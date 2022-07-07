@@ -1,2 +1,2 @@
 # fhir-pacio-pfe
-Pacio personal functioning and engagement FHIR implementation guide
+PACIO Personal Functioning and Engagement FHIR Implementation Guide
