@@ -13,21 +13,11 @@
       "status": "ci-build",
       "current": true
     },
-		{
-			"version": "1.0.0",
-			"desc": "STU 2 draft",
-			"status": "trial-use",
-			"sequence": "STU 2",
-			"fhirversion": "4.0.1",
-			"path": "http://hl7.org/fhir/us/pacio-pfe/STU1",
-			"date": "2021-10-11",
-			"current": true
-		},
     {
       "version": "0.1.0",
-      "date": "2020-10-16",
-      "desc": "Initial STU ballot (Jan 2021 Ballot)",
-      "path": "http://hl7.org/fhir/us/pacio-pfe/2021Jan",
+      "date": "2022-07-07",
+      "desc": "Initial STU ballot (Sept 2022 Ballot)",
+      "path": "http://hl7.org/fhir/us/pacio-pfe/2022Sept",
       "status": "ballot",
       "sequence": "STU 1",
       "fhirversion": "4.0.1"
