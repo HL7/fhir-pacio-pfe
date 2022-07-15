@@ -7,8 +7,8 @@ InstanceOf: PFECollection
 Description: "An instance of Personal Functioning and Engagement Collection for hospital MOCA assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
 * category[+] = OBSCAT#survey
+* category[+] = FUNCTIONINGCAT#functioning "Functioning"
 * category[+] = FUNCPERFCAT#mental_functions "Mental functions"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72133-2 "Montreal Cognitive Assessment [MoCA]"
