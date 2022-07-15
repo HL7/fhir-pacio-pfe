@@ -37,16 +37,16 @@ This IG is divided into several pages which are listed at the top of each page i
 - [Home](index.html): The home page provides the introduction and background information to set context for the use of the HL7® FHIR® Personal Functioning and Engagement IG.
 - Guidance: These pages provide overall guidance in using the profiles and transactions defined in this guide.
     - [Formal Specification](formal_specification.html): Information about conformance to the IG, including Must Support requirements.
-    - [Use Cases](personal_functioning_and_engagement_use_cases.html): Detailed scenario in which the Personal Functioning and Engagement IG could be used.
+    - [Use Cases](personal_functioning_and_engagement_use_case.html): Detailed scenario in which the Personal Functioning and Engagement IG could be used.
     - [Representative Assessments](representative_assessments.html): Specific examples of assessment instruments that can be encoded within the data structure defined by the profiles of this IG.
     - [Security](security_and_data_sharing.html): General security requirements and recommendations for Personal Functioning and Engagement IG actors, including authentication, authorization, and logging requirements and guidance.
     - [Underlying Technologies](underlying_technologies.html): Information about the terminologies, notations, and design principles specific to FHIR® that this specification uses.
-- [Domains](domains.htmls): provides information on how this IG can serve as a framework for representing functioning and engagement observations across a many health and health-related domains.
+- [Domains](domains.html): provides information on how this IG can serve as a framework for representing functioning and engagement observations across a many health and health-related domains.
 - FHIR® Artifacts: These sections provide detailed descriptions and formal definitions for all the FHIR® objects defined in this IG.
     - [Capability Statement](CapabilityStatement-pacio-pfe-cap.html): This artifact defines the specific capabilities that different types of systems are expected to have in order to comply with this IG. Systems conforming to this IG are expected to declare conformance this capability statement.
     - [Profiles](artifacts.html#2): This section lists the set of Profiles defined in this IG to exchange Re-Assessment Timepoint information. Each linked Profile page includes a narrative introduction and a formal definition.
     - [Extensions](artifacts.html#3): This section lists the set of Extensions defined in and used by the Profiles in this IG . Each linked Extension page includes a formal definition.
     - [Value Sets](artifacts.html#4): This section lists the value sets this IG defines.
     - [Code Systems](artifacts.html#5): This section lists the code systems this IG defines.
-    - [Examples](artifacts.html#6): This section lists the example instances associated with this IG, which provide an example representation of the scenario discussed on the [Use Cases](use_cases.html) page.
+    - [Examples](artifacts.html#6): This section lists the example instances associated with this IG.
 - [Downloads](downloads.html): This page provides links to downloadable artifacts.
