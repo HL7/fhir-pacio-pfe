@@ -1,7 +1,7 @@
 Instance: PFEIG-QResponse-Hospital-MMSE-1
-InstanceOf: QuestionnaireResponse
+InstanceOf: USCoreQuestionnaireResponseProfile
+Description: "Montreal Cognitive Assessment [MoCA]"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -16,9 +16,9 @@ Usage: #example
 * item.item.answer.valueQuantity = 20 '{score}'
 
 Instance: PFEIG-QResponse-Hospital-MOCA-1
-InstanceOf: QuestionnaireResponse
+InstanceOf: USCoreQuestionnaireResponseProfile
+Description: "Mini-Mental State Examination [MMSE]"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -33,9 +33,9 @@ Usage: #example
 * item.item.answer.valueQuantity = 18 '{score}'
 
 Instance: PFEIG-QResponse-SNF-BIMS-1
-InstanceOf: QuestionnaireResponse
+InstanceOf: USCoreQuestionnaireResponseProfile
+Description: "Brief interview for mental status [BIMS]"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -77,9 +77,9 @@ Usage: #example
 * item.item.item[=].answer.valueQuantity = 9 '{score}'
 
 Instance: PFEIG-QResponse-SNF-CAM-Admission-1
-InstanceOf: QuestionnaireResponse
+InstanceOf: USCoreQuestionnaireResponseProfile
+Description: "Signs and Symptoms of Delirium (from CAM)"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -101,9 +101,9 @@ Usage: #example
 * item.item.item[=].answer.valueCoding = $loinc#LA61-7 "Behavior not present"
 
 Instance: PFEIG-QResponse-SNF-PHQ9-1
-InstanceOf: QuestionnaireResponse
+InstanceOf: USCoreQuestionnaireResponseProfile
+Description: "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"

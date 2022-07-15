@@ -94,7 +94,7 @@ Description: "An instance of PractitionerRole"
 Instance: PFEIG-Role-SLP-LunaBaskins
 InstanceOf: PractitionerRole
 Description: "An instance of PractitionerRole"
-* code = http://snomed.info/sct#36682004 "Speech and language therapist"
+* code = http://snomed.info/sct#159026005 "Speech and language therapist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-LunaBaskins)
 * organization = Reference(PFEIG-Org-03)

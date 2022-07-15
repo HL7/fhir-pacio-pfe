@@ -20,7 +20,7 @@ Description:    "An exchange of summary observation regarding the most recent pr
 * category ^requirements = "To identify that observation is derived from a questionnaire, is related to personal functioning and engagement, and optionally to identify the domain(s) it falls under."
 
 * category contains functioning 1..1 MS
-* category[functioning].coding = PFEFunctioningCS#functioning "Functioning"
+* category[functioning] = PFEFunctioningCS#functioning "Functioning"
 * category[functioning] ^requirements = "Used to identify that this is an observation related to personal functioning and engagement."
 
 * category contains PFEDomain 0..* MS

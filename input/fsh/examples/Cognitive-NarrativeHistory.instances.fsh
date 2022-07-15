@@ -3,15 +3,16 @@ Alias: $pfe-functioning-cs = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-fun
 
 Instance: PFEIG-Narrative-History-Cognitive-Status-1
 InstanceOf: PFENarrativeHistoryOfStatus
-
+Description: "An instance of Personal Functioning and Engagement Narrative History of Status"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status"
 * extension[0].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location"
 * extension[=].valueReference = Reference(Location/PFEIG-provider-org-loc-01)
 * extension[+].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/assistance-required"
-* extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper."
+* extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
 * status = #final
-* category = $pfe-functioning-cs#functioning "Functioning"
+* category[functioning] = $pfe-functioning-cs#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
 * code = $loinc#11332-4 "History of Cognitive Function Narrative"
 * subject = Reference(Patient/PFEIG-patientBSJ1)
 * effectivePeriod.start = "2019-07-01"

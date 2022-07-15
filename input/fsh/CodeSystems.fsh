@@ -1,13 +1,16 @@
 CodeSystem: PFEFunctioningCS
 Title: "Personal Functioning and Engagement Functioning Category Code System"
 Id: pfe-functioning-cs
-Description: "Defining a specific code for the classification of patient observation regarding individual's functioning and engagement."
+Description: "Defining a specific code for the classification of patient observations regarding individual's functioning and engagement."
+* ^caseSensitive = true
 * #functioning "Functioning" "Functioning is an umbrella term for body function, body structures, activities, and participation in societal roles. An individual's functioning and engagement represents a dynamic interaction between their health condition, environmental factors, and personal factors. Taking a broad view of health that encompasses physical, mental, and social well-being, includes optimizing functioning and engagement as a component of optimizing their health. Characterizing an individual's functioning and engagement includes both understanding the severity of an individual's signs, symptoms, impairments and limitations, and how they correspond with day-to-day activities. Functioning and engagement also serve as a key health outcome within health care."
 
 CodeSystem: PFECategoryCS
 Title: "Personal Functioning and Engagement Category"
 Id: pfe-category-cs
-Description: "Codes for Personal Functioning and Engagement categories"
+Description: "Codes representing health and health-related domains into which functioning observations can be further categorized."
+* ^caseSensitive = true
+* ^hierarchyMeaning = #is-a
 * #body_functions "Body functions" "Body functions are the physiological functions of body systems (including psychological functions). Impairments are problems in body function or structure as a significant deviation or loss. Broad ranges of percentages are provided for those cases in which calibrated assessment instruments or other standards are available to quantify the impairment in body function. For example, when \"no impairment\" or \"complete impairment\" in body function is coded, this scaling may have margin of error of up to 5%. \"Moderate impairment\" is generally up to half of the scale of total impairment. The percentages are to be calibrated in different domains with reference to population standards as percentiles. For this quantification to be used in a uniform manner, assessment procedures need to be developed through research. For a further explanation of coding conventions in ICF, refer to Annex 2."
 * #body_functions #mental_functions "Mental functions" "This chapter is about the functions of the brain: both global mental functions, such as consciousness, energy and drive, and specific mental functions, such as memory, language and calculation mental functions."
 * #body_functions #mental_functions #consciousness_functions "Consciousness functions" "General mental functions of the state of awareness and alertness, including the clarity and continuity of the wakeful state."

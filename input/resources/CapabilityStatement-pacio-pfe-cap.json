@@ -1,6 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "CapabilityStatement-pacio-pfe-cap",
+  "id": "pacio-pfe-cap",
   "url": "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/CapabilityStatement-pacio-pfe-cap.html",
   "version": "0.1.0",
   "name": "Personal_Functioning_And_Engagement_CapabilityStatement",

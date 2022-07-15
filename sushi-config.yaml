@@ -50,12 +50,21 @@ jurisdiction: urn:iso:std:iso:3166#US
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-#menu:
-#   IG Home: index.html
-#   Table of Contents: toc.html
-#   Underlying Technologies: underlying_technologies.html
-#   Use Case Example: functional_indicators_of_care_use_case.html
-#   Profile Highlights and Guidance: profile_highlights_and_guidance.html
-#   Artifacts Summary: artifacts.html
-#   Other Resources:
-#     "FHIR Spec ": new-tab external {{site.data.fhir.path}}index.html
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  Guidance:
+    Formal Specification: formal_specification.html
+    Use Cases: personal_functioning_and_engagement_use_case.html
+    Representative Assessments: representative_assessments.html
+    Security and Privacy: security_and_data_sharing.html
+    Underlying Technologies: underlying_technologies.html
+  Domain Support: domains.html
+  FHIR Artifacts:
+    Capability Statement: CapabilityStatement-pacio-pfe-cap.html
+    Profiles: artifacts.html#2
+    Extensions: artifacts.html#3
+    Value Sets: artifacts.html#4
+    Code Systems: artifacts.html#5
+    Examples: artifacts.html#6
+  Downloads: downloads.html

@@ -1,4 +1,4 @@
-Alias: FUNCPERFCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
+Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
 Alias: FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 
@@ -8,9 +8,9 @@ InstanceOf: PFECollection
 Description: "An instance of Personal Functioning and Engagement Collection"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = OBSCAT#survey
-* category[+] = FUNCPERFCAT#mobility "Mobility"
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[survey] = OBSCAT#survey
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#88331-4 "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
@@ -46,9 +46,9 @@ InstanceOf: PFECollection
 Description: "An instance of Personal Functioning and Engagement Collection"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = OBSCAT#survey
-* category[+] = FUNCPERFCAT#mobility "Mobility"
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[survey] = OBSCAT#survey
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#88330-6 "Mobility - admission performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - admission performance during 3 day assessment period [CMS Assessment]"
@@ -81,9 +81,9 @@ InstanceOf: PFECollection
 Description: "An instance of Personal Functioning and Engagement Collection"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = OBSCAT#survey
-* category[+] = FUNCPERFCAT#self-care "Self-care"
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[survey] = OBSCAT#survey
+* category[PFEDomain] = PFEDOMAINCAT#self-care "Self-care"
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83233-7 "Self-care - admission performance [CMS Assessment]"
 * code.text = "Self-care - admission performance [CMS Assessment]"

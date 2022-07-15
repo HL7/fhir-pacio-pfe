@@ -14,4 +14,4 @@ Before reading this implementation guide, it's important to be familiar with som
 * [Security]({{site.data.fhir.path}}security.html)
 * [Security Labels]({{site.data.fhir.path}}security-labels.html)
 
-This implementation guide supports the [R4]({{site.data.fhir.path}}index.html) version of the FHIR standard and builds on the [US Core Implementation Guide](http://hl7.org/fhir/us/core), and implementers need to familiarize themselves with the profiles in that guide.
+This implementation guide supports the [R4]({{site.data.fhir.path}}index.html) version of the FHIR standard and builds on the [US Core STU5.0.1 Implementation Guide](http://hl7.org/fhir/us/core/STU5.0.1/), and implementers need to familiarize themselves with the profiles in that guide.

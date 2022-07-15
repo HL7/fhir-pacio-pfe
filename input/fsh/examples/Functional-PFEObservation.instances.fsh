@@ -1,4 +1,4 @@
-Alias: FUNCPERFCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
+Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
 Alias: FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 
@@ -8,9 +8,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83194-1 "4 steps - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -24,9 +24,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83192-5 "12 steps - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -40,9 +40,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83198-2 "Walking 10 feet on uneven surfaces - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -56,9 +56,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83196-6 "1 step (curb) - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -72,9 +72,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83190-9 "Picking up object - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -88,9 +88,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#self-care "Self-care"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#self-care "Self-care"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83222-0 "Lower body dressing - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
@@ -104,9 +104,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83202-2 "Walk 50 feet with two turns - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -120,9 +120,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83204-8 "Walk 10 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -136,9 +136,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83206-3 "Car transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -152,9 +152,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83208-9 "Toilet transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -168,9 +168,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83210-5 "Bed-to-chair transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -184,9 +184,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83235-2 "Wheel 150 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -200,9 +200,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83190-9 "Picking up object - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -216,9 +216,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83188-3 "Wheel 50 feet with two turns - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -232,9 +232,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83210-5 "Bed-to-chair transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -248,9 +248,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83200-6 "Walk 150 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -264,9 +264,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#self-care "Self-care"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#self-care "Self-care"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83230-3 "Oral hygiene - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
@@ -280,9 +280,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83216-2 "Sit to lying - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -296,9 +296,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83202-2 "Walk 50 feet with two turns - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -312,9 +312,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#self-care "Self-care"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#self-care "Self-care"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83232-9 "Eating - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
@@ -328,9 +328,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83212-1 "Sit to stand - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -344,9 +344,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83214-7 "Lying to sitting on side of bed - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -360,9 +360,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83235-2 "Wheel 150 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -376,9 +376,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83188-3 "Wheel 50 feet with two turns - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -392,9 +392,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83192-5 "12 steps - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -408,9 +408,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83204-8 "Walk 10 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -424,9 +424,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83218-8 "Roll left and right - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -440,9 +440,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#self-care "Self-care"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#self-care "Self-care"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83228-7 "Toileting hygiene - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
@@ -456,9 +456,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83218-8 "Roll left and right - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -472,9 +472,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83214-7 "Lying to sitting on side of bed - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -488,9 +488,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#self-care "Self-care"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#self-care "Self-care"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83226-1 "Shower/bathe self - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
@@ -504,9 +504,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83216-2 "Sit to lying - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -520,9 +520,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83198-2 "Walking 10 feet on uneven surfaces - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -536,9 +536,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83200-6 "Walk 150 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -552,9 +552,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83212-1 "Sit to stand - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -568,9 +568,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83194-1 "4 steps - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -584,9 +584,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#83196-6 "1 step (curb) - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
@@ -600,9 +600,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83208-9 "Toilet transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -616,9 +616,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#self-care "Self-care"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#self-care "Self-care"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83220-4 "Putting on/taking off footwear - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
@@ -632,9 +632,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#mobility "Mobility"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#83206-3 "Car transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-PT-SallySmith)
@@ -648,9 +648,9 @@ InstanceOf: PFEObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[+] = FUNCTIONINGCAT#functioning "Functioning"
-* category[+] = FUNCPERFCAT#self-care "Self-care"
-* category[+] = OBSCAT#survey
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#self-care "Self-care"
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83224-6 "Upper body dressing - functional ability during 3 day assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)

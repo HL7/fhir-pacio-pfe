@@ -1,17 +1,20 @@
 Alias: $loinc = http://loinc.org
 Alias: $pfe-functioning-cs = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
+Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
 
 Instance: PFEIG-Narrative-History-Functional-Status-1
 InstanceOf: PFENarrativeHistoryOfStatus
-
+Description: "An instance of Personal Functioning and Engagement Narrative History of Status"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status"
 * extension[0].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location"
 * extension[=].valueReference = Reference(Location/PFEIG-provider-org-loc-01)
 * extension[+].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/assistance-required"
-* extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper."
+* extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
 * status = #final
-* category = $pfe-functioning-cs#functioning
+* category[functioning] = $pfe-functioning-cs#functioning "Functioning"
+* category[PFEDomain][0] = PFEDOMAINCAT#mobility "Mobility"
+* category[PFEDomain][1] = PFEDOMAINCAT#self-care "Self-care"
 * code = $loinc#10158-4 "History of Functional status Narrative"
 * subject = Reference(Patient/PFEIG-patientBSJ1)
 * effectivePeriod.start = "2019-07-01"
