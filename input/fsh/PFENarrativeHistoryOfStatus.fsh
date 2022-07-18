@@ -2,7 +2,7 @@ Profile:        PFENarrativeHistoryOfStatus
 Parent:         Observation
 Id:             pfe-narrative-history-of-status
 Title:          "Personal Functioning and Engagement Narrative History of Status"
-Description:    "An exchange of summary observation regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the Personal Functioning and Engagement Collection and Personal Functioning and Engagement Observation profiles to capture assessment data."
+Description:    "An exchange of summary observation regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the [collection](StructureDefinition-pfe-collection.html) and [observatiuon](StructureDefinition-pfe-observation.html) profiles defined in this IG to capture assessment data."
 
 * extension contains ObservationEventLocation named event-location 0..1 MS
 * extension[event-location] ^short = "An extension to indicate where the documented information was collected."
@@ -34,19 +34,21 @@ Description:    "An exchange of summary observation regarding the most recent pr
 * subject 1..1 MS
 * subject only Reference(USCorePatient)
 
-* effective[x] only dateTime or Period or Timing or instant
+* effective[x] only dateTime or Period
 * effective[x] MS
 * effective[x] obeys us-core-1
 * effective[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * effective[x] ^type[=].extension.valueBoolean = true
 * effective[x] ^condition[0] = "us-core-1"
 
-* value[x] 1..1
+* value[x] 1..1 MS
 * value[x] only string
 * value[x] obeys us-core-2
 * value[x] ^short = "Unstructured summary of status observation for the patient. (Strongly encouraged until more structured method is established)"
 * value[x] ^definition = "Unstructured summary of status observation for the patient. (Strongly encouraged until more structured method is established)"
 * value[x] ^condition[0] = "us-core-2"
+
+* dataAbsentReason MS
 
 * performer 1..*
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)

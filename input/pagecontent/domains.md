@@ -1,3 +1,10 @@
+<blockquote class="stu-note">
+<p><b>Note to Commenters:</b>
+The PACIO Personal Functioning and Engagement IG replaces the previously published [PACIO Functional Status](https://hl7.org/fhir/us/pacio-fs/index.html) and [PACIO Cognitive Status](https://hl7.org/fhir/us/pacio-cs/index.html) FHIR IGs as well as the [PACIO SPLASCH](https://paciowg.github.io/splasch-ig/index.html) IG that was under development. This decision was made because the observation profiles created for these IGs all had very similar structures with differences only in the vaocabulary used for the category tied to the profile and the value set from which the code was to be pulled. The use of health domains based on ICF categories and corresponding value sets of observation codes for each domain replaces this approach, allowing this IG to define only a single set of profiles that cover all domains.
+</p>
+</blockquote>
+<br>
+
 The intent of the Personal Functioning and Engagement IG is to provide a framework for communicating and understanding observations related to an individual's functioning in terms of body functions, activities, and participation. The profiles defined within this IG provide a structure that can be used to represent functioning observations from many different domains. In each case, the domain is associated with specific observation codes reprenting questions, tools, instruments, and measurements within that domain.
 
 This IG provides examples of some potential domains and some associated codes. However, the complete list of domains and the associated domain lives in an external [supplemental guide](https://confluence.hl7.org/display/PC/Supplemental+Guide) maintained by the PACIO project. Use of the supplemental guide is optional, but highly recommended. 

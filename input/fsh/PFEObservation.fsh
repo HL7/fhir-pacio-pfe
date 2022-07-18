@@ -5,7 +5,7 @@ Profile:        PFEObservation
 Parent:         USCoreObservationSurveyProfile
 Id:             pfe-observation
 Title:          "Personal Functioning and Engagement Observation"
-Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen)."
+Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen). The structured tool is captured as a parent [collection](StructureDefinition-pfe-collection.html)."
 
 * extension contains 
 	ObservationEventLocation named event-location 0..1 MS
@@ -31,6 +31,9 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * code from PFELoincSnomedVS (extensible)
 * code ^short = "For a Post-Acute Care Assessment, should include a LOINC code and text for the question or concept name."
 
+* effective[x] only dateTime
+
+* performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
 
 * value[x] ^short = "Whenever possible should use the CodeableConcept datatype to provide a suitable code to define the concept for the observation data. As for values like an assessment score or roll-up value, the datatype for this element should be determined by Observation.code. However, for values that are ordinal, may use the CodeableConcept datatype along with the Ordinal Value Extension."
