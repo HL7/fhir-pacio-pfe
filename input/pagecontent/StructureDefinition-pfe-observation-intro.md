@@ -18,7 +18,7 @@ The following data elements must always be present or must be supported if the d
 **Each Personal Functioning and Engagement Observation must support:**
 
 1. the location the observation was made
-1. an additional category value(s) specifying the specific health or health-related [domain](domains.html) that this observation is related to***
+1. an additional [category value or values](ValueSet-pfe-category-vs.html) specifying the specific health or health-related [domain](domains.html) that this observation is related to***
 1. the point in time when the observation was made
 1. the answer or a reason why the data is absent* **
 1. related questionnaire responses that this observation is made from
@@ -27,8 +27,8 @@ The following data elements must always be present or must be supported if the d
 
 **Profile specific implementation guidance:**
 
-* ***When a health or health-related domain is specified as an additional category, Observation.code should be drawn from the corresponding value set specified within the [supplemental guide](https://confluence.hl7.org/display/PC/Supplemental+Guide).
-* **These observations represent a specific question or observation, so the Observation.value element should be populated and and the hasMember list empty.
+* ***When a health or health-related domain is specified as an additional category, Observation.code should be drawn from the corresponding value set specified within the [supplemental guide](https://confluence.hl7.org/display/PC/Supplemental+Guide). If this observation has a parent [collection](StructureDefinition-pfe-collection.html), then additional categories should be included there as well.
+* **These observations represent a specific question or observation, so the Observation.value element should be populated and the hasMember list empty.
 * *An Observation without a value, SHALL include a reason why the data is absent unless there are component observations.
 * Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason.
 

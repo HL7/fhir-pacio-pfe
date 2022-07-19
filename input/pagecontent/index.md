@@ -38,7 +38,7 @@ This IG is divided into several pages which are listed at the top of each page i
 - Guidance: These pages provide overall guidance in using the profiles and transactions defined in this guide.
     - [Formal Specification](formal_specification.html): Information about conformance to the IG, including Must Support requirements.
     - [Use Cases](personal_functioning_and_engagement_use_case.html): Detailed scenario in which the Personal Functioning and Engagement IG could be used.
-    - [Representative Assessments](representative_assessments.html): Specific examples of assessment instruments that can be encoded within the data structure defined by the profiles of this IG.
+    - [Structured Data Capture](structured_data_capture.html): Guidance on how to use structured data capture techniques to represent and use data covered by this IG.
     - [Security](security_and_data_sharing.html): General security requirements and recommendations for Personal Functioning and Engagement IG actors, including authentication, authorization, and logging requirements and guidance.
     - [Underlying Technologies](underlying_technologies.html): Information about the terminologies, notations, and design principles specific to FHIR® that this specification uses.
 - [Domains](domains.html): provides information on how this IG can serve as a framework for representing functioning and engagement observations across a many health and health-related domains.
