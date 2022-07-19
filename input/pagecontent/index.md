@@ -7,9 +7,11 @@ Unfortunately, providers frequently do not receive complete and accurate informa
 Health Information Technology (Health IT) can significantly alleviate administrative burden by supporting health information exchange across care settings to ensure that the relevant information necessary to care for the incoming patient is delivered to the right person, at the right time - thereby improving patient outcomes, reducing provider burden, improving cost efficiencies, and improving workflows. Moreover, enhanced data exchange allows for advanced computability, standardization, usability, and real-time data analytics, enabling broader data use by health IT developers, researchers, providers, and payers.
 
 The Personal Functioning and Engagement Implementation Guide (IG) focuses on the representation and exchange of observations. The IG supports observations across many domains by drawing on the World Health Organization's (WHO) International Classification of Functioning, Disability and Health (commonly known as ICF), which defines health and health-related domains related to an individual's functioning from the perspective of the body, the individual, and society. Examples of domains that ICF defines that the IG can be applied to include but are not limited to:
+
 * Mental functions captured as a part of evaluating an individual's cognitive status
 * Mobility and Self-care captured as a part of evaluating an individual's functional status
 * Communication, voice, and speech functions captured as a part of evaluating an individual's spoken language communication, swallowing, and hearing
+
 More information on the concepts that may be included in this IG can be found in the [ICF Browser](https://apps.who.int/classifications/icfbrowser/).
 
 One impetus for this IG is the amendment to the Social Security Act in 2014 to include the Improving Medicare Post-Acute Care Transformation (IMPACT) Act. IMPACT requires the standardization and interoperability of patient assessment in specific categories for PAC settings, including long-term care hospitals (LTCHs), home health agencies (HHAs), SNFs, and inpatient rehabilitation facilities (IRFs). It focuses on the standardization of data elements in specified quality measure and patient assessment domains for cross setting comparison and clinical information exchange, respectively.
@@ -41,7 +43,7 @@ This IG is divided into several pages which are listed at the top of each page i
     - [Structured Data Capture](structured_data_capture.html): Guidance on how to use structured data capture techniques to represent and use data covered by this IG.
     - [Security](security_and_data_sharing.html): General security requirements and recommendations for Personal Functioning and Engagement IG actors, including authentication, authorization, and logging requirements and guidance.
     - [Underlying Technologies](underlying_technologies.html): Information about the terminologies, notations, and design principles specific to FHIR® that this specification uses.
-- [Domains](domains.html): provides information on how this IG can serve as a framework for representing functioning and engagement observations across a many health and health-related domains.
+- [Domain Support](domains.html): provides information on how this IG can serve as a framework for representing functioning and engagement observations across a many health and health-related domains.
 - FHIR® Artifacts: These sections provide detailed descriptions and formal definitions for all the FHIR® objects defined in this IG.
     - [Capability Statement](CapabilityStatement-pacio-pfe-cap.html): This artifact defines the specific capabilities that different types of systems are expected to have in order to comply with this IG. Systems conforming to this IG are expected to declare conformance this capability statement.
     - [Profiles](artifacts.html#2): This section lists the set of Profiles defined in this IG to exchange Re-Assessment Timepoint information. Each linked Profile page includes a narrative introduction and a formal definition.
