@@ -14,8 +14,8 @@
       "current": true
     },
     {
-      "version": "0.1.0",
-      "date": "2022-07-07",
+      "version": "1.0.0-ballot",
+      "date": "2022-08-12",
       "desc": "Initial STU ballot (Sept 2022 Ballot)",
       "path": "http://hl7.org/fhir/us/pacio-pfe/2022Sept",
       "status": "ballot",

@@ -1,13 +1,24 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "pacio-pfe-cap",
-  "url": "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/CapabilityStatement-pacio-pfe-cap.html",
-  "version": "0.1.0",
+  "url": "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//CapabilityStatement-pacio-pfe-cap.html",
+  "version": "1.0.0-ballot",
   "name": "Personal_Functioning_And_Engagement_CapabilityStatement",
   "title": "Personal Functioning and Engagement Capability Statement",
   "status": "draft",
-  "date": "2020-10-14T00:00:00+00:00",
+  "date": "2022-08-12T00:00:00+00:00",
+  "publisher": "HL7 International - Patient Care",
   "description": "This Capability Statement defines the expected capabilities of a Personal Functioning and Engagement FHIR server conforming to the Personal Functioning and Engagement Implementation Guide.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
   "kind": "requirements",
   "fhirVersion": "4.0.1",
   "format": [
@@ -15,7 +26,7 @@
     "json"
   ],
   "implementationGuide": [
-    "https://build.fhir.org/ig/HL7/fhir-pacio-pfe"
+    "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//fhir-pacio-pfe"
   ],
   "rest": [
     {
@@ -23,27 +34,38 @@
       "resource": [
         {
           "type": "Observation",
-          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/StructureDefinition-pfe-observation.html",
+          "supportedProfile": [
+            "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//StructureDefinition-pfe-collection.html",
+            "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//StructureDefinition-pfe-observation.html",
+            "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//StructureDefinition-pfe-narrative-history-of-status.html"
+          ],
           "interaction": [
             {
-              "code": "read",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "create"
             },
             {
-              "code": "vread",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "update"
             },
             {
-              "code": "history-instance",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "delete"
             },
             {
-              "code": "history-type",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "read"
             },
             {
-              "code": "search-type",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "vread"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "history-type"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "patch"
             }
           ],
           "conditionalCreate": true,
@@ -285,27 +307,34 @@
         },
         {
           "type": "DeviceUseStatement",
-          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/StructureDefinition-pfe-use-of-device.html",
+          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//StructureDefinition-pfe-use-of-device.html",
           "interaction": [
             {
-              "code": "read",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "create"
             },
             {
-              "code": "vread",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "update"
             },
             {
-              "code": "history-instance",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "delete"
             },
             {
-              "code": "history-type",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "read"
             },
             {
-              "code": "search-type",
-              "documentation": "Implemented per the specification (or Insert other doco here)"
+              "code": "vread"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "history-type"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "patch"
             }
           ],
           "conditionalCreate": true,
