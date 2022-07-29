@@ -24,6 +24,9 @@ Alias: USCorePractitionerRole = http://hl7.org/fhir/us/core/StructureDefinition/
 Alias: USCoreOrganization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 Alias: USCoreQuestionnaireResponse = http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse
 Alias: USCoreDocumentReference = http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
+Alias: USCoreDiagnosticReport = http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note
+Alias: $us-core-diagnosticreport-category = http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category
+
 
 //Alias: MDS3.0-NC-1.17 = https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17
 Alias: MDS3.0-NC-1.17 = http://example.org/Questionnaire/MDS3.0-NC-1.17

@@ -20,4 +20,5 @@ Usage: #example
 * effectivePeriod.start = "2019-07-01"
 * effectivePeriod.end = "2020-11-30"
 * performer = Reference(PractitionerRole/PFEIG-provider-role-pcp)
-* valueString = "Patient is a community ambulator, able to attend desired activites and able to care for herself independently."
+* presentedForm.data = "UHJpb3IgdG8gdGhlIGN1cnJlbnQgYWRtaXNzaW9uLCBwYXRpZW50IHdhcyBhIGNvbW11bml0eSBhbWJ1bGF0b3IsIGFibGUgdG8gYXR0ZW5kIGRlc2lyZWQgYWN0aXZpdGVzIGFuZCBjYXJlIGZvciBoZXJzZWxmIGluZGVwZW5kZW50bHku"
+* presentedForm.contentType = #text/plain
