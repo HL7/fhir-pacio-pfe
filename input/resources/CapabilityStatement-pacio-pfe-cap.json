@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "pacio-pfe-cap",
-  "url": "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//CapabilityStatement-pacio-pfe-cap.html",
+  "url": "http://hl7.org/fhir/us/pacio-pfe/CapabilityStatement/pacio-pfe-cap",
   "version": "1.0.0-ballot",
   "name": "Personal_Functioning_And_Engagement_CapabilityStatement",
   "title": "Personal Functioning and Engagement Capability Statement",
@@ -26,7 +26,7 @@
     "json"
   ],
   "implementationGuide": [
-    "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//fhir-pacio-pfe"
+    "http://hl7.org/fhir/us/pacio-pfe/"
   ],
   "rest": [
     {
@@ -35,9 +35,9 @@
         {
           "type": "Observation",
           "supportedProfile": [
-            "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//StructureDefinition-pfe-collection.html",
-            "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//StructureDefinition-pfe-observation.html",
-            "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//StructureDefinition-pfe-narrative-history-of-status.html"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-collection.html",
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-observation.html",
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-narrative-history-of-status.html"
           ],
           "interaction": [
             {
@@ -307,7 +307,7 @@
         },
         {
           "type": "DeviceUseStatement",
-          "profile": "https://build.fhir.org/ig/HL7/fhir-pacio-pfe//StructureDefinition-pfe-use-of-device.html",
+          "profile": "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-use-of-device.html",
           "interaction": [
             {
               "code": "create"

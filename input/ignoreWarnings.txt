@@ -8,3 +8,10 @@
 
 # Grahame Grieve confirmed that this information message should be suppressed. (Zulip stream: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Questionnaire.20could.20not.20be.20resolved)
 The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
+
+# Information on "Canonical URL 'http://hl7.org/fhir/us/pacio-pfe/...' does not resolve" Errors: urls will be valid upon publication. Lloyd M. recommended to ballot with these errors
+ERROR: CapabilityStatement/pacio-pfe-cap: CapabilityStatement.implementationGuide[0]: Canonical URL 'http://hl7.org/fhir/us/pacio-pfe/' does not resolve
+ERROR: CapabilityStatement/pacio-pfe-cap: CapabilityStatement.rest[0].resource[0].supportedProfile[0]: Canonical URL 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-collection.html' does not resolve
+ERROR: CapabilityStatement/pacio-pfe-cap: CapabilityStatement.rest[0].resource[0].supportedProfile[1]: Canonical URL 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-observation.html' does not resolve
+ERROR: CapabilityStatement/pacio-pfe-cap: CapabilityStatement.rest[0].resource[0].supportedProfile[2]: Canonical URL 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-narrative-history-of-status.html' does not resolve
+ERROR: CapabilityStatement/pacio-pfe-cap: CapabilityStatement.rest[0].resource[1].profile: Canonical URL 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-use-of-device.html' does not resolve
