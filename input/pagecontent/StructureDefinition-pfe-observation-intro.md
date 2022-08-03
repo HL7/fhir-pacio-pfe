@@ -11,15 +11,16 @@ The following data elements must always be present or must be supported if the d
 **Each Personal Functioning and Engagement Observation must have:**
 
 1. a status
-1. a category code of “survey” and "functioning"
-1. a [LOINC](http://loinc.org/) or [SNOMED CT](http://hl7.org/fhir/R4/codesystem-snomedct.html) code, if available, which tells you the question or observation made
+1. a category code of "survey" and "functioning"
+1. a [LOINC](http://loinc.org/) or [SNOMED CT](http://hl7.org/fhir/R4/codesystem-snomedct.html) code, if available, identifying the question asked or observation made
 1. a patient
+1. the point in time or period when the observation was made
+1. who made the observation
 
 **Each Personal Functioning and Engagement Observation must support:**
 
 1. the location the observation was made
 1. an additional [category value or values](ValueSet-pfe-category-vs.html) specifying the specific health or health-related [domain](domains.html) that this observation is related to***
-1. the point in time when the observation was made
 1. the answer or a reason why the data is absent* **
 1. related questionnaire responses that this observation is made from
 
