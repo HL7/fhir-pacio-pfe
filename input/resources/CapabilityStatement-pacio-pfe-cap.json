@@ -26,7 +26,7 @@
     "json"
   ],
   "implementationGuide": [
-    "http://hl7.org/fhir/us/pacio-pfe/"
+    "http://hl7.org/fhir/us/pacio-pfe/ImplementationGuide/hl7.fhir.us.pacio-pfe"
   ],
   "rest": [
     {
@@ -35,9 +35,8 @@
         {
           "type": "Observation",
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-collection.html",
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-observation.html",
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-narrative-history-of-status.html"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-collection",
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation"
           ],
           "interaction": [
             {
@@ -83,7 +82,6 @@
             "Observation.context",
             "Observation.performer",
             "Observation.encounter",
-            "Observation.related-target",
             "Observation.device"
           ],
           "searchRevInclude": [
@@ -94,7 +92,6 @@
             "Immunization.reaction",
             "ImmunizationRecommendation.information",
             "MedicationStatement.part-of",
-            "Observation.related-target",
             "Procedure.part-of",
             "QuestionnaireResponse.parent"
           ],
@@ -306,8 +303,91 @@
           ]
         },
         {
+          "type": "DiagnosticReport",
+          "profile": "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "history-type"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "patch"
+            }
+          ],
+          "conditionalCreate": true,
+          "conditionalUpdate": true,
+          "conditionalDelete": "multiple",
+          "referencePolicy": [
+            "literal",
+            "logical"
+          ],
+          "searchInclude": [
+            "DiagnosticReport.based-on",
+            "DiagnosticReport.subject",
+            "DiagnosticReport.patient",
+            "DiagnosticReport.encounter",
+            "DiagnosticReport.media",
+            "DiagnosticReport.performer",
+            "DiagnosticReport.result",
+            "DiagnosticReport.results-interpreter",
+            "DiagnosticReport.specimen"
+          ],
+          "searchParam": [
+            {
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
+              "type": "date",
+              "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period"
+            },
+            {
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+              "type": "token",
+              "documentation": "The code of the report type"
+            },
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+              "type": "reference",
+              "documentation": "The subject that the report is about (if patient)"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+              "type": "token",
+              "documentation": "The unique id for a particular report"
+            },
+            {
+              "name": "encounter",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
+              "type": "reference",
+              "documentation": "Encounter related to the report"
+            }
+          ]
+        },
+        {
           "type": "DeviceUseStatement",
-          "profile": "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition-pfe-use-of-device.html",
+          "profile": "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-use-of-device",
           "interaction": [
             {
               "code": "create"

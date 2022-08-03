@@ -31,8 +31,10 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * code from PFELoincSnomedVS (extensible)
 * code ^short = "For a Post-Acute Care Assessment, should include a LOINC code and text for the question or concept name."
 
+* effective[x] 1..1 
 * effective[x] only dateTime
 
+* performer 1..* 
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
 
@@ -40,18 +42,3 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 
 * derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."
 * derivedFrom only Reference(USCoreQuestionnaireResponse)
-
-/*
-* component ^short = "Currently not used in PFEObservation."
-* basedOn ^short = "Currently not used in PFEObservation."
-* partOf ^short = "Currently not used in PFEObservation."
-* focus ^short = "Currently not used in PFEObservation."
-* issued ^short = "Currently not used in PFEObservation."
-* interpretation ^short = "Currently not used in PFEObservation."
-* bodySite ^short = "Currently not used in PFEObservation."
-* method ^short = "Currently not used in PFEObservation."
-* specimen ^short = "Currently not used in PFEObservation."
-* device ^short = "Currently not used in PFEObservation."
-* referenceRange ^short = "Currently not used in PFEObservation."
-* hasMember ^short = "Currently not used in PFEObservation."
-*/

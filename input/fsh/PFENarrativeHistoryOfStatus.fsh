@@ -2,7 +2,7 @@ Profile:        PFENarrativeHistoryOfStatus
 Parent:         USCoreDiagnosticReport
 Id:             pfe-narrative-history-of-status
 Title:          "Personal Functioning and Engagement Narrative History of Status"
-Description:    "An exchange of summary observation regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the [collection](StructureDefinition-pfe-collection.html) and [observatiuon](StructureDefinition-pfe-observation.html) profiles defined in this IG to capture assessment data."
+Description:    "An exchange of a narrative summary regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the [collection](StructureDefinition-pfe-collection.html) and [observatiuon](StructureDefinition-pfe-observation.html) profiles defined in this IG to capture assessment data."
 
 * extension contains ObservationEventLocation named event-location 0..1 MS
 * extension[event-location] ^short = "An extension to indicate where the documented information was collected."
@@ -36,7 +36,7 @@ Description:    "An exchange of summary observation regarding the most recent pr
 * code ^definition = "The test, panel, report, or note that was ordered."
 
 * effective[x] only dateTime or Period
-* effective[x] MS
+* effective[x] 1..1 MS
 * effective[x] ^short = "Diagnostically relevant time (typically the time of the procedure)"
 * effective[x] ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * effective[x] ^type.extension.valueBoolean = true
@@ -45,6 +45,10 @@ Description:    "An exchange of summary observation regarding the most recent pr
 * performer 1..*
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
+
+* presentedForm 1..*
+* presentedForm ^short = "The narrative text describing the patient's history of status."
+
 
 Invariant: us-core-10
 Description: "effective[x] SHALL be present if the status is 'partial', 'preliminary', 'final', 'amended', 'corrected' or 'appended'"
