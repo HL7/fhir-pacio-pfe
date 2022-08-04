@@ -26,17 +26,6 @@ Description: "An instance of PractitionerRole"
 
 
 
-Instance: PFEIG-Role-PT-LunaBaskins
-InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
-* code = http://snomed.info/sct#36682004 "Physiotherapist"
-* active = true
-* practitioner = Reference(PFEIG-Practitioner-LunaBaskins)
-* organization = Reference(PFEIG-Org-03)
-* location = Reference(PFEIG-Org-Loc-03)
-
-
-
 Instance: PFEIG-Role-OT-DanielGranger
 InstanceOf: PractitionerRole
 Description: "An instance of PractitionerRole"
