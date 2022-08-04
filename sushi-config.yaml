@@ -39,7 +39,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
 copyrightYear: 2022+
-releaseLabel: STU1
+releaseLabel: ballot1
 jurisdiction: urn:iso:std:iso:3166#US
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
