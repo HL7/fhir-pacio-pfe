@@ -1,18 +1,28 @@
-The Personal Functioning and Engagement FHIR Implementation Guide provides a representation for and supports the exchange of information related to a person’s ability to live their life in the world. Unpacking the three words in the title can help clarify the scope and approach of this IG:
-- **Personal**: about an individual person, as opposed to a group or a non-human animal
-- **Functioning**: about what the person can do, the help they need, and contributing factors, both physiological and environmental. The term is taken from the International Classification of Functioning, Disability, and Health (ICF) published by the World Health Organization (WHO) 
-- **Engagement**: interested in helping the individual be an active participant in their life, as opposed to a passive observer
+The Personal Functioning and Engagement FHIR Implementation Guide supports the exchange of information related to a person’s ability to live their life in the world. The three words in the title frame aspects of the intended scope for this IG:
+- **Personal**: about an individual person, as opposed to a group or a non-human animal.
+- **Functioning**: related to what the person can do, the help they need, and the effects of contributing factors, including those physiological, environmental, and personal. The term is taken from the [International Classification of Functioning, Disability, and Health](https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health) (ICF) published by the World Health Organization (WHO).
+- **Engagement**: interested in helping the individual be an active participant in their life, as opposed to a passive observer.
 
 ### Background
 
-When a patient receives care in an acute hospital setting, their clinicians and caregivers rightly focus on diagnosing and treating their immediate life-threatening concern. Once these concerns have been addressed, the patient transitions to lower acuity settings, potentially into long-term care to start, but eventually back into their homes and communities under the care of their primary care physician and other home- and community-based services. As a part of this transition, the focus of their clinicians and caregivers broadens to include how they will effectively live in the world and what support they will need to do so.  Clinicians, including doctors, nurses, physical therapists, occupational therapists, speech and language pathologists, social workers, among others, ask questions and make observations such as 
+When a patient receives care in an acute hospital setting, their clinicians and caregivers rightly focus on diagnosing and treating their immediate life-threatening concern. Once these concerns have been addressed, the patient transitions to lower acuity settings, potentially into long-term care to start, but eventually back into their homes and communities under the care of their primary care physician and other home- and community-based services. As a part of this transition, the focus of their clinicians and caregivers broadens to include how they will effectively live in the world, the therapy and treatment they will need to do so, and what support they will need. Clinicians from many disciplines, including doctors, nurses, physical therapists, occupational therapists, speech and language pathologists, social workers, ask questions and make observations such as 
 - What tasks is the patient having trouble with?
+- What treatments and therapies would help them improve at those tasks?
 - What will be needed to support them in those tasks now and in the future? 
     - What services will they need? 
     - Are changes to their home or living situation necessary?
     - Do they need assistive devices?
+These caregivers consider these questions across many domains, including those traditionally associated with functional status, cognitive status, speech, language, swallowing, cognitive communication, and hearing. 
 
-These caregivers consider these questions across many domains, including those traditionally associated with functional status, cognitive status, speech, language, swallowing, communication, and hearing. This information is particularly important to clinicians and caregivers in long-term, post-acute care (LTPAC) settings because they are tasked with enabling stabilized patients to recover enough of their life functioning and engagement to return to their homes and communities. However, acute care, primary care, and home- and community-based services all produce and need to receive this information as well in order to provide appropriate care for the whole person, promote the patient’s ability to engage in and be more than an observer to their life and fit into their environment, and support the patient in achieving their optimal quality of life.
+This information is a focus of clinicians and caregivers in long-term, post-acute care (LTPAC) settings. During this phase of care, clinicians and therapists are tasked with helping patients to improve their functioning so that they may return to their homes and communities and see close up the improvements in and setbacks to a patient's functioning. However, information on functioning is critical across the full spectrum of care, including acute care, primary care, and home- and community-based services, so that practitioners  can provide appropriate care for the whole person, promote the patient’s ability to engage in and be more than an observer to their life and fit into their environment, and support the patient in achieving their optimal quality of life.
+
+### Why PACIO
+
+The PACIO Project is a collaborative effort to advance interoperable health data exchange between PAC and other providers, patients, and key stakeholders across health care and to promote health data exchange in collaboration with policy makers, standards organizations, and industry through a consensus-based approach.
+
+While the information covered by this implementation guide is relevant to practitioners across the full spectrum of patient care, LTPAC practitioners have a deep understanding of patient functioning that makes them uniquely suited to author this IG. This understanding comes out of
+- the goal of practitioners in these settings of helping their patients return to living in their homes and communities
+- LTPAC practitioners' knowledge of the tasks individuals need to perform and how to help them return to doing so with the necessary treatments and supports.
 
 ### Context and Challenges
 
