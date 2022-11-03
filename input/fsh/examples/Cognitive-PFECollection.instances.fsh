@@ -2,64 +2,16 @@ Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-c
 Alias: FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 
-Instance: PFEIG-CSC-Hospital-MOCA-1
-InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for hospital MOCA assessment"
-* subject = Reference(PFEIG-patientBSJ1)
-* status = #final
-* category[survey] = OBSCAT#survey
-* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
-* effectiveDateTime = "2020-07-08T17:32:00-05:00"
-* code = http://loinc.org#72133-2 "Montreal Cognitive Assessment [MoCA]"
-* code.text = "Montreal Cognitive Assessment [MoCA]"
-* performer[+] = Reference(PFEIG-Role-SLP-JennyGlass)
-* hasMember[+] = Reference(PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1)
-* derivedFrom[+] = Reference(PFEIG-QResponse-Hospital-MOCA-1)
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-01)
-
-Instance: PFEIG-CSC-Hospital-MMSE-1
-InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for hospital MMSE assessment"
-* subject = Reference(PFEIG-patientBSJ1)
-* status = #final
-* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
-* effectiveDateTime = "2020-07-08T17:32:00-05:00"
-* code = http://loinc.org#72107-6 "Mini-Mental State Examination [MMSE]"
-* code.text = "Mini-Mental State Examination [MMSE]"
-* performer[+] = Reference(PFEIG-Role-SLP-JennyGlass)
-* hasMember[+] = Reference(PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31)
-* derivedFrom[+] = Reference(PFEIG-QResponse-Hospital-MMSE-1)
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-01)
-
-Instance: PFEIG-CSC-SNF-CAM-Admission-1
-InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for SNF CAM assessment"
-* subject = Reference(PFEIG-patientBSJ1)
-* status = #final
-* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
-* effectiveDateTime = "2020-04-09T18:00:00-05:00"
-* code = http://loinc.org#86585-7 "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) [CMS Assessment]"
-* code.text = "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) [CMS Assessment]"
-* performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-1)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-3)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-5)
-* derivedFrom[+] = Reference(PFEIG-QResponse-SNF-CAM-Admission-1)
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-
 Instance: PFEIG-CSC-SNF-PHQ9-1
-InstanceOf: PFECollection
+InstanceOf: Observation
 Description: "An instance of Personal Functioning and Engagement Collection"
+* meta.profile[+] = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation"
+* meta.profile[+] = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
+* category[0] = FUNCTIONINGCAT#functioning "Functioning"
+* category[1] = OBSCAT#survey
+* category[2] = PFEDOMAINCAT#mental_functions "Mental functions"
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54635-8 "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"
 * code.text = "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"
@@ -85,28 +37,3 @@ Description: "An instance of Personal Functioning and Engagement Collection"
 * hasMember[+] = Reference(PFEIG-CSC-SNF-PHQ9-1-Ob-Question-29)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-PHQ9-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-03)
-
-Instance: PFEIG-CSC-SNF-BIMS-1
-InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for SNF BIMS assessment"
-* subject = Reference(PFEIG-patientBSJ1)
-* status = #final
-* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
-* effectiveDateTime = "2020-07-11T11:30:00-05:00"
-* code = http://loinc.org#52491-8 "Brief interview for mental status [BIMS]"
-* code.text = "Brief interview for mental status [BIMS]"
-* performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-3)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-4)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-5)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-6)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-7)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-8)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-9)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-10)
-* derivedFrom[+] = Reference(PFEIG-QResponse-SNF-BIMS-1)
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used][+].valueReference = Reference(PFEIG-CSC-SNF-BIMS-1-UseOfDevice-1)
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used][+].valueReference = Reference(PFEIG-CSC-SNF-BIMS-1-UseOfDevice-2)

@@ -10,10 +10,9 @@ The following search parameters and search parameter combinations SHALL be suppo
 
     Example:
 
-      1. GET [base]/Observation?patient=1134281&amp;category=http://terminology.hl7.org/CodeSystem/observation-category\|survey
       1. GET [base]/Observation?patient=1134281&amp;category=http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs\|mental_functions
       
-    *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and a category code = `survey` or `mental_functions` respectively ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
+    *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and a category code = `mental_functions` respectively ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
 1. **SHALL** support searching using the combination of the **[`patient`](http://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-patient.html)** and **[`code`](http://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-code.html)** search parameters:
     - including optional support for *OR* search on `code` (e.g.`code={system|}[code],{system|}[code],...`)

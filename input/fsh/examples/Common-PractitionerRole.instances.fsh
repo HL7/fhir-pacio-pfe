@@ -100,8 +100,6 @@ Description: "An instance of PractitionerRole"
 * organization = Reference(PFEIG-Org-02)
 * location = Reference(PFEIG-Org-Loc-02)
 
-
-
 Instance: PFEIG-Role-SLP-JennyGlass
 InstanceOf: PractitionerRole
 Description: "An instance of PractitionerRole"
@@ -111,5 +109,13 @@ Description: "An instance of PractitionerRole"
 * organization = Reference(PFEIG-Org-01)
 * location = Reference(PFEIG-Org-Loc-01)
 
+Instance: PFEIG-Role-Audio-JillBradley
+InstanceOf: PractitionerRole
+Description: "An instance of PractitionerRole"
+* code = https://taxonomy.nucc.org/#231H00000X "Audiologist"
+* active = true
+* practitioner = Reference(PFEIG-Practitioner-JillBradley)
+* organization = Reference(PFEIG-org-Audiology-Advanced-Hearing-Care)
+* location = Reference(PFEIG-org-Loc-Audiology-Advanced-Hearing-Care)
 
 

@@ -38,3 +38,10 @@ Description: "An instance of Location"
 * name = "San Antonio General Hospital"
 * address.text = "26022 Meadowlark Bay, San Antonio, TX 78260"
 * status = #active
+
+Instance: PFEIG-org-Loc-Audiology-Advanced-Hearing-Care
+InstanceOf: Location
+Description: "An instance of Location"
+* name = "Advanced Hearing Care"
+* address.text = "1901 Pillbug St, San Antonio, TX 78242"
+* status = #active

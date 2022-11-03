@@ -2,15 +2,17 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFEObservation
-Parent:         USCoreObservationSurveyProfile
+Parent:         Observation
 Id:             pfe-observation
 Title:          "Personal Functioning and Engagement Observation"
-Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen). The structured tool is captured as a parent [collection](StructureDefinition-pfe-collection.html)."
+Description:    "An exchange of post-acute care observation for a patient."
 
 * extension contains 
-	ObservationEventLocation named event-location 0..1 MS
+	ObservationEventLocation named event-location 0..1 MS and
+	DevicePatientUsed named device-use 0..* MS
 * extension[event-location] ^short = "An extension to indicate where the observation event occurred."
 * extension[event-location] ^definition = "The principal physical location where the observation event occurred."
+* extension[device-use] ^short = "An extension to indicate a record of assistive device usage by a patient during an assessment."
 
 * status ^short = "Should have the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used."
 
@@ -28,17 +30,11 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * category[PFEDomain] from PFECategoryVS (required)
 * category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
-* code from PFELoincSnomedVS (extensible)
-* code ^short = "For a Post-Acute Care Assessment, should include a LOINC code and text for the question or concept name."
+// * effective[x] 1..1 
+// * effective[x] only dateTime
 
-* effective[x] 1..1 
-* effective[x] only dateTime
+// * performer 1..* 
+// * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
+// *  performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
 
-* performer 1..* 
-* performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
-* performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
-
-* value[x] ^short = "Whenever possible should use the CodeableConcept datatype to provide a suitable code to define the concept for the observation data. As for values like an assessment score or roll-up value, the datatype for this element should be determined by Observation.code. However, for values that are ordinal, may use the CodeableConcept datatype along with the Ordinal Value Extension."
-
-* derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."
-* derivedFrom only Reference(USCoreQuestionnaireResponse)
+// * value[x] ^short = "Whenever possible should use the CodeableConcept datatype to provide a suitable code to define the concept for the observation data. As for values like an assessment score or roll-up value, the datatype for this element should be determined by Observation.code. However, for values that are ordinal, may use the CodeableConcept datatype along with the Ordinal Value Extension."

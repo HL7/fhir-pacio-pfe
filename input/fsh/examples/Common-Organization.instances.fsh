@@ -28,3 +28,8 @@ Instance: PFEIG-Org-02
 InstanceOf: Organization
 Description: "An instance of Organization"
 * name = "Happy Nursing Facility"
+
+Instance: PFEIG-org-Audiology-Advanced-Hearing-Care
+InstanceOf: Organization
+Description: "An instance of Organization"
+* name = "Advanced Hearing Care"
