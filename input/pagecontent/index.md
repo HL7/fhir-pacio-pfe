@@ -12,7 +12,8 @@ When a patient receives care in an acute hospital setting, their clinicians and 
     - What services will they need? 
     - Are changes to their home or living situation necessary?
     - Do they need assistive devices?
-These caregivers consider these questions across many domains, including those traditionally associated with functional status, cognitive status, speech, language, swallowing, cognitive communication, and hearing. 
+
+Caregivers consider these questions across many domains, including those traditionally associated with functional status, cognitive status, speech, language, swallowing, cognitive communication, and hearing. 
 
 This information is a focus of clinicians and caregivers in long-term, post-acute care (LTPAC) settings. During this phase of care, clinicians and therapists are tasked with helping patients to improve their functioning so that they may return to their homes and communities and see close up the improvements in and setbacks to a patient's functioning. However, information on functioning is critical across the full spectrum of care, including acute care, primary care, and home- and community-based services, so that practitioners  can provide appropriate care for the whole person, promote the patient’s ability to engage in and be more than an observer to their life and fit into their environment, and support the patient in achieving their optimal quality of life.
 
