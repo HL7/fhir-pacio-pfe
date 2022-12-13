@@ -111,3 +111,12 @@ Description: "An instance of Practitioner"
 * active = true
 * gender = Hl7FhirAdminGender#female
 * telecom.system = #phone
+
+Instance: PFEIG-Practitioner-FelixFlit
+InstanceOf: Practitioner
+Description: "An instance of Practitioner"
+* name.given = "Felix"
+* name.family = "Flit"
+* name.text = "Felix Flit"
+* active = true
+* gender = Hl7FhirAdminGender#male

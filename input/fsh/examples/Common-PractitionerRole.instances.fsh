@@ -2,7 +2,14 @@ Alias: NUCC = http://nucc.org/provider-taxonomy
 Alias: PRO-ROLE = http://nucc.org/provider-taxonomy
 Alias: SPECIALTY = http://nucc.org/provider-taxonomy
 
-
+Instance: PFEIG-Role-OT-FelixFlit
+InstanceOf: PractitionerRole
+Description: "An instance of PractitionerRole"
+* code = http://snomed.info/sct#80546007 "Occupational therapist"
+* active = true
+* practitioner = Reference(PFEIG-Practitioner-FelixFlit)
+* organization = Reference(PFEIG-Org-01)
+* location = Reference(PFEIG-Org-Loc-01)
 
 Instance: PFEIG-Role-OT-JenCadbury
 InstanceOf: PractitionerRole
