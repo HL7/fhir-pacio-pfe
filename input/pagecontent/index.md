@@ -5,7 +5,7 @@ The Personal Functioning and Engagement FHIR Implementation Guide supports the e
 
 ### Background
 
-When a patient receives care in an acute hospital setting, their clinicians and caregivers rightly focus on diagnosing and treating their immediate life-threatening concern. Once these concerns have been addressed, the patient transitions to lower acuity settings, potentially into long-term care to start, but eventually back into their homes and communities under the care of their primary care physician and other home- and community-based services. As a part of this transition, the focus of their clinicians and caregivers broadens to include how they will effectively live in the world, the therapy and treatment they will need to do so, and what support they will need. Clinicians from many disciplines, including doctors, nurses, physical therapists, occupational therapists, speech and language pathologists, social workers, ask questions and make observations such as 
+When a patient receives care in an acute hospital setting, their clinicians and caregivers rightly focus on diagnosing and treating their immediate life-threatening concern. Once these concerns have been addressed, the patient transitions to lower acuity settings. They may move into long-term care to start, but the goal is to get them back into their homes and communities under the care of their primary care physician and other home- and community-based services. As a part of this transition, the focus of their clinicians and caregivers broadens to include how they will effectively live in the world, the therapy and treatment they will need to do so, and what support they will need. Clinicians from many disciplines, including doctors, nurses, physical therapists, occupational therapists, speech and language pathologists, social workers, ask questions and make observations such as 
 - What tasks is the patient having trouble with?
 - What treatments and therapies would help them improve at those tasks?
 - What will be needed to support them in those tasks now and in the future? 
@@ -15,19 +15,23 @@ When a patient receives care in an acute hospital setting, their clinicians and 
 
 Caregivers consider these questions across many domains, including those traditionally associated with functional status, cognitive status, speech, language, swallowing, cognitive communication, and hearing. 
 
-This information is a focus of clinicians and caregivers in long-term, post-acute care (LTPAC) settings. During this phase of care, clinicians and therapists are tasked with helping patients to improve their functioning so that they may return to their homes and communities and see close up the improvements in and setbacks to a patient's functioning. However, information on functioning is critical across the full spectrum of care, including acute care, primary care, and home- and community-based services, so that practitioners  can provide appropriate care for the whole person, promote the patient’s ability to engage in and be more than an observer to their life and fit into their environment, and support the patient in achieving their optimal quality of life.
+This information is a focus of clinicians and caregivers in long-term, post-acute care (LTPAC) settings. During this phase of care, clinicians and therapists are tasked with helping patients to improve their functioning so that they may return to their homes and communities. Thus, these clinicians and therapists see close up the improvements in and setbacks to a patient's functioning. However, information on functioning is critical across the full spectrum of care, including acute care, primary care, and home- and community-based services, so that practitioners can provide appropriate care for the whole person, promote the patient’s ability to engage in and be more than an observer to their life and fit into their environment, and support the patient in achieving their optimal quality of life.
+
+![PACIO logo](./pacio.png)
 
 ### Why PACIO
 
 The PACIO Project is a collaborative effort to advance interoperable health data exchange between PAC and other providers, patients, and key stakeholders across health care and to promote health data exchange in collaboration with policy makers, standards organizations, and industry through a consensus-based approach.
 
+The primary goal of the PACIO Project is to establish a framework for the development of Fast Healthcare Interoperability Resource (FHIR) technical implementation guides (IGs) and reference implementations that will facilitate health data exchange through standards-based use case-driven application programming interfaces (APIs).
+
 While the information covered by this implementation guide is relevant to practitioners across the full spectrum of patient care, LTPAC practitioners have a deep understanding of patient functioning that makes them uniquely suited to author this IG. This understanding comes out of
-- the goal of practitioners in these settings of helping their patients return to living in their homes and communities
+- the goal of practitioners in these settings of helping their patients return to living in their homes and communities.
 - LTPAC practitioners' knowledge of the tasks individuals need to perform and how to help them return to doing so with the necessary treatments and supports.
 
 ### Context and Challenges
 
- Care coordination – when a person transitions between healthcare settings, including ambulatory care, acute care, long-term post-acute care (LTPAC), and home- and community-based services (HCBS) – is often fragmented and can lead to poor health outcomes, increased burden, and increased costs. Interoperable health information exchange has the potential to improve patient and provider communication and supports access to longitudinal health information that enables improved efficiencies, higher quality of care, and better health outcomes. Data should be usable across the continuum of care, and beyond the traditional healthcare system – into the community.
+Care coordination – when a person transitions between healthcare settings, including ambulatory care, acute care, long-term post-acute care (LTPAC), and home- and community-based services (HCBS) – is often fragmented and can lead to poor health outcomes, increased burden, and increased costs. Interoperable health information exchange has the potential to improve patient and provider communication and supports access to longitudinal health information that enables improved efficiencies, higher quality of care, and better health outcomes. Data should be usable across the continuum of care, and beyond the traditional healthcare system – into the community.
 
 Unfortunately, providers frequently do not receive complete and accurate information on patients transferred into their care in a timely manner, leading to adverse outcomes and additional expenses. This failure to exchange accurate, timely data often leads to inefficient workflows, duplicative data entries, and increased risk of patient harm attributable to missing or inaccurate information. Specifically within the post-acute care setting, poor quality discharge information is a major barrier to safe and effective transitions. With 45% of Medicare beneficiaries requiring post-acute care (PAC) services after hospitalization, the need for a seamless exchange of health information is great. The findings from a 2020 study highlight the significant gap in sharing information at transition. The survey assessed continuity between hospitals and skilled nursing facilities (SNF) and found that at transition of care complete mental status information was received by the SNF only 6% of the time. [[JAMA Network Open. 2021;4(1):e2033980. doi: 10.1001/jamanetworkopen.2020.33980](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2775075)].
 
@@ -51,14 +55,6 @@ The Act requires:
     * Outcome and Assessment Information Set (OASIS) for HHAs
 * Implementation of data elements specified in each domain using standardized data elements to be nested within the assessment instruments currently required for submission by LTCH, IRF, SNF, and HHA providers.
 * Data to be standardized and interoperable to allow exchange of data between PAC providers, among others, using common standards and definitions to provide access to longitudinal information and facilitate coordinated care.
-
-![PACIO logo](./pacio.png)
-
-### The PACIO Project
-
-The PACIO Project is a collaborative effort to advance interoperable health data exchange between PAC and other providers, patients, and key stakeholders across health care and to promote health data exchange in collaboration with policy makers, standards organizations, and industry through a consensus-based approach.
-
-The primary goal of the PACIO Project is to establish a framework for the development of Fast Healthcare Interoperability Resource (FHIR) technical implementation guides (IGs) and reference implementations that will facilitate health data exchange through standards-based use case-driven application programming interfaces (APIs).
 
 ### How to read this Guide
 
