@@ -1,6 +1,6 @@
 // Code Systems
 // NOTE: use a code system (not value set) in instances
-Alias: LNC = http://loinc.org
+Alias: $LNC = http://loinc.org
 Alias: SCT = http://snomed.info/sct
 Alias: CAT = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: UOM = http://unitsofmeasure.org
