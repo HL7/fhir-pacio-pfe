@@ -165,9 +165,10 @@
 <artifact id="CodeSystem/pfe-functioning-cs" key="CodeSystem-pfe-functioning-cs" name="Personal Functioning and Engagement Functioning Category Code System"/>
 <artifact id="ValueSet/pfe-functions-of-cardiovascular-vs" key="ValueSet-pfe-functions-of-cardiovascular-vs" name="Personal Functioning and Engagement Functions Of Cardiovascular, Haematological, Immunological, and Respiratory Systems Value Set"/>
 <artifact id="ValueSet/pfe-functions-of-digestive-vs" key="ValueSet-pfe-functions-of-digestive-vs" name="Personal Functioning and Engagement Functions Of Digestivem, Metabolic, and Endocrine Systems Value Set"/>
-<artifact id="ValueSet/pfe-skin-vs" key="ValueSet-pfe-skin-vs" name="Personal Functioning and Engagement Functions of Skin and Related Structures Value Set"/>
+<artifact id="ValueSet/pfe-skin-functions-vs" key="ValueSet-pfe-skin-functions-vs" name="Personal Functioning and Engagement Functions of Skin and Related Structures Value Set"/>
 <artifact id="ValueSet/pfe-general-tasks-and-demands-vs" key="ValueSet-pfe-general-tasks-and-demands-vs" name="Personal Functioning and Engagement General Tasks and Demands Value Set"/>
 <artifact id="ValueSet/pfe-genitourinary-vs" key="ValueSet-pfe-genitourinary-vs" name="Personal Functioning and Engagement Genitourinary and Reproductive Functions Value Set"/>
+<artifact id="ValueSet/pfe-header-vs" key="ValueSet-pfe-header-vs" name="Personal Functioning and Engagement Headers Value Set"/>
 <artifact id="ValueSet/pfe-learning-and-applying-knowledge-vs" key="ValueSet-pfe-learning-and-applying-knowledge-vs" name="Personal Functioning and Engagement Learning and Applying Knowledge Value Set"/>
 <artifact id="ValueSet/pfe-mental-functions-vs" key="ValueSet-pfe-mental-functions-vs" name="Personal Functioning and Engagement Mental Functions Value Set"/>
 <artifact id="ValueSet/pfe-mobility-vs" key="ValueSet-pfe-mobility-vs" name="Personal Functioning and Engagement Mobility Value Set"/>
@@ -182,6 +183,7 @@
 <artifact id="ValueSet/pfe-self-care-vs" key="ValueSet-pfe-self-care-vs" name="Personal Functioning and Engagement Self-Care Value Set"/>
 <artifact id="ValueSet/pfe-sensory-functions-pain-vs" key="ValueSet-pfe-sensory-functions-pain-vs" name="Personal Functioning and Engagement Sensory Functions and Pain Value Set"/>
 <artifact id="ValueSet/pfe-structures-voice-and-speech-vs" key="ValueSet-pfe-structures-voice-and-speech-vs" name="Personal Functioning and Engagement Structures Involved in Voice and Speech Value Set"/>
+<artifact id="ValueSet/pfe-sub-header-vs" key="ValueSet-pfe-sub-header-vs" name="Personal Functioning and Engagement Sub-Headers Value Set"/>
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
 <artifact id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
 <artifact id="ValueSet/pfe-voice-and-speech-vs" key="ValueSet-pfe-voice-and-speech-vs" name="Personal Functioning and Engagement Voice and Speech Functions Value Set"/>

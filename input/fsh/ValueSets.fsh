@@ -63,9 +63,6 @@ Title: "Personal Functioning and Engagement Domestic Life Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's domestic life."
 Id: pfe-domestic-life-vs
 * $LNC#85073-5
-* $LNC#95028-7
-* $LNC#95029-5
-* $LNC#95030-3
 * $LNC#94976-8
 * $LNC#94963-6
 * $LNC#94977-6
@@ -114,12 +111,10 @@ Id: pfe-functions-of-digestive-vs
 ValueSet: PFEFunctionsOfSkinAndRelatedStructuresVS
 Title: "Personal Functioning and Engagement Functions of Skin and Related Structures Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's skin and related structures functioning."
-Id: pfe-skin-vs
+Id: pfe-skin-functions-vs
 * $LNC#85918-1
 * $LNC#57280-0
 * $LNC#58214-8
-* $LNC#83246-9
-* $LNC#88961-8
 * $LNC#54884-2
 * $LNC#55124-2
 * $LNC#54886-7
@@ -138,7 +133,6 @@ Id: pfe-skin-vs
 * $LNC#86748-1
 * $LNC#57215-6
 * $LNC#57222-2
-* $LNC#58052-2
 * $LNC#88494-0
 * $LNC#46536-9
 * $LNC#57231-3
@@ -153,10 +147,6 @@ Title: "Personal Functioning and Engagement General Tasks and Demands Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's general tasks and demands in their life."
 Id: pfe-general-tasks-and-demands-vs
 * $LNC#95042-8
-* $LNC#54527-7
-* $LNC#83239-4
-* $LNC#85642-7
-* $LNC#95031-1
 * $LNC#94910-7
 * $LNC#94909-9
 
@@ -185,10 +175,8 @@ Id: pfe-mental-functions-vs
 * $LNC#54597-0
 * $LNC#54605-1
 * $LNC#83248-5
-* $LNC#54510-3
 * $LNC#52733-3
 * $LNC#54609-3
-* $LNC#52493-4
 * $LNC#52735-8
 * $LNC#52736-6
 * $LNC#52737-4
@@ -198,8 +186,6 @@ Id: pfe-mental-functions-vs
 * $LNC#54617-6
 * $LNC#95743-1
 * $LNC#54624-2
-* $LNC#95816-5
-* $LNC#93417-4
 * $LNC#95813-2
 * $LNC#85634-4
 * $LNC#95812-4
@@ -208,15 +194,11 @@ Id: pfe-mental-functions-vs
 * $LNC#85651-8
 * $LNC#95815-7
 * $LNC#93414-1
-* $LNC#95852-0
 * $LNC#95855-3
 * $LNC#95856-1
 * $LNC#95857-9
 * $LNC#95858-7
 * $LNC#54634-1
-* $LNC#54635-8
-* $LNC#86843-0
-* $LNC#86844-8
 * $LNC#54636-6
 * $LNC#54637-4
 * $LNC#54638-2
@@ -236,9 +218,6 @@ Id: pfe-mental-functions-vs
 * $LNC#54652-3
 * $LNC#54653-1
 * $LNC#54654-9
-* $LNC#54657-2
-* $LNC#86833-1
-* $LNC#86891-9
 * $LNC#54658-0
 * $LNC#54659-8
 * $LNC#54660-6
@@ -262,22 +241,18 @@ Id: pfe-mental-functions-vs
 * $LNC#54677-0
 * $LNC#93159-2
 * $LNC#86597-2
-* $LNC#54514-5
 * $LNC#54682-0
 * $LNC#54683-8
 * $LNC#54684-6
 * $LNC#54685-3
-* $LNC#54515-2
 * $LNC#54686-1
 * $LNC#54687-9
 * $LNC#54688-7
-* $LNC#54516-0
 * $LNC#54689-5
 * $LNC#54690-3
 * $LNC#54691-1
 * $LNC#54692-9
 * $LNC#54693-7
-* $LNC#54517-8
 * $LNC#54694-5
 * $LNC#54695-2
 * $LNC#54696-0
@@ -307,13 +282,11 @@ Id: pfe-mobility-vs
 * $LNC#45597-2
 * $LNC#45598-0
 * $LNC#45599-8
-* $LNC#54524-4
 * $LNC#54749-7
 * $LNC#54750-5
 * $LNC#54751-3
 * $LNC#54752-1
 * $LNC#54753-9
-* $LNC#92908-3
 * $LNC#92850-7
 * $LNC#92851-5
 * $LNC#86602-0
@@ -321,23 +294,6 @@ Id: pfe-mobility-vs
 * $LNC#85072-7
 * $LNC#83234-5
 * $LNC#94892-7
-* $LNC#95023-8
-* $LNC#95741-5
-* $LNC#87502-1
-* $LNC#88330-6
-* $LNC#89477-4
-* $LNC#89476-6
-* $LNC#95862-9
-* $LNC#85056-0
-* $LNC#95742-3
-* $LNC#87501-3
-* $LNC#88331-4
-* $LNC#89474-1
-* $LNC#88486-6
-* $LNC#99150-5
-* $LNC#90541-4
-* $LNC#94851-3
-* $LNC#94852-1
 * $LNC#95011-3
 * $LNC#83218-8
 * $LNC#89399-0
@@ -447,11 +403,6 @@ Id: pfe-mobility-vs
 * $LNC#94957-8
 * $LNC#94993-3
 * $LNC#94958-6
-* $LNC#95131-9
-* $LNC#95024-6
-* $LNC#95027-9
-* $LNC#95025-3
-* $LNC#95026-1
 * $LNC#94959-4
 * $LNC#94960-2
 * $LNC#94990-9
@@ -502,7 +453,6 @@ ValueSet: PFEBodyStructuresVS
 Title: "Personal Functioning and Engagement Body Structures Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's body structures."
 Id: pfe-body-structures-vs
-* $LNC#54567-3
 * $LNC#3137-7
 * $LNC#3141-9
 * $LNC#54863-6
@@ -513,11 +463,8 @@ ValueSet: PFESelfCareVS
 Title: "Personal Functioning and Engagement Self-Care Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's ability to perform self-care."
 Id: pfe-self-care-vs
-* $LNC#95737-3 "Expression of ideas and wants during assessment period [CMS Assessment]"
-
+* $LNC#95737-3
 * $LNC#93178-2
-* $LNC#86880-2
-* $LNC#86881-0
 * $LNC#45600-4
 * $LNC#45601-2
 * $LNC#45602-0
@@ -526,29 +473,11 @@ Id: pfe-self-care-vs
 * $LNC#45605-3
 * $LNC#45606-1
 * $LNC#45607-9
-* $LNC#46008-9
 * $LNC#45608-7
 * $LNC#45609-5
 * $LNC#55123-4
 * $LNC#45613-7
 * $LNC#85070-1
-* $LNC#95020-4
-* $LNC#95732-4
-* $LNC#95859-5
-* $LNC#85667-4
-* $LNC#89479-0
-* $LNC#89478-2
-* $LNC#95860-3
-* $LNC#85661-7
-* $LNC#95734-0
-* $LNC#95861-1
-* $LNC#85665-8
-* $LNC#89475-8
-* $LNC#88485-8
-* $LNC#99149-7
-* $LNC#90540-6
-* $LNC#94849-7
-* $LNC#94850-5
 * $LNC#95019-6
 * $LNC#83232-9
 * $LNC#89410-5
@@ -588,17 +517,13 @@ Id: pfe-self-care-vs
 * $LNC#89401-4
 * $LNC#89400-6
 * $LNC#94939-6
-* $LNC#94876-0
 * $LNC#86624-4
-* $LNC#54530-1
 * $LNC#54767-9
 * $LNC#54768-7
 * $LNC#54769-5
 * $LNC#88695-2
-* $LNC#54568-1
 * $LNC#71444-4
 * $LNC#71445-1
-* $LNC#93180-8
 * $LNC#91555-3
 * $LNC#86681-4
 * $LNC#86687-1
@@ -638,3 +563,89 @@ Title: "Personal Functioning and Engagement Voice and Speech Functions Value Set
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's voice and speech functioning."
 Id: pfe-voice-and-speech-vs
 * $LNC#54600-2
+
+
+ValueSet: PFEHeaderVS
+Title: "Personal Functioning and Engagement Headers Value Set"
+Description: "This value set includes LOINC codes that represent headers in CMS assessments and are tied to PFE collections."
+Id: pfe-header-vs
+* $LNC#95028-7
+* $LNC#52493-4
+* $LNC#54514-5
+* $LNC#93180-8
+* $LNC#95852-0
+* $LNC#95020-4
+* $LNC#58052-2
+* $LNC#54517-8
+* $LNC#92908-3
+* $LNC#54567-3
+* $LNC#46008-9
+* $LNC#54516-0
+* $LNC#54510-3
+* $LNC#95816-5
+* $LNC#93417-4
+* $LNC#54530-1
+* $LNC#54527-7
+* $LNC#95131-9
+* $LNC#54568-1
+* $LNC#83246-9
+* $LNC#88961-8
+* $LNC#54515-2
+* $LNC#95023-8
+* $LNC#95031-1
+* $LNC#54524-4
+* $LNC#54635-8
+* $LNC#54657-2
+* $LNC#83239-4
+* $LNC#85642-7
+
+
+ValueSet: PFESubHeaderVS
+Title: "Personal Functioning and Engagement Sub-Headers Value Set"
+Description: "This value set includes LOINC codes that represent sub-headers in CMS assessments and are tied to PFE collections."
+Id: pfe-sub-header-vs
+* $LNC#95029-5
+* $LNC#86843-0
+* $LNC#95732-4
+* $LNC#95859-5
+* $LNC#85667-4
+* $LNC#89479-0
+* $LNC#90540-6
+* $LNC#95030-3
+* $LNC#94850-5
+* $LNC#89476-6
+* $LNC#95862-9
+* $LNC#85056-0
+* $LNC#86833-1
+* $LNC#95741-5
+* $LNC#87502-1
+* $LNC#88330-6
+* $LNC#89477-4
+* $LNC#95024-6
+* $LNC#86844-8
+* $LNC#88486-6
+* $LNC#99150-5
+* $LNC#86880-2
+* $LNC#94876-0
+* $LNC#95026-1
+* $LNC#90541-4
+* $LNC#94852-1
+* $LNC#94851-3
+* $LNC#95742-3
+* $LNC#87501-3
+* $LNC#88331-4
+* $LNC#89474-1
+* $LNC#86881-0
+* $LNC#94849-7
+* $LNC#89478-2
+* $LNC#95860-3
+* $LNC#85661-7
+* $LNC#88485-8
+* $LNC#99149-7
+* $LNC#95734-0
+* $LNC#95861-1
+* $LNC#85665-8
+* $LNC#89475-8
+* $LNC#86891-9
+* $LNC#95025-3
+* $LNC#95027-9
