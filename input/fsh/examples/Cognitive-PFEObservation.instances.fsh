@@ -534,11 +534,11 @@ InstanceOf: PFEObservation
 Description: "Categorized using SNOMED as ICF, option 2: individual"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
+* category[+] = OBSCAT#survey
 * category[+] = FUNCTIONINGCAT#functioning "Functioning"
 * category[+] = SCT#106079008 "Digestive system function"
 * category[+] = SCT#47722004 "General metabolic function"
 * category[+] = SCT#123036008 "Endocrine function"
-* category[+] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54773-7 "Constipation present during assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
@@ -553,6 +553,21 @@ Description: "Categorized using SNOMED as ICF, option 3: specific"
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
 * category[PFEDomain] = SCT#106079008 "Digestive system function"
+* category[survey] = OBSCAT#survey
+* effectiveDateTime = "2020-07-11T11:30:00-05:00"
+* code = http://loinc.org#54773-7 "Constipation present during assessment period [CMS Assessment]"
+* performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
+* derivedFrom[+] = Reference(PFEIG-QResponse-SNF-BIMS-1)
+* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
+* valueBoolean = true
+
+Instance: PFEIG-SNOMEDforICF-Constipation-ICF
+InstanceOf: PFEObservation
+Description: "Categorized using SNOMED as ICF, option 3: specific"
+* subject = Reference(PFEIG-patientBSJ1)
+* status = #final
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[PFEDomain] = PFEDOMAINCAT#functions_of_the_digestive_metabolic_and_endocrine_systems "Functions of the digestive, metabolic and endocrine systems"
 * category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54773-7 "Constipation present during assessment period [CMS Assessment]"
