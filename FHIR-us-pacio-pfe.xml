@@ -153,6 +153,7 @@
 <artifact id="StructureDefinition/pfe-collection" key="StructureDefinition-pfe-collection" name="Personal Functioning and Engagement Collection"/>
 <artifact id="CodeSystem/pfe-functioning-cs" key="CodeSystem-pfe-functioning-cs" name="Personal Functioning and Engagement Functioning Category Code System"/>
 <artifact id="StructureDefinition/pfe-narrative-history-of-status" key="StructureDefinition-pfe-narrative-history-of-status" name="Personal Functioning and Engagement Narrative History of Status"/>
+<artifact id="StructureDefinition/pfe-absract-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
 <artifact id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
 <artifact id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
