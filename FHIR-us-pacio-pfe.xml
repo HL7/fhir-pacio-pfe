@@ -117,6 +117,7 @@
 <artifact id="Practitioner/PFEIG-Practitioner-HoneyJones" key="Practitioner-PFEIG-Practitioner-HoneyJones" name="PFEIG-Practitioner-HoneyJones"/>
 <artifact id="Practitioner/PFEIG-Practitioner-JenCadbury" key="Practitioner-PFEIG-Practitioner-JenCadbury" name="PFEIG-Practitioner-JenCadbury"/>
 <artifact id="Practitioner/PFEIG-Practitioner-JennyGlass" key="Practitioner-PFEIG-Practitioner-JennyGlass" name="PFEIG-Practitioner-JennyGlass"/>
+<artifact id="Practitioner/PFEIG-Practitioner-JillBradley" key="Practitioner-PFEIG-Practitioner-JillBradley" name="PFEIG-Practitioner-JillBradley"/>
 <artifact id="Practitioner/PFEIG-Practitioner-JohnSmith" key="Practitioner-PFEIG-Practitioner-JohnSmith" name="PFEIG-Practitioner-JohnSmith"/>
 <artifact id="Practitioner/PFEIG-Practitioner-LunaBaskins" key="Practitioner-PFEIG-Practitioner-LunaBaskins" name="PFEIG-Practitioner-LunaBaskins"/>
 <artifact id="Practitioner/PFEIG-Practitioner-NoraOlogist" key="Practitioner-PFEIG-Practitioner-NoraOlogist" name="PFEIG-Practitioner-NoraOlogist"/>
@@ -131,6 +132,7 @@
 <artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-BIMS-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-BIMS-1" name="PFEIG-QResponse-SNF-BIMS-1"/>
 <artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-CAM-Admission-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-CAM-Admission-1" name="PFEIG-QResponse-SNF-CAM-Admission-1"/>
 <artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-PHQ9-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-PHQ9-1" name="PFEIG-QResponse-SNF-PHQ9-1"/>
+<artifact id="PractitionerRole/PFEIG-Role-Audio-JillBradley" key="PractitionerRole-PFEIG-Role-Audio-JillBradley" name="PFEIG-Role-Audio-JillBradley"/>
 <artifact id="PractitionerRole/PFEIG-Role-OT-DanielGranger" key="PractitionerRole-PFEIG-Role-OT-DanielGranger" name="PFEIG-Role-OT-DanielGranger"/>
 <artifact id="PractitionerRole/PFEIG-Role-OT-JenCadbury" key="PractitionerRole-PFEIG-Role-OT-JenCadbury" name="PFEIG-Role-OT-JenCadbury"/>
 <artifact deprecated="true" id="PractitionerRole/PFEIG-Role-PT-LunaBaskins" key="PractitionerRole-PFEIG-Role-PT-LunaBaskins" name="PFEIG-Role-PT-LunaBaskins"/>
@@ -140,6 +142,7 @@
 <artifact id="PractitionerRole/PFEIG-Role-SLP-HoneyJones" key="PractitionerRole-PFEIG-Role-SLP-HoneyJones" name="PFEIG-Role-SLP-HoneyJones"/>
 <artifact id="PractitionerRole/PFEIG-Role-SLP-JennyGlass" key="PractitionerRole-PFEIG-Role-SLP-JennyGlass" name="PFEIG-Role-SLP-JennyGlass"/>
 <artifact id="PractitionerRole/PFEIG-Role-SLP-LunaBaskins" key="PractitionerRole-PFEIG-Role-SLP-LunaBaskins" name="PFEIG-Role-SLP-LunaBaskins"/>
+<artifact id="Observation/PFEIG-SPLASCH-Hearingtonethresh-01-Obs-L250" key="Observation-PFEIG-SPLASCH-Hearingtonethresh-01-Obs-L250" name="PFEIG-SPLASCH-Hearingtonethresh-01-Obs-L250"/>
 <artifact id="Patient/PFEIG-patientBSJ1" key="Patient-PFEIG-patientBSJ1" name="PFEIG-patientBSJ1"/>
 <artifact id="Organization/PFEIG-provider-org-01" key="Organization-PFEIG-provider-org-01" name="PFEIG-provider-org-01"/>
 <artifact id="Organization/PFEIG-provider-org-16" key="Organization-PFEIG-provider-org-16" name="PFEIG-provider-org-16"/>
@@ -155,8 +158,8 @@
 <artifact id="ValueSet/pfe-example-obs-vs" key="ValueSet-pfe-example-obs-vs" name="Personal Functioning and Engagement Example Observations Value Set"/>
 <artifact id="CodeSystem/pfe-functioning-cs" key="CodeSystem-pfe-functioning-cs" name="Personal Functioning and Engagement Functioning Category Code System"/>
 <artifact id="StructureDefinition/pfe-narrative-history-of-status" key="StructureDefinition-pfe-narrative-history-of-status" name="Personal Functioning and Engagement Narrative History of Status"/>
-<artifact id="StructureDefinition/pfe-absract-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
 <artifact id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
+<artifact id="StructureDefinition/pfe-abstract-observation" key="StructureDefinition-pfe-abstract-observation" name="Personal Functioning and Engagement Observation Abstract"/>
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
 <artifact id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
 <page key="NA" name="(NA)"/>
