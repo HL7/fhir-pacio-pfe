@@ -1,12 +1,11 @@
 /**********
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
-Profile:        PFEAbstractObservation
-Parent:         Observation
-Id:             pfe-absract-observation
-Title:          "Personal Functioning and Engagement Observation"
-Description:    "An abstract profile representing the cross-cutting requirements for Personal Functioning and Engagement Observation instances. This profile is not intended to be used directly. Implementers should use specific profiles that layer these requirements on top of specific US Core Observation profiles."
-* ^abstract = true
+Profile:        PFEObservationClinicalTest
+Parent:         USCoreObservationClinicalTestResultProfile
+Id:             pfe-observation-clinicaltest
+Title:          "Personal Functioning and Engagement Clinical Test Observation"
+Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single picec of observation data that resulted from a clinical test."
 
 * extension contains 
 	ObservationEventLocation named event-location 0..1 MS and
@@ -15,7 +14,6 @@ Description:    "An abstract profile representing the cross-cutting requirements
 * extension[event-location] ^definition = "The principal physical location where the observation event occurred."
 * extension[device-use] ^short = "An extension to indicate a record of assistive device usage by a patient during an assessment."
 
-* status MS
 * status ^short = "Should have the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used."
 
 * category MS
@@ -32,15 +30,9 @@ Description:    "An abstract profile representing the cross-cutting requirements
 * category[PFEDomain] from PFECategoryVS (required)
 * category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
-* code MS
-* code from PFEExampleObservationsVS (example)
-
-* subject MS
-
-* effective[x] MS
 * effective[x] 1..1 
+* effective[x] only dateTime
 
-* performer MS
 * performer 1..* 
-
-* value[x] MS
+* performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
+* performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
