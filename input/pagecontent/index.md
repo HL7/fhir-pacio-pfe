@@ -1,7 +1,7 @@
 The Personal Functioning and Engagement HL7® FHIR® Implementation Guide (IG) supports the exchange of information related to a person’s ability to live their life in the world. The three words in the title frame aspects of the intended scope for this IG:
-- **Personal**: about the functioning of an individual person, as opposed to a group, system, or organization.
-- **Functioning**: related to what the person can do, the help they need, and the effects of contributing factors, including those physiological, environmental, and personal. The term is taken from the [International Classification of Functioning, Disability, and Health](https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health) (ICF) published by the World Health Organization (WHO).
-- **Engagement**: interested in helping the individual be an active participant in their life, as opposed to a passive observer.
+- **Personal**: in-scope data relates to the functioning of an individual person, as opposed to a group, system, or organization.
+- **Functioning**: in-scope data relates to what the person can do, the help they need, and the effects of contributing factors, including those physiological, environmental, and personal. The term is taken from the [International Classification of Functioning, Disability, and Health](https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health) (ICF) published by the World Health Organization (WHO).
+- **Engagement**: through data promoting exchange of this data, this IG aspires to help individuals be active participants in their life, as opposed to passive observers.
 
 ### Background
 
