@@ -9,6 +9,7 @@ Title: "Personal Functioning and Engagement Example Observations Value Set"
 Description: "Codes that provide examples of observations within the scope of the Personal Functioning and Engagement IG."
 Id: pfe-example-obs-vs
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
+* LNC#101265-7
 * LNC#95019-6
 * LNC#79532-8
 * LNC#99828-6
