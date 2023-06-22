@@ -6,7 +6,7 @@ InstanceOf: PFENarrativeHistoryOfStatus
 Description: "An instance of Personal Functioning and Engagement Narrative History of Status"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status"
-* extension[0].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location"
+* extension[0].url = "http://hl7.org/fhir/StructureDefinition/event-location"
 * extension[=].valueReference = Reference(Location/PFEIG-provider-org-loc-01)
 * extension[+].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/assistance-required"
 * extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
