@@ -4,7 +4,7 @@ Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -20,7 +20,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -36,7 +36,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -52,7 +52,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -68,7 +68,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -84,7 +84,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -100,7 +100,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -116,7 +116,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -132,7 +132,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -148,7 +148,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -164,7 +164,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -180,7 +180,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -196,7 +196,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -212,7 +212,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -228,7 +228,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -244,7 +244,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -260,7 +260,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -276,7 +276,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -292,7 +292,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -308,7 +308,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -324,7 +324,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -340,7 +340,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -356,7 +356,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -372,7 +372,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -388,7 +388,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -404,7 +404,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -420,7 +420,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -436,7 +436,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -452,7 +452,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -468,7 +468,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -484,7 +484,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -500,7 +500,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -516,7 +516,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -532,7 +532,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -548,7 +548,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -564,7 +564,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -580,7 +580,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -596,7 +596,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -612,7 +612,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -628,7 +628,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
@@ -644,7 +644,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19
-InstanceOf: PFEObservation
+InstanceOf: PFESingleObservation
 Description: "An instance of Personal Functioning and Engagement Observation"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final

@@ -36,7 +36,7 @@
           "type": "Observation",
           "supportedProfile": [
             "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-collection",
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-single"
           ],
           "interaction": [
             {

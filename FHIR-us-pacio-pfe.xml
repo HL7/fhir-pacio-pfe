@@ -150,6 +150,7 @@
 <artifact id="Location/PFEIG-provider-org-loc-16" key="Location-PFEIG-provider-org-loc-16" name="PFEIG-provider-org-loc-16"/>
 <artifact id="PractitionerRole/PFEIG-provider-role-neurologist" key="PractitionerRole-PFEIG-provider-role-neurologist" name="PFEIG-provider-role-neurologist"/>
 <artifact id="PractitionerRole/PFEIG-provider-role-pcp" key="PractitionerRole-PFEIG-provider-role-pcp" name="PFEIG-provider-role-pcp"/>
+<artifact id="StructureDefinition/pfe-observation-abstract" key="StructureDefinition-pfe-observation-abstract" name="Personal Functioning and Engagement Abstract Observation"/>
 <artifact id="CapabilityStatement/pacio-pfe-cap" key="CapabilityStatement-pacio-pfe-cap" name="Personal Functioning and Engagement Capability Statement"/>
 <artifact id="CodeSystem/pfe-category-cs" key="CodeSystem-pfe-category-cs" name="Personal Functioning and Engagement Category"/>
 <artifact id="ValueSet/pfe-category-vs" key="ValueSet-pfe-category-vs" name="Personal Functioning and Engagement Category Value Set"/>
@@ -158,8 +159,8 @@
 <artifact id="ValueSet/pfe-example-obs-vs" key="ValueSet-pfe-example-obs-vs" name="Personal Functioning and Engagement Example Observations Value Set"/>
 <artifact id="CodeSystem/pfe-functioning-cs" key="CodeSystem-pfe-functioning-cs" name="Personal Functioning and Engagement Functioning Category Code System"/>
 <artifact id="StructureDefinition/pfe-narrative-history-of-status" key="StructureDefinition-pfe-narrative-history-of-status" name="Personal Functioning and Engagement Narrative History of Status"/>
-<artifact id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
-<artifact id="StructureDefinition/pfe-abstract-observation" key="StructureDefinition-pfe-abstract-observation" name="Personal Functioning and Engagement Observation Abstract"/>
+<artifact deprecated="true" id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
+<artifact id="StructureDefinition/pfe-observation-single" key="StructureDefinition-pfe-observation-single" name="Personal Functioning and Engagement Single Observation"/>
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
 <artifact id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
 <page key="NA" name="(NA)"/>
