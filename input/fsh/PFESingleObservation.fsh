@@ -1,10 +1,10 @@
 /**********
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
-Profile:        PFEObservation
+Profile:        PFESingleObservation
 Parent:         USCoreObservationSurveyProfile
-Id:             pfe-observation
-Title:          "Personal Functioning and Engagement Observation"
+Id:             pfe-observation-single
+Title:          "Personal Functioning and Engagement Single Observation"
 Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen). The structured tool is captured as a parent [collection](StructureDefinition-pfe-collection.html)."
 
 * extension contains 

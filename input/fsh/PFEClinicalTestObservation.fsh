@@ -1,11 +1,11 @@
 /**********
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
-Profile:        PFEObservationClinicalTest
+Profile:        PFEClinicalTestObservation
 Parent:         USCoreObservationClinicalTestResultProfile
 Id:             pfe-observation-clinicaltest
 Title:          "Personal Functioning and Engagement Clinical Test Observation"
-Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single picec of observation data that resulted from a clinical test."
+Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single piece of observation data that resulted from a clinical test."
 
 * extension contains 
 	ObservationEventLocation named event-location 0..1 MS and

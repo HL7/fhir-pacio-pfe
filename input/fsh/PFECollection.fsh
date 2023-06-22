@@ -5,7 +5,7 @@ Profile:        PFECollection
 Parent:         USCoreObservationSurveyProfile
 Id:             pfe-collection
 Title:          "Personal Functioning and Engagement Collection"
-Description:    "A point in time collection of post-acute care observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen) with multiple questions. The specific questions within the structured tool are captured as child [observations](StructureDefinition-pfe-observation.html)."
+Description:    "A point in time collection of post-acute care observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen) with multiple questions. The specific questions within the structured tool are captured as child [observations](StructureDefinition-pfe-observation-single.html)."
 
 * extension contains 
 	ObservationEventLocation named event-location 0..1 MS and
@@ -45,25 +45,10 @@ Description:    "A point in time collection of post-acute care observations for 
 
 * value[x] ^short = "If used, should use the CodeableConcept datatype whenever possible to provide a suitable code to define the concept for the observation data. When capturing a collection of related observations, typically this field is not used. If the outcome of an assessment includes one or more summary scores, leave this field unused and use the 'hasMember' field to point to one or more Observation resources with each of which has a score provided in the 'value' field."
 
-* hasMember only Reference(PFEObservation)
+* hasMember only Reference(PFESingleObservation)
 * hasMember MS
 * hasMember ^short = "Each post-acute care observation in the collection. May also be another collection to support nested sections."
 
 * derivedFrom only Reference(USCoreQuestionnaireResponse)
 * derivedFrom MS
 * derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."
-
-/*
-* component ^short = "Currently not used in PFECollection."
-* basedOn ^short = "Currently not used in PFECollection."
-* partOf ^short = "Currently not used in PFECollection."
-* focus ^short = "Currently not used in PFECollection."
-* issued ^short = "Currently not used in PFECollection."
-* dataAbsentReason ^short = "Currently not used in PFECollection."
-* interpretation ^short = "Currently not used in PFECollection."
-* bodySite ^short = "Currently not used in PFECollection."
-* method ^short = "Currently not used in PFECollection."
-* specimen ^short = "Currently not used in PFECollection."
-* device ^short = "Currently not used in PFECollection."
-* referenceRange ^short = "Currently not used in PFECollection."
-*/
