@@ -4,7 +4,15 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 # This is due to a bug in the validator--will be fixed in the next IG Publisher release.
-# The valueSet reference http://loinc.org/vs/LL4309-2 on element Extension.value[x] could not be resolved
+The valueSet reference http://loinc.org/vs/LL4309-2 on element Extension.value[x] could not be resolved
 
 # Grahame Grieve confirmed that this information message should be suppressed. (Zulip stream: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Questionnaire.20could.20not.20be.20resolved)
 The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
+
+# US Core Variance Request approved - no actual variance, abstract profile collecting additions consistent with and applied to multiple US Core Observation profiles: https://confluence.hl7.org/display/CGP/2023-06-22+Cross-Group+Project+Workgroup+Call
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-abstract').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
+# US Core Variance Request approved - no actual variance, extending earlier version of US Core: https://confluence.hl7.org/display/CGP/2023-06-22+Cross-Group+Project+Workgroup+Call
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-collection').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-clinicaltest').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-single').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
