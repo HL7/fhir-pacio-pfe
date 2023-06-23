@@ -10,6 +10,7 @@ CodeSystem: PFECategoryCS
 Title: "Personal Functioning and Engagement Category"
 Id: pfe-category-cs
 Description: "Codes representing health and health-related domains into which functioning observations can be further categorized."
+* ^experimental = false
 * ^caseSensitive = true
 * ^hierarchyMeaning = #is-a
 * #body_functions "Body functions" "Body functions are the physiological functions of body systems (including psychological functions). Impairments are problems in body function or structure as a significant deviation or loss. Broad ranges of percentages are provided for those cases in which calibrated assessment instruments or other standards are available to quantify the impairment in body function. For example, when \"no impairment\" or \"complete impairment\" in body function is coded, this scaling may have margin of error of up to 5%. \"Moderate impairment\" is generally up to half of the scale of total impairment. The percentages are to be calibrated in different domains with reference to population standards as percentiles. For this quantification to be used in a uniform manner, assessment procedures need to be developed through research. For a further explanation of coding conventions in ICF, refer to Annex 2."
