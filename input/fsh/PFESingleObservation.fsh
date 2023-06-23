@@ -28,7 +28,6 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * category[PFEDomain] from PFECategoryVS (required)
 * category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
-* code from PFELoincSnomedVS (extensible)
 * code ^short = "For a Post-Acute Care Assessment, should include a LOINC code and text for the question or concept name."
 
 * effective[x] 1..1 
