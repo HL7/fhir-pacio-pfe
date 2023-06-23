@@ -511,5 +511,12 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 * code = http://loinc.org#54614-3 "Brief Interview for Mental Status - summary score [BIMS]"
 * performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-BIMS-1)
+* derivedFrom[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-3)
+* derivedFrom[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-4)
+* derivedFrom[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-5)
+* derivedFrom[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-6)
+* derivedFrom[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-7)
+* derivedFrom[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-8)
+* derivedFrom[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-9)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
 * valueQuantity = 9 '{score}'

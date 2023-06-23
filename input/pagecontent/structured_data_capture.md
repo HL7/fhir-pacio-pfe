@@ -40,11 +40,11 @@ Representative examples of each of these categories are provided in the followin
     <td>Brief Interview for Mental Status (BIMS) (<a href="QuestionnaireResponse-PFEIG-QResponse-SNF-BIMS-1.html">QuestionnaireResponse</a>)</td>
     <td>52491-8 Brief Interview for Mental Status (<a href="Observation-PFEIG-CSC-SNF-BIMS-1.html">example</a>)<br>
         &nbsp;&nbsp; 52731-7 Repetition of Three Words. Number of words repeated after first attempt (<a href="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-9.html">example</a>)<br>
-        &nbsp;&nbsp; 54510-3 Temporal Orientation (orientation to year, month, and day)<br>
+        &nbsp;&nbsp; 54510-3 Temporal Orientation (orientation to year, month, and day) (<a href="Observation-PFEIG-CSC-SNF-BIMS-1-Temporal.html">example</a>)<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 52732-5 Able to report correct year (<a href="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-3.html">example</a>)<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 52733-3 Able to report correct month (<a href="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-8.html">example</a>)<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 54609-3 Able to report correct day of the week (<a href="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-7.html">example</a>)<br>
-        &nbsp;&nbsp; 52493-4 Recall<br>
+        &nbsp;&nbsp; 52493-4 Recall (<a href="Observation-PFEIG-CSC-SNF-BIMS-1-Recall.html">example</a>)<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 52735-8 Able to recall "sock" (<a href="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-6.html">example</a>)<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 52736-6 Able to recall "blue" (<a href="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-5.html">example</a>)<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 52737-4 Able to recall "bed" (<a href="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-4.html">example</a>)<br>
@@ -74,6 +74,20 @@ Not all assessment tools have standardized codes for all of their questions. For
   </tr>
 </table>
 
-### Structural Details For Display
+### Observation Structure
 
-In order to reduce the complexity of the observation structure, this IG only allows a single level of nesting for observations: [collections](StructureDefinition-pfe-collection.html) contain a single flat list of [observations](StructureDefinition-pfe-observation-single.html). However, this means that some of the structure of the assessment is not represented, such as the BIMS grouper for "Temporal Orientation (orientation to year, month, and day)". For systems wishing to display the complete structure, the QuestionnaireResponse instance can be used to identify the complete structure.
+When representing formal assessments with complex structures as FHIR Observations, each panel and question **SHALL** be mapped to an individual Observation instance, with panels represented using the [collection](StructureDefinition-pfe-collection.html) profile and questions represented using the [single observation](StructureDefinition-pfe-observation-single.html) profile. Two kinds of links between the observation instances capture important relationships:
+- *Parent-child links*: parent observations **SHALL** contain references to each child observation instance, including nested panels and specific questions using the `hasMember` element.
+- *Derivation links*: observations derived from other questions, such as summary scores, **SHOULD** point to the observations that the result is derived from using the `derivedFrom` element. Note that these derivation links appear in this element alongside references to any QuestionnaireResponse that the set of Observations is generated from. The two uses of the `derivedFrom` element can be distinguised by the resource type: score derivations links point to Observation instances, while the reference to the complete instrument response will point to a QuestionnaireResponse.
+
+#### Example: BIMS
+
+This diagram illustrates the required and suggested structure and linkages using the Brief Interview for Mental Status (BIMS) as an example. Note that this structure may be embedded within a larger formal assessment, such as an MDS Assessment described above.
+
+![BIMS Structure and Linkages](StructureExample_BIMS.jpg){:style="float: none;"}
+
+Following the structure of the LOINC codes representing the BIMS, the following structures and links are involved:
+- Panel codes, both the top-level code ([52491-8](https://loinc.org/52491-8)), and inner nodes (e.g., [54510-3](https://loinc.org/54510-3)), are represented using the [collection](StructureDefinition-pfe-collection.html) profile with links to sub panels (e.g., panel [54510-3](https://loinc.org/54510-3) from top level-code [52491-8](https://loinc.org/52491-8)) and individual questions (e.g., question [52732-5](https://loinc.org/52732-5) from inner node [54510-3](https://loinc.org/54510-3)) in the `hasMember` element.
+- Individual questions (e.g., [52732-5](https://loinc.org/52732-5)) represented using the [single observation](StructureDefinition-pfe-observation-single.html) profile. The summary score question ([54614-3](https://loinc.org/54614-3)) contains links in the `derivedFrom` element to the individual questions used to calculate the score (e.g., [52732-5](https://loinc.org/52732-5)).
+- Each observation instance links back to the [QuestionnaireResponse](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-questionnaireresponse.html) representing the whole BIMS Assessment in the `derivedFrom` element.
+
