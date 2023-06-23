@@ -35,7 +35,7 @@ Information covered in this IG is relevant to providers across the full spectrum
 
 ### Domains
 
-The scope of this IG is intentionally broad. It is intended to provide a framework within which to represent observations across many aspects of an individual’s functioning and engagement with their environment and the world. To further support the interoperability of systems based on this guide, the IG defines the domains tied to value sets that enumerate terminology codes for related observations. These domains are drawn from the World Health Organization's (WHO) International Classification of Functioning, Disability and Health (commonly known as ICF). ICF was chosen as the source of domains because it takes a holistic view of a person through an interdisciplinary therapy lens, considers how best to support the person’s return to the community, and has been integrated into some EHRs. Examples of ICF categories the IG uses as domains include but are not limited to:
+The scope of this IG is intentionally broad. It intends to provide a framework within which to represent observations across many aspects of an individual’s functioning and engagement with their environment and the world. To further support the interoperability of systems based on this guide, the IG defines the domains tied to value sets that enumerate terminology codes for related observations. These domains are drawn from the World Health Organization's (WHO) International Classification of Functioning, Disability and Health (commonly known as ICF). ICF was chosen as the source of domains because it takes a holistic view of a person through an interdisciplinary therapy lens, considers how best to support the person’s return to the community, and has been integrated into some EHRs. Examples of ICF categories the IG uses as domains include but are not limited to:
 * [Mental functions](https://icd.who.int/dev11/l-icf/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f1363559646) captured as a part of evaluating an individual's cognitive status,
 * [Mobility](https://icd.who.int/dev11/l-icf/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f2048203604) and [Self-care]( https://icd.who.int/dev11/l-icf/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f1608009360) captured as a part of evaluating an individual's functional status, and
 * [Communication](https://icd.who.int/dev11/l-icf/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f1828012543), and [Voice and speech functions]( https://icd.who.int/dev11/l-icf/en#/http%3a%2f%2fid.who.int%2ficd%2fentity%2f388067588) captured as a part of evaluating an individual's spoken language communication, swallowing, and hearing.
@@ -58,15 +58,15 @@ The Act requires:
 ### How to read this Guide
 
 This IG is divided into several sections that are listed at the top of each page in the menu bar.
-- [Home](index.html): The home page provides the introduction and background information to set context for the use of the HL7® FHIR® Personal Functioning and Engagement IG.
+- [Home](index.html): The home page provides the introduction and background information to set context for the use of the HL7® FHIR Personal Functioning and Engagement IG.
 - Guidance: These pages provide overall guidance in using the profiles and transactions defined in this guide.
     - [Formal Specification](formal_specification.html): Information about conformance to the IG, including Must Support requirements.
     - [Use Cases](personal_functioning_and_engagement_use_case.html): Detailed scenario in which the Personal Functioning and Engagement IG could be used.
     - [Structured Data Capture](structured_data_capture.html): Guidance on how to use structured data capture techniques to represent and use data covered by this IG.
     - [Security](security_and_data_sharing.html): General security requirements and recommendations for Personal Functioning and Engagement IG actors, including authentication, authorization, and logging requirements and guidance.
-    - [Underlying Technologies](underlying_technologies.html): Information about the terminologies, notations, and design principles specific to FHIR® that this specification uses.
+    - [Underlying Technologies](underlying_technologies.html): Information about the terminologies, notations, and design principles specific to FHIR that this specification uses.
 - [Domain Support](domains.html): This page provides details on the use of domain-based value sets within the IG, including how codes are assigned to a specific value set.
-- FHIR® Artifacts: These sections provide detailed descriptions and formal definitions for all the FHIR® objects defined in this IG.
+- FHIR Artifacts: These sections provide detailed descriptions and formal definitions for all the FHIR objects defined in this IG.
     - [Capability Statement](CapabilityStatement-pacio-pfe-cap.html): This artifact defines the specific capabilities that different types of systems are expected to have in order to comply with this IG. Systems conforming to this IG are expected to declare conformance this capability statement.
     - [Profiles](artifacts.html#2): This section lists the set of Profiles defined in this IG to exchange Re-Assessment Timepoint information. Each linked Profile page includes a narrative introduction and a formal definition.
     - [Extensions](artifacts.html#3): This section lists the set of Extensions defined in and used by the Profiles in this IG . Each linked Extension page includes a formal definition.
