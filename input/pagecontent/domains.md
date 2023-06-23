@@ -17,7 +17,7 @@ The [supplemental guide](https://confluence.hl7.org/display/PC/Supplemental+Guid
 
 Standards designers and implementers face many challenges when attempting to enable scalable and meaningful interoperability between health IT systems. Two specific ones that this IG engages with are
 - **Low Friction Communication**: How to generate agreement and consensus about the structure of and terminology used to communicate data so that implementers can adopt the IG consistently enough to support exchange with minimal partner-specific handling and thus realize a reduction in the administrative overhead associated with communication of this information.
-- **Understanding and Use**: How to support the effective use of the data by clinicins and other users so the system can realize the intended benefits of the shraing of this data, namely improved care and reduced costs.
+- **Understanding and Use**: How to support the effective use of the data by clinicians and other users so the system can realize the intended benefits of the sharing of this data, namely improved care and reduced costs.
 
 Categorization of observations into health domains based on International Classification of Functioning, Disability and Health (commonly known as ICF) categories provides opportunities to address these challenges.
 
