@@ -2,6 +2,7 @@ ValueSet: PFECategoryVS
 Title: "Personal Functioning and Engagement Category Value Set"
 Description: "Codes representing health and health-related domains into which functioning observations can be further categorized."
 Id: pfe-category-vs
+* ^experimental = false
 * include codes from system PFECategoryCS
 
 ValueSet: PFEExampleObservationsVS
