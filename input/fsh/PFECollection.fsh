@@ -30,7 +30,6 @@ Description:    "A point in time collection of post-acute care observations for 
 * category[PFEDomain] from PFECategoryVS (required)
 * category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
-* code from PFELoincSnomedVS (extensible)
 * code ^short = "For a Post-Acute Care structured assessment resource such as an instrument or screen, use a LOINC code to identify the instrument/screen name or panel/section title to indicate the kind of assessment."
 
 * effective[x] 1..1 

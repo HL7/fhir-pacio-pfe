@@ -162,7 +162,7 @@
 <artifact deprecated="true" id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
 <artifact id="StructureDefinition/pfe-observation-single" key="StructureDefinition-pfe-observation-single" name="Personal Functioning and Engagement Single Observation"/>
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
-<artifact id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
+<artifact deprecated="true" id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>
