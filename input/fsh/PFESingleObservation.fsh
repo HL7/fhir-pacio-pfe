@@ -5,12 +5,14 @@ Profile:        PFESingleObservation
 Parent:         USCoreObservationSurveyProfile
 Id:             pfe-observation-single
 Title:          "Personal Functioning and Engagement Single Observation"
-Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen). The structured tool is captured as a parent [collection](StructureDefinition-pfe-collection.html)."
+Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging an observation for a single question generally included in a structured resource (e.g. assessment tool, instrument, or screen)."
 
 * extension contains 
-	ObservationEventLocation named event-location 0..1 MS
+	ObservationEventLocation named event-location 0..1 MS and
+	DevicePatientUsed named device-use 0..* MS
 * extension[event-location] ^short = "An extension to indicate where the observation event occurred."
 * extension[event-location] ^definition = "The principal physical location where the observation event occurred."
+* extension[device-use] ^short = "An extension to indicate a record of assistive device usage by a patient during an assessment."
 
 * status ^short = "Should have the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used."
 
@@ -41,3 +43,5 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 
 * derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."
 * derivedFrom only Reference(USCoreQuestionnaireResponse)
+
+* hasMember 0..0

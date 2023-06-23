@@ -22,7 +22,7 @@ The following data elements must always be present or must be supported if the d
 
 1. the location the narrative was written
 1. the level of assistance required by the patient during the time or period covered by the narrative
-1. an additional category value(s) specifying the specific health or health-related [domain](domains.html) that this narrative is related to*
+1. an additional category value(s) specifying the specific health or health-related [domain](domains.html) that this narrative is related to\*
 1. the encounter the report occurred within
 1. instant the report was released
 
@@ -30,6 +30,6 @@ The following data elements must always be present or must be supported if the d
 
 **Profile specific implementation guidance:**
 
-* *When a health or health-related domain is specified as an additional category, DiagnosticReport.code should be drawn from the corresponding value set specified within the [supplemental guide](https://confluence.hl7.org/display/PC/Supplemental+Guide).
+* \*When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), DiagnosticReport.code **SHOULD** be drawn from the corresponding domain-based value set as discussed on the [domains](domains.html) page.
 
 

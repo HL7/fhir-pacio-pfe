@@ -26,5 +26,5 @@ The following data elements must always be present or must be supported if the d
 
 **Profile specific implementation guidance:**
 
-* *When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code should be drawn from the corresponding domain-based value set as discussed on the [domains](domains.html) page and within specific profiles.
+* *When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed on the [domains](domains.html) page and within specific [profiles](artifacts.html#structures-resource-profiles).
 
