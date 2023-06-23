@@ -11,7 +11,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.pacio-pfe
 canonical: http://hl7.org/fhir/us/pacio-pfe
-version: 1.0.0-ballot
+version: 1.0.0
 name: PACIOPersonalFunctioningAndEngagementImplementationGuide
 title: PACIO Personal Functioning and Engagement Implementation Guide
 description: FHIR Implementation Guide to exchange assessments of and data on a person's
@@ -39,7 +39,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
 copyrightYear: 2022+
-releaseLabel: ballot1
+releaseLabel: STU1
 jurisdiction: urn:iso:std:iso:3166#US
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
@@ -62,9 +62,9 @@ menu:
   Domain Support: domains.html
   FHIR Artifacts:
     Capability Statement: CapabilityStatement-pacio-pfe-cap.html
-    Profiles: artifacts.html#2
-    Extensions: artifacts.html#3
-    Value Sets: artifacts.html#4
-    Code Systems: artifacts.html#5
-    Examples: artifacts.html#6
+    Profiles: artifacts.html#structures-abstract-profiles
+    Extensions: artifacts.html#structures-extension-definitions
+    Value Sets: artifacts.html#terminology-value-sets
+    Code Systems: artifacts.html#terminology-code-systems
+    Examples: artifacts.html#example-example-instances
   Downloads: downloads.html
