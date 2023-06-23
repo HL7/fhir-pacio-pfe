@@ -1,6 +1,6 @@
 Instance: PFEIG-QResponse-Hospital-MMSE-1
 InstanceOf: USCoreQuestionnaireResponseProfile
-Description: "Montreal Cognitive Assessment [MoCA]"
+Description: "Mini-Mental State Examination [MMSE]"
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
@@ -17,7 +17,7 @@ Usage: #example
 
 Instance: PFEIG-QResponse-Hospital-MOCA-1
 InstanceOf: USCoreQuestionnaireResponseProfile
-Description: "Mini-Mental State Examination [MMSE]"
+Description: "Montreal Cognitive Assessment [MoCA]"
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
