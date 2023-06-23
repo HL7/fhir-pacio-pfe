@@ -49,6 +49,6 @@ Description:    "A point in time collection of post-acute care observations for 
 * hasMember MS
 * hasMember ^short = "Each post-acute care observation in the collection. May also be another collection to support nested sections."
 
-* derivedFrom only Reference(USCoreQuestionnaireResponse)
+* derivedFrom only Reference(USCoreQuestionnaireResponse or USCoreObservationSurveyProfile)
 * derivedFrom MS
 * derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."

@@ -93,20 +93,55 @@ Description: "An instance of Personal Functioning and Engagement Collection for 
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
 * category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52491-8 "Brief interview for mental status [BIMS]"
 * code.text = "Brief interview for mental status [BIMS]"
 * performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-3)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-4)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-5)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-6)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-7)
-* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-8)
+* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Temporal)
+* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Recall)
 * hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-9)
 * hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-10)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-BIMS-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used][+].valueReference = Reference(PFEIG-CSC-SNF-BIMS-1-UseOfDevice-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used][+].valueReference = Reference(PFEIG-CSC-SNF-BIMS-1-UseOfDevice-2)
+
+Instance: PFEIG-CSC-SNF-BIMS-1-Recall
+InstanceOf: PFECollection
+Description: "An instance of Personal Functioning and Engagement Collection for SNF BIMS assessment"
+* subject = Reference(PFEIG-patientBSJ1)
+* status = #final
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[survey] = OBSCAT#survey
+* effectiveDateTime = "2020-07-11T11:30:00-05:00"
+* code = http://loinc.org#52493-4 "Recall [BIMS]"
+* code.text = "Recall"
+* performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
+* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-4)
+* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-5)
+* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-6)
+* derivedFrom[+] = Reference(PFEIG-QResponse-SNF-BIMS-1)
+* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
+* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used][+].valueReference = Reference(PFEIG-CSC-SNF-BIMS-1-UseOfDevice-1)
+* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used][+].valueReference = Reference(PFEIG-CSC-SNF-BIMS-1-UseOfDevice-2)
+
+Instance: PFEIG-CSC-SNF-BIMS-1-Temporal
+InstanceOf: PFECollection
+Description: "An instance of Personal Functioning and Engagement Collection for SNF BIMS assessment"
+* subject = Reference(PFEIG-patientBSJ1)
+* status = #final
+* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[survey] = OBSCAT#survey
+* effectiveDateTime = "2020-07-11T11:30:00-05:00"
+* code = http://loinc.org#54510-3 "Temporal orientation (orientation to year, month, and day) [BIMS]"
+* code.text = "Temporal orientation (orientation to year, month, and day)"
+* performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
+* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-3)
+* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-7)
+* hasMember[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-8)
+* derivedFrom[+] = Reference(PFEIG-QResponse-SNF-BIMS-1)
+* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
+* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used][+].valueReference = Reference(PFEIG-CSC-SNF-BIMS-1-UseOfDevice-1)
+* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used][+].valueReference = Reference(PFEIG-CSC-SNF-BIMS-1-UseOfDevice-2)
+
+
