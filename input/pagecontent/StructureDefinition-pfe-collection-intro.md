@@ -1,8 +1,8 @@
 **Example Usage Scenarios:**
 
 The following are example usage scenarios for this Profile:
-* Query for the documentation of a formal, or informal, assessment of a patient's functioning and engagement.
-* Record or update assessment observations for a Patient.
+* Query for the documentation of a formal panel of assessment questions related to a patient's functioning and engagement.
+* Record or update observations related to collections of assessment questions for a Patient.
 
 ### Mandatory and Must Support Data Elements
 
@@ -12,7 +12,7 @@ The following data elements must always be present or must be supported if the d
 
 1. a status
 1. a category code of "survey" and "functioning"
-1. a [LOINC](http://loinc.org/) or [SNOMED CT](http://hl7.org/fhir/R4/codesystem-snomedct.html) code, if available, which tells you which tool was used
+1. a code representing the specific panel
 1. a patient
 1. the point in time or period when the observation was made
 1. who made the observation
@@ -22,16 +22,20 @@ The following data elements must always be present or must be supported if the d
 1. the location the observation was made
 1. any devices the patient used
 1. an additional [category value or values](ValueSet-pfe-category-vs.html) specifying the specific health or health-related [domain](domains.html) that this observation is related to***
-1. the answer or a reason why the data is absent*
 1. related questionnaire responses that this observation is made from
-1. references to observations that contain the specific questions and answers that make up the represented tool.**
+1. references to nested collections or single questions that represent the answers within the panel\* or a reason why the data is absent\*\*
 
-\* ** *** see guidance below
+\* \*\* \*\*\* see guidance below
 
 **Profile specific implementation guidance:**
 
-* **These observations represent structured instruments with multiple questions, so the Observation.value element should be empty and the individual survey questions represented as distinct [Personal Functioning and Engagement Observations](StructureDefinition-pfe-observation-single.html) and referenced using Observation.hasMember. Summary scores should be represented as child observations (e.g., a [BIMS Assessment collection](Observation-PFEIG-CSC-SNF-BIMS-1.html) and its [summary score observation](Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-10.html)).
-* ***When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code should be drawn from the corresponding value set specified within the [supplemental guide](https://confluence.hl7.org/display/PC/Supplemental+Guide). The additional categories on the parent collection should include any and all additional categories indicated on its children.
-* *An Observation without a value, SHALL include a reason why the data is absent unless there are 1) component observations, or 2) reporting panel observations using Observation.hasMember.
-* Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason.
+* \*These collection observations represent structured instruments and panels with multiple questions. The hasMember element **SHALL** be used to point to child Observation instances that contain the specific questions and answers, represented by [Single Observations](StructureDefinition-pfe-observation-single.html) or nested panels represented by this profile. The Observation.value and Observation.component elements **SHALL** be empty.
+* \*\*An Observation without a value, **SHALL** include a reason why the data is absent unless there are 1) component observations, or 2) reporting panel observations using Observation.hasMember. Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason.
+* \*\*\*When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed below and on the [domains](domains.html) page.
+
+<blockquote class="stu-note">
+<p>
+***Panel codes are not in scope for inclusion within <a href="domains.html">domain-based value sets</a> within STU1 of the PFE IG while the PACIO community determines how best to apply domains to panels that may have specific observations from multiple domains as descendents. In the meantime, the recommendation is not to include domain categories within Collection observation instances.
+</p>
+</blockquote>
 
