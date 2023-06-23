@@ -103,7 +103,7 @@ Description: "An instance of PractitionerRole"
 Instance: PFEIG-Role-Audio-JillBradley
 InstanceOf: PractitionerRole
 Description: "An instance of PractitionerRole"
-* code = https://taxonomy.nucc.org/#231H00000X "Audiologist"
+* code = http://snomed.info/sct#309418004 "Audiologist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-JillBradley)
 
