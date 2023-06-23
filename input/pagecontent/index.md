@@ -55,6 +55,12 @@ The Act requires:
 * Implementation of data elements specified in each domain using standardized data elements to be nested within the assessment instruments currently required for submission by LTCH, IRF, SNF, and HHA providers.
 * Data to be standardized and interoperable to allow exchange of data between PAC providers, among others, using common standards and definitions to provide access to longitudinal information and facilitate coordinated care.
 
+### Scope Limitations
+
+This IG provides a framework for the exchange of observations relevant to post-acute care and other settings. It seeks to enable exchange of this information and in doing promote its use in clinical care and caregiving. Consistent with this focus, it does not seek to limit or make specific recommendations on either clinical practice itself or the way that software systems display or collect information. Specifically:
+1. The specific codes contained within example or domain-specific value sets do not constitute an endorsement or recommendation for the use of the approaches to data collection that the codes represent, whether formal assessments, clinical tests, or otherwise. Health care providers and other caregivers should collect the information relevant to the care of the patient and related activities such as reimbursement. To enable interoperability across software systems using this IG, codes representing the observations made in practice should be added to the domain-specific value sets in this IG using the process described on the [domains](domains.html) page.
+2. This IG does not provide guidance on how to organize or display information exchanged for use by health care providers and caregivers. These details are critical to enabling the use of data exchanged using this IG and are an active topic of discussion within the PACIO community. However, they are outside the scope of FHIR IGs and are left to implementers who are in the best position to respond to the needs of their users and make the information available in their software in a consistent and well-integrated manner.
+
 ### How to read this Guide
 
 This IG is divided into several sections that are listed at the top of each page in the menu bar.
