@@ -5,7 +5,7 @@ The PACIO Personal Functioning and Engagement IG replaces the previously publish
 </blockquote>
 <br>
 
-The intent of the Personal Functioning and Engagement IG is to provide a framework for communicating and understanding observations related to an individual's functioning in terms of body functions, activities, and participation. The profiles defined within this IG provide a structure that can be used to represent functioning observations from many different domains. In each case, the domain is associated with specific observation codes reprenting questions, tools, instruments, and measurements within that domain.
+The intent of the Personal Functioning and Engagement IG is to provide a framework for communicating and understanding observations related to an individual's functioning in terms of body functions, activities, and participation. The profiles defined within this IG provide a structure that can be used to represent functioning observations from many different domains. In each case, the domain is associated with specific observation codes representing questions, tools, instruments, and measurements within that domain.
 
 This IG provides examples of some potential domains and some associated codes. However, the complete list of domains and the associated domain lives in an external [supplemental guide](https://confluence.hl7.org/display/PC/Supplemental+Guide) maintained by the PACIO project. Use of the supplemental guide is optional, but highly recommended. 
 
