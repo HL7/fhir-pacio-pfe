@@ -43,6 +43,7 @@ Rather than offer a separate Observation profile for each PFE category (also cal
 
 | [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | `Observation.code` ValueSet |
 | ------ | -------------------- | ------------------------- | ------------ |
+| body-functions | Body functions | [ PFE- Body functions ValueSet ]( ValueSet-pfe-body-functions-vs.html ) |
 | mental-functions | Mental functions | [ PFE- Mental functions ValueSet ]( ValueSet-pfe-mental-functions-vs.html ) |
 |  sensory_functions_and_pain | Sensory functions and pain | [ PFE - Sensory functions and pain ValueSet ]( ValueSet-pfe-sensory-functions-pain-vs.html ) |
 | voice_and_speech_functions | Voice and speech functions | [ PFE- Voice and speech functions ValueSet ]( ValueSet-pfe-voice-and-speech-vs.html ) |
