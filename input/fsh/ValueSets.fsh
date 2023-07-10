@@ -47,10 +47,13 @@ Id: pfe-sensory-functions-pain-clinical-test-vs
 * $LNC#91376-4
 * $LNC#89027-7
 * $LNC#89029-3
+
 ValueSet: PFECommunicationVS
 Title: "Personal Functioning and Engagement Communication Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's communication."
 Id: pfe-communication-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#95737-3
 * $LNC#54602-8
 * $LNC#83250-1
@@ -68,6 +71,8 @@ ValueSet: PFEDomesticLifeVS
 Title: "Personal Functioning and Engagement Domestic Life Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's domestic life."
 Id: pfe-domestic-life-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#94976-8
 * $LNC#94963-6
 * $LNC#94977-6
@@ -97,6 +102,8 @@ ValueSet: PFEFunctionsOfCardiovascularHaematologicalImmunologicalRespiratorySyst
 Title: "Personal Functioning and Engagement Functions Of Cardiovascular, Haematological, Immunological, and Respiratory Systems Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's cardiovascular, haematological, immunological, and respiratory systems functioning."
 Id: pfe-functions-of-cardiovascular-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#94907-3
 * $LNC#94908-1
 
@@ -104,6 +111,8 @@ ValueSet: PFEFunctionsOfDigestiveMetabolicEndocrineSystemsVS
 Title: "Personal Functioning and Engagement Functions Of Digestive, Metabolic, and Endocrine Systems Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's digestive, metabolic, and endocrine systems functioning."
 Id: pfe-functions-of-digestive-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#94906-5
 * $LNC#95736-5
 * $LNC#83242-8
@@ -124,6 +133,8 @@ ValueSet: PFEFunctionsOfSkinAndRelatedStructuresVS
 Title: "Personal Functioning and Engagement Functions of Skin and Related Structures Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's skin and related structures functioning."
 Id: pfe-skin-functions-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#85918-1
 * $LNC#57280-0
 * $LNC#58214-8
@@ -159,12 +170,16 @@ ValueSet: PFEGeneralTasksAndDemandsVS
 Title: "Personal Functioning and Engagement General Tasks and Demands Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's general tasks and demands in their life."
 Id: pfe-general-tasks-and-demands-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#94909-9
 
 ValueSet: PFEGenitourinaryReproductiveFunctionsVS
 Title: "Personal Functioning and Engagement Genitourinary and Reproductive Functions Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's genitourinary and reproductive functioning."
 Id: pfe-genitourinary-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#95735-7
 * $LNC#83238-6
 * $LNC#46552-6
@@ -174,12 +189,16 @@ ValueSet: PFELearningAndApplyingKnowledgeVS
 Title: "Personal Functioning and Engagement Learning and Applying Knowledge Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's ability to learn and apply knowledge."
 Id: pfe-learning-and-applying-knowledge-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#93157-6
 
 ValueSet: PFEMentalFunctionsVS
 Title: "Personal Functioning and Engagement Mental Functions Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's mental functioning."
 Id: pfe-mental-functions-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#52732-5
 * $LNC#45482-7
 * $LNC#85629-4
@@ -277,23 +296,20 @@ Id: pfe-mental-functions-vs
 * $LNC#46592-2
 * $LNC#94901-6
 * $LNC#85073-5
-* $LNC#11332-4
-* $LNC#52491-8
 * $LNC#52731-7
 * $LNC#54628-3
 * $LNC#54629-1
 * $LNC#54632-5
 * $LNC#72106-8
-* $LNC#72107-6
-* $LNC#72133-2
 * $LNC#72172-0
 * $LNC#86527-9
-* $LNC#86585-7
 
 ValueSet: PFEMobilityVS
 Title: "Personal Functioning and Engagement Mobility Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's mobility."
 Id: pfe-mobility-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#45588-1
 * $LNC#45589-9
 * $LNC#45590-7
@@ -432,12 +448,13 @@ Id: pfe-mobility-vs
 * $LNC#94877-8
 * $LNC#57246-1
 * $LNC#57247-9
-* $LNC#10158-4
 
 ValueSet: PFENeuromusculoskeletalMovementRelatedFunctionsVS
 Title: "Personal Functioning and Engagement Neuromusculoskeletal and Movement Related Functions Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's neuromusculoskeletal and movement related functioning."
 Id: pfe-neuromusculoskeletal-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#94879-4
 * $LNC#94880-2
 * $LNC#94881-0
@@ -478,6 +495,8 @@ ValueSet: PFEBodyStructuresVS
 Title: "Personal Functioning and Engagement Body Structures Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's body structures."
 Id: pfe-body-structures-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#3137-7
 * $LNC#3141-9
 * $LNC#54863-6
@@ -487,6 +506,8 @@ ValueSet: PFEBodyFunctionsVS
 Title: "Personal Functioning and Engagement Body Functions Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's body functions."
 Id: pfe-body-functions-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#95042-8
 * $LNC#94910-7
 
@@ -495,6 +516,8 @@ ValueSet: PFESelfCareVS
 Title: "Personal Functioning and Engagement Self-Care Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's ability to perform self-care."
 Id: pfe-self-care-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#93178-2
 * $LNC#45600-4
 * $LNC#45601-2
@@ -569,13 +592,13 @@ Id: pfe-self-care-vs
 * $LNC#83222-0
 * $LNC#83224-6
 * $LNC#83226-1
-* $LNC#83233-7
-* $LNC#83254-3
 
 ValueSet: PFESensoryFunctionsAndPainVS
 Title: "Personal Functioning and Engagement Sensory Functions and Pain Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's sensory functioning and pain."
 Id: pfe-sensory-functions-pain-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#94899-2
 * $LNC#95744-9
 * $LNC#93309-3
@@ -625,7 +648,6 @@ Id: pfe-sensory-functions-pain-vs
 * $LNC#98430-2
 * $LNC#98431-0
 * $LNC#98432-8
-* $LNC#98480-7
 * $LNC#98481-5
 * $LNC#98482-3
 
@@ -633,19 +655,25 @@ ValueSet: PFEStructuresInvolvedInVoiceAndSpeechVS
 Title: "Personal Functioning and Engagement Structures Involved in Voice and Speech Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's structures involved in voice and speech."
 Id: pfe-structures-voice-and-speech-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#86706-9
 
 ValueSet: PFEVoiceAndSpeechFunctionsVS
 Title: "Personal Functioning and Engagement Voice and Speech Functions Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's voice and speech functioning."
 Id: pfe-voice-and-speech-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#54600-2
 
 
-ValueSet: PFEHeaderVS
-Title: "Personal Functioning and Engagement Headers Value Set"
-Description: "This value set includes LOINC codes that represent headers in CMS assessments and are tied to PFE collections."
-Id: pfe-header-vs
+ValueSet: PFEPanelVS
+Title: "Personal Functioning and Engagement Panel Value Set"
+Description: "This value set includes LOINC panel codes that represent headers and sub-headers in CMS assessments and are tied to PFE collections."
+Id: pfe-panel-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#95028-7
 * $LNC#52493-4
 * $LNC#54514-5
@@ -675,12 +703,15 @@ Id: pfe-header-vs
 * $LNC#54657-2
 * $LNC#83239-4
 * $LNC#85642-7
-
-
-ValueSet: PFESubHeaderVS
-Title: "Personal Functioning and Engagement Sub-Headers Value Set"
-Description: "This value set includes LOINC codes that represent sub-headers in CMS assessments and are tied to PFE collections."
-Id: pfe-sub-header-vs
+* $LNC#11332-4
+* $LNC#52491-8
+* $LNC#72107-6
+* $LNC#72133-2
+* $LNC#86585-7
+* $LNC#98480-7
+* $LNC#10158-4
+* $LNC#83233-7
+* $LNC#83254-3
 * $LNC#95029-5
 * $LNC#86843-0
 * $LNC#95732-4
