@@ -303,6 +303,7 @@ Id: pfe-mental-functions-vs
 * $LNC#72106-8
 * $LNC#72172-0
 * $LNC#86527-9
+* $LNC#11332-4
 
 ValueSet: PFEMobilityVS
 Title: "Personal Functioning and Engagement Mobility Value Set"
@@ -333,104 +334,70 @@ Id: pfe-mobility-vs
 * $LNC#95011-3
 * $LNC#83218-8
 * $LNC#89399-0
-* $LNC#89398-2
-* $LNC#83217-0
 * $LNC#94940-4
 * $LNC#95010-5
 * $LNC#83216-2
 * $LNC#89395-8
-* $LNC#89394-1
-* $LNC#83215-4
 * $LNC#94941-2
 * $LNC#95009-7
 * $LNC#83214-7
 * $LNC#85926-4
-* $LNC#85927-2
-* $LNC#83213-9
 * $LNC#94942-0
 * $LNC#95008-9
 * $LNC#83212-1
 * $LNC#89393-3
-* $LNC#89392-5
-* $LNC#83211-3
 * $LNC#94943-8
 * $LNC#95007-1
 * $LNC#83210-5
 * $LNC#89415-4
-* $LNC#89414-7
-* $LNC#83209-7
 * $LNC#94944-6
 * $LNC#95006-3
 * $LNC#83208-9
 * $LNC#57244-6
-* $LNC#89390-9
-* $LNC#83207-1
 * $LNC#94945-3
 * $LNC#95005-5
 * $LNC#83206-3
 * $LNC#89413-9
-* $LNC#89412-1
-* $LNC#83205-5
 * $LNC#94946-1
 * $LNC#94932-1
 * $LNC#95004-8
 * $LNC#83204-8
 * $LNC#89386-7
-* $LNC#89385-9
-* $LNC#83203-0
 * $LNC#94947-9
 * $LNC#95003-0
 * $LNC#83202-2
 * $LNC#89382-6
-* $LNC#89381-8
-* $LNC#83201-4
 * $LNC#94948-7
 * $LNC#95002-2
 * $LNC#83200-6
 * $LNC#89384-2
-* $LNC#89383-4
-* $LNC#83199-0
 * $LNC#94949-5
 * $LNC#95001-4
 * $LNC#83198-2
 * $LNC#89380-0
-* $LNC#89379-2
-* $LNC#83197-4
 * $LNC#94950-3
 * $LNC#95000-6
 * $LNC#83196-6
 * $LNC#89421-2
-* $LNC#89420-4
-* $LNC#83195-8
 * $LNC#94951-1
 * $LNC#94999-0
 * $LNC#83194-1
 * $LNC#89417-0
-* $LNC#89416-2
-* $LNC#83193-3
 * $LNC#94952-9
 * $LNC#94998-2
 * $LNC#83192-5
 * $LNC#89419-6
-* $LNC#89418-8
-* $LNC#83191-7
 * $LNC#94953-7
 * $LNC#94997-4
 * $LNC#83190-9
 * $LNC#89403-0
-* $LNC#89402-2
-* $LNC#83189-1
 * $LNC#94954-5
 * $LNC#94992-5
 * $LNC#83188-3
 * $LNC#89376-8
-* $LNC#89375-0
-* $LNC#83187-5
 * $LNC#94991-7
 * $LNC#83235-2
 * $LNC#89378-4
-* $LNC#89377-6
-* $LNC#83236-0
 * $LNC#94996-6
 * $LNC#94955-2
 * $LNC#94995-8
@@ -448,6 +415,7 @@ Id: pfe-mobility-vs
 * $LNC#94877-8
 * $LNC#57246-1
 * $LNC#57247-9
+* $LNC#10158-4
 
 ValueSet: PFENeuromusculoskeletalMovementRelatedFunctionsVS
 Title: "Personal Functioning and Engagement Neuromusculoskeletal and Movement Related Functions Value Set"
@@ -535,41 +503,27 @@ Id: pfe-self-care-vs
 * $LNC#95019-6
 * $LNC#83232-9
 * $LNC#89410-5
-* $LNC#89409-7
-* $LNC#83231-1
 * $LNC#94933-9
-* $LNC#95018-8
-* $LNC#83230-3
-* $LNC#89405-5
-* $LNC#89404-8
 * $LNC#83229-5
 * $LNC#94934-7
 * $LNC#95017-0
 * $LNC#83228-7
 * $LNC#57245-3
-* $LNC#89389-1
-* $LNC#83227-9
 * $LNC#95043-6
 * $LNC#95016-2
 * $LNC#85652-6
-* $LNC#96098-9
-* $LNC#85653-4
 * $LNC#94935-4
 * $LNC#95015-4
 * $LNC#89397-4
-* $LNC#89396-6
 * $LNC#94936-2
 * $LNC#95014-7
 * $LNC#89388-3
-* $LNC#89387-5
 * $LNC#94937-0
 * $LNC#95013-9
 * $LNC#89407-1
-* $LNC#89406-3
 * $LNC#94938-8
 * $LNC#95012-1
 * $LNC#89401-4
-* $LNC#89400-6
 * $LNC#94939-6
 * $LNC#54767-9
 * $LNC#54768-7
@@ -592,6 +546,7 @@ Id: pfe-self-care-vs
 * $LNC#83222-0
 * $LNC#83224-6
 * $LNC#83226-1
+* $LNC#10158-4
 
 ValueSet: PFESensoryFunctionsAndPainVS
 Title: "Personal Functioning and Engagement Sensory Functions and Pain Value Set"
@@ -703,13 +658,11 @@ Id: pfe-panel-vs
 * $LNC#54657-2
 * $LNC#83239-4
 * $LNC#85642-7
-* $LNC#11332-4
 * $LNC#52491-8
 * $LNC#72107-6
 * $LNC#72133-2
 * $LNC#86585-7
 * $LNC#98480-7
-* $LNC#10158-4
 * $LNC#83233-7
 * $LNC#83254-3
 * $LNC#95029-5
@@ -721,9 +674,6 @@ Id: pfe-panel-vs
 * $LNC#90540-6
 * $LNC#95030-3
 * $LNC#94850-5
-* $LNC#89476-6
-* $LNC#95862-9
-* $LNC#85056-0
 * $LNC#86833-1
 * $LNC#95741-5
 * $LNC#87502-1
@@ -745,9 +695,6 @@ Id: pfe-panel-vs
 * $LNC#89474-1
 * $LNC#86881-0
 * $LNC#94849-7
-* $LNC#89478-2
-* $LNC#95860-3
-* $LNC#85661-7
 * $LNC#88485-8
 * $LNC#99149-7
 * $LNC#95734-0
@@ -757,3 +704,81 @@ Id: pfe-panel-vs
 * $LNC#86891-9
 * $LNC#95025-3
 * $LNC#95027-9
+
+
+ValueSet: PFEGoalsMobilityVS
+Title: "Personal Functioning and Engagement Goals Mobility Value Set"
+Description: "This value set includes LOINC codes that represent patient goals regarding individual's mobility."
+Id: pfe-goals-mobility-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
+* $LNC#83187-5
+* $LNC#83189-1
+* $LNC#83191-7
+* $LNC#83193-3
+* $LNC#83195-8
+* $LNC#83197-4
+* $LNC#83199-0
+* $LNC#83201-4
+* $LNC#83203-0
+* $LNC#83205-5
+* $LNC#83207-1
+* $LNC#83209-7
+* $LNC#83211-3
+* $LNC#83213-9
+* $LNC#83215-4
+* $LNC#83217-0
+* $LNC#83236-0
+* $LNC#85927-2
+* $LNC#89375-0
+* $LNC#89377-6
+* $LNC#89379-2
+* $LNC#89381-8
+* $LNC#89383-4
+* $LNC#89385-9
+* $LNC#89390-9
+* $LNC#89392-5
+* $LNC#89394-1
+* $LNC#89398-2
+* $LNC#89402-2
+* $LNC#89412-1
+* $LNC#89414-7
+* $LNC#89416-2
+* $LNC#89418-8
+* $LNC#89420-4
+* $LNC#95862-9
+
+
+ValueSet: PFEGoalsSelfCareVS
+Title: "Personal Functioning and Engagement Goals Self-Care Value Set"
+Description: "This value set includes LOINC codes that represent patient goals regarding individual's ability to perform self-care."
+Id: pfe-goals-self-care-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
+* $LNC#89387-5
+* $LNC#89389-1
+* $LNC#89396-6
+* $LNC#89400-6
+* $LNC#89404-8
+* $LNC#89406-3
+* $LNC#89409-7
+* $LNC#83231-1
+* $LNC#95018-8
+* $LNC#83230-3
+* $LNC#89405-5
+* $LNC#83227-9
+* $LNC#96098-9
+* $LNC#85653-4
+
+
+ValueSet: PFEGoalsPanelVS
+Title: "Personal Functioning and Engagement Goals Panel Value Set"
+Description: "This value set includes LOINC panel codes that are goals represent headers and sub-headers in CMS assessments and are tied to PFE collections."
+Id: pfe-goals-panel-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
+* $LNC#85056-0
+* $LNC#89476-6
+* $LNC#89478-2
+* $LNC#95860-3
+* $LNC#85661-7
