@@ -167,7 +167,6 @@
 <artifact id="ValueSet/pfe-functions-of-cardiovascular-vs" key="ValueSet-pfe-functions-of-cardiovascular-vs" name="Personal Functioning and Engagement Functions Of Cardiovascular, Haematological, Immunological, and Respiratory Systems Value Set"/>
 <artifact id="ValueSet/pfe-functions-of-digestive-vs" key="ValueSet-pfe-functions-of-digestive-vs" name="Personal Functioning and Engagement Functions Of Digestive, Metabolic, and Endocrine Systems Value Set"/>
 <artifact id="ValueSet/pfe-skin-functions-vs" key="ValueSet-pfe-skin-functions-vs" name="Personal Functioning and Engagement Functions of Skin and Related Structures Value Set"/>
-<artifact id="ValueSet/pfe-general-tasks-and-demands-vs" key="ValueSet-pfe-general-tasks-and-demands-vs" name="Personal Functioning and Engagement General Tasks and Demands Value Set"/>
 <artifact id="ValueSet/pfe-genitourinary-vs" key="ValueSet-pfe-genitourinary-vs" name="Personal Functioning and Engagement Genitourinary and Reproductive Functions Value Set"/>
 <artifact id="ValueSet/pfe-goals-mobility-vs" key="ValueSet-pfe-goals-mobility-vs" name="Personal Functioning and Engagement Goals Mobility Value Set"/>
 <artifact id="ValueSet/pfe-goals-panel-vs" key="ValueSet-pfe-goals-panel-vs" name="Personal Functioning and Engagement Goals Panel Value Set"/>

@@ -59,7 +59,6 @@ Rather than offer a separate Observation profile for each PFE category (also cal
 | [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | `Observation.code` ValueSet |
 | ------ | -------------------- | ------------------------- | ------------ |
 | learning_and_applying_knowledge | Learning and applying knowledge | [PFE - Learning and applying knowledge ValueSet ]( ValueSet-pfe-learning-and-applying-knowledge-vs.html ) |
-| general_tasks_and_demands | General tasks and demands | [PFE - General tasks and demands ValueSet ]( ValueSet-pfe-general-tasks-and-demands-vs.html ) |
 | communication  | Communication | [PFE - Communication ValueSet ]( ValueSet-pfe-communication-vs.html ) |
 | mobility | Mobility | [PFE - Mobility ValueSet ]( ValueSet-pfe-mobility-vs.html ) |
 | self-care | Self-care | [PFE - Self-care ValueSet ]( ValueSet-pfe-self-care-vs.html ) |

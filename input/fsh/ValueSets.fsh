@@ -97,6 +97,7 @@ Id: pfe-domestic-life-vs
 * $LNC#94973-5
 * $LNC#94987-5
 * $LNC#94974-3
+* $LNC#94878-6
 
 ValueSet: PFEFunctionsOfCardiovascularHaematologicalImmunologicalRespiratorySystemsVS
 Title: "Personal Functioning and Engagement Functions Of Cardiovascular, Haematological, Immunological, and Respiratory Systems Value Set"
@@ -163,16 +164,7 @@ Id: pfe-skin-functions-vs
 * $LNC#57234-7
 * $LNC#57235-4
 * $LNC#57236-2
-* $LNC#94878-6
 * $LNC#86708-5
-
-ValueSet: PFEGeneralTasksAndDemandsVS
-Title: "Personal Functioning and Engagement General Tasks and Demands Value Set"
-Description: "This value set includes LOINC codes that represent patient observations regarding individual's general tasks and demands in their life."
-Id: pfe-general-tasks-and-demands-vs
-* ^experimental = false
-* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
-* $LNC#94909-9
 
 ValueSet: PFEGenitourinaryReproductiveFunctionsVS
 Title: "Personal Functioning and Engagement Genitourinary and Reproductive Functions Value Set"
@@ -330,7 +322,6 @@ Id: pfe-mobility-vs
 * $LNC#54753-9
 * $LNC#85071-9
 * $LNC#85072-7
-* $LNC#94892-7
 * $LNC#95011-3
 * $LNC#83218-8
 * $LNC#89399-0
@@ -415,7 +406,7 @@ Id: pfe-mobility-vs
 * $LNC#94877-8
 * $LNC#57246-1
 * $LNC#57247-9
-* $LNC#10158-4
+* $LNC#10158-4 // Found in the self-care and mobility Value Sets
 
 ValueSet: PFENeuromusculoskeletalMovementRelatedFunctionsVS
 Title: "Personal Functioning and Engagement Neuromusculoskeletal and Movement Related Functions Value Set"
@@ -478,6 +469,8 @@ Id: pfe-body-functions-vs
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#95042-8
 * $LNC#94910-7
+* $LNC#94909-9
+* $LNC#94888-5
 
 
 ValueSet: PFESelfCareVS
@@ -546,7 +539,10 @@ Id: pfe-self-care-vs
 * $LNC#83222-0
 * $LNC#83224-6
 * $LNC#83226-1
-* $LNC#10158-4
+* $LNC#10158-4 // Found in the self-care and mobility Value Sets
+* $LNC#95018-8
+* $LNC#83230-3
+* $LNC#89405-5
 
 ValueSet: PFESensoryFunctionsAndPainVS
 Title: "Personal Functioning and Engagement Sensory Functions and Pain Value Set"
@@ -563,7 +559,6 @@ Id: pfe-sensory-functions-pain-vs
 * $LNC#54604-4
 * $LNC#94900-8
 * $LNC#57215-6
-* $LNC#94888-5
 * $LNC#67235-2
 * $LNC#67242-8
 * $LNC#67467-1
@@ -763,9 +758,6 @@ Id: pfe-goals-self-care-vs
 * $LNC#89406-3
 * $LNC#89409-7
 * $LNC#83231-1
-* $LNC#95018-8
-* $LNC#83230-3
-* $LNC#89405-5
 * $LNC#83227-9
 * $LNC#96098-9
 * $LNC#85653-4
