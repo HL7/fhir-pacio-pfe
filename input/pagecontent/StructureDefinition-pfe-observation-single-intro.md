@@ -37,38 +37,38 @@ The following data elements must always be present or must be supported if the d
 
 ### Usage
 
-Rather than offer a separate Observation profile for each PFE category (also called domain – e.g., Mental Functions, Mobility, etc.), this profile can support any PFE category. The PFE Domain can be specified in a CodeableConcept in the Observatinon.category slice. Based on the code selected for the optional Observation.category slice, the Table below provides the PACIO-vetted, preferred value sets for Observation.code. Where a preferred value set contains a code to describe a needed concept, servers SHOULD use that code.
+Rather than offer a separate Observation profile for each PFE category (also called domain – e.g., Mental Functions, Mobility, etc.), this profile can support any PFE category. The PFE Domain can be specified in a CodeableConcept in the Observatinon.category slice. Based on the code selected for the optional Observation.category slice, the Table below provides the PACIO-vetted, example value sets that contain the Assessment Observation codes to be placed in Observation.code for the selected domain. Where a preferred value set contains a code to describe a needed concept, servers SHOULD use that code. For more information regarding the ICF categorization process, and how to categorize new codes, see: [ domains ]( domains.html ) 
 
 #### Body Functions PFE Domains
 
-| [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | `Observation.code` ValueSet |
+| [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | Element binding | Assessment Observation Codes ValueSet |
 | ------ | -------------------- | ------------------------- | ------------ |
-| body-functions | Body functions | [ PFE- Body functions ValueSet ]( ValueSet-pfe-body-functions-vs.html ) |
-| mental-functions | Mental functions | [ PFE- Mental functions ValueSet ]( ValueSet-pfe-mental-functions-vs.html ) |
-|  sensory_functions_and_pain | Sensory functions and pain | [ PFE - Sensory functions and pain ValueSet ]( ValueSet-pfe-sensory-functions-pain-vs.html ) |
-| voice_and_speech_functions | Voice and speech functions | [ PFE- Voice and speech functions ValueSet ]( ValueSet-pfe-voice-and-speech-vs.html ) |
-| functions_of_the_cardiovascular_haematological_immunological_and_respiratory_systems |  Functions of the cardiovascular, haematological, immunological and respiratory systems | [PFE - Functions of the cardiovascular, haematological, immunological and respiratory systems ValueSet]( ValueSet-pfe-functions-of-cardiovascular-vs.html ) |
-| functions_of_the_digestive_metabolic_and_endocrine_systems |  Functions of the digestive, metabolic and endocrine systems | [PFE - Functions of the digestive, metabolic and endocrine systems ValueSet]( ValueSet-pfe-functions-of-digestive-vs.html ) |
-| genitourinary_and_reproductive_functions | Genitourinary and reproductive functions | [ PFE- Genitourinary and reproductive functions ValueSet ]( ValueSet-pfe-genitourinary-vs.html )  |
-| neuromusculoskeletal_and_movement-related_functions | Neuromusculoskeletal and movement-related functions | [ PFE- Neuromusculoskeletal and movement-related functions ValueSet ]( ValueSet-pfe-neuromusculoskeletal-vs.html ) |
-| functions_of_the_skin_and_related_structures | Functions of the skin and related structures | [ PFE- Functions of the skin and related structures ValueSet ]( ValueSet-pfe-skin-functions-vs.html ) |
+| body-functions | Body functions | Observation.code | [ PFE- Body functions ValueSet ]( ValueSet-pfe-body-functions-vs.html ) |
+| mental-functions | Mental functions | Observation.code | [ PFE- Mental functions ValueSet ]( ValueSet-pfe-mental-functions-vs.html ) |
+|  sensory_functions_and_pain | Sensory functions and pain | Observation.code | [ PFE - Sensory functions and pain ValueSet ]( ValueSet-pfe-sensory-functions-pain-vs.html ) |
+| voice_and_speech_functions | Voice and speech functions | Observation.code | [ PFE- Voice and speech functions ValueSet ]( ValueSet-pfe-voice-and-speech-vs.html ) |
+| functions_of_the_cardiovascular_haematological_immunological_and_respiratory_systems |  Functions of the cardiovascular, haematological, immunological and respiratory systems | Observation.code | [PFE - Functions of the cardiovascular, haematological, immunological and respiratory systems ValueSet]( ValueSet-pfe-functions-of-cardiovascular-vs.html ) |
+| functions_of_the_digestive_metabolic_and_endocrine_systems |  Functions of the digestive, metabolic and endocrine systems | Observation.code | [PFE - Functions of the digestive, metabolic and endocrine systems ValueSet]( ValueSet-pfe-functions-of-digestive-vs.html ) |
+| genitourinary_and_reproductive_functions | Genitourinary and reproductive functions | Observation.code | [ PFE- Genitourinary and reproductive functions ValueSet ]( ValueSet-pfe-genitourinary-vs.html )  |
+| neuromusculoskeletal_and_movement-related_functions | Neuromusculoskeletal and movement-related functions | Observation.code | [ PFE- Neuromusculoskeletal and movement-related functions ValueSet ]( ValueSet-pfe-neuromusculoskeletal-vs.html ) |
+| functions_of_the_skin_and_related_structures | Functions of the skin and related structures | Observation.code | [ PFE- Functions of the skin and related structures ValueSet ]( ValueSet-pfe-skin-functions-vs.html ) |
 {:.grid}
 
 #### Activities and Participation PFE Domains
 
-| [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | `Observation.code` ValueSet |
+| [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | Element binding | Assessment Observation Codes ValueSet |
 | ------ | -------------------- | ------------------------- | ------------ |
-| learning_and_applying_knowledge | Learning and applying knowledge | [PFE - Learning and applying knowledge ValueSet ]( ValueSet-pfe-learning-and-applying-knowledge-vs.html ) |
-| communication  | Communication | [PFE - Communication ValueSet ]( ValueSet-pfe-communication-vs.html ) |
-| mobility | Mobility | [PFE - Mobility ValueSet ]( ValueSet-pfe-mobility-vs.html ) |
-| self-care | Self-care | [PFE - Self-care ValueSet ]( ValueSet-pfe-self-care-vs.html ) |
-| domestic_life | Domestic life | [PFE - Domestic life ValueSet ]( ValueSet-pfe-domestic-life-vs.html ) |
+| learning_and_applying_knowledge | Learning and applying knowledge | Observation.code | [PFE - Learning and applying knowledge ValueSet ]( ValueSet-pfe-learning-and-applying-knowledge-vs.html ) |
+| communication  | Communication | Observation.code | [PFE - Communication ValueSet ]( ValueSet-pfe-communication-vs.html ) |
+| mobility | Mobility | Observation.code | [PFE - Mobility ValueSet ]( ValueSet-pfe-mobility-vs.html ) |
+| self-care | Self-care | Observation.code | [PFE - Self-care ValueSet ]( ValueSet-pfe-self-care-vs.html ) |
+| domestic_life | Domestic life | Observation.code | [PFE - Domestic life ValueSet ]( ValueSet-pfe-domestic-life-vs.html ) |
 {:.grid}
 
 #### Body Structures PFE Domains
 
-| [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | `Observation.code` ValueSet |
+| [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | Element binding | Assessment Observation Codes ValueSet |
 | ------ | -------------------- | ------------------------- | ------------ |
-| body-structures | Body structures  | [PFE - Body structures ValueSet ]( ValueSet-pfe-body-structures-vs.html ) |
-| structures_involved_in_voice_and_speech | Structures involved in voice and speech  | [PFE - Structures involved in voice and speech ValueSet ]( ValueSet-pfe-structures-voice-and-speech-vs.html ) |
+| body-structures | Body structures  | Observation.code | [PFE - Body structures ValueSet ]( ValueSet-pfe-body-structures-vs.html ) |
+| structures_involved_in_voice_and_speech | Structures involved in voice and speech  | Observation.code | [PFE - Structures involved in voice and speech ValueSet ]( ValueSet-pfe-structures-voice-and-speech-vs.html ) |
 {:.grid} 
