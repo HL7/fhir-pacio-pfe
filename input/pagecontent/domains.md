@@ -17,7 +17,7 @@ The [supplemental guide](https://confluence.hl7.org/display/PC/Supplemental+Guid
 
 Standards designers and implementers face many challenges when attempting to enable scalable and meaningful interoperability between health IT systems. Two specific ones that this IG engages with are
 - **Low Friction Communication**: How to generate agreement and consensus about the structure of and terminology used to communicate data so that implementers can adopt the IG consistently enough to support exchange with minimal partner-specific handling and thus realize a reduction in the administrative overhead associated with communication of this information.
-- **Understanding and Use**: How to support the effective use of the data by clinicins and other users so the system can realize the intended benefits of the shraing of this data, namely improved care and reduced costs.
+- **Understanding and Use**: How to support the effective use of the data by clinicians and other users so the system can realize the intended benefits of the sharing of this data, namely improved care and reduced costs.
 
 Categorization of observations into health domains based on International Classification of Functioning, Disability and Health (commonly known as ICF) categories provides opportunities to address these challenges.
 
@@ -52,7 +52,7 @@ Additional rules have been added to the base ICF categorization process to help 
 
 #### Adding New Codes
 
-Adding new codes to the PFE is a simple and straightforward process, but does require at least some familiarity with FHIR shorthand. The first step is categorizing the new code you want to include into a Value Set into one of the ICF domains using the categorization process described above. If the selected ICF domains does not yet have an associated Value Set, you must first create a new Value Set for that ICF domain following the example of the rest of the ICF Value Sets in the ValueSets.fsh file. If the Value Set associated with the ICF domain already exists, you can skip this step. Next, you must place the code for the PAC assessment item under the Value Set that is associated with the ICF domain it has been categorized to. To do this, add a new line under the correct Value Set with the format:
+Adding new codes to the PFE is a simple and straightforward process, but does require at least some familiarity with FHIR shorthand. The first step is categorizing the new code you want to include into a Value Set into one of the ICF domains using the categorization process described above. If the selected ICF domain does not yet have an associated Value Set, you must first create a new Value Set for that ICF domain following the example of the rest of the ICF Value Sets in the ValueSets.fsh file. If the Value Set associated with the ICF domain already exists, you can skip this step. Next, you must place the code for the PAC assessment item under the Value Set that is associated with the ICF domain it has been categorized to. To do this, add a new line under the correct Value Set with the format:
 
 		* $LNC#<New Code Here>
 
