@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-pfe/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-pfe" defaultVersion="1.0.0-ballot" defaultWorkgroup="" url="http://hl7.org/fhir/us/pacio-pfe">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-pfe/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-pfe" defaultVersion="1.0.0-ballot" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fhir-pacio-pfe" url="http://hl7.org/fhir/us/pacio-pfe">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-pacio-pfe"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/us/pacio-pfe/2022Sep"/>
 <artifactPageExtension value="-definitions"/>
@@ -107,8 +107,8 @@
 <artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27"/>
 <artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3"/>
 <artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7"/>
-<artifact id="DiagnosticReport/PFEIG-Narrative-History-Cognitive-Status-1" key="DiagnosticReport-PFEIG-Narrative-History-Cognitive-Status-1" name="PFEIG-Narrative-History-Cognitive-Status-1"/>
-<artifact id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="DiagnosticReport-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
+<artifact id="DiagnosticReport/PFEIG-Narrative-History-Cognitive-Status-1" key="Observation-PFEIG-Narrative-History-Cognitive-Status-1" name="PFEIG-Narrative-History-Cognitive-Status-1"/>
+<artifact id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
 <artifact id="Organization/PFEIG-Org-01" key="Organization-PFEIG-Org-01" name="PFEIG-Org-01"/>
 <artifact id="Organization/PFEIG-Org-02" key="Organization-PFEIG-Org-02" name="PFEIG-Org-02"/>
 <artifact id="Organization/PFEIG-Org-03" key="Organization-PFEIG-Org-03" name="PFEIG-Org-03"/>
@@ -137,6 +137,7 @@
 <artifact id="PractitionerRole/PFEIG-Role-Audio-JillBradley" key="PractitionerRole-PFEIG-Role-Audio-JillBradley" name="PFEIG-Role-Audio-JillBradley"/>
 <artifact id="PractitionerRole/PFEIG-Role-OT-DanielGranger" key="PractitionerRole-PFEIG-Role-OT-DanielGranger" name="PFEIG-Role-OT-DanielGranger"/>
 <artifact id="PractitionerRole/PFEIG-Role-OT-JenCadbury" key="PractitionerRole-PFEIG-Role-OT-JenCadbury" name="PFEIG-Role-OT-JenCadbury"/>
+<artifact deprecated="true" id="PractitionerRole/PFEIG-Role-PT-LunaBaskins" key="PractitionerRole-PFEIG-Role-PT-LunaBaskins" name="PFEIG-Role-PT-LunaBaskins"/>
 <artifact id="PractitionerRole/PFEIG-Role-PT-RonMarble" key="PractitionerRole-PFEIG-Role-PT-RonMarble" name="PFEIG-Role-PT-RonMarble"/>
 <artifact id="PractitionerRole/PFEIG-Role-PT-SallySmith" key="PractitionerRole-PFEIG-Role-PT-SallySmith" name="PFEIG-Role-PT-SallySmith"/>
 <artifact id="PractitionerRole/PFEIG-Role-PT-ScottDumble" key="PractitionerRole-PFEIG-Role-PT-ScottDumble" name="PFEIG-Role-PT-ScottDumble"/>
@@ -175,6 +176,7 @@
 <artifact id="ValueSet/pfe-mobility-vs" key="ValueSet-pfe-mobility-vs" name="Personal Functioning and Engagement Mobility Value Set"/>
 <artifact id="StructureDefinition/pfe-narrative-history-of-status" key="StructureDefinition-pfe-narrative-history-of-status" name="Personal Functioning and Engagement Narrative History of Status"/>
 <artifact id="ValueSet/pfe-neuromusculoskeletal-vs" key="ValueSet-pfe-neuromusculoskeletal-vs" name="Personal Functioning and Engagement Neuromusculoskeletal and Movement Related Functions Value Set"/>
+<artifact deprecated="true" id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
 <artifact id="ValueSet/pfe-panel-vs" key="ValueSet-pfe-panel-vs" name="Personal Functioning and Engagement Panel Value Set"/>
 <artifact id="ValueSet/pfe-self-care-vs" key="ValueSet-pfe-self-care-vs" name="Personal Functioning and Engagement Self-Care Value Set"/>
 <artifact id="ValueSet/pfe-sensory-functions-pain-clinical-test-vs" key="ValueSet-pfe-sensory-functions-pain-clinical-test-vs" name="Personal Functioning and Engagement Sensory Functions and Pain Clinical Test Value Set"/>
@@ -182,9 +184,11 @@
 <artifact id="StructureDefinition/pfe-observation-single" key="StructureDefinition-pfe-observation-single" name="Personal Functioning and Engagement Single Observation"/>
 <artifact id="ValueSet/pfe-structures-voice-and-speech-vs" key="ValueSet-pfe-structures-voice-and-speech-vs" name="Personal Functioning and Engagement Structures Involved in Voice and Speech Value Set"/>
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
+<artifact deprecated="true" id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
 <artifact id="ValueSet/pfe-voice-and-speech-vs" key="ValueSet-pfe-voice-and-speech-vs" name="Personal Functioning and Engagement Voice and Speech Functions Value Set"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="domains" name="Domains"/>
 <page key="downloads" name="Downloads"/>

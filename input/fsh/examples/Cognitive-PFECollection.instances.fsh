@@ -9,7 +9,7 @@ Description: "An instance of Personal Functioning and Engagement Collection for 
 * status = #final
 * category[survey] = OBSCAT#survey
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
+* category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72133-2 "Montreal Cognitive Assessment [MoCA]"
 * code.text = "Montreal Cognitive Assessment [MoCA]"
@@ -25,7 +25,7 @@ Description: "An instance of Personal Functioning and Engagement Collection for 
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
 * category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
+* category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72107-6 "Mini-Mental State Examination [MMSE]"
 * code.text = "Mini-Mental State Examination [MMSE]"
@@ -41,7 +41,7 @@ Description: "An instance of Personal Functioning and Engagement Collection for 
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
 * category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
+* category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
 * code = http://loinc.org#86585-7 "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) [CMS Assessment]"
 * code.text = "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) [CMS Assessment]"
@@ -59,7 +59,7 @@ Description: "An instance of Personal Functioning and Engagement Collection"
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
 * category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mental_functions "Mental functions"
+* category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54635-8 "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"
 * code.text = "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"
