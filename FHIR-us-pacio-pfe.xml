@@ -109,6 +109,7 @@
 <artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7"/>
 <artifact id="DiagnosticReport/PFEIG-Narrative-History-Cognitive-Status-1" key="Observation-PFEIG-Narrative-History-Cognitive-Status-1" name="PFEIG-Narrative-History-Cognitive-Status-1"/>
 <artifact id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
+<artifact id="Observation/PFEIG-Nested-Collection-Mobility" key="Observation-PFEIG-Nested-Collection-Mobility" name="PFEIG-Nested-Collection-Mobility"/>
 <artifact id="Organization/PFEIG-Org-01" key="Organization-PFEIG-Org-01" name="PFEIG-Org-01"/>
 <artifact id="Organization/PFEIG-Org-02" key="Organization-PFEIG-Org-02" name="PFEIG-Org-02"/>
 <artifact id="Organization/PFEIG-Org-03" key="Organization-PFEIG-Org-03" name="PFEIG-Org-03"/>
