@@ -304,7 +304,9 @@
         },
         {
           "type": "DiagnosticReport",
-          "profile": "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status",
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status"
+          ],
           "interaction": [
             {
               "code": "create"
@@ -387,7 +389,9 @@
         },
         {
           "type": "DeviceUseStatement",
-          "profile": "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-use-of-device",
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-use-of-device"
+          ],
           "interaction": [
             {
               "code": "create"
