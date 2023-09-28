@@ -52,6 +52,12 @@
           "mode": "server",
           "resource": [
               {
+                  "extension": [
+                      {
+                          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                          "valueCode": "SHALL"
+                      }
+                  ],
                   "conditionalCreate": true,
                   "conditionalDelete": "multiple",
                   "conditionalUpdate": true,
@@ -527,6 +533,12 @@
                   "type": "Observation"
               },
               {
+                  "extension": [
+                      {
+                          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                          "valueCode": "MAY"
+                      }
+                  ],
                   "conditionalCreate": true,
                   "conditionalDelete": "multiple",
                   "conditionalUpdate": true,
