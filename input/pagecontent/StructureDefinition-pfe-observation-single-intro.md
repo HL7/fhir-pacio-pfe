@@ -37,7 +37,7 @@ The following data elements must always be present or must be supported if the d
 
 ### Usage
 
-Rather than offer a separate Observation profile for each PFE category (also called domain – e.g., Mental Functions, Mobility, etc.), this profile can support any PFE category. The PFE Domain can be specified in a CodeableConcept in the Observatinon.category slice. Based on the code selected for the optional Observation.category slice, the Table below provides the PACIO-vetted, example value sets that contain the Assessment Observation codes to be placed in Observation.code for the selected domain. Where a preferred value set contains a code to describe a needed concept, servers SHOULD use that code. For more information regarding the ICF categorization process, and how to categorize new codes, see: [ domains ]( domains.html ) 
+Rather than offer a separate Observation profile for each PFE category (also called domain – e.g., Mental Functions, Mobility, etc.), this profile can support any PFE category. The PFE Domain can be specified in a CodeableConcept in the Observation.category slice. Based on the code selected for the optional Observation.category slice, the Table below provides the PACIO-vetted, example value sets that contain the Assessment Observation codes to be placed in Observation.code for the selected domain. Where a preferred value set contains a code to describe a needed concept, servers SHOULD use that code. For more information regarding the ICF categorization process, and how to categorize new codes, see: [ domains ]( domains.html ) 
 
 #### Body Functions PFE Domains
 
