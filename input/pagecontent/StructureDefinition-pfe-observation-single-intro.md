@@ -43,11 +43,9 @@ Rather than offer a separate Observation profile for each PFE category (also cal
 
 | [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | Element binding | Assessment Observation Codes ValueSet |
 | ------ | -------------------- | ------------------------- | ------------ |
-| body-functions | Body functions | Observation.code | [ PFE- Body functions ValueSet ]( ValueSet-pfe-body-functions-vs.html ) |
 | mental-functions | Mental functions | Observation.code | [ PFE- Mental functions ValueSet ]( ValueSet-pfe-mental-functions-vs.html ) |
 |  sensory_functions_and_pain | Sensory functions and pain | Observation.code | [ PFE - Sensory functions and pain ValueSet ]( ValueSet-pfe-sensory-functions-pain-vs.html ) |
 | voice_and_speech_functions | Voice and speech functions | Observation.code | [ PFE- Voice and speech functions ValueSet ]( ValueSet-pfe-voice-and-speech-vs.html ) |
-| functions_of_the_cardiovascular_haematological_immunological_and_respiratory_systems |  Functions of the cardiovascular, haematological, immunological and respiratory systems | Observation.code | [PFE - Functions of the cardiovascular, haematological, immunological and respiratory systems ValueSet]( ValueSet-pfe-functions-of-cardiovascular-vs.html ) |
 | functions_of_the_digestive_metabolic_and_endocrine_systems |  Functions of the digestive, metabolic and endocrine systems | Observation.code | [PFE - Functions of the digestive, metabolic and endocrine systems ValueSet]( ValueSet-pfe-functions-of-digestive-vs.html ) |
 | genitourinary_and_reproductive_functions | Genitourinary and reproductive functions | Observation.code | [ PFE- Genitourinary and reproductive functions ValueSet ]( ValueSet-pfe-genitourinary-vs.html )  |
 | neuromusculoskeletal_and_movement-related_functions | Neuromusculoskeletal and movement-related functions | Observation.code | [ PFE- Neuromusculoskeletal and movement-related functions ValueSet ]( ValueSet-pfe-neuromusculoskeletal-vs.html ) |
@@ -72,3 +70,8 @@ Rather than offer a separate Observation profile for each PFE category (also cal
 | body-structures | Body structures  | Observation.code | [PFE - Body structures ValueSet ]( ValueSet-pfe-body-structures-vs.html ) |
 | structures_involved_in_voice_and_speech | Structures involved in voice and speech  | Observation.code | [PFE - Structures involved in voice and speech ValueSet ]( ValueSet-pfe-structures-voice-and-speech-vs.html ) |
 {:.grid} 
+
+#### Environmental Factors PFE Domains
+| [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | Element binding | Assessment Observation Codes ValueSet |
+| ------ | -------------------- | ------------------------- | ------------ |
+| products_and_technology | Products and technology  | Observation.code | [PFE - Products and Technology ValueSet ]( ValueSet-pfe-products-and-technology-vs.html ) |

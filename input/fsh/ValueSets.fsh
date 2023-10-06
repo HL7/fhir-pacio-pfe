@@ -99,22 +99,12 @@ Id: pfe-domestic-life-vs
 * $LNC#94974-3
 * $LNC#94878-6
 
-ValueSet: PFEFunctionsOfCardiovascularHaematologicalImmunologicalRespiratorySystemsVS
-Title: "Personal Functioning and Engagement Functions Of Cardiovascular, Haematological, Immunological, and Respiratory Systems Value Set"
-Description: "This value set includes LOINC codes that represent patient observations regarding individual's cardiovascular, haematological, immunological, and respiratory systems functioning."
-Id: pfe-functions-of-cardiovascular-vs
-* ^experimental = false
-* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
-* $LNC#94907-3
-* $LNC#94908-1
-
 ValueSet: PFEFunctionsOfDigestiveMetabolicEndocrineSystemsVS
 Title: "Personal Functioning and Engagement Functions Of Digestive, Metabolic, and Endocrine Systems Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding individual's digestive, metabolic, and endocrine systems functioning."
 Id: pfe-functions-of-digestive-vs
 * ^experimental = false
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
-* $LNC#94906-5
 * $LNC#95736-5
 * $LNC#83242-8
 * $LNC#54773-7
@@ -286,7 +276,6 @@ Id: pfe-mental-functions-vs
 * $LNC#44255-8
 * $LNC#46473-5
 * $LNC#46592-2
-* $LNC#94901-6
 * $LNC#85073-5
 * $LNC#52731-7
 * $LNC#54628-3
@@ -414,41 +403,8 @@ Description: "This value set includes LOINC codes that represent patient observa
 Id: pfe-neuromusculoskeletal-vs
 * ^experimental = false
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
-* $LNC#94879-4
-* $LNC#94880-2
-* $LNC#94881-0
-* $LNC#94882-8
-* $LNC#94883-6
-* $LNC#94884-4
-* $LNC#94885-1
-* $LNC#94886-9
-* $LNC#94887-7
-* $LNC#94889-3
-* $LNC#94890-1
-* $LNC#94891-9
-* $LNC#94892-7
-* $LNC#94893-5
-* $LNC#94894-3
-* $LNC#94895-0
-* $LNC#94896-8
-* $LNC#94897-6
-* $LNC#94898-4
-* $LNC#94902-4
-* $LNC#94903-2
-* $LNC#94904-0
-* $LNC#94905-7
-* $LNC#95738-1
-* $LNC#83271-7
-* $LNC#89411-3
-* $LNC#95739-9
-* $LNC#83272-5
-* $LNC#89408-9
-* $LNC#95021-2
-* $LNC#95022-0
 * $LNC#92850-7
 * $LNC#92851-5
-* $LNC#86602-0
-* $LNC#83234-5
 
 ValueSet: PFEBodyStructuresVS
 Title: "Personal Functioning and Engagement Body Structures Value Set"
@@ -460,18 +416,6 @@ Id: pfe-body-structures-vs
 * $LNC#3141-9
 * $LNC#54863-6
 * $LNC#86678-0
-
-ValueSet: PFEBodyFunctionsVS
-Title: "Personal Functioning and Engagement Body Functions Value Set"
-Description: "This value set includes LOINC codes that represent patient observations regarding individual's body functions."
-Id: pfe-body-functions-vs
-* ^experimental = false
-* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
-* $LNC#95042-8
-* $LNC#94910-7
-* $LNC#94909-9
-* $LNC#94888-5
-
 
 ValueSet: PFESelfCareVS
 Title: "Personal Functioning and Engagement Self-Care Value Set"
@@ -497,7 +441,6 @@ Id: pfe-self-care-vs
 * $LNC#83232-9
 * $LNC#89410-5
 * $LNC#94933-9
-* $LNC#83229-5
 * $LNC#94934-7
 * $LNC#95017-0
 * $LNC#83228-7
@@ -550,14 +493,10 @@ Description: "This value set includes LOINC codes that represent patient observa
 Id: pfe-sensory-functions-pain-vs
 * ^experimental = false
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
-* $LNC#94899-2
 * $LNC#95744-9
 * $LNC#93309-3
-* $LNC#54599-6
 * $LNC#95745-6
 * $LNC#93310-1
-* $LNC#54604-4
-* $LNC#94900-8
 * $LNC#57215-6
 * $LNC#67235-2
 * $LNC#67242-8
@@ -617,6 +556,55 @@ Id: pfe-voice-and-speech-vs
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#54600-2
 
+ValueSet: PFEProductsAndTechnologyVS
+Title: "Personal Functioning and Engagement Products and Technology Value Set"
+Description: "This value set includes LOINC codes that represent patient observations regarding the products and technology that affect their lives."
+Id: pfe-products-and-technology-vs
+* $LNC#54599-6
+* $LNC#54604-4
+* $LNC#86602-0
+* $LNC#94879-4
+* $LNC#95042-8
+* $LNC#94880-2
+* $LNC#94881-0
+* $LNC#94882-8
+* $LNC#94883-6
+* $LNC#94884-4
+* $LNC#94885-1
+* $LNC#94886-9
+* $LNC#94887-7
+* $LNC#94888-5
+* $LNC#94889-3
+* $LNC#94890-1
+* $LNC#94891-9
+* $LNC#94892-7
+* $LNC#94893-5
+* $LNC#94894-3
+* $LNC#94895-0
+* $LNC#94896-8
+* $LNC#94897-6
+* $LNC#94898-4
+* $LNC#94899-2
+* $LNC#94900-8
+* $LNC#94901-6
+* $LNC#94902-4
+* $LNC#94903-2
+* $LNC#94904-0
+* $LNC#94905-7
+* $LNC#94906-5
+* $LNC#94907-3
+* $LNC#94908-1
+* $LNC#94910-7
+* $LNC#94909-9
+* $LNC#83234-5
+* $LNC#95738-1
+* $LNC#83271-7
+* $LNC#89411-3
+* $LNC#95739-9
+* $LNC#83272-5
+* $LNC#89408-9
+* $LNC#95021-2
+* $LNC#95022-0
 
 ValueSet: PFEPanelVS
 Title: "Personal Functioning and Engagement Panel Value Set"
@@ -743,7 +731,6 @@ Id: pfe-goals-mobility-vs
 * $LNC#89420-4
 * $LNC#95862-9
 
-
 ValueSet: PFEGoalsSelfCareVS
 Title: "Personal Functioning and Engagement Goals Self-Care Value Set"
 Description: "This value set includes LOINC codes that represent patient goals regarding individual's ability to perform self-care."
@@ -761,6 +748,7 @@ Id: pfe-goals-self-care-vs
 * $LNC#83227-9
 * $LNC#96098-9
 * $LNC#85653-4
+* $LNC#83229-5
 
 
 ValueSet: PFEGoalsPanelVS

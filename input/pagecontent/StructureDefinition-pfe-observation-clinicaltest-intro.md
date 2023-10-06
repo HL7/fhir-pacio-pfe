@@ -33,7 +33,7 @@ The following data elements must always be present or must be supported if the d
 
 ### Domain-specific Value Set Bindings
 
-| [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | `Observation.code` ValueSet |
+| [`Observation.category`](ValueSet-pfe-category-vs.html) | Domain | Element binding | Assessment Observation Codes ValueSet |
 | ------ | -------------------- | ------------------------- | ------------ |
-|  sensory_functions_and_pain | Sensory functions and pain | [PFE - Sensory functions and pain Clinical Test ValueSet](ValueSet-pfe-sensory-functions-pain-clinical-test-vs.html) |
+|  sensory_functions_and_pain | Sensory functions and pain | Observation.code | [ PFE - Sensory functions and pain ValueSet ]( ValueSet-pfe-sensory-functions-pain-vs.html ) |
 {:.grid}
