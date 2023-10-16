@@ -90,7 +90,7 @@
                           "extension": [
                               {
                                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                  "valueCode": "MAY"
+                                  "valueCode": "SHALL"
                               }
                           ],
                           "code": "create"
@@ -99,7 +99,7 @@
                           "extension": [
                               {
                                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                  "valueCode": "MAY"
+                                  "valueCode": "SHALL"
                               }
                           ],
                           "code": "update"
@@ -789,7 +789,7 @@
                           "extension": [
                               {
                                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                  "valueCode": "MAY"
+                                  "valueCode": "SHALL"
                               }
                           ],
                           "code": "create"
@@ -798,7 +798,7 @@
                           "extension": [
                               {
                                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                  "valueCode": "MAY"
+                                  "valueCode": "SHALL"
                               }
                           ],
                           "code": "update"
@@ -1027,7 +1027,7 @@
                   "extension": [
                       {
                           "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                          "valueCode": "MAY"
+                          "valueCode": "SHOULD"
                       }
                   ],
                   "conditionalCreate": true,
