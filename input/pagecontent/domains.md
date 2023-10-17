@@ -7,7 +7,7 @@ The PACIO Personal Functioning and Engagement IG replaces the previously publish
 
 The intent of the Personal Functioning and Engagement IG is to provide a framework for communicating and understanding observations related to an individual's functioning in terms of body functions, activities, and participation. The profiles defined within this IG provide a structure that can be used to represent functioning observations from many different domains. In each case, the domain is associated with specific observation codes representing questions, tools, instruments, and measurements within that domain.
 
-This IG provides examples of some ICF domains and some of their associated codes. To view the ICF and all of its domains, please view the [ICF browser](https://icd.who.int/dev11/l-icf/en) maintained by the World Health Organization (WHO). Use of the domain value sets is optional, but highly recommended. 
+This IG provides examples of some ICF domains and some of their associated, PACIO-vetted, preferred value sets. To view the ICF and all of its domains, please view the [ICF browser](https://icd.who.int/dev11/l-icf/en) maintained by the World Health Organization (WHO).
 
 ### Use
 
@@ -57,10 +57,3 @@ Adding new codes to the PFE is a simple and straightforward process, but does re
 		* $LNC#<New Code Here>
 
 This will add the new code to the Value Set whose list it has been added under.
-
-### Supplemental Guide Development and Maintenance
-
-Development and maintenance of the [supplemental guide](https://confluence.hl7.org/display/PC/Supplemental+Guide) will be done by the PACIO project. Expected activities include
-- Definition of additional domains
-- Creation, publication, and maintenance of value sets containing codes for use within each domain
-- Additional guidance and support for implementers
