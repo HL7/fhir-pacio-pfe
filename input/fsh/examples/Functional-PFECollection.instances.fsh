@@ -10,7 +10,7 @@ Description: "An instance of Personal Functioning and Engagement Collection"
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
 * category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[PFEDomain] = PFEDOMAINCAT#BlockL2-d41 "Mobility"
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#88331-4 "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
@@ -48,7 +48,7 @@ Description: "An instance of Personal Functioning and Engagement Collection"
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
 * category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#mobility "Mobility"
+* category[PFEDomain] = PFEDOMAINCAT#BlockL2-d41 "Mobility"
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#88330-6 "Mobility - admission performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - admission performance during 3 day assessment period [CMS Assessment]"
@@ -83,7 +83,7 @@ Description: "An instance of Personal Functioning and Engagement Collection"
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
 * category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#self-care "Self-care"
+* category[PFEDomain] = PFEDOMAINCAT#BlockL2-d51 "Self-care"
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83233-7 "Self-care - admission performance [CMS Assessment]"
 * code.text = "Self-care - admission performance [CMS Assessment]"

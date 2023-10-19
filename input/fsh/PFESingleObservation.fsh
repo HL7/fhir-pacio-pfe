@@ -30,7 +30,8 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * category[PFEDomain] from PFECategoryVS (required)
 * category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
-* code ^short = "For a Post-Acute Care Assessment, should include a LOINC code and text for the question or concept name."
+* code ^short = "For PFE Assessments, should include a LOINC code and text for the question or concept name."
+* category ^requirements = "This code should be included in the Value Set associated with the selected PFE category ICF domain for this observation."
 
 * effective[x] 1..1 
 * effective[x] only dateTime
