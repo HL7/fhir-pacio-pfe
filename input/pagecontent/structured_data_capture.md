@@ -1,9 +1,9 @@
-In many cases, clinicians use formal, structured instruments to capture details on a patient's functioning and engagement. These include 
+In many cases, clinicians use formal, structured instruments to capture details on a patient's functioning and engagement. These include: 
 
-* long forms required by payers that cover a broad range of domains, e.g., the Centers for Medicare & Medicaid Services (CMS) [Minimum Data Set (MDS) 3.0 Resident Assessment Instrument (RAI)](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/MDS30RAIManual).
+* long forms required by payers that cover a broad range of domains, (e.g., the Centers for Medicare & Medicaid Services (CMS) [Minimum Data Set (MDS) 3.0 Resident Assessment Instrument (RAI)](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/MDS30RAIManual).)
 * shorter assessments that target specific areas such as the [Montreal Cognitive Assessment (MoCA)](https://www.mocatest.org/) or the [swallowing panel](https://loinc.org/99852-6/) that is part of the American Speech-Language-Hearing Association (ASHA) National Outcomes Measurement System (NOMS) program.
 
-The [Structured Data Capture FHIR IG](http://hl7.org/fhir/uv/sdc/) provides a methodology for capturing this information within FHIR both in its raw and its discrete structured form. This page provides guidance on how tools like the [SDC Questionnaire](https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html) and [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/StructureDefinition-us-core-questionnaireresponse.html) resources may be used with this IG.
+The [Structured Data Capture FHIR IG](http://hl7.org/fhir/uv/sdc/) provides a methodology for capturing this information within FHIR both in its raw and in its discrete structured form. This page provides guidance on how tools like the [SDC Questionnaire](https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html) and [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/StructureDefinition-us-core-questionnaireresponse.html) resources may be used with this IG.
 
 ### Codified Representation
 
@@ -63,7 +63,7 @@ Representative examples of each of these categories are provided in the followin
 
 #### Partially Codified Assessments
 
-Not all assessment tools have standardized codes for all of their questions. For example. the [MoCA](https://www.mocatest.org/) has chosen to have a coded representation for the summary score, not the individual questions, which may involve the patient drawing or performing other tasks. In cases like this, QuestionnaireResponses may not be fully mapped to structured observations, meaning that some information remains only in the QuestionnaireResponse instance, or on the paper form.
+Not all assessment tools have standardized codes for all of their questions. For example. the [MoCA](https://www.mocatest.org/) has a coded representation for the summary score, not the individual questions. In cases like this, QuestionnaireResponses may not be fully mapped to structured observations, meaning that some information remains only in the QuestionnaireResponse instance, or on the paper form.
 
 <table class="grid">
   <tr>
