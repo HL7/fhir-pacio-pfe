@@ -5,7 +5,7 @@ Profile:        PFEUseOfDevice
 Parent:         DeviceUseStatement
 Id:             pfe-use-of-device
 Title:          "Personal Functioning and Engagement Use of Device"
-Description:    "A record of an assistive device, e.g. eyeglasses or hearing aid, being used by a patient during a post-acute care observation. This profile based on the DeviceUseStatement resource provides a way to include information about device usage during an assessment."
+Description:    "A record of an assistive device (e.g., eyeglasses or hearing aid) being used by a patient during a post-acute care observation. This profile based on the DeviceUseStatement resource provides a way to include information about device usage during an assessment."
 * subject 1..1
 * subject only Reference(USCorePatient)
 * device ^short = "The description of the device that the patient used."
