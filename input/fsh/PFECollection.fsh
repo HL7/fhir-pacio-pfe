@@ -5,7 +5,7 @@ Profile:        PFECollection
 Parent:         USCoreObservationSurveyProfile
 Id:             pfe-collection
 Title:          "Personal Functioning and Engagement Collection"
-Description:    "A point in time collection of post-acute care observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen) with multiple questions."
+Description:    "A point in time collection of post-acute care observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g., assessment tool, instrument, or screen) with multiple questions."
 
 * extension contains 
 	ObservationEventLocation named event-location 0..1 MS and

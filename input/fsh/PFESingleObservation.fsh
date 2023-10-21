@@ -5,7 +5,7 @@ Profile:        PFESingleObservation
 Parent:         USCoreObservationSurveyProfile
 Id:             pfe-observation-single
 Title:          "Personal Functioning and Engagement Single Observation"
-Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging an observation for a single question generally included in a structured resource (e.g. assessment tool, instrument, or screen)."
+Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging an observation for a single question generally included in a structured resource (e.g., assessment tool, instrument, or screen)."
 
 * extension contains 
 	ObservationEventLocation named event-location 0..1 MS and

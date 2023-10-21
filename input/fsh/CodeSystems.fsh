@@ -1,7 +1,7 @@
 CodeSystem: PFEFunctioningCS
 Title: "Personal Functioning and Engagement Functioning Category Code System"
 Id: pfe-functioning-cs
-Description: "Defining a specific code for the classification of patient observations regarding individual's functioning and engagement."
+Description: "Defines a specific code for the classification of patient observations regarding individual's functioning and engagement."
 * ^caseSensitive = true
 * ^experimental = false
 * #functioning "Functioning" "Functioning is an umbrella term for body function, body structures, activities, and participation in societal roles. An individual's functioning and engagement represents a dynamic interaction between their health condition, environmental factors, and personal factors. Taking a broad view of health that encompasses physical, mental, and social well-being, includes optimizing functioning and engagement as a component of optimizing their health. Characterizing an individual's functioning and engagement includes both understanding the severity of an individual's signs, symptoms, impairments and limitations, and how they correspond with day-to-day activities. Functioning and engagement also serve as a key health outcome within health care."
@@ -9,7 +9,7 @@ Description: "Defining a specific code for the classification of patient observa
 CodeSystem: PFECategoryCS
 Title: "Personal Functioning and Engagement Category"
 Id: pfe-category-cs
-Description: "Codes representing health and health-related domains into which functioning observations can be further categorized."
+Description: "Includes codes representing health and health-related domains into which functioning observations can be further categorized."
 * ^experimental = false
 * ^caseSensitive = true
 * ^hierarchyMeaning = #is-a
