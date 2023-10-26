@@ -560,6 +560,8 @@ ValueSet: PFEProductsAndTechnologyVS
 Title: "Personal Functioning and Engagement Products and Technology Value Set"
 Description: "This value set includes LOINC codes that represent patient observations regarding the products and technology that affect their lives."
 Id: pfe-products-and-technology-vs
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * $LNC#54599-6
 * $LNC#54604-4
 * $LNC#83234-5
