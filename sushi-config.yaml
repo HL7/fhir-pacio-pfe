@@ -22,7 +22,7 @@ extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg 
     valueCode: pc
 publisher:
-  name: HL7 Patient Care Work Group
+  name: HL7 International / Patient Care
   url: http://www.hl7.org/Special/committees/patientcare
   email: patientcare@lists.HL7.org
 contact:
