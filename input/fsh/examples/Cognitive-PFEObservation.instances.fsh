@@ -16,7 +16,8 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 * performer[+] = Reference(PFEIG-Role-SLP-JennyGlass)
 * derivedFrom[+] = Reference(PFEIG-QResponse-Hospital-MOCA-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-01)
-* valueQuantity = 18 '{score}'
+* valueQuantity.value = 18 
+* valueQuantity.unit = "{score}"
 
 
 Instance: PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31
@@ -32,7 +33,8 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 * performer[+] = Reference(PFEIG-Role-SLP-JennyGlass)
 * derivedFrom[+] = Reference(PFEIG-QResponse-Hospital-MMSE-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-01)
-* valueQuantity = 20 '{score}'
+* valueQuantity.value = 20
+* valueQuantity.unit = "{score}"
 
 
 Instance: PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-1
@@ -368,7 +370,8 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 * performer[+] = Reference(PFEIG-Role-SLP-LunaBaskins)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-PHQ9-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-03)
-* valueQuantity = 3 '{score}'
+* valueQuantity.value = 3
+* valueQuantity.unit = "{score}"
 
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-29
@@ -519,4 +522,5 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 * derivedFrom[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-8)
 * derivedFrom[+] = Reference(PFEIG-CSC-SNF-BIMS-1-Ob-Question-9)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-* valueQuantity = 9 '{score}'
+* valueQuantity.value = 9
+* valueQuantity.unit = "{score}"
