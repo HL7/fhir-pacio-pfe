@@ -18,6 +18,9 @@ description: FHIR Implementation Guide to exchange assessments of and data on a 
   functioning, including body functions, activities, and participation, between 
   post-acute care (PAC) and other providers, patients, and key stakeholders
 status: draft
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg 
+    valueCode: pc
 publisher:
   name: HL7 Patient Care Work Group
   url: http://www.hl7.org/Special/committees/patientcare
