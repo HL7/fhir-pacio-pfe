@@ -80,3 +80,16 @@ This IG is divided into several sections that are listed at the top of each page
     - [Code Systems](artifacts.html#5): This section lists the code systems this IG defines.
     - [Examples](artifacts.html#6): This section lists example instances associated with this IG.
 - [Downloads](downloads.html): This page provides links to downloadable artifacts.
+
+### Globals Profiles
+{% include globals-table.xhtml %}
+ 
+### Package Dependencies
+{% include dependency-table.xhtml %}
+ 
+### Cross Version Analysis
+{% include cross-version-analysis.xhtml %}
+ 
+### Intellectual Property Considerations
+{% include ip-statements.xhtml %}
+ 
