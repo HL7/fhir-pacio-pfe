@@ -36,7 +36,7 @@ Description: "Example PFE Collection for hospital MMSE assessment"
 
 Instance: PFEIG-CSC-SNF-CAM-Admission-1
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for SNF CAM assessment"
+Description: "Example PFE Collection for SNF CAM assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -54,7 +54,7 @@ Description: "An instance of Personal Functioning and Engagement Collection for 
 
 Instance: PFEIG-CSC-SNF-PHQ9-1
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection"
+Description: "Example PFE Collection for resident mood interview"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -88,7 +88,7 @@ Description: "An instance of Personal Functioning and Engagement Collection"
 
 Instance: PFEIG-CSC-SNF-BIMS-1
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for SNF BIMS assessment"
+Description: "Example PFE Collection for SNF BIMS assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -108,7 +108,7 @@ Description: "An instance of Personal Functioning and Engagement Collection for 
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Recall
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for SNF BIMS assessment"
+Description: "Example PFE Collection for SNF BIMS assessment: recall"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -127,7 +127,7 @@ Description: "An instance of Personal Functioning and Engagement Collection for 
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Temporal
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for SNF BIMS assessment"
+Description: "Example PFE Collection for SNF BIMS assessment: temporal"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"

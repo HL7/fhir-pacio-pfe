@@ -5,7 +5,7 @@ Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: 4 steps - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -21,7 +21,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: 12 steps - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -37,7 +37,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Walking 10 feet on uneven surfaces - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -53,7 +53,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: 1 step (curb) - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -69,7 +69,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Picking up object - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -85,7 +85,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Lower body dressing - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -101,7 +101,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Walk 50 feet with two turns - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -117,7 +117,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Walk 10 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -133,7 +133,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Car transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -149,7 +149,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Toilet transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -165,7 +165,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Bed-to-chair transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -181,7 +181,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Wheel 150 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -197,7 +197,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Picking up object - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -213,7 +213,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Wheel 50 feet with two turns - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -229,7 +229,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Bed-to-chair transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -245,7 +245,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Walk 150 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -261,7 +261,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Oral hygiene - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -277,7 +277,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Sit to lying - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -293,7 +293,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Walk 50 feet with two turns - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -309,7 +309,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Eating - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -325,7 +325,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Sit to stand - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -341,7 +341,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Lying to sitting on side of bed - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -357,7 +357,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Wheel 150 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -373,7 +373,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Wheel 50 feet with two turns - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -389,7 +389,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: 12 steps - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -405,7 +405,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Walk 10 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -421,7 +421,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Roll left and right - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -437,7 +437,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Toileting hygiene - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -453,7 +453,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Roll left and right - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -469,7 +469,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Lying to sitting on side of bed - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -485,7 +485,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Shower/bathe self - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -501,7 +501,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Sit to lying - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -517,7 +517,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Walking 10 feet on uneven surfaces - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -533,7 +533,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Walk 150 feet - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -549,7 +549,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Sit to stand - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -565,7 +565,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: 4 steps - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -581,7 +581,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: 1 step (curb) - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -597,7 +597,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Toilet transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -613,7 +613,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Putting on/taking off footwear - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -629,7 +629,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Car transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -645,7 +645,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Upper body dressing - functional ability during 3 day assessment period [CMS Assessment]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
