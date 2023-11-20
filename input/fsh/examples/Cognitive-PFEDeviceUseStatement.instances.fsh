@@ -2,7 +2,7 @@
 
 Instance: PFEIG-CSC-SNF-BIMS-1-UseOfDevice-2
 InstanceOf: PFEUseOfDevice
-Description: "An instance of PFEUseOfDevice"
+Description: "Example PFE Use of Device for hearing aid"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #active
 * device = Reference(PFEIG-CMS-Device-HearingAid)
@@ -13,7 +13,7 @@ Description: "An instance of PFEUseOfDevice"
 
 Instance: PFEIG-CSC-SNF-BIMS-1-UseOfDevice-1
 InstanceOf: PFEUseOfDevice
-Description: "An instance of PFEUseOfDevice"
+Description: "Example PFE Use of Device for eyeglasses"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #active
 * device = Reference(PFEIG-CMS-Device-Eyeglasses)

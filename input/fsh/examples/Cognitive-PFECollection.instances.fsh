@@ -4,7 +4,7 @@ Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 
 Instance: PFEIG-CSC-Hospital-MOCA-1
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for hospital MOCA assessment"
+Description: "Example PFE Collection for hospital MOCA assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[survey] = OBSCAT#survey
@@ -20,7 +20,7 @@ Description: "An instance of Personal Functioning and Engagement Collection for 
 
 Instance: PFEIG-CSC-Hospital-MMSE-1
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection for hospital MMSE assessment"
+Description: "Example PFE Collection for hospital MMSE assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"

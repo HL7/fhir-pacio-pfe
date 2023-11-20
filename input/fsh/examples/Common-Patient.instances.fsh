@@ -7,7 +7,7 @@ Alias: Hl7V3ROLE = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 
 Instance: PFEIG-patientBSJ1
 InstanceOf: USCorePatientProfile
-Description: "An instance of USCorePatientProfile"
+Description: "Example US Core Patient: Betsy Smith-Johnson"
 * active = true
 
 * name.text = "Betsy Smith-Johnson"

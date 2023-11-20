@@ -1,6 +1,6 @@
 Instance: PFEIG-QResponse-Hospital-Admission-Mobility-1
 InstanceOf: USCoreQuestionnaireResponseProfile
-Description: "Minimum Data Set (MDS) admission mobility assessment"
+Description: "Example U.S. Core Questionaire Response: Minimum Data Set (MDS) admission mobility assessment"
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
@@ -67,7 +67,7 @@ Usage: #example
 
 Instance: PFEIG-QResponse-Hospital-Discharge-Mobility-1
 InstanceOf: USCoreQuestionnaireResponseProfile
-Description: "Minimum Data Set (MDS) discharge mobility assessment"
+Description: "Example U.S. Core Questionaire Response: Minimum Data Set (MDS) discharge mobility assessment"
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
@@ -133,7 +133,7 @@ Usage: #example
 * item.item.item[=].answer.valueCoding = $loinc#LA11759-0 "Substantial/maximal assistance - Helper does more than half the effort. Helper lifts or holds trunk or limbs and provides more than half the effort."
 
 Instance: PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1
-Description: "Minimum Data Set (MDS) admission self-care assessment"
+Description: "Example U.S. Core Questionaire Response: Minimum Data Set (MDS) admission self-care assessment"
 InstanceOf: USCoreQuestionnaireResponseProfile
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"

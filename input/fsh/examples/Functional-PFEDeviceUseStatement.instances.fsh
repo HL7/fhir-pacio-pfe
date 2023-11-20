@@ -2,7 +2,7 @@
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5
 InstanceOf: PFEUseOfDevice
-Description: "An instance of PFEUseOfDevice"
+Description: "Example PFE Use of Device for handle bars"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #active
 * device = Reference(PFEIG-CMS-Device-HandleBars)
@@ -13,7 +13,7 @@ Description: "An instance of PFEUseOfDevice"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4
 InstanceOf: PFEUseOfDevice
-Description: "An instance of PFEUseOfDevice"
+Description: "Example PFE Use of Device for raised toilet seat"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #active
 * device = Reference(PFEIG-CMS-Device-RaisedToiletSeat)
@@ -24,7 +24,7 @@ Description: "An instance of PFEUseOfDevice"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3
 InstanceOf: PFEUseOfDevice
-Description: "An instance of PFEUseOfDevice"
+Description: "Example PFE Use of Device for walker"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #active
 * device = Reference(PFEIG-CMS-Device-Walker)
@@ -35,7 +35,7 @@ Description: "An instance of PFEUseOfDevice"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2
 InstanceOf: PFEUseOfDevice
-Description: "An instance of PFEUseOfDevice"
+Description: "Example PFE Use of Device for rolling walker"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #active
 * device = Reference(PFEIG-CMS-Device-RollingWalker)
@@ -46,7 +46,7 @@ Description: "An instance of PFEUseOfDevice"
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1
 InstanceOf: PFEUseOfDevice
-Description: "An instance of PFEUseOfDevice"
+Description: "Example PFE Use of Device for bedside rails"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #active
 * device = Reference(PFEIG-CMS-Device-BedsideRails)
@@ -57,7 +57,7 @@ Description: "An instance of PFEUseOfDevice"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6
 InstanceOf: PFEUseOfDevice
-Description: "An instance of PFEUseOfDevice"
+Description: "Example PFE Use of Device for bedside rails"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #active
 * device = Reference(PFEIG-CMS-Device-BedsideRails)
@@ -68,7 +68,7 @@ Description: "An instance of PFEUseOfDevice"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7
 InstanceOf: PFEUseOfDevice
-Description: "An instance of PFEUseOfDevice"
+Description: "Example PFE Use of Device for walker"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #active
 * device = Reference(PFEIG-CMS-Device-Walker)

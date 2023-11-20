@@ -4,7 +4,7 @@ Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-c
 
 Instance: PFEIG-Narrative-History-Functional-Status-1
 InstanceOf: PFENarrativeHistoryOfStatus
-Description: "An instance of Personal Functioning and Engagement Narrative History of Status"
+Description: "Example PFE Narrative History of Status for mobility and self-care"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status"
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/event-location"

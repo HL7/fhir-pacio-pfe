@@ -1,6 +1,6 @@
 Instance: PFEIG-SPLASCH-Hearingtonethresh-01-Obs-L250
 InstanceOf: PFEClinicalTestObservation
-Description: "An instance of Personal Functioning and Engagement Clinical Test Observation"
+Description: "Example PFE Clinical Test Observation for sensory functions and pain"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
