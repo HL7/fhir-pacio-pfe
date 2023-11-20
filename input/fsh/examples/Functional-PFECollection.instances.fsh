@@ -5,7 +5,7 @@ Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection"
+Description: "Example PFE Collection of mobility observations for hospital discharge"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -43,7 +43,7 @@ Description: "An instance of Personal Functioning and Engagement Collection"
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection"
+Description: "Example PFE Collection of mobility observations for hospital admission"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -78,7 +78,7 @@ Description: "An instance of Personal Functioning and Engagement Collection"
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1
 InstanceOf: PFECollection
-Description: "An instance of Personal Functioning and Engagement Collection"
+Description: "Example PFE Collection of self-care observations for SNF admission"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"

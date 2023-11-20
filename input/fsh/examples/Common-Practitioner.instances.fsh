@@ -3,7 +3,7 @@ Alias: Hl7FhirAdminGender = http://hl7.org/fhir/administrative-gender
 
 Instance: PFEIG-Practitioner-ScottDumble
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Scott Dumble"
 * name.given = "Scott"
 * name.family = "Dumble"
 * name.text = "Scott Dumble"
@@ -14,7 +14,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-JohnSmith
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: John Smith"
 * name.given = "John"
 * name.family = "Smith"
 * name.text = "John Smith"
@@ -25,7 +25,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-JenCadbury
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Jen Cadbury"
 * name.given = "Jen"
 * name.family = "Cadbury"
 * name.text = "Jen Cadbury"
@@ -36,7 +36,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-NoraOlogist
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Nora Ologist"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "3668788925"
 * name.given = "Nora"
@@ -51,7 +51,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-LunaBaskins
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Luna Baskins"
 * name.given = "Luna"
 * name.family = "Baskins"
 * name.text = "Luna Baskins"
@@ -62,7 +62,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-DanielGranger
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Daniel Granger"
 * name.given = "Daniel"
 * name.family = "Granger"
 * name.text = "Daniel Granger"
@@ -73,7 +73,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-RonMarble
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Ron Marble"
 * name.given = "Ron"
 * name.family = "Marble"
 * name.text = "Ron Marble"
@@ -84,7 +84,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-SallySmith
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Sally Smith"
 * name.given = "Sally"
 * name.family = "Smith"
 * name.text = "Sally Smith"
@@ -94,7 +94,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-JennyGlass
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Jenny Glass"
 * name.given = "Jenny"
 * name.family = "Glass"
 * name.text = "Jenny Glass"
@@ -104,7 +104,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-HoneyJones
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Honey Jones"
 * name.given = "Honey"
 * name.family = "Jones"
 * name.text = "Honey Jones"
@@ -114,7 +114,7 @@ Description: "An instance of Practitioner"
 
 Instance: PFEIG-Practitioner-JillBradley
 InstanceOf: Practitioner
-Description: "An instance of Practitioner"
+Description: "Example Practitioner: Jill Bradley"
 * name.given = "Jill"
 * name.family = "Bradley"
 * name.text = "Jill Bradley"

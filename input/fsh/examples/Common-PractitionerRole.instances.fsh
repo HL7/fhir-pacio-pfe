@@ -6,7 +6,7 @@ Alias: SPECIALTY = http://nucc.org/provider-taxonomy
 
 Instance: PFEIG-Role-OT-JenCadbury
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Occupational therapist"
 * code = http://snomed.info/sct#80546007 "Occupational therapist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-JenCadbury)
@@ -17,7 +17,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-Role-PT-ScottDumble
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Physiotherapist"
 * code = http://snomed.info/sct#36682004 "Physiotherapist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-ScottDumble)
@@ -28,7 +28,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-Role-OT-DanielGranger
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Occupational therapist"
 * code = http://snomed.info/sct#80546007 "Occupational therapist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-DanielGranger)
@@ -39,7 +39,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-Role-PT-SallySmith
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Physiotherapist"
 * code = http://snomed.info/sct#36682004 "Physiotherapist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-SallySmith)
@@ -50,7 +50,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-provider-role-pcp
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Primary Care Physician"
 * code = http://nucc.org/provider-taxonomy#261QP2300X "Primary Care Clinic/Center"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-JohnSmith)
@@ -61,7 +61,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-Role-PT-RonMarble
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Physiotherapist"
 * code = http://snomed.info/sct#36682004 "Physiotherapist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-RonMarble)
@@ -71,7 +71,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-provider-role-neurologist
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Neurologist"
 * code = http://nucc.org/provider-taxonomy#2084N0400X "Neurology Physician"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-NoraOlogist)
@@ -82,7 +82,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-Role-SLP-LunaBaskins
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Speech and language therapist"
 * code = http://snomed.info/sct#159026005 "Speech and language therapist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-LunaBaskins)
@@ -93,7 +93,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-Role-SLP-HoneyJones
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Speech and language therapist"
 * code = http://snomed.info/sct#159026005 "Speech and language therapist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-HoneyJones)
@@ -102,7 +102,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-Role-Audio-JillBradley
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Audiologist"
 * code = http://snomed.info/sct#309418004 "Audiologist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-JillBradley)
@@ -111,7 +111,7 @@ Description: "An instance of PractitionerRole"
 
 Instance: PFEIG-Role-SLP-JennyGlass
 InstanceOf: PractitionerRole
-Description: "An instance of PractitionerRole"
+Description: "Example Practitioner Role: Speech and language therapist"
 * code = http://snomed.info/sct#159026005 "Speech and language therapist"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-JennyGlass)

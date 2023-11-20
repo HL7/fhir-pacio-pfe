@@ -3,7 +3,7 @@ Alias: $pfe-functioning-cs = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-fun
 
 Instance: PFEIG-Narrative-History-Cognitive-Status-1
 InstanceOf: PFENarrativeHistoryOfStatus
-Description: "An instance of Personal Functioning and Engagement Narrative History of Status"
+Description: "Example PFE Narrative History of Status: History of Cognitive Function Narrative"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status"
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/event-location"

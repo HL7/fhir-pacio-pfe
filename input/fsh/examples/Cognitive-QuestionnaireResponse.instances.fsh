@@ -1,6 +1,6 @@
 Instance: PFEIG-QResponse-Hospital-MMSE-1
 InstanceOf: USCoreQuestionnaireResponseProfile
-Description: "Mini-Mental State Examination [MMSE]"
+Description: "Example U.S. Core Questionnaire Response: Mini-Mental State Examination [MMSE]"
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
@@ -17,7 +17,7 @@ Usage: #example
 
 Instance: PFEIG-QResponse-Hospital-MOCA-1
 InstanceOf: USCoreQuestionnaireResponseProfile
-Description: "Montreal Cognitive Assessment [MoCA]"
+Description: "Example U.S. Core Questionnaire Response: Montreal Cognitive Assessment [MoCA]"
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
@@ -34,7 +34,7 @@ Usage: #example
 
 Instance: PFEIG-QResponse-SNF-BIMS-1
 InstanceOf: USCoreQuestionnaireResponseProfile
-Description: "Brief interview for mental status [BIMS]"
+Description: "Example U.S. Core Questionnaire Response: Brief interview for mental status [BIMS]"
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
@@ -78,7 +78,7 @@ Usage: #example
 
 Instance: PFEIG-QResponse-SNF-CAM-Admission-1
 InstanceOf: USCoreQuestionnaireResponseProfile
-Description: "Signs and Symptoms of Delirium (from CAM)"
+Description: "Example U.S. Core Questionnaire Response: Signs and Symptoms of Delirium (from CAM)"
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
@@ -102,7 +102,7 @@ Usage: #example
 
 Instance: PFEIG-QResponse-SNF-PHQ9-1
 InstanceOf: USCoreQuestionnaireResponseProfile
-Description: "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"
+Description: "Example U.S. Core Questionnaire Response: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"
 Usage: #example
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"

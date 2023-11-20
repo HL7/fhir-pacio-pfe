@@ -5,7 +5,7 @@ Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 
 Instance: PFEIG-Nested-Collection-Mobility
 InstanceOf: PFECollection
-Description: "An instance of a Nested Personal Functioning and Engagement Collection, ie. a Collection of Collections"
+Description: "Example Nested Personal Functioning and Engagement Collection, ie. a Collection of Collections"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
