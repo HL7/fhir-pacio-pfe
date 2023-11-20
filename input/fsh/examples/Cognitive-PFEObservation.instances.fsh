@@ -5,7 +5,7 @@ Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 
 Instance: PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Total score [MoCA]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -22,7 +22,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Total score [MMSE]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -39,7 +39,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-1
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Inattention in last 7 days [CAM.CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -55,7 +55,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-3
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Disorganized thinking in last 7 days [CAM.CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -71,7 +71,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-5
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Acute onset mental status change [CAM.CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -87,7 +87,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-11
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Feeling tired or having little energy in last 2 weeks.frequency [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -103,7 +103,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-12
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Poor appetite or overeating in last 2 weeks.presence [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -119,7 +119,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-13
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Feeling down, depressed or hopeless in last 2 weeks.frequency [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -135,7 +135,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-14
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Trouble falling or staying asleep, or sleeping too much in last 2 weeks.presence [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -151,7 +151,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-15
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Trouble falling or staying asleep, or sleeping too much in last 2 weeks.frequency [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -167,7 +167,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-16
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Feeling tired or having little energy in last 2 weeks.presence [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -183,7 +183,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-17
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Little interest or pleasure in doing things in last 2 weeks.presence [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -199,7 +199,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-18
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Little interest or pleasure in doing things in last 2 weeks.frequency [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -215,7 +215,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-19
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Feeling down, depressed or hopeless in last 2 weeks.presence [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -231,7 +231,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-20
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual in last 2 weeks.presence [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -247,7 +247,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-21
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Trouble concentrating on things, such as reading the newspaper or watching television in last 2 weeks.frequency [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -263,7 +263,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-22
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks.presence [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -279,7 +279,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-23
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual in last 2 weeks.frequency [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -295,7 +295,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-24
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Feeling bad about yourself - or that you are a failure or have let yourself or your family down in last 2 weeks.presence [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -311,7 +311,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-25
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Poor appetite or overeating in last 2 weeks.frequency [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -327,7 +327,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-26
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Trouble concentrating on things, such as reading the newspaper or watching television in last 2 weeks.presence [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -343,7 +343,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-27
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Feeling bad about yourself - or that you are a failure or have let yourself or your family down in last 2 weeks.frequency [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -359,7 +359,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-28
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Mood interview total severity score [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -376,7 +376,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-PHQ9-1-Ob-Question-29
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks.frequency [Reported PHQ-9 CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -392,7 +392,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-3
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Temporal orientation - current year [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -408,7 +408,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-4
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Recall - bed [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -424,7 +424,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-5
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Recall - blue [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -440,7 +440,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-6
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Recall - sock [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -456,7 +456,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-7
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Temporal orientation - current day of the week [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -472,7 +472,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-8
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Temporal orientation - current month [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -488,7 +488,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-9
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Repetition of three words # [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
@@ -504,7 +504,7 @@ Description: "An instance of Personal Functioning and Engagement Observation"
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-10
 InstanceOf: PFESingleObservation
-Description: "An instance of Personal Functioning and Engagement Observation"
+Description: "Example PFE Observation: Brief Interview for Mental Status - summary score [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
