@@ -13,6 +13,4 @@ The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-abstract').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
 # US Core Variance Request approved - no actual variance, extending earlier version of US Core: https://confluence.hl7.org/display/CGP/2023-06-22+Cross-Group+Project+Workgroup+Call
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-collection').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-clinicaltest').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-single').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+%US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles%
