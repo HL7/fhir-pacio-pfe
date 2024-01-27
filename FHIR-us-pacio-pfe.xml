@@ -162,6 +162,7 @@
 <artifact id="StructureDefinition/pfe-observation-clinicaltest" key="StructureDefinition-pfe-observation-clinicaltest" name="Personal Functioning and Engagement Clinical Test Observation"/>
 <artifact id="StructureDefinition/pfe-collection" key="StructureDefinition-pfe-collection" name="Personal Functioning and Engagement Collection"/>
 <artifact id="ValueSet/pfe-communication-vs" key="ValueSet-pfe-communication-vs" name="Personal Functioning and Engagement Communication Value Set"/>
+<artifact id="StructureDefinition/pfe-condition-encounter-diagnosis" key="StructureDefinition-pfe-condition-encounter-diagnosis" name="Personal Functioning and Engagement Condition Encounter Diagnosis Profile"/>
 <artifact id="StructureDefinition/pfe-condition-problems-health-concerns" key="StructureDefinition-pfe-condition-problems-health-concerns" name="Personal Functioning and Engagement Condition Problems and Health Concerns Profile"/>
 <artifact id="ValueSet/pfe-domestic-life-vs" key="ValueSet-pfe-domestic-life-vs" name="Personal Functioning and Engagement Domestic Life Value Set"/>
 <artifact id="ValueSet/pfe-example-obs-vs" key="ValueSet-pfe-example-obs-vs" name="Personal Functioning and Engagement Example Observations Value Set"/>
