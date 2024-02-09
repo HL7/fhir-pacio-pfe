@@ -11,4 +11,3 @@ Description:    "An exchange of post-acute care goal for a patient. This profile
 * achievementStatus from GoalAchievementStatus (extensible)
 
 * note MS
-* addresses MS
