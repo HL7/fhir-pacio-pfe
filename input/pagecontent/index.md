@@ -79,7 +79,7 @@ This IG is divided into several sections that are listed at the top of each page
     - [Value Sets](artifacts.html#4): This section lists the value sets this IG defines.
     - [Code Systems](artifacts.html#5): This section lists the code systems this IG defines.
     - [Examples](artifacts.html#6): This section lists example instances associated with this IG.
-- [Downloads](downloads.html): This page provides links to downloadable artifacts
+- [Downloads](downloads.html): This page provides links to downloadable artifacts.
 
 ### Globals Profiles
 {% include globals-table.xhtml %}
