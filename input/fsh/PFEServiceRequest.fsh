@@ -9,4 +9,3 @@ Description:    "An exchange of post-acute care service request for a patient. T
 
 * reasonReference MS
 * orderDetail MS
-* note MS
