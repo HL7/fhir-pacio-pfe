@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFESingleObservation
-Parent:         USCoreObservationSurveyProfile
+Parent:         USCoreSimpleObservationProfile
 Id:             pfe-observation-single
 Title:          "Personal Functioning and Engagement Single Observation"
 Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging an observation for a single question generally included in a structured resource (e.g., assessment tool, instrument, or screen)."
@@ -43,6 +43,6 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * value[x] ^short = "Whenever possible should use the CodeableConcept datatype to provide a suitable code to define the concept for the observation data. As for values like an assessment score or roll-up value, the datatype for this element should be determined by Observation.code. However, for values that are ordinal, may use the CodeableConcept datatype along with the Ordinal Value Extension."
 
 * derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."
-* derivedFrom only Reference(USCoreQuestionnaireResponse or USCoreObservationSurveyProfile)
+* derivedFrom only Reference(USCoreQuestionnaireResponse or USCoreSimpleObservationProfile)
 
 * hasMember 0..0
