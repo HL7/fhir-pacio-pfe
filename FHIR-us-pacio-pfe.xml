@@ -180,6 +180,7 @@
 <artifact id="ValueSet/pfe-mobility-vs" key="ValueSet-pfe-mobility-vs" name="Personal Functioning and Engagement Mobility Value Set"/>
 <artifact id="StructureDefinition/pfe-narrative-history-of-status" key="StructureDefinition-pfe-narrative-history-of-status" name="Personal Functioning and Engagement Narrative History of Status"/>
 <artifact id="ValueSet/pfe-neuromusculoskeletal-vs" key="ValueSet-pfe-neuromusculoskeletal-vs" name="Personal Functioning and Engagement Neuromusculoskeletal and Movement Related Functions Value Set"/>
+<artifact id="StructureDefinition/pfe-nutrition-order" key="StructureDefinition-pfe-nutrition-order" name="Personal Functioning and Engagement Nutrition Order Profile"/>
 <artifact deprecated="true" id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
 <artifact id="ValueSet/pfe-panel-vs" key="ValueSet-pfe-panel-vs" name="Personal Functioning and Engagement Panel Value Set"/>
 <artifact id="ValueSet/pfe-products-and-technology-vs" key="ValueSet-pfe-products-and-technology-vs" name="Personal Functioning and Engagement Products and Technology Value Set"/>
