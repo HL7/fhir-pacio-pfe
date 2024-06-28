@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFEClinicalTestObservation
-Parent:         USCoreObservationClinicalTestResultProfile
+Parent:         USCoreObservationClinicalResultProfile
 Id:             pfe-observation-clinicaltest
 Title:          "Personal Functioning and Engagement Clinical Test Observation"
 Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single piece of observation data that resulted from a clinical test."

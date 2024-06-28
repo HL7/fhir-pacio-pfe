@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFECollection
-Parent:         USCoreObservationSurveyProfile
+Parent:         USCoreSimpleObservationProfile
 Id:             pfe-collection
 Title:          "Personal Functioning and Engagement Collection"
 Description:    "A point in time collection of post-acute care observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g., assessment tool, instrument, or screen) with multiple questions."
@@ -49,6 +49,6 @@ Description:    "A point in time collection of post-acute care observations for 
 * hasMember MS
 * hasMember ^short = "Each post-acute care observation in the collection. May also be another collection to support nested sections."
 
-* derivedFrom only Reference(USCoreQuestionnaireResponse or USCoreObservationSurveyProfile)
+* derivedFrom only Reference(USCoreQuestionnaireResponse or USCoreSimpleObservationProfile)
 * derivedFrom MS
 * derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."

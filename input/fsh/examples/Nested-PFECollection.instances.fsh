@@ -9,7 +9,7 @@ Description: "Example Nested Personal Functioning and Engagement Collection, ie.
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[survey] = OBSCAT#survey
+* category[us-core] = OBSCAT#survey
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-d41 "Mobility"
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#88331-4 "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
