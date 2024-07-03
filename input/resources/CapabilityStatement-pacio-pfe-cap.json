@@ -1508,6 +1508,243 @@
                         "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-problems-health-concerns"
                     ],
                     "type": "Condition"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHOULD"
+                        }
+                    ],
+                    "conditionalCreate": true,
+                    "_conditionalCreate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalDelete": "multiple",
+                    "_conditionalDelete": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalUpdate": true,
+                    "_conditionalUpdate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
+                    ],
+                    "searchInclude": [
+                        "Goal.identifier",
+                        "Goal.subject",
+                        "Goal.patient",
+                        "Goal.achievementStatus",
+                        "Goal.addresses"
+                    ],
+                    "_searchInclude": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        }
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-identifier",
+                            "documentation": "Search by identifier",
+                            "name": "identifier",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-subject",
+                            "documentation": "Search by subject",
+                            "name": "subject",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "documentation": "Search by subject - a patient",
+                            "name": "patient",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-achievementStatus",
+                            "documentation": "Search by achievement status",
+                            "name": "achievementStatus",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-addresses",
+                            "documentation": "Search by addresses",
+                            "name": "addresses",
+                            "type": "reference"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-goal"
+                    ],
+                    "type": "Goal"
                 }
             ],
             "searchParam": [
