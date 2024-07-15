@@ -1,4 +1,3 @@
-/*
 Alias: $loinc = http://loinc.org
 Alias: $pfe-functioning-cs = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 
@@ -12,7 +11,7 @@ Usage: #example
 * extension[+].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/assistance-required"
 * extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
 * status = #final
-* category[functioning] = $pfe-functioning-cs#functioning "Functioning"
+* category[us-core] = USCORECAT#functional-status "Functional Status"
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * code = $loinc#11332-4 "History of Cognitive Function Narrative"
 * subject = Reference(Patient/PFEIG-patientBSJ1)
@@ -21,4 +20,3 @@ Usage: #example
 * performer = Reference(PractitionerRole/PFEIG-provider-role-pcp)
 * presentedForm.data = "UHJpb3IgdG8gdGhlIGN1cnJlbnQgYWRtaXNzaW9uLCBwYXRpZW50IHdhcyBhbGVydCBhbmQgb3JpZW50ZWQgeCAzLiBTaGUgd2FzIGluZGVwZW5kZW50IGluIGhvdXNlaG9sZCBmaW5hbmNlcywgc29jaWFsIGFuZCBjb21tdW5pdHkgYWN0aXZpdGllcywgY29laGVyZW50IGFuZCBhcHByb3ByaWF0ZSBjb21tdW5pY2F0aW9uLiBTaGUgd2FzIGFibGUgdG8gaW5kZXBlbmRlbnRseSBzZWxlY3QgYXBwcm9wcmlhdGUgYXR0aXJlIGZvciBsb2NhdGlvbiBhbmQgd2VhdGhlci4="
 * presentedForm.contentType = #text/plain
-*/

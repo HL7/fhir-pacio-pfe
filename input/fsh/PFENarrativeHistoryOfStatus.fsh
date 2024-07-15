@@ -28,10 +28,6 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 * category[us-core] from PFEUSCoreCategoryVS (required)
 * category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
 
-* category contains survey 1..1 MS
-* category[survey] from PFESurveyCategoryVS 
-* category[survey] ^requirements = "Indicates the personal functioning and engagement observation is of type survey"
-
 * category contains PFEDomain 0..* MS
 * category[PFEDomain] from PFECategoryVS (required)
 * category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
