@@ -1,3 +1,4 @@
+/*
 Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
 Alias: FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
@@ -97,3 +98,4 @@ Description: "Example PFE Collection of self-care observations for SNF admission
 * hasMember[+] = Reference(PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
+*/

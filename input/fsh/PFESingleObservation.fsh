@@ -22,8 +22,12 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * category ^slicing.rules = #open
 * category ^requirements = "To identify that observation is derived from a questionnaire, is related to personal functioning and engagement, and optionally to identify the domain(s) it falls under."
 
-* category[us-core] from OBSCAT (required)
+* category[us-core] from PFEUSCoreCategoryVS (required)
 * category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
+
+* category contains survey 1..1 MS
+* category[survey] from PFESurveyCategoryVS 
+* category[survey] ^requirements = "Indicates the personal functioning and engagement observation is of type survey"
 
 * category contains PFEDomain 0..* MS
 * category[PFEDomain] from PFECategoryVS (required)

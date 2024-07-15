@@ -1,3 +1,4 @@
+/*
 Instance: PFEIG-SPLASCH-Hearingtonethresh-01-Obs-L250
 InstanceOf: PFEClinicalTestObservation
 Description: "Example PFE Clinical Test Observation for sensory functions and pain"
@@ -9,3 +10,4 @@ Description: "Example PFE Clinical Test Observation for sensory functions and pa
 * code = http://loinc.org#91375-6 "Hearing threshold Ear - left --250 Hz"
 * performer[+] = Reference(PractitionerRole/PFEIG-Role-Audio-JillBradley)
 * valueQuantity = 45 'dB'
+*/

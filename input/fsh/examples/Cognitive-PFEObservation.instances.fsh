@@ -1,3 +1,4 @@
+/*
 Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
 Alias: FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
@@ -524,3 +525,4 @@ Description: "Example PFE Observation: Brief Interview for Mental Status - summa
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
 * valueQuantity.value = 9
 * valueQuantity.unit = "{score}"
+*/
