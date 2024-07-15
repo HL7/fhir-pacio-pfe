@@ -7,6 +7,7 @@ Alias: UOM = http://unitsofmeasure.org
 Alias: DAR = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: Hl7FhirAdminGender  = http://hl7.org/fhir/administrative-gender
 Alias: NUCC = http://nucc.org/provider-taxonomy
+Alias: USCORECAT = http://hl7.org/fhir/us/core/CodeSystem/us-core-category
 
 // Value Sets
 // NOTE: use a value set (not code system) when binding a field

@@ -19,7 +19,7 @@
 <artifact deprecated="true" id="Observation/PFEIG-CSC-Hospital-MMSE-1" key="Observation-PFEIG-CSC-Hospital-MMSE-1" name="PFEIG-CSC-Hospital-MMSE-1"/>
 <artifact deprecated="true" id="Observation/PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31" key="Observation-PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31" name="PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31"/>
 <artifact deprecated="true" id="Observation/PFEIG-CSC-Hospital-MOCA-1" key="Observation-PFEIG-CSC-Hospital-MOCA-1" name="PFEIG-CSC-Hospital-MOCA-1"/>
-<artifact deprecated="true" id="Observation/PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1" key="Observation-PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1" name="PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1"/>
+<artifact id="Observation/PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1" key="Observation-PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1" name="PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1"/>
 <artifact deprecated="true" id="Observation/PFEIG-CSC-SNF-BIMS-1" key="Observation-PFEIG-CSC-SNF-BIMS-1" name="PFEIG-CSC-SNF-BIMS-1"/>
 <artifact deprecated="true" id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-10" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-10" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-10"/>
 <artifact deprecated="true" id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-3" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-3" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-3"/>

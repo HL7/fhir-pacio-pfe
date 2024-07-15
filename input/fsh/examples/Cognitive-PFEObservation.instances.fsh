@@ -1,4 +1,4 @@
-/*
+
 Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
 Alias: FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
@@ -9,9 +9,9 @@ InstanceOf: PFESingleObservation
 Description: "Example PFE Observation: Total score [MoCA]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
+* category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
-* category[us-core] = OBSCAT#survey
+* category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72172-0 "Total score [MoCA]"
 * performer[+] = Reference(PFEIG-Role-SLP-JennyGlass)
@@ -20,6 +20,7 @@ Description: "Example PFE Observation: Total score [MoCA]"
 * valueQuantity.value = 18 
 * valueQuantity.unit = "{score}"
 
+/*
 
 Instance: PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31
 InstanceOf: PFESingleObservation
