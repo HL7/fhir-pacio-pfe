@@ -109,7 +109,7 @@
 <artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3"/>
 <artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7"/>
 <artifact id="DiagnosticReport/PFEIG-Narrative-History-Cognitive-Status-1" key="Observation-PFEIG-Narrative-History-Cognitive-Status-1" name="PFEIG-Narrative-History-Cognitive-Status-1"/>
-<artifact id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
+<artifact deprecated="true" id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
 <artifact id="Observation/PFEIG-Nested-Collection-Mobility" key="Observation-PFEIG-Nested-Collection-Mobility" name="PFEIG-Nested-Collection-Mobility"/>
 <artifact id="Organization/PFEIG-Org-01" key="Organization-PFEIG-Org-01" name="PFEIG-Org-01"/>
 <artifact id="Organization/PFEIG-Org-02" key="Organization-PFEIG-Org-02" name="PFEIG-Org-02"/>
@@ -190,6 +190,8 @@
 <artifact id="StructureDefinition/pfe-service-request" key="StructureDefinition-pfe-service-request" name="Personal Functioning and Engagement Service Request Profile"/>
 <artifact id="StructureDefinition/pfe-observation-single" key="StructureDefinition-pfe-observation-single" name="Personal Functioning and Engagement Single Observation"/>
 <artifact id="ValueSet/pfe-structures-voice-and-speech-vs" key="ValueSet-pfe-structures-voice-and-speech-vs" name="Personal Functioning and Engagement Structures Involved in Voice and Speech Value Set"/>
+<artifact id="ValueSet/pfe-survey-category-vs" key="ValueSet-pfe-survey-category-vs" name="Personal Functioning and Engagement Survey Value Set"/>
+<artifact id="ValueSet/pfe-us-core-category-vs" key="ValueSet-pfe-us-core-category-vs" name="Personal Functioning and Engagement US Core Value Set"/>
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
 <artifact deprecated="true" id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
 <artifact id="ValueSet/pfe-voice-and-speech-vs" key="ValueSet-pfe-voice-and-speech-vs" name="Personal Functioning and Engagement Voice and Speech Functions Value Set"/>

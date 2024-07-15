@@ -24,9 +24,9 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 * category ^slicing.rules = #open
 * category ^requirements = "To identify that this narrative note is related to personal functioning and engagement and optionally to identify the domain(s) it falls under. These narratives are not expected to have a US Core DiagnosticReport Category."
 
-* category contains functioning 1..1 MS
-* category[functioning] = PFEFunctioningCS#functioning "Functioning"
-* category[functioning] ^requirements = "Used to identify that this is an observation related to personal functioning and engagement."
+* category[us-core] 1..2 MS
+* category[us-core] from PFEUSCoreCategoryVS (required)
+* category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
 
 * category contains PFEDomain 0..* MS
 * category[PFEDomain] from PFECategoryVS (required)

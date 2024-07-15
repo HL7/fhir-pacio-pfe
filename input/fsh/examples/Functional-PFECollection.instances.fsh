@@ -8,8 +8,8 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection of mobility observations for hospital discharge"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[us-core] = OBSCAT#survey
+* category[us-core] = USCORECAT#functional-status "Functional Status"
+* category[survey] = OBSCAT#survey
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-d41 "Mobility"
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#88331-4 "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
@@ -46,8 +46,8 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection of mobility observations for hospital admission"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[us-core] = OBSCAT#survey
+* category[us-core] = USCORECAT#functional-status "Functional Status"
+* category[survey] = OBSCAT#survey
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-d41 "Mobility"
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#88330-6 "Mobility - admission performance during 3 day assessment period [CMS Assessment]"
@@ -81,8 +81,8 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection of self-care observations for SNF admission"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[functioning] = FUNCTIONINGCAT#functioning "Functioning"
-* category[us-core] = OBSCAT#survey
+* category[us-core] = USCORECAT#functional-status "Functional Status"
+* category[survey] = OBSCAT#survey
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-d51 "Self-care"
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83233-7 "Self-care - admission performance [CMS Assessment]"

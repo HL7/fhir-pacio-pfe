@@ -2,6 +2,7 @@ Alias: $loinc = http://loinc.org
 Alias: $pfe-functioning-cs = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
 
+/*
 Instance: PFEIG-Narrative-History-Functional-Status-1
 InstanceOf: PFENarrativeHistoryOfStatus
 Description: "Example PFE Narrative History of Status for mobility and self-care"
@@ -22,3 +23,4 @@ Usage: #example
 * performer = Reference(PractitionerRole/PFEIG-provider-role-pcp)
 * presentedForm.data = "UHJpb3IgdG8gdGhlIGN1cnJlbnQgYWRtaXNzaW9uLCBwYXRpZW50IHdhcyBhIGNvbW11bml0eSBhbWJ1bGF0b3IsIGFibGUgdG8gYXR0ZW5kIGRlc2lyZWQgYWN0aXZpdGVzIGFuZCBjYXJlIGZvciBoZXJzZWxmIGluZGVwZW5kZW50bHku"
 * presentedForm.contentType = #text/plain
+*/

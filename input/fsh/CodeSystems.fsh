@@ -1,3 +1,6 @@
+
+
+//only used in PFE Abstract Observation, which may be no longer applicable
 CodeSystem: PFEFunctioningCS
 Title: "Personal Functioning and Engagement Functioning Category Code System"
 Id: pfe-functioning-cs
