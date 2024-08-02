@@ -8,7 +8,7 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection for hospital MOCA assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[survey] = OBSCAT#survey
+* category[survey] = OBSCAT#survey "Survey"
 * category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
@@ -25,7 +25,7 @@ Description: "Example PFE Collection for hospital MMSE assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
-* category[survey] = OBSCAT#survey
+* category[survey] = OBSCAT#survey "Survey"
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72107-6 "Mini-Mental State Examination [MMSE]"
@@ -44,8 +44,8 @@ Description: "Example PFE Collection for SNF CAM assessment"
 * category[survey] = OBSCAT#survey
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
-* code = http://loinc.org#86585-7 "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) [CMS Assessment]"
-* code.text = "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) [CMS Assessment]"
+* code = http://loinc.org#86585-7 "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]"
+* code.text = "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]"
 * performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
 * hasMember[+] = Reference(PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-1)
 * hasMember[+] = Reference(PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-3)
