@@ -1,7 +1,7 @@
 Instance: Condition-recordedDate
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/Condition-recordedDate.json"
+* url = "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/Condition-recordedDate"
 * version = "1.9.1"
 * name = "ConditionRecordedDateSearchParameter"
 * status = #active

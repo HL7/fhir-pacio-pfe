@@ -1,7 +1,7 @@
 Instance: NutritionOrder-orderer
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/NutritionOrder-orderer.json"
+* url = "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/NutritionOrder-orderer"
 * version = "1.9.1"
 * name = "NutritionOrderOrdererSearchParameter"
 * status = #active

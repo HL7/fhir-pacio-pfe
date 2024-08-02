@@ -1,7 +1,7 @@
 Instance: ServiceRequest-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/ServiceRequest-identifier.json"
+* url = "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/ServiceRequest-identifier"
 * version = "1.9.1"
 * name = "ServiceRequestIdentifierSearchParameter"
 * status = #active

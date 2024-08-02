@@ -1,7 +1,7 @@
 Instance: Condition-bodySite
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/Condition-bodySite.json"
+* url = "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/Condition-bodySite"
 * version = "1.9.1"
 * name = "ConditionBodySiteSearchParameter"
 * status = #active

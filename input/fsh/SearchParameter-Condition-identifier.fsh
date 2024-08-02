@@ -1,7 +1,7 @@
 Instance: Condition-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/Condition-identifier.json"
+* url = "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/Condition-identifier"
 * version = "1.9.1"
 * name = "ConditionIdentifierSearchParameter"
 * status = #active

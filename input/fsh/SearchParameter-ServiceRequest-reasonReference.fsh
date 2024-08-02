@@ -1,7 +1,7 @@
 Instance: ServiceRequest-reasonReference
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://build.fhir.org/ig/HL7/fhir-pacio-pfe/ServiceRequest-reasonReference.json"
+* url = "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/ServiceRequest-reasonReference"
 * version = "1.9.1"
 * name = "ServiceRequestReasonReferenceSearchParameter"
 * status = #active
