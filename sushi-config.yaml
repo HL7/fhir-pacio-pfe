@@ -11,13 +11,13 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.pacio-pfe
 canonical: http://hl7.org/fhir/us/pacio-pfe
-version: 2.0.0
+version: 2.0.0-ballot
 name: PACIOPersonalFunctioningAndEngagementImplementationGuide
 title: PACIO Personal Functioning and Engagement Implementation Guide
 description: FHIR Implementation Guide to exchange assessments of and data on a person's
   functioning, including body functions, activities, and participation, between 
   post-acute care (PAC) and other providers, patients, and key stakeholders
-status: draft
+status: ballot
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg 
     valueCode: pc
@@ -42,7 +42,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
 copyrightYear: 2022+
-releaseLabel: STU1
+releaseLabel: 2024Sep
 jurisdiction: urn:iso:std:iso:3166#US
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
