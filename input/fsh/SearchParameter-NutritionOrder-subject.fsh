@@ -13,7 +13,7 @@ Usage: #definition
 * code = #name
 * base = #NutritionOrder
 * type = #string
-* expression = "NutritionOrder.subject"
+* expression = "NutritionOrder.patient"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = true
