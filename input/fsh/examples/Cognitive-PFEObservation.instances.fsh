@@ -27,7 +27,7 @@ Description: "Example PFE Observation: Total score [MMSE]"
 * status = #final
 * category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
-* category[survey] = OBSCAT#survey
+* category[survey] = OBSCAT#survey "Survey"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72106-8 "Total score [MMSE]"
 * performer[+] = Reference(PFEIG-Role-SLP-JennyGlass)
@@ -413,13 +413,13 @@ Description: "Example PFE Observation: Recall - bed [BIMS]"
 * status = #final
 * category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
-* category[survey] = OBSCAT#survey
+* category[survey] = OBSCAT#survey 
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52737-4 "Recall - bed [BIMS]"
 * performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-BIMS-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-* valueCodeableConcept = http://loinc.org#LA10125-5 "Yes, after cueing (\"a piece of furniture\")"
+// * valueCodeableConcept = http://loinc.org#LA10125-5 "Yes, after cueing \(\"a piece of furniture\"\)"
 
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-5
@@ -435,7 +435,7 @@ Description: "Example PFE Observation: Recall - blue [BIMS]"
 * performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-BIMS-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-* valueCodeableConcept = http://loinc.org#LA10978-7 "Yes, after cueing (\"a color\")"
+// * valueCodeableConcept = http://loinc.org#LA10978-7 "Yes, after cueing (\"a color\")"
 
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-6
@@ -451,7 +451,7 @@ Description: "Example PFE Observation: Recall - sock [BIMS]"
 * performer[+] = Reference(PFEIG-Role-SLP-HoneyJones)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-BIMS-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-* valueCodeableConcept = http://loinc.org#LA10126-3 "Yes, after cueing (\"something to wear\")"
+// * valueCodeableConcept = http://loinc.org#LA10126-3 "Yes, after cueing (\"something to wear\")"
 
 
 Instance: PFEIG-CSC-SNF-BIMS-1-Ob-Question-7

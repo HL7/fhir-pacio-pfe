@@ -1,12 +1,12 @@
 {
     "package-id" : "hl7.fhir.us.pacio-pfe",
-    "version" : "1.0.0",
+    "version" : "2.0.0",
     "path" : "http://hl7.org/fhir/us/pacio-pfe/STU1",
     "status" : "trial-use",
-    "sequence" : "STU 1",
+    "sequence" : "STU 2",
     "milestone": true,
-    "desc" : "STU1 Release",
-    "descmd" : "STU1 Release",
+    "desc" : "STU2 Release",
+    "descmd" : "STU2 Release",
     "changes" : "change_log.html",
     "mode" : "milestone"
   }
