@@ -2380,7 +2380,7 @@
     ],
     "status": "draft",
     "title": "Personal Functioning and Engagement Capability Statement",
-    "url": "http://hl7.org/fhir/us/pacio-pfe/CapabilityStatement/pacio-pfe-cap|2.0.0",
+    "url": "http://hl7.org/fhir/us/pacio-pfe/CapabilityStatement/pacio-pfe-cap",
     "version": "1.0.0-ballot",
     "resourceType": "CapabilityStatement"
   }
