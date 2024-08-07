@@ -26,6 +26,7 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 	survey 0..1 MS and 
 	PFEDomain 0..* MS
 
+* category[us-core] from PFEUSCoreCategoryVS
 
 * category[survey] from PFESurveyCategoryVS 
 * category[survey] ^requirements = "Indicates the personal functioning and engagement observation is of type survey"
