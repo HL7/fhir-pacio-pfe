@@ -17,7 +17,7 @@ title: PACIO Personal Functioning and Engagement Implementation Guide
 description: FHIR Implementation Guide to exchange assessments of and data on a person's
   functioning, including body functions, activities, and participation, between 
   post-acute care (PAC) and other providers, patients, and key stakeholders
-status: ballot
+status: active
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg 
     valueCode: pc
@@ -42,7 +42,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
 copyrightYear: 2022+
-releaseLabel: 2024Sep
+releaseLabel: STU2 ballot
 jurisdiction: urn:iso:std:iso:3166#US
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
