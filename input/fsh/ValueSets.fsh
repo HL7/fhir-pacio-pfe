@@ -3,15 +3,15 @@ Title: "Personal Functioning and Engagement US Core Value Set"
 Id: pfe-us-core-category-vs
 Description: "Subset of the us core categories to identify the type of PFE observation"
 * ^experimental = false
-* SIMPLEOBSCAT#functional-status "Functional Status"
-* SIMPLEOBSCAT#cognitive-status "Cognitive Status"
+* USCORECAT#functional-status "Functional Status"
+* USCORECAT#cognitive-status "Cognitive Status"
 
 ValueSet: PFESurveyCategoryVS
 Title: "Personal Functioning and Engagement Survey Value Set"
 Id: pfe-survey-category-vs
 Description: "Used to indicate that all PFE observations of of type Survey"
 * ^experimental = false
-* SIMPLEOBSCAT#survey "Survey"
+* OBSCAT#survey "Survey"
 
 ValueSet: PFECategoryVS
 Title: "Personal Functioning and Engagement Category Value Set"

@@ -13,7 +13,7 @@ Usage: #example
 * item.text = "Mini-Mental State Examination [MMSE]"
 * item.item.linkId = "MMSE/ToTalScore"
 * item.item.text = "MMSE Total Score"
-* item.item.answer.valueQuantity = 20 '{score}'
+* item.item.answer.valueInteger = 20
 
 Instance: PFEIG-QResponse-Hospital-MOCA-1
 InstanceOf: USCoreQuestionnaireResponseProfile
@@ -30,7 +30,7 @@ Usage: #example
 * item.text = "Montreal Cognitive Assessment [MoCA]"
 * item.item.linkId = "MoCA/TotalScore"
 * item.item.text = "Total score [MoCA]"
-* item.item.answer.valueQuantity = 18 '{score}'
+* item.item.answer.valueInteger = 18
 
 Instance: PFEIG-QResponse-SNF-BIMS-1
 InstanceOf: USCoreQuestionnaireResponseProfile
@@ -74,7 +74,7 @@ Usage: #example
 // * item.item.item[=].item[=].answer.valueCoding = $loinc#LA10125-5 "Yes, after cueing (\"a piece of furniture\")"
 * item.item.item[+].linkId = "Section-3/C0500"
 * item.item.item[=].text = "BIMS Summary Score"
-* item.item.item[=].answer.valueQuantity = 9 '{score}'
+* item.item.item[=].answer.valueInteger = 9
 
 Instance: PFEIG-QResponse-SNF-CAM-Admission-1
 InstanceOf: USCoreQuestionnaireResponseProfile
@@ -174,5 +174,5 @@ Usage: #example
 * item.item[=].item[=].item[=].text = "Thoughts that you would be better off dead"
 * item.item[+].linkId = "Section-4/D0300"
 * item.item[=].text = "PHQ-9 Total Score"
-* item.item[=].answer.valueQuantity = 3 '{score}'
+* item.item[=].answer.valueInteger = 3
 
