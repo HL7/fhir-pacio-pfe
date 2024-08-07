@@ -38,3 +38,11 @@ Description: "Example Location: San Antonio General Hospital"
 * name = "San Antonio General Hospital"
 * address.text = "26022 Meadowlark Bay, San Antonio, TX 78260"
 * status = #active
+
+
+Instance: PFEIG-Org-Loc-Primary-Care-Michigan
+InstanceOf: Location
+Description: "Example Location: Michigan Primary Health Care Associates"
+* name = "Michigan Primary Health Care Associates"
+* address.text = "123 Spruce Dr. Grand Rapids, MI 49503"
+* status = #active

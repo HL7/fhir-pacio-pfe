@@ -28,3 +28,10 @@ Instance: PFEIG-Org-02
 InstanceOf: Organization
 Description: "Example Organization: Happy Nursing Facility"
 * name = "Happy Nursing Facility"
+
+
+Instance: PFEIG-Org-Primary-Care-Michigan
+InstanceOf: Organization
+Description: "Example Organization: Michigan Primary Health Care Associates"
+Usage: #example
+* name = "Michigan Primary Health Care Associates"

@@ -92,6 +92,7 @@ Description: "Example Practitioner: Sally Smith"
 * gender = Hl7FhirAdminGender#female
 * telecom.system = #phone
 
+
 Instance: PFEIG-Practitioner-JennyGlass
 InstanceOf: Practitioner
 Description: "Example Practitioner: Jenny Glass"
@@ -101,6 +102,7 @@ Description: "Example Practitioner: Jenny Glass"
 * active = true
 * gender = Hl7FhirAdminGender#female
 * telecom.system = #phone
+
 
 Instance: PFEIG-Practitioner-HoneyJones
 InstanceOf: Practitioner
@@ -112,11 +114,32 @@ Description: "Example Practitioner: Honey Jones"
 * gender = Hl7FhirAdminGender#female
 * telecom.system = #phone
 
+
 Instance: PFEIG-Practitioner-JillBradley
 InstanceOf: Practitioner
 Description: "Example Practitioner: Jill Bradley"
 * name.given = "Jill"
 * name.family = "Bradley"
 * name.text = "Jill Bradley"
+* active = true
+* gender = Hl7FhirAdminGender#female
+
+
+Instance: PFEIG-Practioner-GeraldPark
+InstanceOf: Practitioner
+Description: "Example Practitioner: Gerald Park"
+* name.given = "Gerald"
+* name.family = "Park"
+* name.text = "Gerald Park"
+* active = true
+* gender = Hl7FhirAdminGender#male
+
+
+Instance: PFEIG-Practitioner-AnitaChu
+InstanceOf: Practitioner
+Description: "Example Practitioner: Anita Chu"
+* name.given = "Anita"
+* name.family = "Chu"
+* name.text = "Anita Chu"
 * active = true
 * gender = Hl7FhirAdminGender#female
