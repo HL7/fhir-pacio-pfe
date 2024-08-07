@@ -1,6 +1,7 @@
 Alias: NUCC = http://nucc.org/provider-taxonomy
 Alias: PRO-ROLE = http://nucc.org/provider-taxonomy
 Alias: SPECIALTY = http://nucc.org/provider-taxonomy
+Alias: $taxonomy = https://taxonomy.nucc.org/
 
 
 
@@ -69,6 +70,7 @@ Description: "Example Practitioner Role: Physiotherapist"
 * location = Reference(PFEIG-Org-Loc-01)
 
 
+
 Instance: PFEIG-provider-role-neurologist
 InstanceOf: PractitionerRole
 Description: "Example Practitioner Role: Neurologist"
@@ -100,6 +102,8 @@ Description: "Example Practitioner Role: Speech and language therapist"
 * organization = Reference(PFEIG-Org-02)
 * location = Reference(PFEIG-Org-Loc-02)
 
+
+
 Instance: PFEIG-Role-Audio-JillBradley
 InstanceOf: PractitionerRole
 Description: "Example Practitioner Role: Audiologist"
@@ -118,5 +122,26 @@ Description: "Example Practitioner Role: Speech and language therapist"
 * organization = Reference(PFEIG-Org-01)
 * location = Reference(PFEIG-Org-Loc-01)
 
+
+
+Instance: PFEIG-Role-SNFDoc-GeraldPark
+InstanceOf: PractitionerRole
+Description: "Example Practitioner Role: Geriatric Medicine Physician"
+* active = true
+* code = $taxonomy#207QG0300X "Geriatric Medicine Physician"
+* practitioner = Reference(PFEIG-Practioner-GeraldPark) "Gerald Park"
+* organization = Reference(PFEIG-Org-02) "Happy Nursing Facility"
+* location = Reference(PFEIG-Org-Loc-02)
+
+
+
+Instance: PFEIG-Role-IMMD-AnitaChu
+InstanceOf: PractitionerRole
+Description: "Example Practitioner Role: Internal Medicine Physician"
+* active = true
+* code = $taxonomy#207R00000X "Internal Medicine Physician"
+* practitioner = Reference(PFEIG-Practitioner-AnitaChu) "Dr. Anita Chu"
+* organization = Reference(PFEIG-Org-Primary-Care-Michigan) "Michigan Primary Health Care Associates"
+* location = Reference(PFEIG-Org-Loc-Primary-Care-Michigan)
 
 
