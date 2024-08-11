@@ -9,8 +9,8 @@
 # Grahame Grieve confirmed that this information message should be suppressed. (Zulip stream: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Questionnaire.20could.20not.20be.20resolved)
 The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 
-# US Core Variance Request approved - no actual variance, abstract profile collecting additions consistent with and applied to multiple US Core Observation profiles: https://confluence.hl7.org/display/CGP/2023-06-22+Cross-Group+Project+Workgroup+Call
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-abstract').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-
 # US Core Variance Request approved - no actual variance, extending earlier version of US Core: https://confluence.hl7.org/display/CGP/2023-06-22+Cross-Group+Project+Workgroup+Call
 %US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles%
+
+# The value sets defined in this IG are still experimental and not ready to go into THO
+%Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now%
