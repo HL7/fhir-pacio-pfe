@@ -11,7 +11,8 @@ Usage: #example
 * extension[+].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/assistance-required"
 * extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
 * status = #final
-* category[us-core] = USCORECAT#functional-status "Functional Status"
+* category[us-core] = $loinc#LP7839-6 "Pathology"
+//* category[us-core] = USCORECAT#functional-status "Functional Status"
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * code = $loinc#11332-4 "History of Cognitive Function Narrative"
 * subject = Reference(Patient/PFEIG-patientBSJ1)
