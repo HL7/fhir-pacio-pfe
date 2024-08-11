@@ -2,7 +2,6 @@ Alias: $loinc = http://loinc.org
 Alias: $pfe-functioning-cs = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
 
-/*
 Instance: PFEIG-Narrative-History-Functional-Status-1
 InstanceOf: PFENarrativeHistoryOfStatus
 Description: "Example PFE Narrative History of Status for mobility and self-care"
@@ -13,7 +12,7 @@ Usage: #example
 * extension[+].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/assistance-required"
 * extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
 * status = #final
-* category[functioning] = $pfe-functioning-cs#functioning "Functioning"
+* category[us-core] = $loinc#LP7839-6 "Pathology"
 * category[PFEDomain][0] = PFEDOMAINCAT#BlockL2-d41 "Mobility"
 * category[PFEDomain][1] = PFEDOMAINCAT#BlockL2-d51 "Self-care"
 * code = $loinc#10158-4 "History of Functional status Narrative"
@@ -23,4 +22,3 @@ Usage: #example
 * performer = Reference(PractitionerRole/PFEIG-provider-role-pcp)
 * presentedForm.data = "UHJpb3IgdG8gdGhlIGN1cnJlbnQgYWRtaXNzaW9uLCBwYXRpZW50IHdhcyBhIGNvbW11bml0eSBhbWJ1bGF0b3IsIGFibGUgdG8gYXR0ZW5kIGRlc2lyZWQgYWN0aXZpdGVzIGFuZCBjYXJlIGZvciBoZXJzZWxmIGluZGVwZW5kZW50bHku"
 * presentedForm.contentType = #text/plain
-*/
