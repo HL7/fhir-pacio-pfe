@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFEAbstractObservation
-Parent:         Observation
+Parent:         USCoreSimpleObservationProfile
 Id:             pfe-observation-abstract
 Title:          "Personal Functioning and Engagement Abstract Observation"
 Description:    "An abstract profile representing the cross-cutting requirements for Personal Functioning and Engagement Observation instances. This profile is not intended to be used directly. Implementers should use specific profiles that layer these requirements on top of specific US Core Observation profiles."
@@ -24,16 +24,17 @@ Description:    "An abstract profile representing the cross-cutting requirements
 * category ^slicing.rules = #open
 * category ^requirements = "To identify that observation is derived from a questionnaire, is related to personal functioning and engagement, and optionally to identify the domain(s) it falls under."
 
-* category contains functioning 1..1 MS
-* category[functioning] = PFEFunctioningCS#functioning "Functioning"
-* category[functioning] ^requirements = "Used to identify that this is an observation related to personal functioning and engagement."
+* category contains
+	survey 0..1 MS and 
+	PFEDomain 0..* MS
 
-* category contains PFEDomain 0..* MS
+* category[us-core] from PFEUSCoreCategoryVS
+
+* category[survey] from PFESurveyCategoryVS 
+* category[survey] ^requirements = "Indicates the personal functioning and engagement observation is of type survey"
+
 * category[PFEDomain] from PFECategoryVS (required)
 * category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
-
-* code MS
-* code from PFEExampleObservationsVS (example)
 
 * subject 1..1 MS
 
