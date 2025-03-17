@@ -33,6 +33,8 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * effective[x] 1..1 
 * effective[x] only dateTime
 
+* method MS
+
 * performer 1..* 
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."

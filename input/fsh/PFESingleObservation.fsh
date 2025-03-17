@@ -44,6 +44,8 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
 
+* method MS
+
 * value[x] ^short = "Whenever possible should use the CodeableConcept datatype to provide a suitable code to define the concept for the observation data. As for values like an assessment score or roll-up value, the datatype for this element should be determined by Observation.code. However, for values that are ordinal, may use the CodeableConcept datatype along with the Ordinal Value Extension."
 
 * derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."
