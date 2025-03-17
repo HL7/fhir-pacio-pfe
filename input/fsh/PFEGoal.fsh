@@ -12,3 +12,4 @@ Description:    "An exchange of post-acute care goal for a patient. This profile
 
 * note MS
 * addresses MS
+* expressedBy MS
