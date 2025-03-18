@@ -1,10 +1,10 @@
-The syntax used to describe the interactions below is described [here](https://hl7.org/fhir/us/core/STU5.0.1/general-guidance.html#search-syntax).
+The syntax used to describe the interactions below is described [here](https://hl7.org/fhir/us/core/STU6.1/general-guidance.html#search-syntax).
 
 #### Mandatory Search Parameters:
 
 The following search parameters and search parameter combinations SHALL be supported:
 
-1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-category.html)** search parameters:
+1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-category.html)** search parameters:
 
     `GET [base]/Observation?patient={Type/}[id]&category={system|}[code]`
 
@@ -15,7 +15,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and a category code = `clinical-test` or `sensory_functions_and_pain` respectively ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
-1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-code.html)** search parameters:
+1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-code.html)** search parameters:
     - including optional support for *OR* search on `code` (e.g.`code={system|}[code],{system|}[code],...`)
 
     `GET [base]/Observation?patient={Type/}[id]&code={system|}[code]{,{system|}[code],...}`
@@ -27,7 +27,7 @@ The following search parameters and search parameter combinations SHALL be suppo
 
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and observation code(s).  SHOULD support search by multiple report codes. The Observation `code` parameter searches `Observation.code only. ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
-1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-category.html)** and **[`date`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-date.html)** search parameters:
+1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-category.html)** and **[`date`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-date.html)** search parameters:
     - including support for these `date` comparators: `gt,lt,ge,le`
     - including optional support for *AND* search on `date` (e.g.`date=[date]&date=[date]]&...`)
 
@@ -45,7 +45,7 @@ The following search parameters and search parameter combinations SHALL be suppo
 
 The following search parameter combinations SHOULD be supported:
 
-1. **SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-category.html)** and **[`status`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-status.html)** search parameters:
+1. **SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-category.html)** and **[`status`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-status.html)** search parameters:
     - including support for *OR* search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
 
     `GET [base]/Observation?patient={Type/}[id]&category={system|}[code]&status={system|}[code]{,{system|}[code],...}`
@@ -57,7 +57,7 @@ The following search parameter combinations SHOULD be supported:
 
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and category = `clinical-test` or `sensory_functions_and_pain` respectively and status `final` ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
-1. **SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-code.html)** and **[`date`](https://hl7.org/fhir/us/core/STU5.0.1/SearchParameter-us-core-observation-date.html)** search parameters:
+1. **SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-code.html)** and **[`date`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-date.html)** search parameters:
     - including optional support for *OR* search on `code` (e.g.`code={system|}[code],{system|}[code],...`)
     - including support for these `date` comparators: `gt,lt,ge,le`
     - including optional support for *AND* search on `date` (e.g.`date=[date]&date=[date]]&...`)
