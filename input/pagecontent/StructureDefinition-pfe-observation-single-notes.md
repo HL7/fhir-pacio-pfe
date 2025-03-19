@@ -2,7 +2,7 @@ The syntax used to describe the interactions below is described [here](https://h
 
 #### Mandatory Search Parameters:
 
-The following search parameters and search parameter combinations SHALL be supported:
+The following search parameters and search parameter combinations **SHALL** be supported:
 
 1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-category.html)** search parameters:
 
@@ -25,7 +25,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       1. GET [base]/Observation?patient=1134281&amp;code=http://loinc.org\|72133-2
       1. GET [base]/Observation?patient=1134281&amp;code=http://loinc.org\|72133-2,http://loinc.org\|72107-6,http://loinc.org\|54635-8
 
-    *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and observation code(s).  SHOULD support search by multiple report codes. The Observation `code` parameter searches `Observation.code only. ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
+    *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and observation code(s).  **SHOULD** support search by multiple report codes. The Observation `code` parameter searches `Observation.code only. ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
 1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-category.html)** and **[`date`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-date.html)** search parameters:
     - including support for these `date` comparators: `gt,lt,ge,le`
@@ -43,7 +43,7 @@ The following search parameters and search parameter combinations SHALL be suppo
 
 #### Optional Search Parameters:
 
-The following search parameter combinations SHOULD be supported:
+The following search parameter combinations **SHOULD** be supported:
 
 1. **SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-category.html)** and **[`status`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-observation-status.html)** search parameters:
     - including support for *OR* search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
@@ -68,4 +68,4 @@ The following search parameter combinations SHOULD be supported:
 
       1. GET [base]Observation?patient=555580&amp;code=http://loinc.org\|72133-2&amp;date=ge2019-01-01T00:00:00Z
 
-    *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and date and report code(s).  SHOULD support search by multiple report codes. ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token) and [how to search by date](https://hl7.org/fhir/R4/search.html#date))
+    *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and date and report code(s).  **SHOULD** support search by multiple report codes. ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token) and [how to search by date](https://hl7.org/fhir/R4/search.html#date))

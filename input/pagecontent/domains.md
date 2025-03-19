@@ -57,10 +57,10 @@ Most health observations fall into either the Body Functions or Activities and P
 
 To disambiguate categorization and to make the categorization process more easily reproducible, additional rules have been developed to augment the base ICF categorization process. These rules address some of the difficulties that arose while trying to categorize the PAC assessment items into ICF domains and provide additional clarification when more than one domain categorization could apply. 
 
-1. PAC assessment observations should be categorized into the ICF domain within the “Activities and Participation” category only when the question focuses on  a specific activity.
+1. PAC assessment observations **SHOULD** be categorized into the ICF domain within the “Activities and Participation” category only when the question focuses on  a specific activity.
     - For assessment items related to assistive devices, unless the activity the assistive device helps with is present in the question, place them into a domain related to the body function that the assistive device most supports.
-2.  PAC assessment observations that are part of a specific group of questions (e.g.,PHQ-9 or BIMS) or part of a group of questions listed all under the same header question should be categorized according to the main focus of the grouping header.
-3. All available assessment item resources, such as the question’s available responses, the question text, and the question short name, should be considered when making categorization decisions. 
+2.  PAC assessment observations that are part of a specific group of questions (e.g.,PHQ-9 or BIMS) or part of a group of questions listed all under the same header question **SHOULD** be categorized according to the main focus of the grouping header.
+3. All available assessment item resources, such as the question’s available responses, the question text, and the question short name, **SHOULD** be considered when making categorization decisions. 
 
 #### Adding New Codes
 

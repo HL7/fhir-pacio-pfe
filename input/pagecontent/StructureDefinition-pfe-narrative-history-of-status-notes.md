@@ -2,7 +2,7 @@ The syntax used to describe the interactions below is described [here](https://h
 
 #### Mandatory Search Parameters:
 
-The following search parameters and search parameter combinations SHALL be supported:
+The following search parameters and search parameter combinations **SHALL** be supported:
 
 1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-diagnosticreport-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-diagnosticreport-category.html)** search parameters:
 
@@ -24,7 +24,7 @@ The following search parameters and search parameter combinations SHALL be suppo
       1. GET [base]/DiagnosticReport?patient=1134281&amp;code=http://loinc.org\|11332-4
       1. GET [base]/DiagnosticReport?patient=1134281&amp;code=http://loinc.org\|11332-4,http://loinc.org\|10158-4
 
-    *Implementation Notes:* Fetches a bundle of all DiagnosticReport resources for the specified patient and code(s).  SHOULD support search by multiple report codes. The DiagnosticReport `code` parameter searches `DiagnosticReport.code only. ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
+    *Implementation Notes:* Fetches a bundle of all DiagnosticReport resources for the specified patient and code(s).  **SHOULD** support search by multiple report codes. The DiagnosticReport `code` parameter searches `DiagnosticReport.code only. ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
 1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-diagnosticreport-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-diagnosticreport-category.html)** and **[`date`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-diagnosticreport-date.html)** search parameters:
     - including support for these `date` comparators: `gt,lt,ge,le`
@@ -41,7 +41,7 @@ The following search parameters and search parameter combinations SHALL be suppo
 
 #### Optional Search Parameters:
 
-The following search parameter combinations SHOULD be supported:
+The following search parameter combinations **SHOULD** be supported:
 
 1. **SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-diagnosticreport-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-diagnosticreport-category.html)** and **[`status`](https://hl7.org/fhir/us/core/STU6.1/SearchParameter-us-core-diagnosticreport-status.html)** search parameters:
     - including support for *OR* search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
@@ -65,4 +65,4 @@ The following search parameter combinations SHOULD be supported:
 
       1. GET [base]DiagnosticReport?patient=555580&amp;code=http://loinc.org\|11332-4&amp;date=ge2019-01-01T00:00:00Z
 
-    *Implementation Notes:* Fetches a bundle of all DiagnosticReport resources for the specified patient and date and report code(s).  SHOULD support search by multiple report codes. ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token) and [how to search by date](https://hl7.org/fhir/R4/search.html#date))
+    *Implementation Notes:* Fetches a bundle of all DiagnosticReport resources for the specified patient and date and report code(s).  **SHOULD** support search by multiple report codes. ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token) and [how to search by date](https://hl7.org/fhir/R4/search.html#date))
