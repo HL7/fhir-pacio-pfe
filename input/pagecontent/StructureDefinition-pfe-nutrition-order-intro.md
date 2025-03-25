@@ -38,6 +38,6 @@ The scope of the Personal Functioning and Engagement Nutrition Order Profile enc
 For IV nutrition, mineral supplements, or vitamin supplements, use a the US Core IG’s Medication Request profile (US Core MedicationRequest). 
 
 #### Relationship to other resources
-This profile is derived from the FHIR R4 base Nutrition Order resource. Normally profiles in U.S. based implementation guides are derived from U.S. Core profiles, but an exception was made because no U.S. Core 6.1.0 Nutrition Order profile exists. 
+This profile is derived from the [FHIR R4 base Nutrition Order](https://hl7.org/fhir/R4/nutritionorder.html) resource. Normally profiles in U.S. based implementation guides are derived from U.S. Core profiles, but an exception was made because no U.S. Core 6.1.0 Nutrition Order profile exists. 
 
 Within the Personal Functioning and Engagement Nutrition Order Profile, Allergy Intolerance is a required data element. The Allergy Intolerance data element must be populated, even if it states that the patient has no known allergies. This is a change from the parent Nutrition Order base FHIR resource, in which Allergy Intolerance is optional. This constraint was added based on feedback from clinicians at the weekly Personal Functioning and Engagement subgroup meeting where they emphasized the importance of the Allergy Intolerance data element due to patient safety. References to encounter and orderer profiles are optional (as in the parent Nutrition Order resource) but have been elevated to Must Support. 
