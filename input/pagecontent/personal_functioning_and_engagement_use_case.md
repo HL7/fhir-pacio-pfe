@@ -11,7 +11,7 @@ The journey starts with Betsy in her home. She has a medical event that results 
 Betsy has another medical event at home and is transferred to Hospital B. Based on evaluations performed at the hospital, Betsy's doctors determine that she will need significant help to recover enough independence to return home. They recommend she transfer to a PAC skilled nursing facility (SNF). While admitted, the SNF completes Minimum Data Set (MDS) assessment instruments documenting Betsy's abilities and progress. Once sufficiently recovered, the SNF discharges Betsy and she returns home with the help of a variety of home and community-based services (HCBS). While receiving HCBS, Betsy's caregivers complete Functional Assessment Standardized Items (FASI) assessments.
 
 
-![Patient Journey](Patient_Journey.png){:style="float: none;"}
+![Patient Journey](Patient_Journey.png){:style="float: none; width: 100%;"}
 
 Figure 1: Example Post-acute Care Patient Healthcare Journey
 
