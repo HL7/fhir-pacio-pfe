@@ -1,5 +1,5 @@
 
-Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
+Alias: PFEDOMAINCAT = http://hl7.org/fhir/sid/icf
 Alias: FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 

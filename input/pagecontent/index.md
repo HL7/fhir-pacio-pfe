@@ -77,8 +77,7 @@ This IG is divided into several sections that are listed at the top of each page
     - [Profiles](artifacts.html#2): This section lists the set of Profiles defined in this IG to exchange functioning information. Each linked Profile page includes a narrative introduction and a formal definition.
     - [Extensions](artifacts.html#3): This section lists the set of Extensions defined in and used by the Profiles in this IG . Each linked Extension page includes a formal definition.
     - [Value Sets](artifacts.html#4): This section lists the value sets this IG defines.
-    - [Code Systems](artifacts.html#5): This section lists the code systems this IG defines.
-    - [Examples](artifacts.html#6): This section lists example instances associated with this IG.
+    - [Examples](artifacts.html#5): This section lists example instances associated with this IG.
 - [Downloads](downloads.html): This page provides links to downloadable artifacts.
 
 ### Globals Profiles

@@ -11,7 +11,7 @@ The following search parameters and search parameter combinations **SHALL** be s
     Example:
 
       1. GET [base]/Observation?patient=1134281&amp;category=http://terminology.hl7.org/CodeSystem/observation-category\|survey
-      1. GET [base]/Observation?patient=1134281&amp;category=http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs\|mental_functions
+      1. GET [base]/Observation?patient=1134281&amp;category=http://hl7.org/fhir/sid/icf\|mental_functions
       
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and a category code = `survey` or `mental_functions` respectively ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
@@ -36,7 +36,7 @@ The following search parameters and search parameter combinations **SHALL** be s
     Example:
 
       1. GET [base]Observation?patient=555580&amp;category=http://terminology.hl7.org/CodeSystem/observation-category\|survey&amp;date=ge2018-03-14T00:00:00Z
-      1. GET [base]Observation?patient=555580&amp;category=http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs\|mental_functions&amp;date=ge2018-03-14T00:00:00Z
+      1. GET [base]Observation?patient=555580&amp;category=http://hl7.org/fhir/sid/icf\|mental_functions&amp;date=ge2018-03-14T00:00:00Z
 
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and date and a category code = `survey` or `mental_functions` respectively ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token) and [how to search by date](https://hl7.org/fhir/R4/search.html#date))
 
@@ -53,7 +53,7 @@ The following search parameter combinations **SHOULD** be supported:
     Example:
 
       1. GET [base]/Observation?patient=1134281&amp;category=http://terminology.hl7.org/CodeSystem/observation-category\|survey&amp;status=final
-      1. GET [base]/Observation?patient=1134281&amp;category=http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs\|mental_functions&amp;status=final
+      1. GET [base]/Observation?patient=1134281&amp;category=http://hl7.org/fhir/sid/icf\|mental_functions&amp;status=final
 
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient and category = `survey` or `mental_functions` respectively and status `final` ([how to search by reference](https://hl7.org/fhir/R4/search.html#reference) and [how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
