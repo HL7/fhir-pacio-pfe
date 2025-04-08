@@ -34,6 +34,7 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * effective[x] only dateTime
 
 * method MS
+* method from SDOHCCValueSetObservationMethod (example)
 
 * performer 1..* 
 * performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)

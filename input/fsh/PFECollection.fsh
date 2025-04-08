@@ -49,6 +49,8 @@ Description:    "A point in time collection of post-acute care observations for 
 * value[x] 0..0
 * component 0..0
 
+* method from SDOHCCValueSetObservationMethod (example)
+
 * hasMember only Reference(PFESingleObservation)
 * hasMember MS
 * hasMember ^short = "Each post-acute care observation in the collection. May also be another collection to support nested sections."

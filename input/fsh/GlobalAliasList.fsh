@@ -15,6 +15,7 @@ Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: LNCVS = http://hl7.org/fhir/ValueSet/observation-codes
 Alias: CATVS = http://hl7.org/fhir/ValueSet/observation-category
 Alias: LL4309-2 = http://loinc.org/vs/LL4309-2
+Alias: SDOHCCValueSetObservationMethod = http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetObservationMethod
 
 // Misc
 Alias: EventLocation = http://hl7.org/fhir/StructureDefinition/event-location
