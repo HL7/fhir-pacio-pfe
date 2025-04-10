@@ -1,5 +1,5 @@
 Profile:        PFENarrativeHistoryOfStatus
-Parent:         USCoreDiagnosticReport
+Parent:         $USCoreDiagnosticReportProfileNoteExchange
 Id:             pfe-narrative-history-of-status
 Title:          "Personal Functioning and Engagement Narrative History of Status"
 Description:    "An exchange of a narrative summary regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the [collection](StructureDefinition-pfe-collection.html) and [single observation](StructureDefinition-pfe-observation-single.html) profiles defined in this IG to capture assessment data."
@@ -43,7 +43,7 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 * effective[x] ^condition = "us-core-10"
 
 * performer 1..*
-* performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
+* performer only Reference($USCorePractitioner or $USCorePractitionerRole or $USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
 
 * presentedForm 1..*

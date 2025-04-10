@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFESingleObservation
-Parent:         USCoreSimpleObservationProfile
+Parent:         $USCoreSimpleObservationProfile
 Id:             pfe-observation-single
 Title:          "Personal Functioning and Engagement Single Observation"
 Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging an observation for a single question generally included in a structured resource (e.g., assessment tool, instrument, or screen)."
@@ -41,15 +41,15 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * effective[x] only dateTime
 
 * performer 1..* 
-* performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
+* performer only Reference($USCorePractitioner or $USCorePractitionerRole or $USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
 
 * method MS
-* method from SDOHCCValueSetObservationMethod (example)
+* method from $SDOHCCValueSetObservationMethod (example)
 
 * value[x] ^short = "Whenever possible should use the CodeableConcept datatype to provide a suitable code to define the concept for the observation data. As for values like an assessment score or roll-up value, the datatype for this element should be determined by Observation.code. However, for values that are ordinal, may use the CodeableConcept datatype along with the Ordinal Value Extension."
 
 * derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."
-* derivedFrom only Reference(USCoreQuestionnaireResponse or USCoreSimpleObservationProfile)
+* derivedFrom only Reference($USCoreQuestionnaireResponse or $USCoreSimpleObservationProfile)
 
 * hasMember 0..0

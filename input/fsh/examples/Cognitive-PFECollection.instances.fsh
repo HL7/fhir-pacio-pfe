@@ -9,7 +9,7 @@ Description: "Example PFE Collection for hospital MOCA assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[survey] = OBSCAT#survey "Survey"
-* category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
+* category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72133-2 "Montreal Cognitive Assessment [MoCA]"
@@ -24,7 +24,7 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection for hospital MMSE assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
+* category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = OBSCAT#survey "Survey"
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
@@ -40,7 +40,7 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection for SNF CAM assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
+* category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = OBSCAT#survey
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
@@ -58,7 +58,7 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection for resident mood interview"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
+* category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = OBSCAT#survey
 * category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
@@ -92,7 +92,7 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection for SNF BIMS assessment"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
+* category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52491-8 "Brief interview for mental status [BIMS]"
@@ -112,7 +112,7 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection for SNF BIMS assessment: recall"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
+* category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52493-4 "Recall [BIMS]"
@@ -131,7 +131,7 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection for SNF BIMS assessment: temporal"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
+* category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54510-3 "Temporal orientation (orientation to year, month, and day) [BIMS]"

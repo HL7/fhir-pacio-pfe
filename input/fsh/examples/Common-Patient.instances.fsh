@@ -1,9 +1,7 @@
-Alias: Hl7FhirAdminGender = http://hl7.org/fhir/administrative-gender
-Alias: Hl7V3MS = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
-Alias: LANGVALSET = urn:ietf:bcp:47
-Alias: Hl7V2TBL0131 = http://hl7.org/fhir/v2/0131
-Alias: Hl7V3ROLE = http://terminology.hl7.org/CodeSystem/v3-RoleCode
-
+Alias: $Hl7V3MS = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
+//Alias: $LANGVALSET = urn:ietf:bcp:47
+//Alias: $Hl7V2TBL0131 = http://hl7.org/fhir/v2/0131
+//Alias: $Hl7V3ROLE = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 
 Instance: PFEIG-patientBSJ1
 InstanceOf: USCorePatientProfile
@@ -19,10 +17,10 @@ Description: "Example US Core Patient: Betsy Smith-Johnson"
 * identifier.system = "http://example.org/identifiers/patient"
 * identifier.value = "10A3D58WH1600"
 
-* gender = Hl7FhirAdminGender#female
+* gender = $Hl7FhirAdminGender#female
 
 
-* maritalStatus = Hl7V3MS#U
+* maritalStatus = $Hl7V3MS#U
 
 * telecom.system = #phone
 * telecom.value = "210-222-1111"

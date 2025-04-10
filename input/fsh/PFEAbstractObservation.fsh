@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFEAbstractObservation
-Parent:         USCoreSimpleObservationProfile
+Parent:         $USCoreSimpleObservationProfile
 Id:             pfe-observation-abstract
 Title:          "Personal Functioning and Engagement Abstract Observation"
 Description:    "An abstract profile representing the cross-cutting requirements for Personal Functioning and Engagement Observation instances. This profile is not intended to be used directly. Implementers should use specific profiles that layer these requirements on top of specific US Core Observation profiles."

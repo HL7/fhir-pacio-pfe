@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFECollection
-Parent:         USCoreSimpleObservationProfile
+Parent:         $USCoreSimpleObservationProfile
 Id:             pfe-collection
 Title:          "Personal Functioning and Engagement Collection"
 Description:    "A point in time collection of post-acute care observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g., assessment tool, instrument, or screen) with multiple questions."
@@ -44,17 +44,17 @@ Description:    "A point in time collection of post-acute care observations for 
 
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
 * performer 1..* 
-* performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
+* performer only Reference($USCorePractitioner or $USCorePractitionerRole or $USCoreOrganization)
 
 * value[x] 0..0
 * component 0..0
 
-* method from SDOHCCValueSetObservationMethod (example)
+* method from $SDOHCCValueSetObservationMethod (example)
 
 * hasMember only Reference(PFESingleObservation)
 * hasMember MS
 * hasMember ^short = "Each post-acute care observation in the collection. May also be another collection to support nested sections."
 
-* derivedFrom only Reference(USCoreQuestionnaireResponse or USCoreSimpleObservationProfile)
+* derivedFrom only Reference($USCoreQuestionnaireResponse or $USCoreSimpleObservationProfile)
 * derivedFrom MS
 * derivedFrom ^short = "Should point back to the QuestionnaireResponse that this resource is derived from."
