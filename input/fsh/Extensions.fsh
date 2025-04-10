@@ -22,3 +22,11 @@ Id: assistance-required
 * ^context.expression = "DiagnosticReport"
 * value[x] only CodeableConcept
 * value[x] from LL4309-2 (extensible)
+
+Extension: DomainCategory
+Description: "Domain used to categorize Observations to provide guidance on which Codes might be applicable"
+Id: domain-category
+* ^context.type = #element
+* ^context.expression = "Observation"
+* value[x] only CodeableConcept
+* value[x] from PFECategoryVS (required)

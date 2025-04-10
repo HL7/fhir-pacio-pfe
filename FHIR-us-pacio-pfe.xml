@@ -13,6 +13,7 @@
 <artifact id="SearchParameter/Condition-identifier" key="SearchParameter-Condition-identifier" name="Condition-identifier"/>
 <artifact id="SearchParameter/Condition-recordedDate" key="SearchParameter-Condition-recordedDate" name="Condition-recordedDate"/>
 <artifact id="StructureDefinition/device-patient-used" key="StructureDefinition-device-patient-used" name="DevicePatientUsed"/>
+<artifact id="StructureDefinition/domain-category" key="StructureDefinition-domain-category" name="DomainCategory"/>
 <artifact id="SearchParameter/Goal-achievementStatus" key="SearchParameter-Goal-achievementStatus" name="Goal-achievementStatus"/>
 <artifact id="SearchParameter/Goal-addresses" key="SearchParameter-Goal-addresses" name="Goal-addresses"/>
 <artifact id="SearchParameter/Goal-identifier" key="SearchParameter-Goal-identifier" name="Goal-identifier"/>
@@ -199,6 +200,7 @@
 <artifact id="ValueSet/pfe-body-structures-vs" key="ValueSet-pfe-body-structures-vs" name="Personal Functioning and Engagement Body Structures Value Set"/>
 <artifact id="CapabilityStatement/pacio-pfe-cap" key="CapabilityStatement-pacio-pfe-cap" name="Personal Functioning and Engagement Capability Statement"/>
 <artifact deprecated="true" id="CodeSystem/pfe-category-cs" key="CodeSystem-pfe-category-cs" name="Personal Functioning and Engagement Category"/>
+<artifact id="StructureDefinition/pfe-category-tag" key="StructureDefinition-pfe-category-tag" name="Personal Functioning and Engagement Category Tag"/>
 <artifact id="ValueSet/pfe-category-vs" key="ValueSet-pfe-category-vs" name="Personal Functioning and Engagement Category Value Set"/>
 <artifact id="StructureDefinition/pfe-observation-clinicaltest" key="StructureDefinition-pfe-observation-clinicaltest" name="Personal Functioning and Engagement Clinical Test Observation"/>
 <artifact id="StructureDefinition/pfe-collection" key="StructureDefinition-pfe-collection" name="Personal Functioning and Engagement Collection"/>
