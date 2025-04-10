@@ -1365,14 +1365,23 @@
                     "searchInclude": [
                         "Condition.identifier",
                         "Condition.subject",
+                        "Condition.patient",
                         "Condition.bodySite",
                         "Condition.asserter",
-                        "recordedDate",
-                        "code",
-                        "encounter"
+                        "Condition.recordedDate",
+                        "Condition.code",
+                        "Condition.encounter"
                 
                     ],
                     "_searchInclude": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
                         {
                             "extension": [
                                 {
@@ -1438,7 +1447,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-identifier",
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
                             "documentation": "Search by identifier",
                             "name": "identifier",
                             "type": "token"
@@ -1462,7 +1471,19 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-bodySite",
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "documentation": "Search by subject - a patient",
+                            "name": "patient",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-body-site",
                             "documentation": "Search by body site",
                             "name": "bodySite",
                             "type": "token"
@@ -1486,10 +1507,10 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-recordedDate",
+                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-recorded-date",
                             "documentation": "Search by recorded date",
                             "name": "recordedDate",
-                            "type": "token"
+                            "type": "date"
                         },
                         {
                             "extension": [
@@ -1498,7 +1519,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-code",
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
                             "documentation": "Search by code",
                             "name": "code",
                             "type": "token"
@@ -1510,7 +1531,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-encounter",
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
                             "documentation": "Search by encounter",
                             "name": "encounter",
                             "type": "reference"
@@ -1700,7 +1721,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-goal-identifier",
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
                             "documentation": "Search by identifier",
                             "name": "identifier",
                             "type": "token"
@@ -1712,7 +1733,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-goal-subject",
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-subject",
                             "documentation": "Search by subject",
                             "name": "subject",
                             "type": "reference"
@@ -1736,7 +1757,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-goal-achievementStatus",
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-achievement-status",
                             "documentation": "Search by achievement status",
                             "name": "achievementStatus",
                             "type": "token"
@@ -1748,7 +1769,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-goal-addresses",
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-addresses",
                             "documentation": "Search by addresses",
                             "name": "addresses",
                             "type": "reference"
@@ -1882,21 +1903,12 @@
                     ],
                     "searchInclude": [
                         "NutritionOrder.identifier",
-                        "NutritionOrder.subject",
                         "NutritionOrder.patient",
                         "NutritionOrder.encounter",
                         "NutritionOrder.orderer",
                         "NutritionOrder.status"
                     ],
                     "_searchInclude": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
                         {
                             "extension": [
                                 {
@@ -1946,22 +1958,10 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/NutritionOrder-identifier",
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
                             "documentation": "Search by identifier",
                             "name": "identifier",
                             "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/NutritionOrder-subject",
-                            "documentation": "Search by subject",
-                            "name": "subject",
-                            "type": "reference"
                         },
                         {
                             "extension": [
@@ -1982,7 +1982,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/NutritionOrder-encounter",
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
                             "documentation": "Search by encounter",
                             "name": "encounter",
                             "type": "reference"
@@ -2009,7 +2009,7 @@
                             "definition": "http://hl7.org/fhir/SearchParameter/NutritionOrder-status",
                             "documentation": "Search by status",
                             "name": "status",
-                            "type": "reference"
+                            "type": "token"
                         }
                     ],
                     "supportedProfile": [
@@ -2222,7 +2222,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-servicerequest-identifier",
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
                             "documentation": "Search by identifier",
                             "name": "identifier",
                             "type": "token"
@@ -2234,7 +2234,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-servicerequest-subject",
+                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-subject",
                             "documentation": "Search by subject",
                             "name": "subject",
                             "type": "reference"
@@ -2258,7 +2258,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-servicerequest-status",
+                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-status",
                             "documentation": "Search by status",
                             "name": "status",
                             "type": "token"
@@ -2270,7 +2270,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-servicerequest-code",
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
                             "documentation": "Search by code",
                             "name": "code",
                             "type": "token"
@@ -2282,7 +2282,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-servicerequest-requester",
+                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-requester",
                             "documentation": "Search by requester",
                             "name": "requester",
                             "type": "reference"
@@ -2294,7 +2294,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-servicerequest-performer",
+                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-performer",
                             "documentation": "Search by performer",
                             "name": "performer",
                             "type": "reference"
@@ -2306,7 +2306,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/us-core-servicerequest-reasonReference",
+                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-reason-reference",
                             "documentation": "Search by reason reference",
                             "name": "reason reference",
                             "type": "reference"
