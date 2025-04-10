@@ -9,8 +9,13 @@
 # Grahame Grieve confirmed that this information message should be suppressed. (Zulip stream: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Questionnaire.20could.20not.20be.20resolved)
 The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 
-# US Core Variance Request approved - no actual variance, extending earlier version of US Core: https://confluence.hl7.org/display/CGP/2023-06-22+Cross-Group+Project+Workgroup+Call
-%US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles%
+# The following code system are not discoverable because they are code systems in THO, but THO doesn't define the codes. They have been checked and the identifiers are correct
+A definition for CodeSystem 'http://hl7.org/fhir/sid/icf' could not be found, so the code cannot be validated
+Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-category-vs|2.0.0' because the code system http://hl7.org/fhir/sid/icf was not found
+A definition for CodeSystem 'http://hl7.org/fhir/sid/icf' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-category-vs|2.0.0' because the code system http://hl7.org/fhir/sid/icf was not found
 
-# The value sets defined in this IG are still experimental and not ready to go into THO
-%Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now%
+# These package versions have been carefully considered and these are the versions we would like to use
+%The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30%
+
+# type='pattern' is dictated by US Core 6.1.0 Observation profiles for category slices, so we can't use type='value'
+The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)

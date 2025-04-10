@@ -19,15 +19,18 @@ Alias: SDOHCCValueSetObservationMethod = http://hl7.org/fhir/us/sdoh-clinicalcar
 
 // Misc
 Alias: EventLocation = http://hl7.org/fhir/StructureDefinition/event-location
-Alias: USCorePatient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
-Alias: USCoreEncounter = http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
-Alias: USCoreLocation = http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
-Alias: USCorePractitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
-Alias: USCorePractitionerRole = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole
-Alias: USCoreOrganization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
-Alias: USCoreQuestionnaireResponse = http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse
-Alias: USCoreDocumentReference = http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
-Alias: USCoreDiagnosticReport = http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note
+
+// US Core
+Alias: USCorePatient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0
+Alias: USCoreEncounter = http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|6.1.0
+Alias: USCoreLocation = http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|6.1.0
+Alias: USCorePractitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
+Alias: USCorePractitionerRole = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|6.1.0
+Alias: USCoreOrganization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0
+Alias: USCoreQuestionnaireResponse = http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0
+Alias: USCoreDocumentReference = http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0
+Alias: USCoreDiagnosticReport = http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|6.1.0
+
 Alias: $us-core-diagnosticreport-category = http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category
 
 

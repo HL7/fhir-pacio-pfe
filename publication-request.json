@@ -1,12 +1,16 @@
 {
-    "package-id" : "hl7.fhir.us.pacio-pfe",
-    "version" : "2.0.0-ballot",
-    "path" : "http://hl7.org/fhir/us/pacio-pfe/2024Sep",
-    "status" : "ballot",
-    "sequence" : "STU 2",
-    "milestone": true,
-    "desc" : "Ballot version for STU2",
-    "descmd" : "Ballot version for STU2",
-    "changes" : "change_log.html",
-    "mode" : "working"
-  }
+  "package-id" : "hl7.fhir.us.pacio-pfe",
+  "version" : "2.0.0",
+  "path" : "http://hl7.org/fhir/us/pacio-pfe/STU2",
+  "status" : "trial-use",
+  "sequence" : "STU 2",
+  "milestone": true,
+  "desc" : "Personal Functioning and Engagement STU2",
+  "descmd" : "Personal Functioning and Engagement STU2",
+  "title" : "PACIO Personal Functioning and Engagement Implementation Guide",
+  "changes" : "change_log.html",
+  "mode" : "milestone",
+  "ci-build" : "https://build.fhir.org/ig/HL7/fhir-pacio-pfe",
+  "introduction" : "The Personal Functioning and Engagement (PFE) HL7® FHIR® Implementation Guide (IG) supports the exchange of information related to a person's ability to participate in activities and interact with their community and the environment around them.",
+  "category" : "Clinical Documents"
+}
