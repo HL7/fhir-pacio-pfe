@@ -239,7 +239,8 @@
 <artifact id="ValueSet/pfe-voice-and-speech-vs" key="ValueSet-pfe-voice-and-speech-vs" name="Personal Functioning and Engagement Voice and Speech Functions Value Set"/>
 <artifact deprecated="true" id="SearchParameter/ServiceRequest-code" key="SearchParameter-ServiceRequest-code" name="ServiceRequest-code"/>
 <artifact deprecated="true" id="SearchParameter/ServiceRequest-identifier" key="SearchParameter-ServiceRequest-identifier" name="ServiceRequest-identifier"/>
-<artifact id="SearchParameter/ServiceRequest-reasonReference" key="SearchParameter-ServiceRequest-reasonReference" name="ServiceRequest-reasonReference"/>
+<artifact id="SearchParameter/ServiceRequest-reason-reference" key="SearchParameter-ServiceRequest-reason-reference" name="ServiceRequest-reason-reference"/>
+<artifact deprecated="true" id="SearchParameter/ServiceRequest-reasonReference" key="SearchParameter-ServiceRequest-reasonReference" name="ServiceRequest-reasonReference"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>

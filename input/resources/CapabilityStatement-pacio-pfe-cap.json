@@ -1769,7 +1769,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-addresses",
+                            "definition": "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/Goal-addresses",
                             "documentation": "Search by addresses",
                             "name": "addresses",
                             "type": "reference"
@@ -1994,7 +1994,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/NutritionOrder-orderer",
+                            "definition": "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/NutritionOrder-orderer",
                             "documentation": "Search by orderer",
                             "name": "orderer",
                             "type": "reference"
@@ -2306,7 +2306,7 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-reason-reference",
+                            "definition": "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/ServiceRequest-reason-reference",
                             "documentation": "Search by reason reference",
                             "name": "reason reference",
                             "type": "reference"

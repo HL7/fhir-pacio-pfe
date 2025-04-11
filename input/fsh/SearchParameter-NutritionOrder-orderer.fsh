@@ -12,7 +12,7 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * code = #name
 * base = #NutritionOrder
-* type = #string
+* type = #reference
 * expression = "NutritionOrder.orderer"
 * xpathUsage = #normal
 * multipleOr = true
