@@ -9,7 +9,8 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 
 * extension contains 
 	ObservationEventLocation named event-location 0..1 MS and
-	DevicePatientUsed named device-use 0..* MS
+	DevicePatientUsed named device-use 0..* MS and
+	DomainCategory named domain-category 0..* MS
 * extension[event-location] ^short = "An extension to indicate where the observation event occurred."
 * extension[event-location] ^definition = "The principal physical location where the observation event occurred."
 * extension[device-use] ^short = "An extension to indicate a record of assistive device usage by a patient during an assessment."

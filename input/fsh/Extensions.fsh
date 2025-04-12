@@ -28,5 +28,4 @@ Description: "Domain used to categorize Observations to provide guidance on whic
 Id: domain-category
 * ^context.type = #element
 * ^context.expression = "Observation"
-* value[x] only CodeableConcept
-* value[x] from PFECategoryVS (required)
+* value[x] only Reference(PFECategoryTag)
