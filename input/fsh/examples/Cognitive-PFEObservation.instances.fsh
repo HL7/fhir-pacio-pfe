@@ -10,13 +10,13 @@ Description: "Example PFE Observation: Total score [MoCA]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = USCORECAT#cognitive-status "Cognitive Status"
-* category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = OBSCAT#survey
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72172-0 "Total score [MoCA]"
 * performer[+] = Reference(PFEIG-Role-SLP-JennyGlass)
 * derivedFrom[+] = Reference(PFEIG-QResponse-Hospital-MOCA-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-01)
+* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
 * valueQuantity.value = 18 
 * valueQuantity.unit = "{score}"
 

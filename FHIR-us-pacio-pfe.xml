@@ -8,12 +8,13 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/assistance-required" key="StructureDefinition-assistance-required" name="AssistanceRequired"/>
+<artifact id="Basic/BlockL2-b11-Mental-Functions" key="Basic-BlockL2-b11-Mental-Functions" name="BlockL2-b11-Mental-Functions"/>
+<artifact id="StructureDefinition/category-tag" key="StructureDefinition-category-tag" name="CategoryTag"/>
 <artifact id="SearchParameter/Condition-bodySite" key="SearchParameter-Condition-bodySite" name="Condition-bodySite"/>
 <artifact id="SearchParameter/Condition-code" key="SearchParameter-Condition-code" name="Condition-code"/>
 <artifact id="SearchParameter/Condition-identifier" key="SearchParameter-Condition-identifier" name="Condition-identifier"/>
 <artifact id="SearchParameter/Condition-recordedDate" key="SearchParameter-Condition-recordedDate" name="Condition-recordedDate"/>
 <artifact id="StructureDefinition/device-patient-used" key="StructureDefinition-device-patient-used" name="DevicePatientUsed"/>
-<artifact id="StructureDefinition/domain-category" key="StructureDefinition-domain-category" name="DomainCategory"/>
 <artifact id="SearchParameter/Goal-achievementStatus" key="SearchParameter-Goal-achievementStatus" name="Goal-achievementStatus"/>
 <artifact id="SearchParameter/Goal-addresses" key="SearchParameter-Goal-addresses" name="Goal-addresses"/>
 <artifact id="SearchParameter/Goal-identifier" key="SearchParameter-Goal-identifier" name="Goal-identifier"/>

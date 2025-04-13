@@ -23,9 +23,10 @@ Id: assistance-required
 * value[x] only CodeableConcept
 * value[x] from LL4309-2 (extensible)
 
-Extension: DomainCategory
-Description: "Domain used to categorize Observations to provide guidance on which Codes might be applicable"
-Id: domain-category
+Extension: CategoryTag
+Description: "Reference to an instance of PFECategoryTag that can be used to categorize Observations to provide guidance on which Codes might be applicable"
+Id: category-tag
 * ^context.type = #element
 * ^context.expression = "Observation"
 * value[x] only Reference(PFECategoryTag)
+
