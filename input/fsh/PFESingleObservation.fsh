@@ -14,6 +14,7 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * extension[event-location] ^short = "An extension to indicate where the observation event occurred."
 * extension[event-location] ^definition = "The principal physical location where the observation event occurred."
 * extension[device-use] ^short = "An extension to indicate a record of assistive device usage by a patient during an assessment."
+* extension[category-tag] ^short = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
 * status ^short = "Should have the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used."
 
@@ -23,17 +24,12 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * category ^slicing.rules = #open
 * category ^requirements = "To identify that observation is derived from a questionnaire, is related to personal functioning and engagement, and optionally to identify the domain(s) it falls under."
 
-* category contains
-	survey 0..1 MS and 
-	PFEDomain 0..* MS
+* category contains survey 0..1 MS 
 
 * category[us-core] from PFEUSCoreCategoryVS
 
 * category[survey] from PFESurveyCategoryVS 
 * category[survey] ^requirements = "Indicates the personal functioning and engagement observation is of type survey"
-
-* category[PFEDomain] from PFECategoryVS (required)
-* category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
 * code ^short = "For PFE Assessments, should include a LOINC code and text for the question or concept name."
 * category ^requirements = "This code should be included in the Value Set associated with the selected PFE category ICF domain for this observation."
