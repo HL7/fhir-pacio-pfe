@@ -9,6 +9,9 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/assistance-required" key="StructureDefinition-assistance-required" name="AssistanceRequired"/>
 <artifact id="Basic/BlockL2-b11-Mental-Functions" key="Basic-BlockL2-b11-Mental-Functions" name="BlockL2-b11-Mental-Functions"/>
+<artifact id="Basic/BlockL2-b21-Sensory-Functions-and-Pain" key="Basic-BlockL2-b21-Sensory-Functions-and-Pain" name="BlockL2-b21-Sensory-Functions-and-Pain"/>
+<artifact id="Basic/BlockL2-d41-Mobility" key="Basic-BlockL2-d41-Mobility" name="BlockL2-d41-Mobility"/>
+<artifact id="Basic/BlockL2-d51-Self-Care" key="Basic-BlockL2-d51-Self-Care" name="BlockL2-d51-Self-Care"/>
 <artifact id="StructureDefinition/category-tag" key="StructureDefinition-category-tag" name="CategoryTag"/>
 <artifact id="SearchParameter/Condition-bodySite" key="SearchParameter-Condition-bodySite" name="Condition-bodySite"/>
 <artifact id="SearchParameter/Condition-code" key="SearchParameter-Condition-code" name="Condition-code"/>
