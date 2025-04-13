@@ -10,6 +10,8 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 * extension contains AssistanceRequired named assistance-required 0..1 MS
 * extension[assistance-required] ^short = "An extension to indicate the level of assistance required for a patient during an assessment."
 
+* extension contains CategoryTag named category-tag 0..* MS
+
 * status MS
 * status ^short = "Should have the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used."
 
