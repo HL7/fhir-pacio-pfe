@@ -1,3 +1,6 @@
+/**********
+NOTE: Aliases are defined in GlobalAliasList.fsh
+**********/
 Profile:        PFENarrativeHistoryOfStatus
 Parent:         $USCoreDiagnosticReportProfileNoteExchange
 Id:             pfe-narrative-history-of-status

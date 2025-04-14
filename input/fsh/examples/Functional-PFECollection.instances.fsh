@@ -1,11 +1,15 @@
+/**********
+NOTE: Aliases are defined in GlobalAliasList.fsh
+**********/
+
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1
 InstanceOf: PFECollection
 Description: "Example PFE Collection of mobility observations for hospital discharge"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#functional-status "Functional Status"
-* category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#BlockL2-d41 "Mobility"
+* category[survey] = $OBSCAT#survey
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-d41 "Mobility"
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#88331-4 "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"

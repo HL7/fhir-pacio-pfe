@@ -1,3 +1,7 @@
+/**********
+NOTE: Aliases are defined in GlobalAliasList.fsh
+**********/
+
 ValueSet: PFEUSCoreCategoryVS
 Title: "Personal Functioning and Engagement US Core Value Set"
 Id: pfe-us-core-category-vs
@@ -11,7 +15,7 @@ Title: "Personal Functioning and Engagement Survey Value Set"
 Id: pfe-survey-category-vs
 Description: "Used to indicate that all PFE observations of of type Survey"
 * ^experimental = false
-* OBSCAT#survey "Survey"
+* $OBSCAT#survey "Survey"
 
 ValueSet: PFECategoryVS
 Title: "Personal Functioning and Engagement Category Value Set"

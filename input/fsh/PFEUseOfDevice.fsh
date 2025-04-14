@@ -1,5 +1,6 @@
-Alias:  DVT = https://www.hl7.org/fhir/valueset-device-nametype.html
-Alias: ObservationLocation = http://hl7.org/fhir/StructureDefinition/event-location
+/**********
+NOTE: Aliases are defined in GlobalAliasList.fsh
+**********/
 
 Profile:        PFEUseOfDevice
 Parent:         DeviceUseStatement
