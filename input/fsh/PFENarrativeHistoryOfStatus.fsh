@@ -4,13 +4,15 @@ Id:             pfe-narrative-history-of-status
 Title:          "Personal Functioning and Engagement Narrative History of Status"
 Description:    "An exchange of a narrative summary regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the [collection](StructureDefinition-pfe-collection.html) and [single observation](StructureDefinition-pfe-observation-single.html) profiles defined in this IG to capture assessment data."
 
-* extension contains ObservationEventLocation named event-location 0..1 MS
+* extension contains 
+  ObservationEventLocation named event-location 0..1 MS and
+  AssistanceRequired named assistance-required 0..1 MS and
+  CategoryTag named category-tag 0..* MS
+
 * extension[event-location] ^short = "An extension to indicate where the documented information was collected."
 * extension[event-location] ^definition = "The principal physical location where the documented information was collected."
-* extension contains AssistanceRequired named assistance-required 0..1 MS
 * extension[assistance-required] ^short = "An extension to indicate the level of assistance required for a patient during an assessment."
-
-* extension contains CategoryTag named category-tag 0..* MS
+* extension[category-tag] ^short = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
 * status MS
 * status ^short = "Should have the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used."
@@ -29,10 +31,6 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 * category[us-core] 0..* MS
 * category[us-core] from http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category (required)
 * category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
-
-* category contains PFEDomain 0..* MS
-* category[PFEDomain] from PFECategoryVS (required)
-* category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
 * code ^short = "US Core Report Code"
 * code ^definition = "The test, panel, report, or note that was ordered."

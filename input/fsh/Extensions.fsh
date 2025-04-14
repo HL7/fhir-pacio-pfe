@@ -26,7 +26,9 @@ Id: assistance-required
 Extension: CategoryTag
 Description: "Reference to an instance of PFECategoryTag that can be used to categorize Observations to provide guidance on which Codes might be applicable"
 Id: category-tag
-* ^context.type = #element
-* ^context.expression = "Observation"
+* ^context[0].type = #element
+* ^context[0].expression = "Observation"
+* ^context[1].type = #element
+* ^context[1].expression = "DiagnosticReport"
 * value[x] only Reference(PFECategoryTag)
 
