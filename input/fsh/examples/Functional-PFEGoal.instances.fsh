@@ -4,7 +4,7 @@ Alias: $sct = http://snomed.info/sct
 
 
 Instance: PFEIG-Goal-DressingGoal
-InstanceOf: Goal
+InstanceOf: PFEGoal
 Description: "Example PFE Goal for dressing"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-goal"
 * lifecycleStatus = #active
@@ -26,7 +26,7 @@ Description: "Example PFE Goal for dressing"
 
 
 Instance: PFEIG-Goal-StandingGoal
-InstanceOf: Goal
+InstanceOf: PFEGoal
 Description: "Example PFE Goal for standing"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-goal"
 * lifecycleStatus = #active
@@ -47,7 +47,7 @@ Description: "Example PFE Goal for standing"
 
 
 Instance: PFEIG-Goal-WalkingGoal
-InstanceOf: Goal
+InstanceOf: PFEGoal
 Description: "Example PFE Goal for walking"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-goal"
 * lifecycleStatus = #active
