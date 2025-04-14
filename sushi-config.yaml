@@ -66,7 +66,7 @@ menu:
   Domain Support: domains.html
   FHIR Artifacts:
     Capability Statement: CapabilityStatement-pacio-pfe-cap.html
-    Profiles: artifacts.html#structures-abstract-profiles
+    Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
     Value Sets: artifacts.html#terminology-value-sets
     Examples: artifacts.html#example-example-instances
