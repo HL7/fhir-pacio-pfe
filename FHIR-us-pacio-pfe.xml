@@ -201,7 +201,7 @@
 <artifact id="Location/PFEIG-provider-org-loc-16" key="Location-PFEIG-provider-org-loc-16" name="PFEIG-provider-org-loc-16"/>
 <artifact id="PractitionerRole/PFEIG-provider-role-neurologist" key="PractitionerRole-PFEIG-provider-role-neurologist" name="PFEIG-provider-role-neurologist"/>
 <artifact id="PractitionerRole/PFEIG-provider-role-pcp" key="PractitionerRole-PFEIG-provider-role-pcp" name="PFEIG-provider-role-pcp"/>
-<artifact id="StructureDefinition/pfe-observation-abstract" key="StructureDefinition-pfe-observation-abstract" name="Personal Functioning and Engagement Abstract Observation"/>
+<artifact deprecated="true" id="StructureDefinition/pfe-observation-abstract" key="StructureDefinition-pfe-observation-abstract" name="Personal Functioning and Engagement Abstract Observation"/>
 <artifact id="ValueSet/pfe-body-structures-vs" key="ValueSet-pfe-body-structures-vs" name="Personal Functioning and Engagement Body Structures Value Set"/>
 <artifact id="CapabilityStatement/pacio-pfe-cap" key="CapabilityStatement-pacio-pfe-cap" name="Personal Functioning and Engagement Capability Statement"/>
 <artifact deprecated="true" id="CodeSystem/pfe-category-cs" key="CodeSystem-pfe-category-cs" name="Personal Functioning and Engagement Category"/>
