@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFEClinicalTestObservation
-Parent:         USCoreObservationClinicalResultProfile
+Parent:         $USCoreObservationClinicalResultProfile
 Id:             pfe-observation-clinicaltest
 Title:          "Personal Functioning and Engagement Clinical Test Observation"
 Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single piece of observation data that resulted from a clinical test."
@@ -32,8 +32,8 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * effective[x] only dateTime
 
 * method MS
-* method from SDOHCCValueSetObservationMethod (example)
+* method from $SDOHCCValueSetObservationMethod (example)
 
 * performer 1..* 
-* performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
+* performer only Reference($USCorePractitioner or $USCorePractitionerRole or $USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."

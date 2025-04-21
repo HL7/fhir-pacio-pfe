@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Extension: ObservationEventLocation
-Parent: EventLocation
+Parent: $EventLocation
 Description: "This extension is used to indicate the principal physical location where an observation event occurred."
 Id: event-location
 * value[x] only Reference(USCoreLocation)
@@ -21,7 +21,7 @@ Id: assistance-required
 * ^context.type = #element
 * ^context.expression = "DiagnosticReport"
 * value[x] only CodeableConcept
-* value[x] from LL4309-2 (extensible)
+* value[x] from $LL4309-2 (extensible)
 
 Extension: CategoryTag
 Description: "Reference to an instance of PFECategoryTag that can be used to categorize Observations to provide guidance on which Codes might be applicable"
@@ -31,4 +31,3 @@ Id: category-tag
 * ^context[1].type = #element
 * ^context[1].expression = "DiagnosticReport"
 * value[x] only Reference(PFECategoryTag)
-

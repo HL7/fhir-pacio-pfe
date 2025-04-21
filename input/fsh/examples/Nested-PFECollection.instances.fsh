@@ -1,16 +1,11 @@
-Alias: PFEDOMAINCAT = http://hl7.org/fhir/sid/icf
-Alias: FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
-Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
-
-
 Instance: PFEIG-Nested-Collection-Mobility
 InstanceOf: PFECollection
 Description: "Example Nested Personal Functioning and Engagement Collection, ie. a Collection of Collections"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core][0] = USCORECAT#functional-status "Functional Status"
-* category[us-core][1] = USCORECAT#cognitive-status "Cognitive Status"
-* category[survey] = OBSCAT#survey
+* category[us-core][0] = $USCORECAT#functional-status "Functional Status"
+* category[us-core][1] = $USCORECAT#cognitive-status "Cognitive Status"
+* category[survey] = $OBSCAT#survey
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-d41-Mobility)
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#88331-4 "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"

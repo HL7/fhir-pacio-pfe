@@ -8,7 +8,7 @@ Description: "Example Practitioner: Scott Dumble"
 * name.family = "Dumble"
 * name.text = "Scott Dumble"
 * active = true
-* gender = Hl7FhirAdminGender#male
+* gender = $Hl7FhirAdminGender#male
 * telecom.system = #phone
 
 
@@ -19,7 +19,7 @@ Description: "Example Practitioner: John Smith"
 * name.family = "Smith"
 * name.text = "John Smith"
 * active = true
-* gender = Hl7FhirAdminGender#male
+* gender = $Hl7FhirAdminGender#male
 * telecom.system = #phone
 
 
@@ -30,7 +30,7 @@ Description: "Example Practitioner: Jen Cadbury"
 * name.family = "Cadbury"
 * name.text = "Jen Cadbury"
 * active = true
-* gender = Hl7FhirAdminGender#female
+* gender = $Hl7FhirAdminGender#female
 * telecom.system = #phone
 
 
@@ -43,7 +43,7 @@ Description: "Example Practitioner: Nora Ologist"
 * name.family = "Ologist"
 * name.text = "Nora Ologist"
 * active = true
-* gender = Hl7FhirAdminGender#female
+* gender = $Hl7FhirAdminGender#female
 * telecom.system = #phone
 * telecom.value = "(210) 555 7632"
 * address.text = "26022 Meadowlark Bay, San Antonio, TX 78260"
@@ -56,7 +56,7 @@ Description: "Example Practitioner: Luna Baskins"
 * name.family = "Baskins"
 * name.text = "Luna Baskins"
 * active = true
-* gender = Hl7FhirAdminGender#female
+* gender = $Hl7FhirAdminGender#female
 * telecom.system = #phone
 
 
@@ -67,7 +67,7 @@ Description: "Example Practitioner: Daniel Granger"
 * name.family = "Granger"
 * name.text = "Daniel Granger"
 * active = true
-* gender = Hl7FhirAdminGender#male
+* gender = $Hl7FhirAdminGender#male
 * telecom.system = #phone
 
 
@@ -78,7 +78,7 @@ Description: "Example Practitioner: Ron Marble"
 * name.family = "Marble"
 * name.text = "Ron Marble"
 * active = true
-* gender = Hl7FhirAdminGender#male
+* gender = $Hl7FhirAdminGender#male
 * telecom.system = #phone
 
 
@@ -89,7 +89,7 @@ Description: "Example Practitioner: Sally Smith"
 * name.family = "Smith"
 * name.text = "Sally Smith"
 * active = true
-* gender = Hl7FhirAdminGender#female
+* gender = $Hl7FhirAdminGender#female
 * telecom.system = #phone
 
 
@@ -100,7 +100,7 @@ Description: "Example Practitioner: Jenny Glass"
 * name.family = "Glass"
 * name.text = "Jenny Glass"
 * active = true
-* gender = Hl7FhirAdminGender#female
+* gender = $Hl7FhirAdminGender#female
 * telecom.system = #phone
 
 
@@ -111,7 +111,7 @@ Description: "Example Practitioner: Honey Jones"
 * name.family = "Jones"
 * name.text = "Honey Jones"
 * active = true
-* gender = Hl7FhirAdminGender#female
+* gender = $Hl7FhirAdminGender#female
 * telecom.system = #phone
 
 
@@ -122,7 +122,7 @@ Description: "Example Practitioner: Jill Bradley"
 * name.family = "Bradley"
 * name.text = "Jill Bradley"
 * active = true
-* gender = Hl7FhirAdminGender#female
+* gender = $Hl7FhirAdminGender#female
 
 
 Instance: PFEIG-Practioner-GeraldPark
@@ -132,7 +132,7 @@ Description: "Example Practitioner: Gerald Park"
 * name.family = "Park"
 * name.text = "Gerald Park"
 * active = true
-* gender = Hl7FhirAdminGender#male
+* gender = $Hl7FhirAdminGender#male
 
 
 Instance: PFEIG-Practitioner-AnitaChu
@@ -142,4 +142,4 @@ Description: "Example Practitioner: Anita Chu"
 * name.family = "Chu"
 * name.text = "Anita Chu"
 * active = true
-* gender = Hl7FhirAdminGender#female
+* gender = $Hl7FhirAdminGender#female
