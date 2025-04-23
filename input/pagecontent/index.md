@@ -1,3 +1,47 @@
+<div style="width: 100%;" >
+<h3 id="plain-language-summary-about-hl7-and-this-guide">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary-about-hl7-and-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+  <button class="btn btn-info btn-lg collapsed" type="button" title="Click to Open or Close the Plain Language Summary" data-toggle="collapse" data-target="#plain-lang-summary" aria-expanded="false" aria-controls="collapseExample">
+    Welcome! Thank-you for wanting to learn about this guide.  Click Here to see the Plain Language Summary
+  </button>
+</h3>
+</div>
+<div class="collapse" id="plain-lang-summary" aria-expanded="false" style="height: 0px;">
+  <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
+  
+<h4 id="about-hl7">About HL7<a class="anchorjs-link " href="#about-hl7" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p><a href="http://hl7.org/">HL7</a>, which stands for Health Level Seven, creates standards to help different healthcare computer systems talk to each other. These HL7 standards are a special language or set of rules that lets information be shared between hospitals, doctors’ offices (e.g. Electronic Health Record Systems), labs, patients (e.g. via patient portals), pharmacies, and insurers, among others.</p>
+
+<p>One of the HL7 standards is HL7 FHIR (Fast Healthcare Interoperability Resources). It helps connect healthcare systems, making it easier for doctors, nurses, and other healthcare professionals to share important information about patients. For example, if you have a lab test at a hospital, HL7 FHIR helps send the results to your doctor’s office so they can provide the right care.</p>
+
+<p>A goal of HL7 is to make sure everyone involved in your healthcare has the right information at the right time. Our standards help machines and people, including you, work together to make better decisions for your health. HL7 sets rules that computer systems follow, so they can understand and share information in a consistent and reliable way.</p>
+
+<p>To learn more about HL7, you can visit the website <a href="http://hl7.org/">hl7.org</a></p>
+
+<p>The people at HL7 make guides that explain how to use the rules (standards) for different things. These guides bring the rules together and show how to use them for specific purposes.</p>
+
+<h4 id="about-this-guide">About this Guide<a class="anchorjs-link " href="#about-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p>The PACIO Personal Functioning and Engagement (PFE) Implementation Guide helps healthcare providers share information about how people live their daily lives. It focuses on understanding what people can do, what challenges they face, and how their environment affects them. This guide uses a system called FHIR to organize and share this information in a clear and consistent way.</p>
+
+<p>The guide is based on the <strong>International Classification of Functioning, Disability, and Health (ICF)</strong>, which groups information into four main areas:</p>
+
+<ol type="1">
+    <li><strong>Body Functions:</strong> This is about how the body works, like thinking, breathing, moving, or feeling pain.</li>
+    <li><strong>Activities and Participation:</strong> These are everyday tasks, like walking, eating, working, or spending time with friends. It shows if someone can do these things alone or needs help.</li>
+    <li><strong>Environmental Factors:</strong> These are things around a person that affect their life, like whether their home is wheelchair-friendly or if they have support from family or caregivers.</li>
+    <li><strong>Body Structures:</strong> This focuses on physical parts of the body, like bones, muscles, or organs, and any problems with them.</li>
+</ol>
+
+<p>Based on the ICF category, the PFE implementation guide can recommend a short list of codes for caregivers to describe what they observed about the patient. This reduces the burden on caregivers because they have a smaller set of data that only has what they need.</p>
+
+<p>This guide makes it easier for doctors, caregivers, and others to work together and plan care that fits the patient's needs. By sharing this information in a standard way, everyone involved can better understand how to help the patient live their best life.</p>
+
+<p>In short, the PFE guide helps healthcare focus on the whole person—not just their medical problems—so they can stay active and engaged in life.</p>
+
+
+  </div>
+</div>
+
 The Personal Functioning and Engagement (PFE) HL7® FHIR® Implementation Guide (IG) supports the exchange of information related to a person's ability to participate in activities and interact with their community and the environment around them. The three words in the title frame aspects of the intended scope for this IG:
 - **Personal**: in-scope data relates to the functioning of an individual person, as opposed to a group, system, or organization.
 - **Functioning**: in-scope data relates to what the person can do, the help they need, and the effects of contributing factors, including physiological, environmental, and personal conditions. The [International Classification of Functioning, Disability, and Health](https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health) (ICF), published by the World Health Organization (WHO), defines the term, “functioning,” as an umbrella term for body functions, activities, and participation. 
