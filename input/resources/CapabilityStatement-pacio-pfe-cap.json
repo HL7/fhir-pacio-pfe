@@ -1802,7 +1802,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/Goal-subject",
@@ -1814,13 +1814,37 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
                             "documentation": "Search by subject - a patient",
                             "name": "patient",
                             "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-target-date",
+                            "documentation": "Search by goal target date",
+                            "name": "target date",
+                            "type": "date"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-lifecycle-status",
+                            "documentation": "Search by lifecycle status",
+                            "name": "lifecycle status",
+                            "type": "token"
                         },
                         {
                             "extension": [
