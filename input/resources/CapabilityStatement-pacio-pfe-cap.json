@@ -264,7 +264,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
@@ -288,7 +288,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
@@ -408,7 +408,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
@@ -624,7 +624,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/Observation-category",
@@ -660,7 +660,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/Observation-status",
@@ -972,7 +972,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
@@ -984,7 +984,31 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category",
+                            "documentation": "The classification of the type of diagnostic report",
+                            "name": "category",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-status",
+                            "documentation": "Search by status",
+                            "name": "status",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
@@ -1456,7 +1480,55 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-clinical-status",
+                            "documentation": "Search by status",
+                            "name": "status",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-abatement-date",
+                            "documentation": "Search by abatement date",
+                            "name": "abatement date",
+                            "type": "date"
+                          },
+                          {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-onset-date",
+                            "documentation": "Search by onset date",
+                            "name": "onset date",
+                            "type": "date"
+                          },
+                          {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-recorded-date",
+                            "documentation": "Search by recorded date",
+                            "name": "recorded date",
+                            "type": "date"
+                          },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/Condition-subject",
@@ -1468,7 +1540,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
@@ -1516,7 +1588,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
@@ -1528,7 +1600,7 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
+                                    "valueCode": "SHALL"
                                 }
                             ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
