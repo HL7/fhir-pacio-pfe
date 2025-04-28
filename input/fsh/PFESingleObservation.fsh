@@ -26,8 +26,11 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 
 * category contains survey 0..1 MS 
 
+* category[us-core] 1..2 MS
 * category[us-core] from PFEUSCoreCategoryVS
+* category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
 
+* category[survey] 1..1 MS
 * category[survey] from PFESurveyCategoryVS 
 * category[survey] ^requirements = "Indicates the personal functioning and engagement observation is of type survey"
 

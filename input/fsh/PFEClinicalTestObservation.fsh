@@ -24,7 +24,7 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * category ^slicing.rules = #open
 * category ^requirements = "To identify that observation is derived from a questionnaire, is related to personal functioning and engagement, and optionally to identify the domain(s) it falls under."
 
-* category[us-core] 0..* MS
+* category[us-core] 1..2 MS
 * category[us-core] from http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category (required)
 * category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
 

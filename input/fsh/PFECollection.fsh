@@ -25,9 +25,11 @@ Description:    "A point in time collection of post-acute care observations for 
 
 * category contains survey 0..1 MS 
 
+* category[us-core] 1..2 MS 
 * category[us-core] from PFEUSCoreCategoryVS (required)
 * category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
 
+* category[survey] 1..1 MS
 * category[survey] from PFESurveyCategoryVS 
 * category[survey] ^requirements = "Indicates the personal functioning and engagement observation is of type survey"
 
