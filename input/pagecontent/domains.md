@@ -1,6 +1,6 @@
 <blockquote class="stu-note">
 <p><b>Note:</b>
-The Personal Functioning and Engagement IG replaces the previously published <a href="https://hl7.org/fhir/us/pacio-fs/index.html">PACIO Functional Status</a> and <a href="https://hl7.org/fhir/us/pacio-cs/index.html">PACIO Cognitive Status</a> FHIR IGs as well as the <a href="https://paciowg.github.io/splasch-ig/index.html">PACIO SPLASCH</a> IG that had been under development. This decision was made because the profiles created for these IGs all had very similar structures. This version of the IG, STU1, focuses on the use of Observation Profiles. For the Observation profiles, the only differences is the vocabulary used for the category tied to the profile and the value set from which the code was to be pulled. The use of health domains based on ICF categories and corresponding value sets of observation codes for each domain replaces the need for multiple IG, allowing this IG to define only a single set of profiles that cover all domains.
+The Personal Functioning and Engagement IG replaces the previously published <a href="https://hl7.org/fhir/us/pacio-fs/index.html">PACIO Functional Status</a> and <a href="https://hl7.org/fhir/us/pacio-cs/index.html">PACIO Cognitive Status</a> FHIR IGs as well as the <a href="https://paciowg.github.io/splasch-ig/index.html">PACIO SPLASCH</a> IG that had been under development. This decision was made because the profiles created for these IGs all had very similar structures. For the Observation-based profiles, the vocabulary used for the category (referenced in the Category Tag profile) is tied to the value set from which the code was to be pulled. The use of health domains based on ICF categories and corresponding value sets of observation codes for each domain replaces the need for multiple IGs, allowing this IG to define only a single set of profiles that cover all domains.
 </p>
 </blockquote>
 <br>
@@ -36,8 +36,8 @@ The collection of information about a person's functioning and engagement data v
 The International Classification of Functioning, Disability and Health, or ICF, is the World Health Organization framework for measuring health and disability at both individual and population levels. The ICF has 4 main categories: 
 1. Body Functions
 2. Activities and Participation
-3. Body Structures
-4. Environmental Factors
+3. Environmental Factors
+4. Body Structures
 
 Within each of these categories are hierarchically arranged domains comprised of sets of related physiological functions, anatomical structures, actions, tasks, areas of life, and external influences. The Value Set domains in this IG are drawn from these ICF domains, in which each Post Acute Care observation item can be categorized. These domains also contain sub-chapters that are more granular and contain specific concepts related to the parent domain, which can be useful when making ICF domain categorization decisions.
 
@@ -48,8 +48,8 @@ Contained in this IG are Value Sets for each of the health-related domains drawn
 The categorization process at a base level is simple. The first step is to look at the assessment question and, based upon the question text, the question short name, and the question responses, determine what the main concept of the question is. The next step is to determine to which ICF hierarchy the concept most closely relates using the ICF hierarchy definitions. The ICF hierarchies are:
 1. Body Functions
 2. Activities and Participation
-3. Body Structures
-4. Environmental Factors
+3. Environmental Factors
+4. Body Structures
 
 Most health observations fall into either the Body Functions or Activities and Participation hierarchies, since these are most related to observations about an individual. The final step is to use the ICF chapter (i.e. domain) definitions to find the appropriate domain within the selected hierarchy. Each ICF domain contains definitions for sub-chapter elements, which can help identify the appropriate chapter and sub-chapter selection for the observation. This process ensures that each health observation is categorized successfully with an ICF domain and its LOINC code can then be added to the associated Value Set.
 
