@@ -1460,7 +1460,168 @@
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                             "valueCode": "SHOULD"
-                        }
+                        },
+                        {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "recorded-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "asserted-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "clinical-status"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "onset-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "abatement-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "clinical-status"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "encounter"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "code"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHALL"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          }
                     ],
                     "conditionalCreate": true,
                     "_conditionalCreate": {
@@ -1810,7 +1971,58 @@
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                             "valueCode": "SHOULD"
-                        }
+                        },
+                        {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "target-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "description"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "lifecycle-status"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          }
                     ],
                     "conditionalCreate": true,
                     "_conditionalCreate": {
@@ -2308,7 +2520,100 @@
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                             "valueCode": "SHOULD"
-                        }
+                        },
+                        {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHALL"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "authored"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "status"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHALL"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "code"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "authored"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHALL"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "code"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          }
                     ],
                     "conditionalCreate": true,
                     "_conditionalCreate": {
