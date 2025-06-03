@@ -1,6 +1,6 @@
 <blockquote class="stu-note">
 <p><b>Note:</b>
-The Personal Functioning and Engagement IG replaces the previously published <a href="https://hl7.org/fhir/us/pacio-fs/index.html">PACIO Functional Status</a> and <a href="https://hl7.org/fhir/us/pacio-cs/index.html">PACIO Cognitive Status</a> FHIR IGs as well as the <a href="https://paciowg.github.io/splasch-ig/index.html">PACIO SPLASCH</a> IG that had been under development. This decision was made because the profiles created for these IGs all had very similar structures. This version of the IG, STU1, focuses on the use of Observation Profiles. For the Observation profiles, the only differences is the vocabulary used for the category tied to the profile and the value set from which the code was to be pulled. The use of health domains based on ICF categories and corresponding value sets of observation codes for each domain replaces the need for multiple IG, allowing this IG to define only a single set of profiles that cover all domains.
+The Personal Functioning and Engagement IG replaces the previously published <a href="https://hl7.org/fhir/us/pacio-fs/index.html">PACIO Functional Status</a> and <a href="https://hl7.org/fhir/us/pacio-cs/index.html">PACIO Cognitive Status</a> FHIR IGs as well as the <a href="https://paciowg.github.io/splasch-ig/index.html">PACIO SPLASCH</a> IG that had been under development. This decision was made because the profiles created for these IGs all had very similar structures. For the Observation-based profiles, the vocabulary used for the category (referenced in the Category Tag profile) is tied to the value set from which the code was to be pulled. The use of health domains based on ICF categories and corresponding value sets of observation codes for each domain replaces the need for multiple IGs, allowing this IG to define only a single set of profiles that cover all domains.
 </p>
 </blockquote>
 <br>
@@ -36,8 +36,8 @@ The collection of information about a person's functioning and engagement data v
 The International Classification of Functioning, Disability and Health, or ICF, is the World Health Organization framework for measuring health and disability at both individual and population levels. The ICF has 4 main categories: 
 1. Body Functions
 2. Activities and Participation
-3. Body Structures
-4. Environmental Factors
+3. Environmental Factors
+4. Body Structures
 
 Within each of these categories are hierarchically arranged domains comprised of sets of related physiological functions, anatomical structures, actions, tasks, areas of life, and external influences. The Value Set domains in this IG are drawn from these ICF domains, in which each Post Acute Care observation item can be categorized. These domains also contain sub-chapters that are more granular and contain specific concepts related to the parent domain, which can be useful when making ICF domain categorization decisions.
 
@@ -48,8 +48,8 @@ Contained in this IG are Value Sets for each of the health-related domains drawn
 The categorization process at a base level is simple. The first step is to look at the assessment question and, based upon the question text, the question short name, and the question responses, determine what the main concept of the question is. The next step is to determine to which ICF hierarchy the concept most closely relates using the ICF hierarchy definitions. The ICF hierarchies are:
 1. Body Functions
 2. Activities and Participation
-3. Body Structures
-4. Environmental Factors
+3. Environmental Factors
+4. Body Structures
 
 Most health observations fall into either the Body Functions or Activities and Participation hierarchies, since these are most related to observations about an individual. The final step is to use the ICF chapter (i.e. domain) definitions to find the appropriate domain within the selected hierarchy. Each ICF domain contains definitions for sub-chapter elements, which can help identify the appropriate chapter and sub-chapter selection for the observation. This process ensures that each health observation is categorized successfully with an ICF domain and its LOINC code can then be added to the associated Value Set.
 
@@ -57,10 +57,10 @@ Most health observations fall into either the Body Functions or Activities and P
 
 To disambiguate categorization and to make the categorization process more easily reproducible, additional rules have been developed to augment the base ICF categorization process. These rules address some of the difficulties that arose while trying to categorize the PAC assessment items into ICF domains and provide additional clarification when more than one domain categorization could apply. 
 
-1. PAC assessment observations should be categorized into the ICF domain within the “Activities and Participation” category only when the question focuses on  a specific activity.
+1. PAC assessment observations **SHOULD** be categorized into the ICF domain within the “Activities and Participation” category only when the question focuses on  a specific activity.
     - For assessment items related to assistive devices, unless the activity the assistive device helps with is present in the question, place them into a domain related to the body function that the assistive device most supports.
-2.  PAC assessment observations that are part of a specific group of questions (e.g.,PHQ-9 or BIMS) or part of a group of questions listed all under the same header question should be categorized according to the main focus of the grouping header.
-3. All available assessment item resources, such as the question’s available responses, the question text, and the question short name, should be considered when making categorization decisions. 
+2.  PAC assessment observations that are part of a specific group of questions (e.g.,PHQ-9 or BIMS) or part of a group of questions listed all under the same header question **SHOULD** be categorized according to the main focus of the grouping header.
+3. All available assessment item resources, such as the question’s available responses, the question text, and the question short name, **SHOULD** be considered when making categorization decisions. 
 
 #### Adding New Codes
 

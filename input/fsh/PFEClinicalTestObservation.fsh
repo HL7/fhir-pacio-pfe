@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Profile:        PFEClinicalTestObservation
-Parent:         USCoreObservationClinicalResultProfile
+Parent:         $USCoreObservationClinicalResultProfile
 Id:             pfe-observation-clinicaltest
 Title:          "Personal Functioning and Engagement Clinical Test Observation"
 Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single piece of observation data that resulted from a clinical test."
@@ -22,7 +22,7 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * category ^slicing.rules = #open
 * category ^requirements = "To identify that observation is derived from a questionnaire, is related to personal functioning and engagement, and optionally to identify the domain(s) it falls under."
 
-* category[us-core] 0..* MS
+* category[us-core] 1..2 MS
 * category[us-core] from http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category (required)
 * category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
 
@@ -33,6 +33,9 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * effective[x] 1..1 
 * effective[x] only dateTime
 
+* method MS
+* method from $SDOHCCValueSetObservationMethod (example)
+
 * performer 1..* 
-* performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
+* performer only Reference($USCorePractitioner or $USCorePractitionerRole or $USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."

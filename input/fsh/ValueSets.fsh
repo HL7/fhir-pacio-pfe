@@ -1,24 +1,28 @@
+/**********
+NOTE: Aliases are defined in GlobalAliasList.fsh
+**********/
+
 ValueSet: PFEUSCoreCategoryVS
 Title: "Personal Functioning and Engagement US Core Value Set"
 Id: pfe-us-core-category-vs
 Description: "Subset of the us core categories to identify the type of PFE observation"
 * ^experimental = false
-* USCORECAT#functional-status "Functional Status"
-* USCORECAT#cognitive-status "Cognitive Status"
+* $USCORECAT#functional-status "Functional Status"
+* $USCORECAT#cognitive-status "Cognitive Status"
 
 ValueSet: PFESurveyCategoryVS
 Title: "Personal Functioning and Engagement Survey Value Set"
 Id: pfe-survey-category-vs
 Description: "Used to indicate that all PFE observations of of type Survey"
 * ^experimental = false
-* OBSCAT#survey "Survey"
+* $OBSCAT#survey "Survey"
 
 ValueSet: PFECategoryVS
 Title: "Personal Functioning and Engagement Category Value Set"
 Description: "This value set includes codes representing health and health-related domains into which functioning observations can be further categorized."
 Id: pfe-category-vs
 * ^experimental = false
-* include codes from system PFECategoryCS
+* include codes from system http://hl7.org/fhir/sid/icf
 
 ValueSet: PFEExampleObservationsVS
 Title: "Personal Functioning and Engagement Example Observations Value Set"

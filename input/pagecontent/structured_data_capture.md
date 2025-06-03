@@ -3,7 +3,7 @@ In many cases, clinicians use formal, structured instruments to capture details 
 * long forms required by payers that cover a broad range of domains, (e.g., the Centers for Medicare & Medicaid Services (CMS) [Minimum Data Set (MDS) 3.0 Resident Assessment Instrument (RAI)](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/MDS30RAIManual).)
 * shorter assessments that target specific areas such as the [Montreal Cognitive Assessment (MoCA)](https://www.mocatest.org/) or the [swallowing panel](https://loinc.org/99852-6/) that is part of the American Speech-Language-Hearing Association (ASHA) National Outcomes Measurement System (NOMS) program.
 
-The [Structured Data Capture FHIR IG](http://hl7.org/fhir/uv/sdc/) provides a methodology for capturing this information within FHIR both in its raw and in its discrete structured form. This page provides guidance on how tools like the [SDC Questionnaire](https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html) and [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/StructureDefinition-us-core-questionnaireresponse.html) resources may be used with this IG.
+The [Structured Data Capture FHIR IG](http://hl7.org/fhir/uv/sdc/) provides a methodology for capturing this information within FHIR both in its raw and in its discrete structured form. This page provides guidance on how tools like the [SDC Questionnaire](https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html) and [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/StructureDefinition-us-core-questionnaireresponse.html) resources **MAY** be used with this IG.
 
 ### Codified Representation
 
@@ -63,7 +63,7 @@ Representative examples of each of these categories are provided in the followin
 
 #### Partially Codified Assessments
 
-Not all assessment tools have standardized codes for all of their questions. For example. the [MoCA](https://www.mocatest.org/) has a coded representation for the summary score, not the individual questions. In cases like this, QuestionnaireResponses may not be fully mapped to structured observations, meaning that some information remains only in the QuestionnaireResponse instance, or on the paper form.
+Not all assessment tools have standardized codes for all of their questions. For example. the [MoCA](https://www.mocatest.org/) has a coded representation for the summary score, not the individual questions. In cases like this, QuestionnaireResponses **MAY** not be fully mapped to structured observations, meaning that some information remains only in the QuestionnaireResponse instance, or on the paper form.
 
 <table class="grid">
   <tr>
@@ -89,5 +89,5 @@ This diagram illustrates the required and suggested structure and linkages using
 Following the structure of the LOINC codes representing the BIMS, the following structures and links are involved:
 - Panel codes, both the top-level code ([52491-8](https://loinc.org/52491-8)), and inner nodes (e.g., [54510-3](https://loinc.org/54510-3)), are represented using the [collection](StructureDefinition-pfe-collection.html) profile with links to sub panels (e.g., panel [54510-3](https://loinc.org/54510-3) from top level-code [52491-8](https://loinc.org/52491-8)) and individual questions (e.g., question [52732-5](https://loinc.org/52732-5) from inner node [54510-3](https://loinc.org/54510-3)) in the `hasMember` element.
 - Individual questions (e.g., [52732-5](https://loinc.org/52732-5)) represented using the [single observation](StructureDefinition-pfe-observation-single.html) profile. The summary score question ([54614-3](https://loinc.org/54614-3)) contains links in the `derivedFrom` element to the individual questions used to calculate the score (e.g., [52732-5](https://loinc.org/52732-5)).
-- Each observation instance links back to the [QuestionnaireResponse](https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-questionnaireresponse.html) representing the whole BIMS Assessment in the `derivedFrom` element.
+- Each observation instance links back to the [QuestionnaireResponse](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html) representing the whole BIMS Assessment in the `derivedFrom` element.
 

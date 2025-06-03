@@ -1,5 +1,3 @@
-
-
 Instance: PFEIG-CMS-Device-HearingAid
 InstanceOf: Device
 Description: "Example Device: Hearing aid"

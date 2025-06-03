@@ -1,13 +1,18 @@
+/**********
+NOTE: Aliases are defined in GlobalAliasList.fsh
+**********/
 Profile:        PFENarrativeHistoryOfStatus
-Parent:         USCoreDiagnosticReport
+Parent:         $USCoreDiagnosticReportProfileNoteExchange
 Id:             pfe-narrative-history-of-status
 Title:          "Personal Functioning and Engagement Narrative History of Status"
 Description:    "An exchange of a narrative summary regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the [collection](StructureDefinition-pfe-collection.html) and [single observation](StructureDefinition-pfe-observation-single.html) profiles defined in this IG to capture assessment data."
 
-* extension contains ObservationEventLocation named event-location 0..1 MS
+* extension contains 
+  ObservationEventLocation named event-location 0..1 MS and
+  AssistanceRequired named assistance-required 0..1 MS
+
 * extension[event-location] ^short = "An extension to indicate where the documented information was collected."
 * extension[event-location] ^definition = "The principal physical location where the documented information was collected."
-* extension contains AssistanceRequired named assistance-required 0..1 MS
 * extension[assistance-required] ^short = "An extension to indicate the level of assistance required for a patient during an assessment."
 
 * status MS
@@ -24,7 +29,7 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 * category ^slicing.rules = #open
 * category ^requirements = "To identify that this narrative note is related to personal functioning and engagement and optionally to identify the domain(s) it falls under. These narratives are not expected to have a US Core DiagnosticReport Category."
 
-* category[us-core] 0..* MS
+* category[us-core] 1..2 MS
 * category[us-core] from http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category (required)
 * category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
 
@@ -43,7 +48,7 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 * effective[x] ^condition = "us-core-10"
 
 * performer 1..*
-* performer only Reference(USCorePractitioner or USCorePractitionerRole or USCoreOrganization)
+* performer only Reference($USCorePractitioner or $USCorePractitionerRole or $USCoreOrganization)
 * performer ^short = "The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization."
 
 * presentedForm 1..*

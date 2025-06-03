@@ -1,16 +1,15 @@
-Alias: PFEDOMAINCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-category-cs
-Alias: FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
-Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
-
+/**********
+NOTE: Aliases are defined in GlobalAliasList.fsh
+**********/
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1
 InstanceOf: PFECollection
 Description: "Example PFE Collection of mobility observations for hospital discharge"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core] = USCORECAT#functional-status "Functional Status"
-* category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#BlockL2-d41 "Mobility"
+* category[us-core] = $USCORECAT#functional-status "Functional Status"
+* category[survey] = $OBSCAT#survey
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-d41 "Mobility"
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#88331-4 "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
@@ -46,9 +45,9 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection of mobility observations for hospital admission"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core] = USCORECAT#functional-status "Functional Status"
-* category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#BlockL2-d41 "Mobility"
+* category[us-core] = $USCORECAT#functional-status "Functional Status"
+* category[survey] = $OBSCAT#survey
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-d41 "Mobility"
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#88330-6 "Mobility - admission performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - admission performance during 3 day assessment period [CMS Assessment]"
@@ -81,9 +80,9 @@ InstanceOf: PFECollection
 Description: "Example PFE Collection of self-care observations for SNF admission"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
-* category[us-core] = USCORECAT#functional-status "Functional Status"
-* category[survey] = OBSCAT#survey
-* category[PFEDomain] = PFEDOMAINCAT#BlockL2-d51 "Self-care"
+* category[us-core] = $USCORECAT#functional-status "Functional Status"
+* category[survey] = $OBSCAT#survey
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-d51 "Self-care"
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83233-7 "Self-care - admission performance [CMS Assessment]"
 * code.text = "Self-care - admission performance [CMS Assessment]"

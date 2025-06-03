@@ -2,7 +2,7 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 Extension: ObservationEventLocation
-Parent: EventLocation
+Parent: $EventLocation
 Description: "This extension is used to indicate the principal physical location where an observation event occurred."
 Id: event-location
 * value[x] only Reference(USCoreLocation)
@@ -21,4 +21,4 @@ Id: assistance-required
 * ^context.type = #element
 * ^context.expression = "DiagnosticReport"
 * value[x] only CodeableConcept
-* value[x] from LL4309-2 (extensible)
+* value[x] from $LL4309-2 (extensible)

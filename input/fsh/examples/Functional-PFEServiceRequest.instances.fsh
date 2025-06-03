@@ -2,7 +2,7 @@ Alias: $sct = http://snomed.info/sct
 
 
 Instance: PFEIG-ServiceRequest-PCPFollowUp
-InstanceOf: ServiceRequest
+InstanceOf: PFEServiceRequest
 Description: "Example PFE Service Request to order PCP follow-up"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request"
 * status = #active
@@ -17,7 +17,7 @@ Description: "Example PFE Service Request to order PCP follow-up"
 
 
 Instance: PFEIG-ServiceRequest-SNFDischargeCallOTRefer
-InstanceOf: ServiceRequest
+InstanceOf: PFEServiceRequest
 Description: "Example PFE Service Request to order a occupational therapy assessment"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request"
 * status = #active
@@ -33,7 +33,7 @@ Description: "Example PFE Service Request to order a occupational therapy assess
 
 
 Instance: PFEIG-ServiceRequest-SNFDischargeCallOrder
-InstanceOf: ServiceRequest
+InstanceOf: PFEServiceRequest
 Description: "Example PFE Service Request to inform doctor"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request"
 * status = #active
@@ -48,7 +48,7 @@ Description: "Example PFE Service Request to inform doctor"
 
 
 Instance: PFEIG-ServiceRequest-SNFDischargeCallSLPRefer
-InstanceOf: ServiceRequest
+InstanceOf: PFEServiceRequest
 Description: "Example PFE Service Request to order a speech therapy assessment"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request"
 * status = #active
@@ -63,7 +63,7 @@ Description: "Example PFE Service Request to order a speech therapy assessment"
 
 
 Instance: PFEIG-ServiceRequest-SNFDischargeLabOrderBMP
-InstanceOf: ServiceRequest
+InstanceOf: PFEServiceRequest
 Description: "Example PFE Service Request to order a blood chemistry lab procedure"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request"
 * status = #active
@@ -82,7 +82,7 @@ Description: "Example PFE Service Request to order a blood chemistry lab procedu
 
 
 Instance: PFEIG-ServiceRequest-SNFDischargeLabOrderCBC
-InstanceOf: ServiceRequest
+InstanceOf: PFEServiceRequest
 Description: "Example PFE Service Request to order a complete blood count"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request"
 * status = #active
@@ -98,7 +98,7 @@ Description: "Example PFE Service Request to order a complete blood count"
 
 
 Instance: PFEIG-ServiceRequest-SNFDischargePTRefer
-InstanceOf: ServiceRequest
+InstanceOf: PFEServiceRequest
 Description: "Example PFE Service Request to order a physical therapy assessment"
 * meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request"
 * status = #active
