@@ -9,7 +9,7 @@ Description: "Example PFE Collection for hospital MOCA assessment"
 * status = #final
 * category[survey] = $OBSCAT#survey "Survey"
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72133-2 "Montreal Cognitive Assessment [MoCA]"
 * code.text = "Montreal Cognitive Assessment [MoCA]"
@@ -25,7 +25,7 @@ Description: "Example PFE Collection for hospital MMSE assessment"
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = $OBSCAT#survey "Survey"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72107-6 "Mini-Mental State Examination [MMSE]"
 * code.text = "Mini-Mental State Examination [MMSE]"
@@ -41,7 +41,7 @@ Description: "Example PFE Collection for SNF CAM assessment"
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = $OBSCAT#survey
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
 * code = http://loinc.org#86585-7 "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]"
 * code.text = "MDS v3.0 - RAI v1.17.2, OASIS E - Signs and symptoms of delirium (from CAM) during assessment period [CMS Assessment]"
@@ -59,7 +59,7 @@ Description: "Example PFE Collection for resident mood interview"
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = $OBSCAT#survey
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54635-8 "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"
 * code.text = "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"

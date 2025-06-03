@@ -5,11 +5,14 @@ Instance: PFEIG-Narrative-History-Cognitive-Status-1
 InstanceOf: PFENarrativeHistoryOfStatus
 Description: "Example PFE Narrative History of Status: History of Cognitive Function Narrative"
 Usage: #example
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(Location/PFEIG-provider-org-loc-01)
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/assistance-required].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* meta.profile = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status"
+* extension[0].url = "http://hl7.org/fhir/StructureDefinition/event-location"
+* extension[=].valueReference = Reference(Location/PFEIG-provider-org-loc-01)
+* extension[+].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/assistance-required"
+* extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
 * status = #final
 * category[us-core] = $loinc#LP7839-6 "Pathology"
+* category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * code = $loinc#11332-4 "History of Cognitive Function Narrative"
 * subject = Reference(Patient/PFEIG-patientBSJ1)
 * effectivePeriod.start = "2019-07-01"

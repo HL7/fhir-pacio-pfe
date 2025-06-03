@@ -4,7 +4,7 @@ Description: "Example PFE Observation: Total score [MoCA]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72172-0 "Total score [MoCA]"
@@ -20,7 +20,7 @@ Description: "Example PFE Observation: Total score [MMSE]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey "Survey"
 * effectiveDateTime = "2020-07-08T17:32:00-05:00"
 * code = http://loinc.org#72106-8 "Total score [MMSE]"
@@ -37,7 +37,7 @@ Description: "Example PFE Observation: Inattention in last 7 days [CAM.CMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
 * code = http://loinc.org#54628-3 "Inattention in last 7 days [CAM.CMS]"
@@ -53,7 +53,7 @@ Description: "Example PFE Observation: Disorganized thinking in last 7 days [CAM
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
 * code = http://loinc.org#54629-1 "Disorganized thinking in last 7 days [CAM.CMS]"
@@ -69,7 +69,7 @@ Description: "Example PFE Observation: Acute onset mental status change [CAM.CMS
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-04-09T18:00:00-05:00"
 * code = http://loinc.org#54632-5 "Acute onset mental status change [CAM.CMS]"
@@ -85,7 +85,7 @@ Description: "Example PFE Observation: Feeling tired or having little energy in 
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54643-2 "Feeling tired or having little energy in last 2 weeks.frequency [Reported PHQ-9 CMS]"
@@ -101,7 +101,7 @@ Description: "Example PFE Observation: Poor appetite or overeating in last 2 wee
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54644-0 "Poor appetite or overeating in last 2 weeks.presence [Reported PHQ-9 CMS]"
@@ -117,7 +117,7 @@ Description: "Example PFE Observation: Feeling down, depressed or hopeless in la
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54639-0 "Feeling down, depressed or hopeless in last 2 weeks.frequency [Reported PHQ-9 CMS]"
@@ -133,7 +133,7 @@ Description: "Example PFE Observation: Trouble falling or staying asleep, or sle
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54640-8 "Trouble falling or staying asleep, or sleeping too much in last 2 weeks.presence [Reported PHQ-9 CMS]"
@@ -149,7 +149,7 @@ Description: "Example PFE Observation: Trouble falling or staying asleep, or sle
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54641-6 "Trouble falling or staying asleep, or sleeping too much in last 2 weeks.frequency [Reported PHQ-9 CMS]"
@@ -165,7 +165,7 @@ Description: "Example PFE Observation: Feeling tired or having little energy in 
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54642-4 "Feeling tired or having little energy in last 2 weeks.presence [Reported PHQ-9 CMS]"
@@ -181,7 +181,7 @@ Description: "Example PFE Observation: Little interest or pleasure in doing thin
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54636-6 "Little interest or pleasure in doing things in last 2 weeks.presence [Reported PHQ-9 CMS]"
@@ -197,7 +197,7 @@ Description: "Example PFE Observation: Little interest or pleasure in doing thin
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54637-4 "Little interest or pleasure in doing things in last 2 weeks.frequency [Reported PHQ-9 CMS]"
@@ -213,7 +213,7 @@ Description: "Example PFE Observation: Feeling down, depressed or hopeless in la
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54638-2 "Feeling down, depressed or hopeless in last 2 weeks.presence [Reported PHQ-9 CMS]"
@@ -229,7 +229,7 @@ Description: "Example PFE Observation: Moving or speaking so slowly that other p
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54650-7 "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual in last 2 weeks.presence [Reported PHQ-9 CMS]"
@@ -245,7 +245,7 @@ Description: "Example PFE Observation: Trouble concentrating on things, such as 
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54649-9 "Trouble concentrating on things, such as reading the newspaper or watching television in last 2 weeks.frequency [Reported PHQ-9 CMS]"
@@ -261,7 +261,7 @@ Description: "Example PFE Observation: Thoughts that you would be better off dea
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54652-3 "Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks.presence [Reported PHQ-9 CMS]"
@@ -277,7 +277,7 @@ Description: "Example PFE Observation: Moving or speaking so slowly that other p
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54651-5 "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual in last 2 weeks.frequency [Reported PHQ-9 CMS]"
@@ -293,7 +293,7 @@ Description: "Example PFE Observation: Feeling bad about yourself - or that you 
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54646-5 "Feeling bad about yourself - or that you are a failure or have let yourself or your family down in last 2 weeks.presence [Reported PHQ-9 CMS]"
@@ -309,7 +309,7 @@ Description: "Example PFE Observation: Poor appetite or overeating in last 2 wee
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54645-7 "Poor appetite or overeating in last 2 weeks.frequency [Reported PHQ-9 CMS]"
@@ -325,7 +325,7 @@ Description: "Example PFE Observation: Trouble concentrating on things, such as 
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54648-1 "Trouble concentrating on things, such as reading the newspaper or watching television in last 2 weeks.presence [Reported PHQ-9 CMS]"
@@ -341,7 +341,7 @@ Description: "Example PFE Observation: Feeling bad about yourself - or that you 
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54647-3 "Feeling bad about yourself - or that you are a failure or have let yourself or your family down in last 2 weeks.frequency [Reported PHQ-9 CMS]"
@@ -357,7 +357,7 @@ Description: "Example PFE Observation: Mood interview total severity score [Repo
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54654-9 "Mood interview total severity score [Reported PHQ-9 CMS]"
@@ -374,7 +374,7 @@ Description: "Example PFE Observation: Thoughts that you would be better off dea
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54653-1 "Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks.frequency [Reported PHQ-9 CMS]"
@@ -390,7 +390,7 @@ Description: "Example PFE Observation: Temporal orientation - current year [BIMS
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52732-5 "Temporal orientation - current year [BIMS]"
@@ -406,7 +406,7 @@ Description: "Example PFE Observation: Recall - bed [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey 
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52737-4 "Recall - bed [BIMS]"
@@ -422,7 +422,7 @@ Description: "Example PFE Observation: Recall - blue [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52736-6 "Recall - blue [BIMS]"
@@ -438,7 +438,7 @@ Description: "Example PFE Observation: Recall - sock [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52735-8 "Recall - sock [BIMS]"
@@ -454,7 +454,7 @@ Description: "Example PFE Observation: Temporal orientation - current day of the
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54609-3 "Temporal orientation - current day of the week [BIMS]"
@@ -470,7 +470,7 @@ Description: "Example PFE Observation: Temporal orientation - current month [BIM
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52733-3 "Temporal orientation - current month [BIMS]"
@@ -486,7 +486,7 @@ Description: "Example PFE Observation: Repetition of three words # [BIMS]"
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#52731-7 "Repetition of three words # [BIMS]"
@@ -502,7 +502,7 @@ Description: "Example PFE Observation: Brief Interview for Mental Status - summa
 * subject = Reference(PFEIG-patientBSJ1)
 * status = #final
 * category[us-core] = $USCORECAT#cognitive-status "Cognitive Status"
-* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/category-tag].valueReference = Reference(BlockL2-b11-Mental-Functions)
+* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-b11 "Mental functions"
 * category[survey] = $OBSCAT#survey
 * effectiveDateTime = "2020-07-11T11:30:00-05:00"
 * code = http://loinc.org#54614-3 "Brief Interview for Mental Status - summary score [BIMS]"

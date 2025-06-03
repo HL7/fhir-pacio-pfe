@@ -9,13 +9,11 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 
 * extension contains 
   ObservationEventLocation named event-location 0..1 MS and
-  AssistanceRequired named assistance-required 0..1 MS and
-  CategoryTag named category-tag 0..* MS
+  AssistanceRequired named assistance-required 0..1 MS
 
 * extension[event-location] ^short = "An extension to indicate where the documented information was collected."
 * extension[event-location] ^definition = "The principal physical location where the documented information was collected."
 * extension[assistance-required] ^short = "An extension to indicate the level of assistance required for a patient during an assessment."
-* extension[category-tag] ^short = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
 * status MS
 * status ^short = "Should have the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used."
@@ -34,6 +32,10 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 * category[us-core] 1..2 MS
 * category[us-core] from http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category (required)
 * category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
+
+* category contains PFEDomain 0..* MS
+* category[PFEDomain] from PFECategoryVS (required)
+* category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
 * code ^short = "US Core Report Code"
 * code ^definition = "The test, panel, report, or note that was ordered."
