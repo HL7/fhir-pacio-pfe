@@ -47,3 +47,6 @@ There are multiple different potential matches for the url 'http://hl7.org/fhir/
 
 # Grahame Grieve confirmed that the ICF code system is not supported. (Zulip stream: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/https.3A.2F.2Ftx.2Efhir.2Eorg.2Fr4.3A.20Unable.20to.20provide.20support)
 Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icf
+
+# Using the standard CapabilityStatementExpectation extension in additional contexts to fully express intended capabilities: see FHIR-12419
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
