@@ -46,4 +46,4 @@ Reference to draft ValueSet http://hl7.org/fhir/ValueSet/servicerequest-category
 There are multiple different potential matches for the url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '6.1.0', found versions: 3.1.1, 6.1.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal' to 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|6.1.0'
 
 # Grahame Grieve confirmed that the ICF code system is not supported. (Zulip stream: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/https.3A.2F.2Ftx.2Efhir.2Eorg.2Fr4.3A.20Unable.20to.20provide.20support)
-Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icf (from server, see log)
+Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icf
