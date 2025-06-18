@@ -40,7 +40,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 6.1.0
-  hl7.fhir.us.sdoh-clinicalcare: 2.2.0
+  hl7.fhir.us.sdoh-clinicalcare: 2.3.0
 parameters:
   path-expansion-params: '../../input/_resources/terminology-settings.json'  # for using US ed of SNOMED
   show-inherited-invariants: false
