@@ -47,7 +47,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
 copyrightYear: 2022+
-releaseLabel: STU2
+releaseLabel: STU 2
 jurisdiction: urn:iso:std:iso:3166#US
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
