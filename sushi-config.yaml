@@ -46,6 +46,8 @@ parameters:
   show-inherited-invariants: false
   apply-jurisdiction: true
   apply-publisher: true
+  logging: progress
+
 copyrightYear: 2022+
 releaseLabel: STU 2
 jurisdiction: urn:iso:std:iso:3166#US
