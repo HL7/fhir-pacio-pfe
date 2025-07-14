@@ -23,7 +23,8 @@ Description:    "A point in time collection of post-acute care observations for 
 
 * category contains 
 	survey 1..1 MS and
-	PFEDomain 0..* MS
+	PFEDomain 0..* MS and
+	PFEDetail 0..* MS
 
 * category[us-core] 1..2 MS 
 * category[us-core] from PFEUSCoreCategoryVS (required)
@@ -35,7 +36,26 @@ Description:    "A point in time collection of post-acute care observations for 
 * category[PFEDomain] from PFECategoryVS (required)
 * category[PFEDomain] ^requirements = "Indicates the personal functioning and engagement domain(s) that this observation is related to."
 
+* category[PFEDetail] from PFECategoryVS (required)
+* category[PFEDetail] ^requirements = "Provides more detailed International Classification of Function, Disability, and Health (ICF) that this observation relates to"
+
 * code ^short = "For a Post-Acute Care structured assessment resource such as an instrument or screen, use a LOINC code to identify the instrument/screen name or panel/section title to indicate the kind of assessment."
+* category ^requirements = "This code should be included in the union of the Value Sets associated with the selected PFE domain for this collection."
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, s, "http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-body-structures-vs", extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, d3, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-communication-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, d6, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-domestic-life-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, b5, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-functions-of-digestive-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, b8, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-skin-functions-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, b6, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-genitourinary-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, d1, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-learning-and-applying-knowledge-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, b1, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-mental-functions-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, d4, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-mobility-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, b7, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-neuromusculoskeletal-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, e1, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-products-and-technology-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, d5, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-self-care-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, b2, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-sensory-functions-pain-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, s3, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-structures-voice-and-speech-vs, extensible)
+* insert AdditionalBinding(PFESingleObservation, code, Observation.category:PFEDomain, b3, http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-voice-and-speech-vs, extensible)
 
 * effective[x] 1..1 
 * effective[x] only dateTime or Period

@@ -15,6 +15,7 @@ Alias: $SDOHCCValueSetObservationMethod = http://hl7.org/fhir/us/sdoh-clinicalca
 
 // Misc
 Alias: $EventLocation = http://hl7.org/fhir/StructureDefinition/event-location|5.2.0
+Alias: $AddBinding = http://hl7.org/fhir/tools/StructureDefinition/additional-binding
 
 // US Core
 Alias: $USCoreConditionEncounterDiagnosisProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0
