@@ -6,7 +6,7 @@ Description: "Example Nested Personal Functioning and Engagement Collection, ie.
 * category[us-core][0] = $USCORECAT#functional-status "Functional Status"
 * category[us-core][1] = $USCORECAT#cognitive-status "Cognitive Status"
 * category[survey] = $OBSCAT#survey
-* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-d41 "Mobility"
+* category[PFEDomain] = $PFEDOMAINCAT#d4 "Mobility"
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#88331-4 "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"

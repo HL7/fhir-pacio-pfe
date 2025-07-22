@@ -9,7 +9,7 @@ Description: "Example PFE Collection of mobility observations for hospital disch
 * status = #final
 * category[us-core] = $USCORECAT#functional-status "Functional Status"
 * category[survey] = $OBSCAT#survey
-* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-d41 "Mobility"
+* category[PFEDomain] = $PFEDOMAINCAT#d4 "Mobility"
 * effectiveDateTime = "2020-07-10T14:34:00-05:00"
 * code = http://loinc.org#88331-4 "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
@@ -47,7 +47,7 @@ Description: "Example PFE Collection of mobility observations for hospital admis
 * status = #final
 * category[us-core] = $USCORECAT#functional-status "Functional Status"
 * category[survey] = $OBSCAT#survey
-* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-d41 "Mobility"
+* category[PFEDomain] = $PFEDOMAINCAT#d4 "Mobility"
 * effectiveDateTime = "2020-07-08T16:00:00-05:00"
 * code = http://loinc.org#88330-6 "Mobility - admission performance during 3 day assessment period [CMS Assessment]"
 * code.text = "Mobility - admission performance during 3 day assessment period [CMS Assessment]"
@@ -82,7 +82,7 @@ Description: "Example PFE Collection of self-care observations for SNF admission
 * status = #final
 * category[us-core] = $USCORECAT#functional-status "Functional Status"
 * category[survey] = $OBSCAT#survey
-* category[PFEDomain] = $PFEDOMAINCAT#BlockL2-d51 "Self-care"
+* category[PFEDomain] = $PFEDOMAINCAT#d5 "Self-care"
 * effectiveDateTime = "2020-07-11T16:32:00-05:00"
 * code = http://loinc.org#83233-7 "Self-care - admission performance [CMS Assessment]"
 * code.text = "Self-care - admission performance [CMS Assessment]"
