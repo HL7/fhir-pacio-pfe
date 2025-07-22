@@ -8,9 +8,6 @@
 The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 
 # The following code system are not discoverable because they are code systems in THO, but THO doesn't define the codes. They have been checked and the identifiers are correct
-A definition for CodeSystem 'http://hl7.org/fhir/sid/icf' could not be found, so the code cannot be validated
-Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-category-vs|2.0.0' because the code system http://hl7.org/fhir/sid/icf was not found
-A definition for CodeSystem 'http://hl7.org/fhir/sid/icf' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-category-vs|2.0.0' because the code system http://hl7.org/fhir/sid/icf was not found
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icf
 
 # This version of US Core has been carefully considered as a base for this IG.  This is the version we would like to use for quickest potential adoption.
