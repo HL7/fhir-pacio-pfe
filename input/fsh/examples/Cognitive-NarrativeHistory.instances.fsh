@@ -12,7 +12,7 @@ Usage: #example
 * extension[=].valueCodeableConcept = $loinc#LA11539-6 "Independent - Patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
 * status = #final
 * category[us-core] = $loinc#LP7839-6 "Pathology"
-* category[PFEDomain] = PFEDOMAINCAT#BlockL2-b11 "Mental functions"
+* category[PFEDomain] = PFEDOMAINCAT#b1 "Mental functions"
 * code = $loinc#11332-4 "History of Cognitive Function Narrative"
 * subject = Reference(Patient/PFEIG-patientBSJ1)
 * effectivePeriod.start = "2019-07-01"
