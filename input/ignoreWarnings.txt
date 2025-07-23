@@ -10,6 +10,9 @@ The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be
 # The following code system are not discoverable because they are code systems in THO, but THO doesn't define the codes. They have been checked and the identifiers are correct
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icf
 
+# For information only. The PFE IG defines this value set using the ICF code system defined by the WHO. We don't have control over the large number of codes in the ICF.
+The value set expansion is too large, and only a subset has been displayed
+
 # This version of US Core has been carefully considered as a base for this IG.  This is the version we would like to use for quickest potential adoption.
 %The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30%
 
