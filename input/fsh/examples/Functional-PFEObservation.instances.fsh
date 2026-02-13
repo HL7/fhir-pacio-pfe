@@ -267,8 +267,7 @@ Description: "Example PFE Observation: Oral hygiene - functional ability during 
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-* valueCodeableConcept = http://loinc.org#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
-
+* insert SetPartialModerateAssist(valueCodeableConcept)
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3
 InstanceOf: PFESingleObservation
@@ -315,7 +314,7 @@ Description: "Example PFE Observation: Eating - functional ability during 3 day 
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-* valueCodeableConcept = http://loinc.org#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(valueCodeableConcept)
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7
@@ -427,7 +426,7 @@ Description: "Example PFE Observation: Roll left and right - functional ability 
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
 * derivedFrom[+] = Reference(PFEIG-QResponse-Hospital-Discharge-Mobility-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-01)
-* valueCodeableConcept = http://loinc.org#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(valueCodeableConcept)
 
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11
@@ -443,7 +442,7 @@ Description: "Example PFE Observation: Toileting hygiene - functional ability du
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-* valueCodeableConcept = http://loinc.org#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(valueCodeableConcept)
 
 
 Instance: PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1
@@ -475,7 +474,7 @@ Description: "Example PFE Observation: Lying to sitting on side of bed - functio
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
 * derivedFrom[+] = Reference(PFEIG-QResponse-Hospital-Discharge-Mobility-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-01)
-* valueCodeableConcept = http://loinc.org#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(valueCodeableConcept)
 
 
 Instance: PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15
@@ -507,7 +506,7 @@ Description: "Example PFE Observation: Sit to lying - functional ability during 
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
 * derivedFrom[+] = Reference(PFEIG-QResponse-Hospital-Discharge-Mobility-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-01)
-* valueCodeableConcept = http://loinc.org#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(valueCodeableConcept)
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22
@@ -555,7 +554,7 @@ Description: "Example PFE Observation: Sit to stand - functional ability during 
 * performer[+] = Reference(PFEIG-Role-PT-RonMarble)
 * derivedFrom[+] = Reference(PFEIG-QResponse-Hospital-Discharge-Mobility-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-01)
-* valueCodeableConcept = http://loinc.org#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(valueCodeableConcept)
 
 
 Instance: PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26
@@ -651,4 +650,4 @@ Description: "Example PFE Observation: Upper body dressing - functional ability 
 * performer[+] = Reference(PFEIG-Role-OT-JenCadbury)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
-* valueCodeableConcept = http://loinc.org#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(valueCodeableConcept)
