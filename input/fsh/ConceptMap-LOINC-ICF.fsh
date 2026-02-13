@@ -5,10 +5,10 @@ Instance: LOINCtoICF
 InstanceOf: ConceptMap
 Usage: #definition
 * url = "http://hl7.org/fhir/us/pacio-pfe/ConceptMap/LOINCtoICF"
-* version = "1.9.1"
 * name = "LOINCtoICF"
 * title = "LOINC to ICF Mapping"
 * status = #active
+* experimental = false
 * date = "2024-09-01T18:06:11+00:00"
 * publisher = "HL7 International / Patient Care"
 * contact.name = "HL7 International / Patient Care"
