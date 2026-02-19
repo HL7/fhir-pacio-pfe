@@ -4,7 +4,7 @@ Alias: $LNC = http://loinc.org
 Alias: $Hl7FhirAdminGender  = http://hl7.org/fhir/administrative-gender
 Alias: $NUCC = http://nucc.org/provider-taxonomy
 Alias: $USCORECAT = http://hl7.org/fhir/us/core/CodeSystem/us-core-category
-Alias: $OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category|1.0.1
+Alias: $OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $PFEDOMAINCAT = http://hl7.org/fhir/sid/icf
 Alias: $FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 
