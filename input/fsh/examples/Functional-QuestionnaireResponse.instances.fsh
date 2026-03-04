@@ -82,16 +82,16 @@ Usage: #example
 * item.item.text = "Mobility - discharge performance during 3 day assessment period [CMS Assessment]"
 * item.item.item[0].linkId = "Section-37/GG0170A3"
 * item.item.item[=].text = "Roll left and right - functional ability during 3 day assessment period [CMS Assessment]"
-* item.item.item[=].answer.valueCoding = $loinc#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(item.item.item[=].answer.valueCoding)
 * item.item.item[+].linkId = "Section-37/GG0170B3"
 * item.item.item[=].text = "Sit to lying - functional ability during 3 day assessment period [CMS Assessment]"
-* item.item.item[=].answer.valueCoding = $loinc#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(item.item.item[=].answer.valueCoding)
 * item.item.item[+].linkId = "Section-37/GG0170C3"
 * item.item.item[=].text = "Lying to sitting on side of bed - functional ability during 3 day assessment period [CMS Assessment]"
-* item.item.item[=].answer.valueCoding = $loinc#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(item.item.item[=].answer.valueCoding)
 * item.item.item[+].linkId = "Section-37/GG0170D3"
 * item.item.item[=].text = "Sit to stand - functional ability during 3 day assessment period [CMS Assessment]"
-* item.item.item[=].answer.valueCoding = $loinc#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(item.item.item[=].answer.valueCoding)
 * item.item.item[+].linkId = "Section-37/GG0170E3"
 * item.item.item[=].text = "Chair/bed-to-chair transfer - functional ability during 3 day assessment period [CMS Assessment]"
 * item.item.item[=].answer.valueCoding = $loinc#LA11759-0 "Substantial/maximal assistance - Helper does more than half the effort. Helper lifts or holds trunk or limbs and provides more than half the effort."
@@ -149,19 +149,19 @@ Usage: #example
 * item.item.text = "Self-care - admission performance [CMS Assessment]"
 * item.item.item[0].linkId = "Section-37/GG0130A1"
 * item.item.item[=].text = "Eating"
-* item.item.item[=].answer.valueCoding = $loinc#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(item.item.item[=].answer.valueCoding)
 * item.item.item[+].linkId = "Section-37/GG0130B1"
 * item.item.item[=].text = "Oral hygiene"
-* item.item.item[=].answer.valueCoding = $loinc#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(item.item.item[=].answer.valueCoding)
 * item.item.item[+].linkId = "Section-37/GG0130C1"
 * item.item.item[=].text = "Toileting hygiene"
-* item.item.item[=].answer.valueCoding = $loinc#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(item.item.item[=].answer.valueCoding)
 * item.item.item[+].linkId = "Section-37/GG0130E1"
 * item.item.item[=].text = "Shower/bathe self"
 * item.item.item[=].answer.valueCoding = $loinc#LA26735-3 "Not attempted due to medical condition or safety concerns"
 * item.item.item[+].linkId = "Section-37/GG0130F1"
 * item.item.item[=].text = "Upper body dressing"
-* item.item.item[=].answer.valueCoding = $loinc#LA10055-4 "Partial/moderate assistance - Helper does less than half the effort. Helper lifts, holds or supports trunk or limbs, but provides less than half the effort."
+* insert SetPartialModerateAssist(item.item.item[=].answer.valueCoding)
 * item.item.item[+].linkId = "Section-37/GG0130G1"
 * item.item.item[=].text = "Lower body dressing"
 * item.item.item[=].answer.valueCoding = $loinc#LA11759-0 "Substantial/maximal assistance - Helper does more than half the effort. Helper lifts or holds trunk or limbs and provides more than half the effort."

@@ -17,6 +17,7 @@
 <artifact deprecated="true" id="SearchParameter/Goal-achievementStatus" key="SearchParameter-Goal-achievementStatus" name="Goal-achievementStatus"/>
 <artifact id="SearchParameter/Goal-addresses" key="SearchParameter-Goal-addresses" name="Goal-addresses"/>
 <artifact deprecated="true" id="SearchParameter/Goal-identifier" key="SearchParameter-Goal-identifier" name="Goal-identifier"/>
+<artifact id="ConceptMap/LOINCtoICF" key="ConceptMap-LOINCtoICF" name="LOINC to ICF Mapping"/>
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-encounter" key="SearchParameter-NutritionOrder-encounter" name="NutritionOrder-encounter"/>
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-identifier" key="SearchParameter-NutritionOrder-identifier" name="NutritionOrder-identifier"/>
 <artifact id="SearchParameter/NutritionOrder-orderer" key="SearchParameter-NutritionOrder-orderer" name="NutritionOrder-orderer"/>

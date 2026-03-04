@@ -189,7 +189,6 @@ Id: pfe-mental-functions-vs
 * $LNC#11332-4
 * $LNC#44250-9
 * $LNC#44255-8
-* $LNC#45482-7
 * $LNC#46473-5
 * $LNC#46589-8
 * $LNC#46592-2
@@ -573,8 +572,6 @@ Id: pfe-products-and-technology-vs
 * $LNC#83271-7
 * $LNC#83272-5
 * $LNC#86602-0
-* $LNC#89408-9
-* $LNC#89411-3
 * $LNC#94879-4
 * $LNC#94880-2
 * $LNC#94881-0
@@ -666,7 +663,6 @@ Id: pfe-panel-vs
 * $LNC#90541-4
 * $LNC#92908-3
 * $LNC#93180-8
-* $LNC#93417-4
 * $LNC#94849-7
 * $LNC#94850-5
 * $LNC#94851-3
