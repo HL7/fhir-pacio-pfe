@@ -23,6 +23,8 @@
 <artifact id="SearchParameter/NutritionOrder-orderer" key="SearchParameter-NutritionOrder-orderer" name="NutritionOrder-orderer"/>
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-subject" key="SearchParameter-NutritionOrder-subject" name="NutritionOrder-subject"/>
 <artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="ObservationEventLocation"/>
+<artifact id="StructureDefinition/pfe-clinical-justification" key="StructureDefinition-pfe-clinical-justification" name="PFEClinicalJustification"/>
+<artifact id="StructureDefinition/pfe-device-user" key="StructureDefinition-pfe-device-user" name="PFEDeviceUser"/>
 <artifact id="AllergyIntolerance/PFEIG-AllergyACE" key="AllergyIntolerance-PFEIG-AllergyACE" name="PFEIG-AllergyACE"/>
 <artifact id="Device/PFEIG-CMS-Device-BedsideRails" key="Device-PFEIG-CMS-Device-BedsideRails" name="PFEIG-CMS-Device-BedsideRails"/>
 <artifact id="Device/PFEIG-CMS-Device-Eyeglasses" key="Device-PFEIG-CMS-Device-Eyeglasses" name="PFEIG-CMS-Device-Eyeglasses"/>
@@ -207,6 +209,7 @@
 <artifact id="ValueSet/pfe-communication-vs" key="ValueSet-pfe-communication-vs" name="Personal Functioning and Engagement Communication Value Set"/>
 <artifact id="StructureDefinition/pfe-condition-encounter-diagnosis" key="StructureDefinition-pfe-condition-encounter-diagnosis" name="Personal Functioning and Engagement Condition Encounter Diagnosis Profile"/>
 <artifact id="StructureDefinition/pfe-condition-problems-health-concerns" key="StructureDefinition-pfe-condition-problems-health-concerns" name="Personal Functioning and Engagement Condition Problems and Health Concerns Profile"/>
+<artifact id="StructureDefinition/pfe-device-request" key="StructureDefinition-pfe-device-request" name="Personal Functioning and Engagement Device Request Profile"/>
 <artifact id="StructureDefinition/pfe-diagnostic-report-note-exchange" key="StructureDefinition-pfe-diagnostic-report-note-exchange" name="Personal Functioning and Engagement Diagnostic Report Note Exchange Profile"/>
 <artifact id="ValueSet/pfe-domestic-life-vs" key="ValueSet-pfe-domestic-life-vs" name="Personal Functioning and Engagement Domestic Life Value Set"/>
 <artifact deprecated="true" id="ValueSet/pfe-example-obs-vs" key="ValueSet-pfe-example-obs-vs" name="Personal Functioning and Engagement Example Observations Value Set"/>

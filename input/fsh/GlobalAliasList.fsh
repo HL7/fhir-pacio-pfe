@@ -12,9 +12,10 @@ Alias: $FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functio
 // NOTE: use a value set (not code system) when binding a field
 Alias: $LL4309-2 = http://loinc.org/vs/LL4309-2
 Alias: $SDOHCCValueSetObservationMethod = http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetObservationMethod
+Alias: $DeviceAssociationRelationship = https://build.fhir.org/valueset-deviceassociation-relationship.html
 
 // Misc
-Alias: $EventLocation = http://hl7.org/fhir/StructureDefinition/event-location|5.2.0
+Alias: $EventLocation = http://hl7.org/fhir/StructureDefinition/event-location
 
 // US Core
 Alias: $USCoreConditionEncounterDiagnosisProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0
@@ -26,6 +27,7 @@ Alias: $USCoreGoalProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-c
 Alias: $USCoreLocation = http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|6.1.0
 Alias: $USCoreSimpleObservationProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0
 Alias: $USCoreObservationClinicalResultProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0
+Alias: $USCoreObservationScreeningAssessmentProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|6.1.0
 Alias: $USCoreOrganization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0
 Alias: $USCorePatient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0
 Alias: $USCorePractitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
