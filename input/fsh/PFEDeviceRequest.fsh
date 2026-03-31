@@ -19,6 +19,9 @@ Description:    "An exchange of post-acute care device requests for a patient. T
 * parameter MS
 * occurrence[x] MS
 * requester MS
+* requester.extension contains PFEDeviceRequestAdditionalRequester named requester-additional 0..1 MS
+* requester.extension[requester-additional] ^short = "Cross-version extension for R6 requester targets not supported in R4."
+* requester.extension[requester-additional] ^definition = "Carries DeviceRequest.requester when the requester is a CareTeam, Group, Patient, or RelatedPerson, which are allowed in FHIR R6 but not in FHIR R4."
 * authoredOn MS
 * encounter MS
 * priority MS
