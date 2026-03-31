@@ -46,7 +46,6 @@ Id: pfe-clinical-justification
 Extension: PFEDeviceRequestLocation
 Description: "Cross-version extension to carry DeviceRequest.location from FHIR R6 on an R4 DeviceRequest."
 Id: pfe-device-request-location
-* ^url = "http://hl7.org/fhir/6.0/StructureDefinition/extension-DeviceRequest.location"
 * ^context.type = #element
 * ^context.expression = "DeviceRequest"
 * extension contains
@@ -60,7 +59,6 @@ Id: pfe-device-request-location
 Extension: PFEDeviceRequestAdditionalRequester
 Description: "Cross-version extension to carry FHIR R6 DeviceRequest.requester targets that are not allowed in FHIR R4."
 Id: pfe-device-request-additional-requester
-* ^url = "http://hl7.org/fhir/6.0/StructureDefinition/extension-DeviceRequest.requester"
 * ^context.type = #element
 * ^context.expression = "DeviceRequest.requester"
 * value[x] only Reference(CareTeam or Group or Patient or RelatedPerson)
