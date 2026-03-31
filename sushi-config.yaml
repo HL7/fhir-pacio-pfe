@@ -47,9 +47,6 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
   pin-canonicals: 'pin-multiples'
-  special-url:
-    - http://hl7.org/fhir/6.0/StructureDefinition/extension-DeviceRequest.location
-    - http://hl7.org/fhir/6.0/StructureDefinition/extension-DeviceRequest.requester
 copyrightYear: 2022+
 releaseLabel: STU 2
 jurisdiction: urn:iso:std:iso:3166#US
