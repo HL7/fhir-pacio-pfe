@@ -42,3 +42,16 @@ Id: pfe-clinical-justification
 * ^context.type = #element
 * ^context.expression = "DeviceRequest"
 * value[x] only string or markdown or Annotation
+
+Extension: PFEDeviceRequestLocation
+Description: "Cross-version extension to carry DeviceRequest.location from FHIR R6 on an R4 DeviceRequest."
+Id: pfe-device-request-location
+* ^context.type = #element
+* ^context.expression = "DeviceRequest"
+* extension contains
+    concept 0..1 and
+    reference 0..1
+* value[x] 0..0
+* extension[concept].value[x] only CodeableConcept
+* extension[concept].valueCodeableConcept from $ServiceDeliveryLocationRoleType (example)
+* extension[reference].value[x] only Reference($USCoreLocation)
