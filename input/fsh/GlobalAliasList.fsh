@@ -13,6 +13,7 @@ Alias: $FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functio
 Alias: $LL4309-2 = http://loinc.org/vs/LL4309-2
 Alias: $SDOHCCValueSetObservationMethod = http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetObservationMethod
 Alias: $DeviceAssociationRelationship = https://build.fhir.org/valueset-deviceassociation-relationship.html
+Alias: $ServiceDeliveryLocationRoleType = http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
 
 // Misc
 Alias: $EventLocation = http://hl7.org/fhir/StructureDefinition/event-location

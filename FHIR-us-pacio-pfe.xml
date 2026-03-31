@@ -24,6 +24,7 @@
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-subject" key="SearchParameter-NutritionOrder-subject" name="NutritionOrder-subject"/>
 <artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="ObservationEventLocation"/>
 <artifact id="StructureDefinition/pfe-clinical-justification" key="StructureDefinition-pfe-clinical-justification" name="PFEClinicalJustification"/>
+<artifact id="StructureDefinition/pfe-device-request-location" key="StructureDefinition-pfe-device-request-location" name="PFEDeviceRequestLocation"/>
 <artifact id="StructureDefinition/pfe-device-user" key="StructureDefinition-pfe-device-user" name="PFEDeviceUser"/>
 <artifact id="AllergyIntolerance/PFEIG-AllergyACE" key="AllergyIntolerance-PFEIG-AllergyACE" name="PFEIG-AllergyACE"/>
 <artifact id="Device/PFEIG-CMS-Device-BedsideRails" key="Device-PFEIG-CMS-Device-BedsideRails" name="PFEIG-CMS-Device-BedsideRails"/>
