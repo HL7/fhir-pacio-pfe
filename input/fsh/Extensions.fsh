@@ -55,3 +55,10 @@ Id: pfe-device-request-location
 * extension[concept].value[x] only CodeableConcept
 * extension[concept].valueCodeableConcept from $ServiceDeliveryLocationRoleType (example)
 * extension[reference].value[x] only Reference($USCoreLocation)
+
+Extension: PFEDeviceRequestAdditionalRequester
+Description: "Cross-version extension to carry FHIR R6 DeviceRequest.requester targets that are not allowed in FHIR R4."
+Id: pfe-device-request-additional-requester
+* ^context.type = #element
+* ^context.expression = "DeviceRequest"
+* value[x] only Reference(CareTeam or Group or Patient or RelatedPerson)

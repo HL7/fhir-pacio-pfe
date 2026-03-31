@@ -9,10 +9,13 @@ Description:    "An exchange of post-acute care device requests for a patient. T
 
 * extension contains
     PFEDeviceRequestLocation named location 0..* MS and
+    PFEDeviceRequestAdditionalRequester named requester-additional 0..1 MS and
     PFEDeviceUser named device-user 0..* MS and
     PFEClinicalJustification named clinical-justification 0..* MS
 * extension[location] ^short = "Cross-version extension for the R6 DeviceRequest.location element."
 * extension[location] ^definition = "Carries the FHIR R6 DeviceRequest.location element on this R4 DeviceRequest to support cross-version migration."
+* extension[requester-additional] ^short = "Cross-version extension for R6 requester targets not supported in R4."
+* extension[requester-additional] ^definition = "Carries DeviceRequest.requester when the requester is a CareTeam, Group, Patient, or RelatedPerson, which are allowed in FHIR R6 but not in FHIR R4."
 * subject 1..1
 * subject only Reference($USCorePatient)
 * subject MS
