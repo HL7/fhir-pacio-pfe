@@ -2,6 +2,16 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 
+ValueSet: PFEDeviceType
+Title: "Personal Functioning and Engagement Device Type Value Set"
+Id: pfe-device-type
+Description: "Codes used to identify requested assistive device types for Personal Functioning and Engagement device requests."
+* ^experimental = false
+* ^copyright = "Includes CPT content, copyright American Medical Association. All rights reserved. CPT is a registered trademark of the American Medical Association."
+* include codes from system $HCPCS
+* include codes from system $CPT
+* include codes from valueset $FHIRDeviceType
+
 ValueSet: PFEUSCoreCategoryVS
 Title: "Personal Functioning and Engagement US Core Value Set"
 Id: pfe-us-core-category-vs

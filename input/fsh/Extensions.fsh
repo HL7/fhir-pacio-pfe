@@ -23,22 +23,26 @@ Id: assistance-required
 * value[x] only CodeableConcept
 * value[x] from $LL4309-2 (extensible)
 
-Extension: PFEDeviceUser
+Extension: PFEDeviceRequestUser
 Description: "Identifies the person or role using the device and, optionally, the nature of that relationship to the device."
-Id: pfe-device-user
+Id: pfe-device-request-user
 * ^context.type = #element
 * ^context.expression = "DeviceRequest"
 * extension contains
     user 1..1 and
     relationship 0..1
 * value[x] 0..0
+* extension[user] ^short = "Device User"
+* extension[user] ^definition = "The person using the device. This can be the Patient, a related person (e.g., Spouse), or a care provider (e.g., Nursing Aid, Physical Therapist)."
 * extension[user].value[x] only Reference(Patient or RelatedPerson or Practitioner or PractitionerRole)
+* extension[relationship] ^short = "User relationship"
+* extension[relationship] ^definition = "The relationship between the user and the device."
 * extension[relationship].value[x] only CodeableConcept
 * extension[relationship].valueCodeableConcept from $DeviceAssociationRelationship (extensible)
 
-Extension: PFEClinicalJustification
+Extension: PFEDeviceRequestClinicalJustification
 Description: "Captures the clinical justification for a device request as plain text, narrative, or annotation."
-Id: pfe-clinical-justification
+Id: pfe-device-request-clinical-justification
 * ^context.type = #element
 * ^context.expression = "DeviceRequest"
 * value[x] only string or markdown or Annotation
