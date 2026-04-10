@@ -7,6 +7,8 @@ Alias: $USCORECAT = http://hl7.org/fhir/us/core/CodeSystem/us-core-category
 Alias: $OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category|2.0.0
 Alias: $PFEDOMAINCAT = http://hl7.org/fhir/sid/icf
 Alias: $FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
+Alias: $CPT = http://www.ama-assn.org/go/cpt
+Alias: $HCPCS = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
 
 // Value Sets
 // NOTE: use a value set (not code system) when binding a field
@@ -14,9 +16,12 @@ Alias: $LL4309-2 = http://loinc.org/vs/LL4309-2
 Alias: $SDOHCCValueSetObservationMethod = http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetObservationMethod
 Alias: $DeviceAssociationRelationship = https://build.fhir.org/valueset-deviceassociation-relationship.html
 Alias: $ServiceDeliveryLocationRoleType = http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
+Alias: $FHIRDeviceType = http://hl7.org/fhir/ValueSet/device-type
 
 // Misc
 Alias: $EventLocation = http://hl7.org/fhir/StructureDefinition/event-location
+Alias: $PASCoverage = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-coverage
+Alias: $PASClaimResponse = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-claimresponse
 
 // US Core
 Alias: $USCoreConditionEncounterDiagnosisProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0
@@ -35,3 +40,4 @@ Alias: $USCorePractitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-
 Alias: $USCorePractitionerRole = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|6.1.0
 Alias: $USCoreQuestionnaireResponse = http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0
 Alias: $USCoreServiceRequestProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|6.1.0
+Alias: $USCoreConditionCodeValueSet = http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code
