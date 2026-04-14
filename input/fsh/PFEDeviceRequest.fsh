@@ -10,13 +10,30 @@ Description:    "An exchange of post-acute care device requests for a patient. T
 * extension contains
     PFEDeviceRequestLocation named location 0..* MS and
     PFEDeviceRequestUser named device-user 0..* MS and
-    PFEDeviceRequestClinicalJustification named clinical-justification 0..* MS
-* extension[location] ^short = "Cross-version extension for the R6 DeviceRequest.location element."
-* extension[location] ^definition = "Carries the FHIR R6 DeviceRequest.location element on this R4 DeviceRequest to support cross-version migration."
+    PFEDeviceRequestClinicalJustification named clinical-justification 0..* MS and
+    PFEDeviceRequestAssessment named assessment 0..* MS and
+    PFEDeviceRequestUseOfDevice named use-of-device 0..* MS and
+    http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal named goal 0..* MS
 * extension[device-user] ^short = "Device user(s)"
 * extension[device-user] ^definition = "Identifies the person(s) using the device, their role in using the device and, optionally, the nature of their relationship(s) to the device during use."
 * extension[clinical-justification] ^short = "Clinical justification"
 * extension[clinical-justification] ^definition = "Captures the clinical justification or rationale for the medical necessity of a device request. Complements the DeviceRequest.reasonCode and DeviceRequest.reasonReference data elements."
+* extension[assessment] ^short = "Supporting assessment information"
+* extension[assessment] ^definition = "Supporting information about patient assessments that may influence fulfillment of the device request."
+* extension[assessment] ^comment = """
+This includes assessments documenting the patient's ability to use/interact with the device related to:
+
+- Cognition: If the patient has the cognitive capacity to use the device (e.g., via cognitive test/scale)
+- Physical Functioning: If the patient is physically able to use the device (e.g., assessment)
+- Vision: If the device supports the patient's visual capabilities (e.g., via ICD code)
+- Health Literacy: If the patient can learn how to use the device (e.g., via health literacy scale)
+- Disability: Refer to a profile where disability information would be indicated
+"""
+* extension[use-of-device] ^short = "Supporting device usage information"
+* extension[use-of-device] ^definition = "Supporting information about the patient's usage of the requested device during an assessment that may influence fulfillment of the device request."
+* extension[use-of-device] ^comment = "Example: Observation data about a patient admitted to a SNF using a cane to complete a walking assessment, such as CMS MDS section GG items on walking distance."
+* extension[goal] ^short = "Supporting goal information"
+* extension[goal] ^definition = "Supporting information about the patient's goals that may influence fulfillment of the device request."
 * basedOn ^comment = """
 Examples:
 - A service request or order for physical, occupational, or speech-language therapy that describes medical necessity and use of the device
@@ -61,33 +78,4 @@ Examples:
 * status MS
 * insurance MS
 * insurance only Reference($PASCoverage or $PASClaimResponse)
-* supportingInfo MS
-* supportingInfo ^slicing.discriminator.type = #profile
-* supportingInfo ^slicing.discriminator.path = "resolve()"
-* supportingInfo ^slicing.rules = #open
-* supportingInfo contains
-    assessment 0..* MS and
-    use-of-device 0..* MS and
-    goal 0..* MS
-* supportingInfo ^definition = "Supporting clinical information that may influence fulfillment of the device request."
-* supportingInfo ^comment = "Example: A gait assessment documenting altered gait that supports the patient's need for a cane, or therapy notes documenting device-related functional needs."
-* supportingInfo[assessment] only Reference($USCoreObservationScreeningAssessmentProfile)
-* supportingInfo[assessment] ^short = "Supporting assessment information"
-* supportingInfo[assessment] ^definition = "Supporting information about patient assessments that may influence fulfillment of the device request."
-* supportingInfo[assessment] ^comment = """
-This includes assessments documenting the patient's ability to use/interact with the device related to:
-
-- Cognition: If the patient has the cognitive capacity to use the device (e.g., via cognitive test/scale)
-- Physical Functioning: If the patient is physically able to use the device (e.g., assessment)
-- Vision: If the device supports the patient's visual capabilities (e.g., via ICD code)
-- Health Literacy: If the patient can learn how to use the device (e.g., via health literacy scale)
-- Disability: Refer to a profile where disability information would be indicated
-"""
-* supportingInfo[use-of-device] only Reference(PFEUseOfDevice)
-* supportingInfo[use-of-device] ^short = "Supporting device usage information"
-* supportingInfo[use-of-device] ^definition = "Supporting information about the patient's usage of the requested device during an assessment that may influence fulfillment of the device request."
-* supportingInfo[use-of-device] ^comment = "Example: Observation data about a patient admitted to a SNF using a cane to complete a walking assessment, such as CMS MDS section GG items on walking distance."
-* supportingInfo[goal] only Reference(PFEGoal)
-* supportingInfo[goal] ^short = "Supporting goal information"
-* supportingInfo[goal] ^definition = "Supporting information about the patient's goals that may influence fulfillment of the device request."
 * note MS

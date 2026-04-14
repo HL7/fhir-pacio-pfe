@@ -47,8 +47,23 @@ Id: pfe-device-request-clinical-justification
 * ^context.expression = "DeviceRequest"
 * value[x] only string or markdown or Annotation
 
+Extension: PFEDeviceRequestAssessment
+Description: "Carries supporting assessment information for a device request."
+Id: pfe-device-request-assessment
+* ^context.type = #element
+* ^context.expression = "DeviceRequest"
+* value[x] only Reference($USCoreObservationScreeningAssessmentProfile)
+
+Extension: PFEDeviceRequestUseOfDevice
+Description: "Carries supporting information about the patient's usage of the requested device during an assessment."
+Id: pfe-device-request-use-of-device
+* ^context.type = #element
+* ^context.expression = "DeviceRequest"
+* value[x] only Reference(PFEUseOfDevice)
+
 Extension: PFEDeviceRequestLocation
-Description: "Cross-version extension to carry DeviceRequest.location from FHIR R6 on an R4 DeviceRequest."
+Title: "Requested location"
+Description: "The preferred location(s) where the device should actually be used in coded or free text form. E.g. at home or nursing day care center."
 Id: pfe-device-request-location
 * ^context.type = #element
 * ^context.expression = "DeviceRequest"
