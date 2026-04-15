@@ -26,6 +26,7 @@
 <artifact id="StructureDefinition/pfe-device-request-additional-requester" key="StructureDefinition-pfe-device-request-additional-requester" name="PFEDeviceRequestAdditionalRequester"/>
 <artifact id="StructureDefinition/pfe-device-request-assessment" key="StructureDefinition-pfe-device-request-assessment" name="PFEDeviceRequestAssessment"/>
 <artifact id="StructureDefinition/pfe-device-request-clinical-justification" key="StructureDefinition-pfe-device-request-clinical-justification" name="PFEDeviceRequestClinicalJustification"/>
+<artifact id="StructureDefinition/pfe-device-request-location" key="StructureDefinition-pfe-device-request-location" name="PFEDeviceRequestLocation"/>
 <artifact id="StructureDefinition/pfe-device-request-use-of-device" key="StructureDefinition-pfe-device-request-use-of-device" name="PFEDeviceRequestUseOfDevice"/>
 <artifact id="StructureDefinition/pfe-device-request-user" key="StructureDefinition-pfe-device-request-user" name="PFEDeviceRequestUser"/>
 <artifact id="AllergyIntolerance/PFEIG-AllergyACE" key="AllergyIntolerance-PFEIG-AllergyACE" name="PFEIG-AllergyACE"/>
@@ -87,7 +88,9 @@
 <artifact id="Condition/PFEIG-Condition-RightWeak" key="Condition-PFEIG-Condition-RightWeak" name="PFEIG-Condition-RightWeak"/>
 <artifact id="Condition/PFEIG-Condition-StrokeDiagnosis" key="Condition-PFEIG-Condition-StrokeDiagnosis" name="PFEIG-Condition-StrokeDiagnosis"/>
 <artifact id="Condition/PFEIG-Condition-UndressingConcern" key="Condition-PFEIG-Condition-UndressingConcern" name="PFEIG-Condition-UndressingConcern"/>
+<artifact id="DeviceRequest/PFEIG-DeviceRequest-RollingWalker" key="DeviceRequest-PFEIG-DeviceRequest-RollingWalker" name="PFEIG-DeviceRequest-RollingWalker"/>
 <artifact id="DiagnosticReport/PFEIG-DiagnosticReport" key="DiagnosticReport-PFEIG-DiagnosticReport" name="PFEIG-DiagnosticReport"/>
+<artifact id="Encounter/PFEIG-Encounter-DeviceRequest-RollingWalker" key="Encounter-PFEIG-Encounter-DeviceRequest-RollingWalker" name="PFEIG-Encounter-DeviceRequest-RollingWalker"/>
 <artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1" name="PFEIG-FSC-Hospital-Admission-Mobility-1"/>
 <artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1"/>
 <artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11"/>
@@ -154,6 +157,8 @@
 <artifact id="Location/PFEIG-Org-Loc-03" key="Location-PFEIG-Org-Loc-03" name="PFEIG-Org-Loc-03"/>
 <artifact id="Location/PFEIG-Org-Loc-Primary-Care-Michigan" key="Location-PFEIG-Org-Loc-Primary-Care-Michigan" name="PFEIG-Org-Loc-Primary-Care-Michigan"/>
 <artifact id="Organization/PFEIG-Org-Primary-Care-Michigan" key="Organization-PFEIG-Org-Primary-Care-Michigan" name="PFEIG-Org-Primary-Care-Michigan"/>
+<artifact id="Coverage/PFEIG-PASCoverage-BSJ1" key="Coverage-PFEIG-PASCoverage-BSJ1" name="PFEIG-PASCoverage-BSJ1"/>
+<artifact id="Organization/PFEIG-Payer-Org-01" key="Organization-PFEIG-Payer-Org-01" name="PFEIG-Payer-Org-01"/>
 <artifact id="Practitioner/PFEIG-Practioner-GeraldPark" key="Practitioner-PFEIG-Practioner-GeraldPark" name="PFEIG-Practioner-GeraldPark"/>
 <artifact id="Practitioner/PFEIG-Practitioner-AnitaChu" key="Practitioner-PFEIG-Practitioner-AnitaChu" name="PFEIG-Practitioner-AnitaChu"/>
 <artifact id="Practitioner/PFEIG-Practitioner-DanielGranger" key="Practitioner-PFEIG-Practitioner-DanielGranger" name="PFEIG-Practitioner-DanielGranger"/>
@@ -175,6 +180,7 @@
 <artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-BIMS-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-BIMS-1" name="PFEIG-QResponse-SNF-BIMS-1"/>
 <artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-CAM-Admission-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-CAM-Admission-1" name="PFEIG-QResponse-SNF-CAM-Admission-1"/>
 <artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-PHQ9-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-PHQ9-1" name="PFEIG-QResponse-SNF-PHQ9-1"/>
+<artifact id="RelatedPerson/PFEIG-RelatedPerson-CharlesJohnson" key="RelatedPerson-PFEIG-RelatedPerson-CharlesJohnson" name="PFEIG-RelatedPerson-CharlesJohnson"/>
 <artifact id="PractitionerRole/PFEIG-Role-Audio-JillBradley" key="PractitionerRole-PFEIG-Role-Audio-JillBradley" name="PFEIG-Role-Audio-JillBradley"/>
 <artifact id="PractitionerRole/PFEIG-Role-IMMD-AnitaChu" key="PractitionerRole-PFEIG-Role-IMMD-AnitaChu" name="PFEIG-Role-IMMD-AnitaChu"/>
 <artifact id="PractitionerRole/PFEIG-Role-OT-DanielGranger" key="PractitionerRole-PFEIG-Role-OT-DanielGranger" name="PFEIG-Role-OT-DanielGranger"/>
@@ -245,7 +251,6 @@
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
 <artifact deprecated="true" id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
 <artifact id="ValueSet/pfe-voice-and-speech-vs" key="ValueSet-pfe-voice-and-speech-vs" name="Personal Functioning and Engagement Voice and Speech Functions Value Set"/>
-<artifact id="StructureDefinition/pfe-device-request-location" key="StructureDefinition-pfe-device-request-location" name="Requested location"/>
 <artifact deprecated="true" id="SearchParameter/ServiceRequest-code" key="SearchParameter-ServiceRequest-code" name="ServiceRequest-code"/>
 <artifact deprecated="true" id="SearchParameter/ServiceRequest-identifier" key="SearchParameter-ServiceRequest-identifier" name="ServiceRequest-identifier"/>
 <artifact id="SearchParameter/ServiceRequest-reason-reference" key="SearchParameter-ServiceRequest-reason-reference" name="ServiceRequest-reason-reference"/>

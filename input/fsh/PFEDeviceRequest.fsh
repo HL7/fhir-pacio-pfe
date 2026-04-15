@@ -13,7 +13,8 @@ Description:    "An exchange of post-acute care device requests for a patient. T
     PFEDeviceRequestClinicalJustification named clinical-justification 0..* MS and
     PFEDeviceRequestAssessment named assessment 0..* MS and
     PFEDeviceRequestUseOfDevice named use-of-device 0..* MS and
-    http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal named goal 0..* MS
+    $PertainsToGoal named goal 0..* MS
+* extension[location] ^short = "Requested location"    
 * extension[device-user] ^short = "Device user(s)"
 * extension[device-user] ^definition = "Identifies the person(s) using the device, their role in using the device and, optionally, the nature of their relationship(s) to the device during use."
 * extension[clinical-justification] ^short = "Clinical justification"

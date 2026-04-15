@@ -22,6 +22,9 @@ Alias: $FHIRDeviceType = http://hl7.org/fhir/ValueSet/device-type
 Alias: $EventLocation = http://hl7.org/fhir/StructureDefinition/event-location
 Alias: $PASCoverage = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-coverage
 Alias: $PASClaimResponse = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-claimresponse
+Alias: $PASBeneficiary = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-beneficiary
+Alias: $PASSubscriber = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-subscriber
+Alias: $PASInsurer = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-insurer
 
 // US Core
 Alias: $USCoreConditionEncounterDiagnosisProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0
@@ -41,3 +44,6 @@ Alias: $USCorePractitionerRole = http://hl7.org/fhir/us/core/StructureDefinition
 Alias: $USCoreQuestionnaireResponse = http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0
 Alias: $USCoreServiceRequestProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|6.1.0
 Alias: $USCoreConditionCodeValueSet = http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code
+
+// HL7 extensions
+Alias: $PertainsToGoal = http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal

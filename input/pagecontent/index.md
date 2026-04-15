@@ -118,10 +118,12 @@ This IG is divided into several sections that are listed at the top of each page
 - [Domain Support](domains.html): This page provides details on the use of domain-based value sets within the IG, including how codes are assigned to a specific value set.
 - FHIR Artifacts: These sections provide detailed descriptions and formal definitions for all the FHIR objects defined in this IG.
     - [Capability Statement](CapabilityStatement-pacio-pfe-cap.html): This artifact defines the specific capabilities that different types of systems are expected to have in order to comply with this IG. Systems conforming to this IG are expected to declare conformance with this capability statement.
-    - [Profiles](artifacts.html#2): This section lists the set of Profiles defined in this IG to exchange functioning information. Each linked Profile page includes a narrative introduction and a formal definition.
-    - [Extensions](artifacts.html#3): This section lists the set of Extensions defined in and used by the Profiles in this IG . Each linked Extension page includes a formal definition.
-    - [Value Sets](artifacts.html#4): This section lists the value sets this IG defines.
-    - [Examples](artifacts.html#5): This section lists example instances associated with this IG.
+    - [Search Parameters](artifacts.html#2): This section lists the set of Search Parameters defined in this IG to support search functionality. E.    
+    - [Profiles](artifacts.html#3): This section lists the set of Profiles defined in this IG to exchange functioning information. Each linked Profile page includes a narrative introduction and a formal definition.
+    - [Extensions](artifacts.html#4): This section lists the set of Extensions defined in and used by the Profiles in this IG . Each linked Extension page includes a formal definition.
+    - [Value Sets](artifacts.html#5): This section lists the value sets this IG defines.
+    - [Concept Maps](artifacts.html#6): This section lists the Concept Maps this IG defines.
+    - [Examples](artifacts.html#7): This section lists example instances associated with this IG.
 - [Downloads](downloads.html): This page provides links to downloadable artifacts.
 
 ### Globals Profiles

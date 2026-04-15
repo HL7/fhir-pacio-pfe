@@ -62,7 +62,6 @@ Id: pfe-device-request-use-of-device
 * value[x] only Reference(PFEUseOfDevice)
 
 Extension: PFEDeviceRequestLocation
-Title: "Requested location"
 Description: "The preferred location(s) where the device should actually be used in coded or free text form. E.g. at home or nursing day care center."
 Id: pfe-device-request-location
 * ^context.type = #element
