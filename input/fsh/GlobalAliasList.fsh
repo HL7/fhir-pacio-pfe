@@ -7,6 +7,7 @@ Alias: $USCORECAT = http://hl7.org/fhir/us/core/CodeSystem/us-core-category
 Alias: $OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category|2.0.0
 Alias: $PFEDOMAINCAT = http://hl7.org/fhir/sid/icf
 Alias: $FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
+Alias: $PFEDeviceAssociationRelationshipCS = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-deviceassociation-relationship-cs
 Alias: $CPT = http://www.ama-assn.org/go/cpt
 Alias: $HCPCS = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
 
@@ -14,7 +15,6 @@ Alias: $HCPCS = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
 // NOTE: use a value set (not code system) when binding a field
 Alias: $LL4309-2 = http://loinc.org/vs/LL4309-2
 Alias: $SDOHCCValueSetObservationMethod = http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetObservationMethod
-Alias: $DeviceAssociationRelationship = https://build.fhir.org/valueset-deviceassociation-relationship.html
 Alias: $ServiceDeliveryLocationRoleType = http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
 Alias: $FHIRDeviceType = http://hl7.org/fhir/ValueSet/device-type
 

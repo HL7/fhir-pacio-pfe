@@ -2,6 +2,13 @@
 NOTE: Aliases are defined in GlobalAliasList.fsh
 **********/
 
+ValueSet: PFEDeviceAssociationRelationshipVS
+Title: "Personal Functioning and Engagement Device Association Relationship Value Set"
+Id: pfe-deviceassociation-relationship-vs
+Description: "Relationship codes used to describe how a person is associated with a device."
+* ^experimental = false
+* include codes from system $PFEDeviceAssociationRelationshipCS
+
 ValueSet: PFEDeviceType
 Title: "Personal Functioning and Engagement Device Type Value Set"
 Id: pfe-device-type

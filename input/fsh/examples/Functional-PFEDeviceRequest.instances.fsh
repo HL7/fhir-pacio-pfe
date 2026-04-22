@@ -23,7 +23,7 @@ Usage: #example
 * insurance = Reference(PFEIG-PASCoverage-BSJ1)
 * extension[location].valueString = "Skilled nursing facility room"
 * extension[device-user][+].extension[user].valueReference = Reference(PFEIG-patientBSJ1)
-* extension[device-user][=].extension[relationship].valueCodeableConcept = http://hl7.org/fhir/deviceassociation-relationship#patient "Patient"
+* extension[device-user][=].extension[relationship].valueCodeableConcept = $PFEDeviceAssociationRelationshipCS#patient "Patient"
 * extension[clinical-justification].extension[note].valueMarkdown = "Betsy requires a rolling walker to support safe ambulation, transfers, and participation in daily activities while recovering from stroke-related right-sided weakness and deconditioning."
 * extension[clinical-justification].extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16)
 * extension[clinical-justification].extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18)

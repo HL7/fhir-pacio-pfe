@@ -38,7 +38,7 @@ Id: pfe-device-request-user
 * extension[relationship] ^short = "User relationship"
 * extension[relationship] ^definition = "The relationship between the user and the device."
 * extension[relationship].value[x] only CodeableConcept
-* extension[relationship].valueCodeableConcept from $DeviceAssociationRelationship (extensible)
+* extension[relationship].valueCodeableConcept from PFEDeviceAssociationRelationshipVS (extensible)
 
 Extension: PFEDeviceRequestClinicalJustification
 Description: "Groups clinical justification information for a device request, including note, assessment, use of device, and goal."
@@ -62,7 +62,7 @@ Id: pfe-device-request-clinical-justification
 * extension[use-of-device].value[x] only Reference(PFEUseOfDevice)
 * extension[goal] ^short = "Supporting goal information"
 * extension[goal] ^definition = "Supporting information about the patient's goals that may influence fulfillment of the device request."
-* extension[goal].value[x] only Reference(Goal)
+* extension[goal].value[x] only Reference(PFEGoal)
 
 Extension: PFEDeviceRequestLocation
 Description: "The preferred location(s) where the device should actually be used."
