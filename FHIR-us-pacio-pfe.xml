@@ -24,10 +24,8 @@
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-subject" key="SearchParameter-NutritionOrder-subject" name="NutritionOrder-subject"/>
 <artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="ObservationEventLocation"/>
 <artifact id="StructureDefinition/pfe-device-request-additional-requester" key="StructureDefinition-pfe-device-request-additional-requester" name="PFEDeviceRequestAdditionalRequester"/>
-<artifact id="StructureDefinition/pfe-device-request-assessment" key="StructureDefinition-pfe-device-request-assessment" name="PFEDeviceRequestAssessment"/>
 <artifact id="StructureDefinition/pfe-device-request-clinical-justification" key="StructureDefinition-pfe-device-request-clinical-justification" name="PFEDeviceRequestClinicalJustification"/>
 <artifact id="StructureDefinition/pfe-device-request-location" key="StructureDefinition-pfe-device-request-location" name="PFEDeviceRequestLocation"/>
-<artifact id="StructureDefinition/pfe-device-request-use-of-device" key="StructureDefinition-pfe-device-request-use-of-device" name="PFEDeviceRequestUseOfDevice"/>
 <artifact id="StructureDefinition/pfe-device-request-user" key="StructureDefinition-pfe-device-request-user" name="PFEDeviceRequestUser"/>
 <artifact id="AllergyIntolerance/PFEIG-AllergyACE" key="AllergyIntolerance-PFEIG-AllergyACE" name="PFEIG-AllergyACE"/>
 <artifact id="Device/PFEIG-CMS-Device-BedsideRails" key="Device-PFEIG-CMS-Device-BedsideRails" name="PFEIG-CMS-Device-BedsideRails"/>

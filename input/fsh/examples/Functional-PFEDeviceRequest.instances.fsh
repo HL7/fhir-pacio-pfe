@@ -21,14 +21,14 @@ Usage: #example
 * requester.extension[requester-additional].valueReference = Reference(PFEIG-RelatedPerson-CharlesJohnson)
 * performer = Reference(PFEIG-Org-03)
 * insurance = Reference(PFEIG-PASCoverage-BSJ1)
-* extension[location].extension[reference].valueReference = Reference(PFEIG-Org-Loc-02)
+* extension[location].valueString = "Skilled nursing facility room"
 * extension[device-user][+].extension[user].valueReference = Reference(PFEIG-patientBSJ1)
 * extension[device-user][=].extension[relationship].valueCodeableConcept = http://hl7.org/fhir/deviceassociation-relationship#patient "Patient"
-* extension[clinical-justification].valueMarkdown = "Betsy requires a rolling walker to support safe ambulation, transfers, and participation in daily activities while recovering from stroke-related right-sided weakness and deconditioning."
-* extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16)
-* extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18)
-* extension[use-of-device][+].valueReference = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2)
-* extension[goal][+].valueReference = Reference(PFEIG-Goal-WalkingGoal)
+* extension[clinical-justification].extension[note].valueMarkdown = "Betsy requires a rolling walker to support safe ambulation, transfers, and participation in daily activities while recovering from stroke-related right-sided weakness and deconditioning."
+* extension[clinical-justification].extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16)
+* extension[clinical-justification].extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18)
+* extension[clinical-justification].extension[use-of-device][+].valueReference = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2)
+* extension[clinical-justification].extension[goal][+].valueReference = Reference(PFEIG-Goal-WalkingGoal)
 * note.text = "Order for a rolling walker to support discharge planning and continued mobility rehabilitation."
 
 
@@ -65,6 +65,7 @@ Description: "Example insurer organization for PAS coverage"
 Usage: #example
 * meta.profile = Canonical($PASInsurer)
 * name = "Texas Example Health Plan"
+* active = true
 
 
 Instance: PFEIG-PASCoverage-BSJ1

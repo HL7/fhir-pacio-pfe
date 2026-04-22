@@ -41,38 +41,36 @@ Id: pfe-device-request-user
 * extension[relationship].valueCodeableConcept from $DeviceAssociationRelationship (extensible)
 
 Extension: PFEDeviceRequestClinicalJustification
-Description: "Captures the clinical justification for a device request as plain text, narrative, or annotation."
+Description: "Groups clinical justification information for a device request, including note, assessment, use of device, and goal."
 Id: pfe-device-request-clinical-justification
 * ^context.type = #element
 * ^context.expression = "DeviceRequest"
-* value[x] only string or markdown or Annotation
-
-Extension: PFEDeviceRequestAssessment
-Description: "Carries supporting assessment information for a device request."
-Id: pfe-device-request-assessment
-* ^context.type = #element
-* ^context.expression = "DeviceRequest"
-* value[x] only Reference($USCoreObservationScreeningAssessmentProfile)
-
-Extension: PFEDeviceRequestUseOfDevice
-Description: "Carries supporting information about the patient's usage of the requested device during an assessment."
-Id: pfe-device-request-use-of-device
-* ^context.type = #element
-* ^context.expression = "DeviceRequest"
-* value[x] only Reference(PFEUseOfDevice)
+* extension contains
+    note 0..* and
+    assessment 0..* and
+    use-of-device 0..* and
+    goal 0..*
+* value[x] 0..0
+* extension[note] ^short = "Clinical justification note"
+* extension[note] ^definition = "Captures the clinical justification or rationale for the medical necessity of a device request as plain text, markdown, or annotation."
+* extension[note].value[x] only string or markdown or Annotation
+* extension[assessment] ^short = "Supporting assessment information"
+* extension[assessment] ^definition = "Supporting information about patient assessments that may influence fulfillment of the device request."
+* extension[assessment].value[x] only Reference(PFEClinicalTestObservation or PFECollection or PFESingleObservation)
+* extension[use-of-device] ^short = "Supporting device usage information"
+* extension[use-of-device] ^definition = "Supporting information about the patient's usage of the requested device during an assessment that may influence fulfillment of the device request."
+* extension[use-of-device].value[x] only Reference(PFEUseOfDevice)
+* extension[goal] ^short = "Supporting goal information"
+* extension[goal] ^definition = "Supporting information about the patient's goals that may influence fulfillment of the device request."
+* extension[goal].value[x] only Reference(Goal)
 
 Extension: PFEDeviceRequestLocation
-Description: "The preferred location(s) where the device should actually be used in coded or free text form. E.g. at home or nursing day care center."
+Description: "The preferred location(s) where the device should actually be used."
 Id: pfe-device-request-location
 * ^context.type = #element
 * ^context.expression = "DeviceRequest"
-* extension contains
-    concept 0..1 and
-    reference 0..1
-* value[x] 0..0
-* extension[concept].value[x] only CodeableConcept
-* extension[concept].valueCodeableConcept from $ServiceDeliveryLocationRoleType (example)
-* extension[reference].value[x] only Reference($USCoreLocation)
+* value[x] only CodeableConcept or string
+* valueCodeableConcept from $ServiceDeliveryLocationRoleType (extensible)
 
 Extension: PFEDeviceRequestAdditionalRequester
 Description: "Cross-version extension to carry FHIR R6 DeviceRequest.requester targets that are not allowed in FHIR R4."
