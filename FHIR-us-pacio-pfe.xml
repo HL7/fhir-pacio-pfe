@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-pfe/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-pfe" defaultVersion="2.0.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fhir-pacio-pfe" url="http://hl7.org/fhir/us/pacio-pfe">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-pfe/2026Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-pfe" defaultVersion="2.0.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fhir-pacio-pfe" url="http://hl7.org/fhir/us/pacio-pfe">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-pacio-pfe"/>
+<version code="3.0.0-ballot" url="http://hl7.org/fhir/us/pacio-pfe/2026Sep"/>
 <version code="2.0.0" url="http://hl7.org/fhir/us/pacio-pfe/STU2"/>
 <version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/pacio-pfe/2024Sep"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/pacio-pfe/STU1"/>
@@ -216,6 +217,8 @@
 <artifact id="ValueSet/pfe-communication-vs" key="ValueSet-pfe-communication-vs" name="Personal Functioning and Engagement Communication Value Set"/>
 <artifact id="StructureDefinition/pfe-condition-encounter-diagnosis" key="StructureDefinition-pfe-condition-encounter-diagnosis" name="Personal Functioning and Engagement Condition Encounter Diagnosis Profile"/>
 <artifact id="StructureDefinition/pfe-condition-problems-health-concerns" key="StructureDefinition-pfe-condition-problems-health-concerns" name="Personal Functioning and Engagement Condition Problems and Health Concerns Profile"/>
+<artifact id="CodeSystem/pfe-deviceassociation-relationship-cs" key="CodeSystem-pfe-deviceassociation-relationship-cs" name="Personal Functioning and Engagement Device Association Relationship Code System"/>
+<artifact id="ValueSet/pfe-deviceassociation-relationship-vs" key="ValueSet-pfe-deviceassociation-relationship-vs" name="Personal Functioning and Engagement Device Association Relationship Value Set"/>
 <artifact id="StructureDefinition/pfe-device-request" key="StructureDefinition-pfe-device-request" name="Personal Functioning and Engagement Device Request Profile"/>
 <artifact id="ValueSet/pfe-device-type" key="ValueSet-pfe-device-type" name="Personal Functioning and Engagement Device Type Value Set"/>
 <artifact id="StructureDefinition/pfe-diagnostic-report-note-exchange" key="StructureDefinition-pfe-diagnostic-report-note-exchange" name="Personal Functioning and Engagement Diagnostic Report Note Exchange Profile"/>
