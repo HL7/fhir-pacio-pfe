@@ -10,6 +10,7 @@ Alias: $FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functio
 Alias: $PFEDeviceAssociationRelationshipCS = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-deviceassociation-relationship-cs
 Alias: $CPT = http://www.ama-assn.org/go/cpt
 Alias: $HCPCS = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
+Alias: $SCT = http://snomed.info/sct
 
 // Value Sets
 // NOTE: use a value set (not code system) when binding a field

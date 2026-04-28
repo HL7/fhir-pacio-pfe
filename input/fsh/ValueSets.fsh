@@ -19,6 +19,16 @@ Description: "Codes used to identify requested assistive device types for Person
 * include codes from system $CPT
 * include codes from valueset $FHIRDeviceType
 
+ValueSet: PFEDeviceParameterCodeVS
+Title: "Personal Functioning and Engagement Device Parameter Code Value Set"
+Id: pfe-device-parameter-code-vs
+Description: "Codes used to identify requested device parameters for Personal Functioning and Engagement device requests."
+* ^experimental = false
+* ^copyright = "Includes CPT content, copyright American Medical Association. All rights reserved. CPT is a registered trademark of the American Medical Association. This value set includes content from SNOMED CT, which is copyright International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7."
+* include codes from system $HCPCS
+* include codes from system $CPT
+* include codes from system $SCT
+
 ValueSet: PFEUSCoreCategoryVS
 Title: "Personal Functioning and Engagement US Core Value Set"
 Id: pfe-us-core-category-vs

@@ -11,97 +11,125 @@ Description:    "An exchange of post-acute care device requests for a patient. T
     PFEDeviceRequestLocation named location 0..* MS and
     PFEDeviceRequestUser named device-user 0..* MS and
     PFEDeviceRequestClinicalJustification named clinical-justification 0..* MS
-
 * extension[location] ^short = "location"
-* extension[location] ^comment = """
-Location is captured via a coded (e.g., SNOMED-CT) or free text. Examples:
-
-- Code: SNOMED-CT 42665001 (Nursing Home) 
-- Free text: “At the patient’s residence”  
-"""
-
 * extension[device-user] ^short = "Device user(s)"
-* extension[device-user] ^definition = "Identifies the person(s) using the device, their role in using the device and, optionally, the nature of their relationship(s) to the device during use."
-* extension[device-user] ^comment = """
-The user is captured using a profile (e.g., HL7 RelatedPerson profile) and the relationship is indicated as Custodian, Maintainer, Patient, or Operator. Example Users:  
-
-- Patient 
-- Related Person: Spouse, child 
-- Practitioner: Home Health Aide, Nursing Aid, Occupational Therapist, Physical Therapist, Speech-Language Pathologist 
-"""
-
 * extension[clinical-justification] ^short = "Clinical justification"
-* extension[clinical-justification] ^definition = "Groups clinical justification, assessment findings, observed device use, and goals that may influence fulfillment of the device request."
-* extension[clinical-justification].extension[note] ^short = "Clinical justification note"
-* extension[clinical-justification].extension[note] ^definition = "Captures the clinical justification or rationale for the medical necessity of a device request. Complements the DeviceRequest.reasonCode and DeviceRequest.reasonReference data elements."
-* extension[clinical-justification].extension[assessment] ^short = "Supporting assessment information"
-* extension[clinical-justification].extension[assessment] ^definition = "Supporting information about patient assessments that may influence fulfillment of the device request."
-* extension[clinical-justification].extension[assessment] ^comment = """
-This includes assessments documenting the patient's ability to use/interact with the device related to:
 
-- Cognition: If the patient has the cognitive capacity to use the device (e.g., via cognitive test/scale)
-- Physical Functioning: If the patient is physically able to use the device (e.g., assessment)
-- Vision: If the patient's visual capabilities are aligned with the device features (e.g., via ICD code) 
-- Health Literacy: If the patient has the ability learn how to use the device (e.g., via health literacy scale)   
-- Disability: If the patient has a disability that would need to be accommodated in the selection of a device (e.g., via an demographic disability item) 
-
-Examples:
-
-- Cognition: Brief Cognitive Assessment Tool (BCAT®) short form (LOINC 95872-8) 
-- Physical functioning: 9-Hole Pegboard Dexterity Test (LOINC 83141-2) 
-- Vision: Motor Free Visual Perception test (MFVP) (SNOMED-CT 396216003) 
-- Health Literacy: BRIEF health literacy screening tool (LOINC 95866-0) 
-- Disability: Indication in the patient’s demographic record of having a disability (ICD-10  Z73.6) 
-"""
-* extension[clinical-justification].extension[use-of-device] ^short = "Supporting device usage information"
-* extension[clinical-justification].extension[use-of-device] ^definition = "Supporting information about the patient's usage of the requested device during an assessment that may influence fulfillment of the device request."
-* extension[clinical-justification].extension[use-of-device] ^comment = "Example: Observation data about a patient admitted to a SNF using a cane to complete a walking assessment, such as CMS MDS section GG items on walking distance."
-* extension[clinical-justification].extension[goal] ^short = "Supporting goal information"
-* extension[clinical-justification].extension[goal] ^definition = "Supporting information about the patient's goals that may influence fulfillment of the device request."
-
+* basedOn ^definition = "A Plan, proposal, order/service request, and/or goal order that is fulfilled by this device request."
 * basedOn ^comment = """
-Examples:
-- A service request or order for physical, occupational, or speech-language therapy that describes medical necessity and use of the device
-- A care plan that describes how the device will be used to support patient participation in daily activities and care activities
-- An order to evaluate someone for the appropriateness of a device
-- A care plan requirement to maintain range of motion that a splint order helps fulfill
-- A portable oxygen pack request intended to support participation in a community event
+    Examples:
+    - A care plan that describes how the device will be used by the patient to support their participation in daily activities and care activities (captured via the US Core Care Plan profile) 
+    - A service request for physical, occupational, or speech-language therapy that includes a description of the medical necessity for, appropriateness of, and use of the device during therapy sessions (captured via the PFE Service Request profile) 
+    - A nutrition order that requires a device to provide nutritional support to a patient (via the PFE Nutrition Order profile) 
+    - A goal participate in a community event that is supported an order of a portable oxygen pack (captured via the PFE Goal profile) 
+"""
+
+* groupIdentifier MS
+* groupIdentifier ^comment = """
+    Examples:
+    - An alphanumeric string that is used as a group identifier for a composite request for:  
+    - A motorized wheelchair, a seat cushion, a communication device, and accessories used to attach the cushion and communication device to the wheelchair 
+    - A knee brace and a grabbing tool to support independent living for a patient who had knee surgery and is being discharged home from an inpatient rehab facility 
 """
 
 * subject 1..1
 * subject only Reference($USCorePatient)
 * subject MS
-* code[x] only CodeableConcept
-* codeCodeableConcept ^definition = "Information about the requested device. This can be captured through information documented via the Device profile, or using a codeable concept, such as a Current Procedural Terminology (CPT), Healthcare Common Procedure Coding System (HCPCS), or SNOMED-CT code."
+* subject ^short = "Patient"
+* subject ^definition = "The patient for whom the device is being requested."
+* code[x] MS
 * codeCodeableConcept from PFEDeviceType (extensible)
-* codeCodeableConcept MS
+
+
 * parameter MS 
+* parameter ^short = "Parameter(s) for device"
+* parameter ^definition = "Specific parameter(s) for the requested device."
 * parameter ^comment = """
-Examples:
-- Wheelchair: Seat cushion requirements such as material, size, and air pressure or firmness
-- Boot: Weight-bearing or non-weight-bearing
-- Splints or braces: Range-of-motion setting
-- Device weight limits
-- Enteral feeding device: One port or two ports
-- TENS units: Frequency, duration, pulse length, and intensity
-- Crutches or walkers: Height or width adjustment, such as tall or pediatric
-- Hot or cold pack: Temperature
+    Examples:
+    - Wheelchair: Seat cushion requirements, such as material and width 
+    - Splints or braces: Range-of-motion setting 
+    - Device weight limits 
+    - Enteral feeding device: Number of connections 
+    - TENS units: Settings, such as frequency and duration 
+    - Walkers: Dimension parameters, such as width 
+    - Hot or cold pack: Temperature 
 """
+* parameter.code ^short = "Parameter code(s)"
+* parameter.code ^definition = "A code that identifies the device parameter(s)."
+* parameter.code from PFEDeviceParameterCodeVS (preferred)
+* parameter.code ^comment = """
+    Examples:  
+    - Wheelchair seat cushion: Material = SNOMED 260769002, width = SNOMED 103355008 
+    - Splints or braces: Range-of-motion = SNOMED 364564000 
+    - Enteral feeding device connections = SNOMED 711341009 
+    - TENS units: Frequency = SNOMED 278269003, duration = SNOMED 762636008 
+    - Walker: Width = SNOMED 103355008 
+    - Hot or cold pack: Temperature = SNOMED 722490005 
+"""
+* parameter.value[x] ^short = "Parameter value(s)"
+* parameter.value[x] ^definition = "The value(s) of the device parameter(s). "
+* parameter.value[x] ^comment = """
+    Examples:  
+    - Wheelchair seat cushion: Filled with silicone gel = SNOMED 860705001, width = “21 inches” 
+    - Splints or braces: Range-of-motion = “50 degrees” 
+    - Enteral feeding device connections = “2” 
+    - TENS units: Frequency = “30 pps”, duration = “10 minutes” 
+    - Walker: Width = “24 inches” 
+    - Hot or cold pack: Temperature = “35°C” or “10°C” 
+"""
+
 * occurrence[x] MS
+* occurrence[x] ^comment = """
+    The Schedule data type allows many different expressions, for example:  
+    - Times per day: "Every 8 hours"; "Three times a day" 
+    - Duration: “Up to 2 hours per day”; “Between 4 and 6 hours per day” 
+    - Specific times: "1/2 an hour before breakfast for 10 days from 23-Dec 2011" 
+    - Date range: "15 Oct 2013, 17 Oct 2013 and 1 Nov 2013” 
+    - “As needed” 
+"""
+
 * reasonCode from $USCoreConditionCodeValueSet (extensible)
-* reasonCode ^definition = "A code indicating the reason or justification for requesting the device. This can be a code for a diagnosis, problem, or condition that necessitates use of the requested device. Complements the DeviceRequest.extension:clinical-justification.extension:note and DeviceRequest.reasonReference data elements."
+* reasonCode ^definition = "Codes indicating the reason or justification for requesting the device. This can be a code for a diagnosis, problem, or condition that necessitates use of the requested device. Complements the DeviceRequest.extension:clinical-justification.extension:note and DeviceRequest.reasonReference data elements."
+* reasonCode ^comment = """
+    Examples:  
+    - For a patient receiving home health services with chronically low oxygen saturation levels due to a chronic lung disease, and needs a portable oxygen pack in order to participate in a community event: ICD-10-CM J96.11 “Chronic respiratory failure with hypoxia” 
+    - For a patient at a long-term care facility who had a stroke, now has aphasia because of the stroke and needs a communication device to use during speech-language therapy sessions: ICD-10-CM I61.1 “Nontraumatic intracerebral hemorrhage in hemisphere, cortical”; ICD-10-CM I69.320 “Aphasia following cerebral infarction”; ICD-10-PCS F06Z1KZ “Speech-Language Pathology and Related Disorders Counseling Treatment using Audiovisual Equipment” 
+    - For a patient who had right knee surgery for a meniscus tear, has limited mobility due to the surgery, is being discharged from an inpatient rehab facility to their home, and needs a knee brace and grabbing tool in order have adequate mobility to live independently: ICD-10-CM S83.261 “Peripheral tear of lateral meniscus, current injury, right knee”; ICD-10-PCS 0SQC4ZZ “Repair Right Knee Joint, Percutaneous Endoscopic Approach”; SNOMED 8510008 “Reduced mobility (finding)”; SNOMED 301572006 “Does mobilize using aids (finding)”; ICD-10-CM Z73 “Problems related to life management difficulty” 
+    - For a patient with breast cancer admitted to a skilled nursing facility who lost weight due to treatment-induced nausea, and needs an enteral nutrition device to gain weight and maintain it: ICD-10-CM C50.811 “Malignant neoplasm of overlapping sites of right female breast”; ICD-10-CM C50.812 “Malignant neoplasm of overlapping sites of left female breast”; SNOMED 367336001 “Chemotherapy (procedure)”; ICD-10-CM R11.0 “Nausea”; SNOMED 18846006 “Chemotherapy-induced nausea and vomiting (disorder)”; ICD-10-CM R63 “Symptoms and signs concerning food and fluid intake”; ICD-10-CM R63.6 “Underweight”; SNOMED 404923009 “Weight gain advised (situation)”; SNOMED 229912004 “Enteral feeding (regime/therapy)”
+"""
+
 * reasonReference ^definition = "Reason or justification for the request or use of this device. Complements the DeviceRequest.extension:clinical-justification.extension:note and DeviceRequest.reasonCode data elements."
+* reasonReference ^comment = """
+    Examples:  
+    - For a patient receiving home health services with chronically low oxygen saturation levels due to a chronic lung disease, and needs a portable oxygen pack in order to participate in a community event: Documentation of a plan to support the patient’s participation in the community event via the US Core CarePlan 
+    - For a patient at a long-term care facility who had a stroke, now has aphasia because of the stroke and needs a communication device to use during speech-language therapy sessions: Documentation of an order for therapy sessions via the US Core ServiceRequest profile 
+    - For a patient who had right knee surgery for a meniscus tear, has limited mobility due to the surgery, is being discharged from an inpatient rehab facility to their home, and needs a knee brace and grabbing tool in order have adequate mobility to live independently: Documentation of the use of the brace and grabber to support mobility and independent living via the US Core CarePlan profile 
+    - For a patient with breast cancer admitted to a skilled nursing facility who lost weight due to treatment-induced nausea, and needs an enteral nutrition device to gain weight and maintain it: Documentation of an enteral nutrition order via the PFE NutritionOrder profile 
+"""
+
+
 * requester MS
-* requester.extension contains PFEDeviceRequestAdditionalRequester named requester-additional 0..1 MS
-* requester.extension[requester-additional] ^short = "Cross-version extension for R6 requester targets not supported in R4."
-* requester.extension[requester-additional] ^definition = "Carries DeviceRequest.requester when the requester is a CareTeam, Group, Patient, or RelatedPerson, which are allowed in FHIR R6 but not in FHIR R4."
-* performerType ^short = "Device performer role (deprecated)"
-* performerType ^comment = "Implementer SHOULD use device-user extension."
-* performer ^definition = "The desired individual or entity to provide the device to the subject of the request."
+* requester.extension contains PFEDeviceRequestAdditionalRequester named additional-requester 0..1 MS
+* requester.extension[additional-requester] ^short = "Cross-version extension for R6 requester targets not supported in R4."
+* requester.extension[additional-requester] ^definition = "Carries DeviceRequest.requester when the requester is a CareTeam, Group, Patient, or RelatedPerson, which are allowed in FHIR R6 but not in FHIR R4."
+* requester ^short = "Device requester"
+* requester ^definition = "The individual or entity who initiated the device request and has responsibility for its activation."
+
+* performerType 0..0
+* performerType ^comment = "DO NOT USE THIS DATA ELEMENT. It will be removed from version R6 of the FHIR Device Request Profile. To capture the device performer role, use DeviceRequest.extension:device-user extension"
+* performer MS
 * authoredOn MS
 * encounter MS
 * priority MS
 * status MS
 * insurance MS
 * insurance only Reference($PASCoverage or $PASClaimResponse)
+* supportingInfo ^comment = """
+    Examples:  
+    - For a patient receiving home health services with chronically low oxygen saturation levels due to a chronic lung disease, and needs a portable oxygen pack in order to participate in a community event: Documentation of their chronic lung disease and hypoxia in an HL7 Condition profile 
+    - For a patient at a long-term care facility who had a stroke, now has aphasia because of the stroke and needs a communication device to use during speech-language therapy sessions: Documentation of stroke via the HL7 DiagnosticReport profile; and aphasia via the PFE ConditionEncounterDiagnosis profile 
+    - For a patient who had right knee surgery for a meniscus tear, has limited mobility due to the surgery, is being discharged from an inpatient rehab facility to their home, and needs a knee brace and grabbing tool in order have adequate mobility to live independently: Documentation of the surgery via the HL7 Procedure profile; and limited ability to live independently captured during activities of daily living (ADL), instrumental activities of daily living (iADL), and pain assessments conducted with and without the devices via the PFE Collection profile  
+    - For a patient with breast cancer admitted to a skilled nursing facility who lost weight due to treatment-induced nausea, and needs an enteral nutrition device to gain weight and maintain it: Documentation of cancer via the HL7 DiagnosticReport profile; chemotherapy via the HL7 Procedure profile; nausea via the via the ConditionEncounterDiagnosis profile; and weight loss via US Core BodyWeight profile 
+"""
+
 * note MS

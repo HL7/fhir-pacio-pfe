@@ -18,7 +18,7 @@ Usage: #example
 * reasonReference[+] = Reference(PFEIG-Condition-HemiparesisDiagnosis)
 * encounter = Reference(PFEIG-Encounter-DeviceRequest-RollingWalker)
 * requester = Reference(PFEIG-Role-SNFDoc-GeraldPark)
-* requester.extension[requester-additional].valueReference = Reference(PFEIG-RelatedPerson-CharlesJohnson)
+* requester.extension[additional-requester].valueReference = Reference(PFEIG-RelatedPerson-CharlesJohnson)
 * performer = Reference(PFEIG-Org-03)
 * insurance = Reference(PFEIG-PASCoverage-BSJ1)
 * extension[location].valueString = "Skilled nursing facility room"
