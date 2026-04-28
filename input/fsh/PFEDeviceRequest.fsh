@@ -5,7 +5,7 @@ Profile:        PFEDeviceRequest
 Parent:         DeviceRequest
 Id:             pfe-device-request
 Title:          "Personal Functioning and Engagement Device Request Profile"
-Description:    "An exchange of post-acute care device requests for a patient. This profile is used for exchanging requests for assistive devices."
+Description:    "The purpose of the profile is to facilitate exchange of information related to a device request/order being made at a post-acute care setting to support a patient’s personal functioning and engagement. The US Core Device Profile inherits from the FHIR [DeviceRequest]([Device](https://hl7.org/fhir/R4/devicerequest.html)) resource; refer to it for scope and usage definitions."
 
 * extension contains
     PFEDeviceRequestLocation named location 0..* MS and
@@ -109,7 +109,7 @@ Description:    "An exchange of post-acute care device requests for a patient. T
 
 
 * requester MS
-* requester.extension contains PFEDeviceRequestAdditionalRequester named additional-requester 0..1 MS
+* requester.extension contains PFEDeviceRequestAdditionalRequester named additional-requester 0..1
 * requester.extension[additional-requester] ^short = "Cross-version extension for R6 requester targets not supported in R4."
 * requester.extension[additional-requester] ^definition = "Carries DeviceRequest.requester when the requester is a CareTeam, Group, Patient, or RelatedPerson, which are allowed in FHIR R6 but not in FHIR R4."
 * requester ^short = "Device requester"
