@@ -5,7 +5,7 @@ Profile:        PFEDeviceRequest
 Parent:         DeviceRequest
 Id:             pfe-device-request
 Title:          "Personal Functioning and Engagement Device Request Profile"
-Description:    "The purpose of the profile is to facilitate exchange of information related to a device request/order being made at a post-acute care setting to support a patient’s personal functioning and engagement. The US Core Device Profile inherits from the FHIR [DeviceRequest]([Device](https://hl7.org/fhir/R4/devicerequest.html)) resource; refer to it for scope and usage definitions. (test)"
+Description:    "The purpose of the profile is to facilitate exchange of information related to a device request/order being made at a post-acute care setting to support a patient’s personal functioning and engagement. The US Core Device Profile inherits from the FHIR [DeviceRequest](https://hl7.org/fhir/R4/devicerequest.html) resource; refer to it for scope and usage definitions."
 
 * extension contains
     PFEDeviceRequestLocation named location 0..* MS and
