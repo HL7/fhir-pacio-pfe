@@ -7,31 +7,52 @@ The following are example usage scenarios for this Profile:
 * Query for a device request of a patient's prior functioning and engagement.
 * Record or update prior functioning and engagement device request for a Patient.
 
+### How this resource was developed 
+
+This Profile was developed by the Personal Functioning and Engagement (PFE) subgroup of the Post-Acute Care InterOperability (PACIO) Project. The subgroup contains experts in: Assessing for and ordering devices (e.g., physical therapists, speech language pathologists), EHR implementation and interoperability, HL7 FHIR, and user-centered design. PACIO is sponsored by the US Centers for Medicare and Medicaid Services (CMS) and by the MITRE Corporation. 
+
+** Specific methods used: **
+- Needs assessment 
+  - PACIO community members identified challenges when requesting devices in Post-acute care (PAC) settings  
+- Identify gaps in existing device request and related resources 
+  - Extraction of data elements within existing resources 
+    - FHIR profiles for [Device](https://hl7.org/fhir/R4/device.html), [DeviceRequest](https://hl7.org/fhir/R4/devicerequest.html), [DeviceDefinition](https://hl7.org/fhir/R4/devicedefinition.html), [DeviceAssociation (R6)](https://build.fhir.org/deviceassociation) 
+    - Da Vinci Payer Data Exchange IG [PDex Device profile](https://hl7.org/fhir/us/davinci-pdex/StructureDefinition-pdex-device.html) and Da Vinci Prior Authorization Support (PAS) IG [PAS Device Request profile](https://hl7.org/fhir/us/davinci-pas/en/StructureDefinition-profile-devicerequest.html)
+    - Why look at Da Vinci specifically? "The HTI-4 final rule adopts three new certification criteria to support more efficient management of electronic prior authorization tasks and reduce administrative burden for providers. These criteria are based on Fast Healthcare Interoperability Resources (FHIR®) implementation specifications developed by the HL7® Da Vinci project.” (cite)  
+  - Identification of device request requirements by CMS and payors 
+  - Compare profile data elements and CMS/payor requirements 
+  - PFE community review of extracted data elements and comparison to CMS/payor requirements to identify gaps based on PAC practice 
+- Identify an existing resource to use as foundation for a PFE Device Request profile 
+  - See this [Confluence page](https://confluence.hl7.org/spaces/PC/pages/413248626/PFE+Device+Profile+Design+Decision) for details on the selection process 
+- Build the PFE Device Request profile to address gaps and address PAC needs 
+  - MITRE team created an initial draft of the profile 
+  - PAC community iteratively provided feedback to improve profile drafts 
+
 ### Mandatory and Must Support Data Elements
 
 The following data elements must always be present or must be supported if the data is present in the sending system ([Must Support](formal_specification.html#must-support) definition). They are presented below with a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [Formal Profile Definition](#profile) below provides the formal summary, definitions, and terminology requirements.
 
 **Each Personal Functioning and Engagement Narrative History of Status must have:**
 
-1. a code describing the type of device
-1. a patient
+1. code[x]
+1. patient
 
 **Each Personal Functioning and Engagement Narrative History of Status must support:**
 
-1. the location the device should be used
-1. the person(s) using the device, their role in using the device
-1. clinical justification, assessment findings, observed device use, and goals that may influence fulfillment of the device request.
-1. a status
-1. priority for the order
-1. specific parameters for the device 
-1. a encounter related to the order
-1. the timing schedule for the use of the device
-1. when ordered
-1. who requested the device \*
-1. insurance coverage
-1. a note
+1. extension:location
+1. extension:device-user
+1. extnesion:clinical-justification
+1. status
+1. priority
+1. parameter
+1. encounter
+1. occurrence[x]
+1. authoredOn
+1. requester\*
+1. insurance
+1. note
 
-\* see guidance below
+\* see the Profile specific implementation guidance section below
 
 **Profile specific implementation guidance:**
 
