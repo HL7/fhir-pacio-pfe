@@ -48,6 +48,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
   pin-canonicals: 'pin-all'
+  toggle-changes: true
 copyrightYear: 2022+
 releaseLabel: STU 2
 jurisdiction: urn:iso:std:iso:3166#US
