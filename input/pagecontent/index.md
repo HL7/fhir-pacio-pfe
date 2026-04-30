@@ -1,3 +1,13 @@
+<div class="note-to-balloters" markdown="1">
+
+**What's new in the US Core January 2026 Ballot**
+
+{% include whats-new/v3-ballot.md %}
+</div>
+
+Where possible, new and updated pre-publishing content is highlighted with green text and background- **This highlighting will be removed prior to publication.**
+{:.new-content}
+
 <div style="width: 100%;" >
 <h3 id="plain-language-summary-about-hl7-and-this-guide">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary-about-hl7-and-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
   <button class="btn btn-info btn-lg collapsed" type="button" title="Click to Open or Close the Plain Language Summary" data-toggle="collapse" data-target="#plain-lang-summary" aria-expanded="false" aria-controls="collapseExample">
