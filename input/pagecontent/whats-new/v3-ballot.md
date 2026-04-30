@@ -1,2 +1,14 @@
-- [PFE DeviceRequest profile](StructureDefinition-pfe-device-request-additional-requester.html)
-- Guidance for Use of ConceptMap for ICF Domain Categorization ([link](formal_specification.html#use-of-conceptmap-for-icf-domain-categorization))
+- ICF-to-LOINC mapping
+  - Guidance for Use of ConceptMap for ICF Domain Categorization ([link](formal_specification.html#use-of-conceptmap-for-icf-domain-categorization))
+  - [LOINC to ICF Mapping ConceptMap](ConceptMap-LOINCtoICF.html)
+- PFE DeviceRequest
+  - [Personal Functioning and Engagement Device Request Profile](StructureDefinition-pfe-device-request.html)
+  - [PFEDeviceRequestAdditionalRequester extension](StructureDefinition-pfe-device-request-additional-requester.html)
+  - [PFEDeviceRequestClinicalJustification extension](StructureDefinition-pfe-device-request-clinical-justification.html)
+  - [PFEDeviceRequestLocation extension](StructureDefinition-pfe-device-request-location.html)
+  - [PFEDeviceRequestUser extension](StructureDefinition-pfe-device-request-user.html)
+  - [Personal Functioning and Engagement Device Association Relationship Code System](CodeSystem-pfe-deviceassociation-relationship-cs.html)
+  - [Personal Functioning and Engagement Device Association Relationship Value Set](ValueSet-pfe-deviceassociation-relationship-vs.html)
+  - [Personal Functioning and Engagement Device Type Value Set](ValueSet-pfe-device-type.html)
+  - [Personal Functioning and Engagement Device Parameter Code Value Set](ValueSet-pfe-device-parameter-code-vs.html)
+  - [PFEIG-DeviceRequest-RollingWalker example](DeviceRequest-PFEIG-DeviceRequest-RollingWalker.html)
