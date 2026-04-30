@@ -96,3 +96,4 @@ Description: "Example PFE Collection of self-care observations for SNF admission
 * hasMember[+] = Reference(PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27)
 * derivedFrom[+] = Reference(PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1)
 * extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location].valueReference = Reference(PFEIG-Org-Loc-02)
+* extension[http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used][+].valueReference = Reference(PFEIG-SNF-Adm-Mobility-UseOfDevice-RollingWalker)

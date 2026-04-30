@@ -119,6 +119,17 @@ Description: "Example Practitioner Role: Speech and language therapist"
 
 
 
+Instance: PFEIG-Role-SNFPT-RonMarble
+InstanceOf: PractitionerRole
+Description: "Example Practitioner Role: SNF physical therapist"
+* code = http://snomed.info/sct#36682004 "Physiotherapist"
+* active = true
+* practitioner = Reference(PFEIG-Practitioner-RonMarble) "Ron Marble"
+* organization = Reference(PFEIG-Org-02) "Happy Nursing Facility"
+* location = Reference(PFEIG-Org-Loc-02)
+
+
+
 Instance: PFEIG-Role-SNFDoc-GeraldPark
 InstanceOf: PractitionerRole
 Description: "Example Practitioner Role: Geriatric Medicine Physician"
@@ -138,5 +149,4 @@ Description: "Example Practitioner Role: Internal Medicine Physician"
 * practitioner = Reference(PFEIG-Practitioner-AnitaChu) "Dr. Anita Chu"
 * organization = Reference(PFEIG-Org-Primary-Care-Michigan) "Michigan Primary Health Care Associates"
 * location = Reference(PFEIG-Org-Loc-Primary-Care-Michigan)
-
 

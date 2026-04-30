@@ -1,3 +1,6 @@
+This page has new content for PACIO PFE Version 3.0.0
+{:.new-content}
+
 **Example Usage Scenarios:**
 
 The following are example usage scenarios for this Profile:
