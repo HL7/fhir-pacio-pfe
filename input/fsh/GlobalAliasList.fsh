@@ -4,7 +4,7 @@ Alias: $LNC = http://loinc.org
 Alias: $Hl7FhirAdminGender  = http://hl7.org/fhir/administrative-gender
 Alias: $NUCC = http://nucc.org/provider-taxonomy
 Alias: $USCORECAT = http://hl7.org/fhir/us/core/CodeSystem/us-core-category
-Alias: $OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category|2.0.0
+Alias: $OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $PFEDOMAINCAT = http://hl7.org/fhir/sid/icf
 Alias: $FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: $PFEDeviceAssociationRelationshipCS = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-deviceassociation-relationship-cs
@@ -21,7 +21,7 @@ Alias: $FHIRDeviceType = http://hl7.org/fhir/ValueSet/device-type
 
 // Misc
 Alias: $EventLocation = http://hl7.org/fhir/StructureDefinition/event-location
-Alias: $PASCoverage = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-coverage
+Alias: $PASCoverage = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-coverage|2.2.1
 Alias: $PASClaimResponse = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-claimresponse
 Alias: $PASBeneficiary = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-beneficiary
 Alias: $PASSubscriber = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-subscriber

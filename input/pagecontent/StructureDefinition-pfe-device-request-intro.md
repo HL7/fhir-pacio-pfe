@@ -1,11 +1,14 @@
 This page has new content for PACIO PFE Version 3.0.0
 {:.new-content}
 
+Given that many Post-acute care (PAC) patients are covered via Medicare and/or Medicaid (cite, cite, cite), the PFE community intentionally and carefully developed the to support capture of documentation that can be critical for a device order/request to be covered by Medicare/Medicaid. While this profile is not a prior authorization or reimbursement workflow, it includes information that supports both (e.g., clinical justification). It is not intended to replace prior authorization or insurance profiles, but to complement them. 
+
 **Example Usage Scenarios:**
 
 The following are example usage scenarios for this Profile:
-* Query for a device request of a patient's prior functioning and engagement.
-* Record or update prior functioning and engagement device request for a Patient.
+- Submit a new request for a device to support a patient’s physical and cognitive functioning and/or engagement in daily activities (aka functioning and engagement). 
+- Query past device requests as part of gathering information about a patient’s prior functioning and engagement support. 
+- Record or update an existing device request based on changes in a patient’s functional and engagement abilities. 
 
 ### How this resource was developed 
 
@@ -56,5 +59,5 @@ The following data elements must always be present or must be supported if the d
 
 **Profile specific implementation guidance:**
 
-* \*FHIR R4 DeviceRequest resource allows Device, Practitioner, PractitionerRole, and Organization. FHIR R6 DeviceRequest resource also allows CareTeam, Group, Patient, and RelatedPerson. Implementer MAY use the [additional-requester](StructureDefinition-pfe-device-request-additional-requester.html) extension for these additional requester types added in FHIR R6.
+* \*FHIR R4 DeviceRequest.requester allows Device, Practitioner, PractitionerRole, and Organization. FHIR R6 DeviceRequest.requester also allows CareTeam, Group, Patient, and RelatedPerson. Implementer MAY use the [additional-requester](StructureDefinition-pfe-device-request-additional-requester.html) extension for these additional requester types added in FHIR R6.
 

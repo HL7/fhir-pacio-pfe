@@ -4,11 +4,13 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
+
 # Confirmed that this information message should be suppressed. (Zulip stream: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Questionnaire.20could.20not.20be.20resolved)
 The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 
 # The following code system are not discoverable because they are code systems in THO, but THO doesn't define the codes. They have been checked and the identifiers are correct
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icf
+Target Code System http://hl7.org/fhir/sid/icf doesn't have all content (content = not-present), so the target codes cannot be checked
 
 # For information only. The PFE IG defines this value set using the ICF code system defined by the WHO. We don't have control over the large number of codes in the ICF.
 The value set expansion is too large, and only a subset has been displayed

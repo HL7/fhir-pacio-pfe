@@ -22,7 +22,6 @@ Usage: #example
 * encounter = Reference(PFEIG-Encounter-DeviceRequest-RollingWalker)
 * requester = Reference(PFEIG-Role-SNFPT-RonMarble)
 * requester.extension[additional-requester].valueReference = Reference(PFEIG-RelatedPerson-CharlesJohnson)
-* performer = Reference(PFEIG-Org-03)
 * insurance = Reference(PFEIG-PASCoverage-BSJ1)
 * extension[location].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-RoleCode#SNF "Skilled nursing facility"
 * extension[device-user][+].extension[user].valueReference = Reference(PFEIG-patientBSJ1)
@@ -103,6 +102,7 @@ Description: "Example PAS coverage for Betsy Smith-Johnson"
 Usage: #example
 * meta.profile = Canonical($PASCoverage)
 * status = #active
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MB "Member Number"
 * identifier.system = "http://example.org/coverage"
 * identifier.value = "PAS-987654321"
 * subscriber = Reference(PFEIG-patientBSJ1)
