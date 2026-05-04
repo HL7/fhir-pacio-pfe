@@ -12,6 +12,9 @@ The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icf
 Target Code System http://hl7.org/fhir/sid/icf doesn't have all content (content = not-present), so the target codes cannot be checked
 
+# CodeSystem is not enumerable
+Error from https://tx.fhir.org/r4: Error: The code System "http://www.ama-assn.org/go/cpt" has a grammar, and cannot be enumerated directly
+
 # For information only. The PFE IG defines this value set using the ICF code system defined by the WHO. We don't have control over the large number of codes in the ICF.
 The value set expansion is too large, and only a subset has been displayed
 

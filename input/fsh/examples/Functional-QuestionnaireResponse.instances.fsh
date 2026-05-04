@@ -2,6 +2,7 @@ Instance: PFEIG-QResponse-Hospital-Admission-Mobility-1
 InstanceOf: USCoreQuestionnaireResponseProfile
 Description: "Example U.S. Core Questionaire Response: Minimum Data Set (MDS) admission mobility assessment"
 Usage: #example
+* meta.profile = Canonical(us-core-questionnaireresponse|6.1.0)
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -69,6 +70,7 @@ Instance: PFEIG-QResponse-Hospital-Discharge-Mobility-1
 InstanceOf: USCoreQuestionnaireResponseProfile
 Description: "Example U.S. Core Questionaire Response: Minimum Data Set (MDS) discharge mobility assessment"
 Usage: #example
+* meta.profile = Canonical(us-core-questionnaireresponse|6.1.0)
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -136,6 +138,7 @@ Instance: PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1
 Description: "Example U.S. Core Questionaire Response: Minimum Data Set (MDS) admission self-care assessment"
 InstanceOf: USCoreQuestionnaireResponseProfile
 Usage: #example
+* meta.profile = Canonical(us-core-questionnaireresponse|6.1.0)
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"

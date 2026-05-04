@@ -23,9 +23,6 @@ Alias: $FHIRDeviceType = http://hl7.org/fhir/ValueSet/device-type
 Alias: $EventLocation = http://hl7.org/fhir/StructureDefinition/event-location
 Alias: $PASCoverage = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-coverage|2.2.1
 Alias: $PASClaimResponse = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-claimresponse
-Alias: $PASBeneficiary = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-beneficiary
-Alias: $PASSubscriber = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-subscriber
-Alias: $PASInsurer = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-insurer
 
 // US Core
 Alias: $USCoreConditionEncounterDiagnosisProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0

@@ -50,6 +50,7 @@ Description:    "The purpose of the profile is to facilitate exchange of informa
     - Wheeled walker: HCPCS E0143 “Walker, folding, wheeled, adjustable or fixed height” 
     - Hot or cold pack: HCPCS A9273 “Cold or hot fluid bottle, ice cap or collar, heat and/or cold wrap, any type” 
 """
+* codeCodeableConcept MS
 * codeCodeableConcept from PFEDeviceType (extensible)
 
 * parameter MS 
