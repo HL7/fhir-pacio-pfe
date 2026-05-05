@@ -27,7 +27,7 @@ Description:    "The purpose of the profile is to facilitate exchange of informa
 * groupIdentifier MS
 * groupIdentifier ^comment = """
     Examples:
-    - An alphanumeric string that is used as a group identifier for a composite request for:  
+    - An alphanumeric string that is used as a group identifier for a composite request for.  
     - A motorized wheelchair, a seat cushion, a communication device, and accessories used to attach the cushion and communication device to the wheelchair 
     - A knee brace and a grabbing tool to support independent living for a patient who had knee surgery and is being discharged home from an inpatient rehab facility 
 """
@@ -37,9 +37,21 @@ Description:    "The purpose of the profile is to facilitate exchange of informa
 * subject MS
 * subject ^short = "Patient"
 * subject ^definition = "The patient for whom the device is being requested."
-* code[x] MS
-* codeCodeableConcept from PFEDeviceType (extensible)
 
+* code[x] MS
+* code[x] ^definition = "A code that indicates the device being requested. Example code systems include Current Procedural Terminology (CPT) or Healthcare Common Procedure Coding System (HCPCS) codes"
+* code[x] ^comment = """
+    Examples: 
+    - Wheelchair seat cushion: HCPCS E2601 “General use wheelchair seat cushion, width less than 22 inches, any depth” 
+    - Splint: HCPCS A4570 “Splint” 
+    - Brace: HCPCS L3224 “Orthopedic footwear, woman's shoe, oxford, used as an integral part of a brace (orthosis)” 
+    - Enteral feeding pump and supplies: HCPCS B4035 “Enteral feeding supply kit; pump fed, per day, includes but not limited to feeding/flushing syringe, administration set tubing, dressings, tape” 
+    - TENS device with 2 leads: HCPCS E0720 “Transcutaneous electrical nerve stimulation (tens) device, two lead, localized stimulation” 
+    - Wheeled walker: HCPCS E0143 “Walker, folding, wheeled, adjustable or fixed height” 
+    - Hot or cold pack: HCPCS A9273 “Cold or hot fluid bottle, ice cap or collar, heat and/or cold wrap, any type” 
+"""
+* codeCodeableConcept MS
+* codeCodeableConcept from PFEDeviceType (extensible)
 
 * parameter MS 
 * parameter ^short = "Parameter(s) for device"
@@ -117,7 +129,8 @@ Description:    "The purpose of the profile is to facilitate exchange of informa
 
 * performerType 0..0
 * performerType ^comment = "DO NOT USE THIS DATA ELEMENT. It will be removed from version R6 of the FHIR Device Request Profile. To capture the device performer role, use DeviceRequest.extension:device-user extension"
-* performer MS
+* performer 0..0
+* performer ^comment = "System SHALL use the device-user extension to record the person(s) who will be using the device"
 * authoredOn MS
 * encounter MS
 * priority MS

@@ -8,8 +8,8 @@ InstanceOf: USCorePatientProfile
 Description: "Example US Core Patient: Betsy Smith-Johnson"
 
 * meta.profile = Canonical(us-core-patient|6.1.0)
-* meta.profile[+] = Canonical($PASBeneficiary)
-* meta.profile[+] = Canonical($PASSubscriber)
+* meta.profile[+] = "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-beneficiary|2.2.1"
+* meta.profile[+] = "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-subscriber|2.2.1"
 * active = true
 
 * name.text = "Betsy Smith-Johnson"

@@ -22,7 +22,6 @@ Usage: #example
 * encounter = Reference(PFEIG-Encounter-DeviceRequest-RollingWalker)
 * requester = Reference(PFEIG-Role-SNFPT-RonMarble)
 * requester.extension[additional-requester].valueReference = Reference(PFEIG-RelatedPerson-CharlesJohnson)
-* performer = Reference(PFEIG-Org-03)
 * insurance = Reference(PFEIG-PASCoverage-BSJ1)
 * extension[location].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-RoleCode#SNF "Skilled nursing facility"
 * extension[device-user][+].extension[user].valueReference = Reference(PFEIG-patientBSJ1)
@@ -92,7 +91,7 @@ Instance: PFEIG-Payer-Org-01
 InstanceOf: Organization
 Description: "Example insurer organization for PAS coverage"
 Usage: #example
-* meta.profile = Canonical($PASInsurer)
+* meta.profile = "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-insurer|2.2.1"
 * name = "Texas Example Health Plan"
 * active = true
 
@@ -101,8 +100,9 @@ Instance: PFEIG-PASCoverage-BSJ1
 InstanceOf: Coverage
 Description: "Example PAS coverage for Betsy Smith-Johnson"
 Usage: #example
-* meta.profile = Canonical($PASCoverage)
+* meta.profile = "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-coverage|2.2.1"
 * status = #active
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MB "Member Number"
 * identifier.system = "http://example.org/coverage"
 * identifier.value = "PAS-987654321"
 * subscriber = Reference(PFEIG-patientBSJ1)

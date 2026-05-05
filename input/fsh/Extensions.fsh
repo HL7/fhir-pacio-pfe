@@ -49,7 +49,20 @@ Id: pfe-device-request-user
 * extension[relationship].valueCodeableConcept from PFEDeviceAssociationRelationshipVS (extensible)
 
 Extension: PFEDeviceRequestClinicalJustification
-Description: "Groups clinical justification, assessment findings, observed device use, and goals that may influence fulfillment of the device request."
+Description: """
+    Groups information that supports the clinical justification for the device request. These can include assessment findings, and goals that may influence fulfillment of the device request.
+    - assessments documenting the patient’s ability to use/interact with the device related to:   
+        - Cognition: If the patient has the cognitive capacity to use the device via the Brief Cognitive Assessment Tool (BCAT®) short form (LOINC 95872-8) 
+        - Physical Functioning: If the patient is physically able to use the device via the 9-Hole Pegboard Dexterity Test (LOINC 83141-2) 
+        - Vision: If the patient's visual capabilities are aligned with the device features via the Motor Free Visual Perception test (MFVP) (SNOMED-CT 396216003) 
+        - Health Literacy: If the patient has the ability learn how to use the device via the BRIEF health literacy screening tool (LOINC 95866-0) 
+        - Disability: If the patient has a disability that would need to be accommodated in the selection of a device via an indication in the patient’s demographic record of having a disability (ICD-10  Z73.6) 
+    - Documented observation of the patient’s usage of the requested device during an assessment that may influence the fulfillment of the device.  
+        - Example: A patient at a long-term care facility uses a cane to complete a walking assessment (e.g., the Centers for Medicare & Medicaid Services [CMS] Minimum Data Set [MDS] section GG items on walking distance) that is captured as observation data (via the derivedFrom data element within the PFE Use of Device profile). 
+    - Supporting information about the patient's goals that may influence fulfillment of the device request. 
+        - Example: A patient at an inpatient rehabilitation facility has a goal of living independently at home after knee surgery, which requires limiting the range of motion of their knee. To support this goal, the physical therapist overseeing their rehab submits device requests for a knee brace that limits range of motion and a grabbing tool to help compensate for limited mobility due to the brace. Supporting information related to the goal can include: Independent daily dressing assessment (e.g., items GG0130.F and G from the MDS captured in the LOINC panel 108256-9) and a pain assessment (e.g., section J from the MDS captured in the LOINC panel 108256-9) that are completed by the patient while wearing a knee brace and while using a grabbing tool (captured in the PFE Goal profile via an Observation under the “addresses” data element). 
+        - Example: A patient in a skilled nursing facility has a goal to gain weight and maintain it. The patient’s dietitian orders an enteral nutrition-related device. Supporting information related to the goal can include: Vital sign data regarding weight to assess gain/maintenance (captured in the PFE Goal profile via LOINC code 29463-7 under the “measure” data element), Nutrition orders (captured in the PFE Goal profile via a NutritionOrder under the “addresses” data element) 
+"""
 Id: pfe-device-request-clinical-justification
 * ^context.type = #element
 * ^context.expression = "DeviceRequest"
