@@ -27,6 +27,7 @@ Alias: $PASClaimResponse = http://hl7.org/fhir/us/davinci-pas/StructureDefinitio
 // US Core
 Alias: $USCoreConditionEncounterDiagnosisProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0
 Alias: $USCoreConditionProblemsHealthConcernsProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|6.1.0
+Alias: $USCoreDeviceProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device|6.1.0
 Alias: $USCoreDiagnosticReportProfileNoteExchange = http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|6.1.0
 Alias: $USCoreDocumentReference = http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0
 Alias: $USCoreEncounter = http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|6.1.0

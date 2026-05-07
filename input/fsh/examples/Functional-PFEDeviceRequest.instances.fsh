@@ -6,6 +6,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * basedOn = Reference(PFEIG-ServiceRequest-SNFDischargePTRefer)
+* priorRequest = Reference(PFEIG-DeviceRequest-Wheelchair)
 * subject = Reference(PFEIG-patientBSJ1)
 * codeCodeableConcept = $HCPCS#E0143 "Walker, folding, wheeled, adjustable or fixed height"
 * parameter.code = http://snomed.info/sct#103355008
@@ -34,6 +35,16 @@ Usage: #example
 * extension[clinical-justification][=].extension[use-of-device][+].valueReference = Reference(PFEIG-SNF-Adm-Mobility-UseOfDevice-RollingWalker)
 * extension[clinical-justification][=].extension[goal][+].valueReference = Reference(PFEIG-Goal-WalkingGoal)
 * note.text = "Order for a rolling walker to support reconditioning and mobility rehabilitation, and to reduce fall risk."
+
+
+Instance: PFEIG-DeviceRequest-Wheelchair
+InstanceOf: DeviceRequest
+Description: "Example Device Request for a wheelchair completed prior to the rolling walker request"
+Usage: #example
+* status = #completed
+* intent = #order
+* subject = Reference(PFEIG-patientBSJ1)
+* codeReference = Reference(PFEIG-CMS-Device-Wheelchair)
 
 
 Instance: PFEIG-RiskAssessment-FallRisk

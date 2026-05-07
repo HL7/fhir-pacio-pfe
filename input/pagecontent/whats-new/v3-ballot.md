@@ -2,6 +2,7 @@
   - Guidance for Use of ConceptMap for ICF Domain Categorization ([link](formal_specification.html#use-of-conceptmap-for-icf-domain-categorization))
   - [LOINC to ICF Mapping ConceptMap](ConceptMap-LOINCtoICF.html)
 - PFE DeviceRequest
+  - [Personal Functioning and Engagement Device Profile](StructureDefinition-pfe-device.html)
   - [Personal Functioning and Engagement Device Request Profile](StructureDefinition-pfe-device-request.html)
   - [PFEDeviceRequestAdditionalRequester extension](StructureDefinition-pfe-device-request-additional-requester.html)
   - [PFEDeviceRequestClinicalJustification extension](StructureDefinition-pfe-device-request-clinical-justification.html)

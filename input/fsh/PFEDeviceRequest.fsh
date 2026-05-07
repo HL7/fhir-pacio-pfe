@@ -127,6 +127,7 @@ Description:    "The purpose of the profile is to facilitate exchange of informa
 * requester ^short = "Device requester"
 * requester ^definition = "The individual or entity who initiated the device request and has responsibility for its activation."
 
+* priorRequest MS
 * performerType 0..0
 * performerType ^comment = "DO NOT USE THIS DATA ELEMENT. It will be removed from version R6 of the FHIR Device Request Profile. To capture the device performer role, use DeviceRequest.extension:device-user extension"
 * performer 0..0
@@ -135,6 +136,7 @@ Description:    "The purpose of the profile is to facilitate exchange of informa
 * encounter MS
 * priority MS
 * status MS
+* status 1..1
 * insurance MS
 * insurance only Reference($PASCoverage or $PASClaimResponse)
 * supportingInfo ^comment = """
