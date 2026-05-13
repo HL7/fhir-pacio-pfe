@@ -39,14 +39,17 @@ The following data elements must always be present or must be supported if the d
 
 1. code[x]
 1. patient
+1. status
 
 **Each Personal Functioning and Engagement Narrative History of Status must support:**
 
 1. extension:location
 1. extension:device-user
 1. extnesion:clinical-justification
-1. status
+1. priorRequest
+1. groupIdentifier
 1. priority
+1. code[x]:CodeablConcept
 1. parameter
 1. encounter
 1. occurrence[x]
