@@ -13,9 +13,19 @@ Description: "Example Device: Rolling walker"
 Instance: PFEIG-CMS-Device-Wheelchair
 InstanceOf: PFEDevice
 Description: "Example Device: Wheelchair"
-* type.text = "Wheelchair"
+* type = $HCPCS#E1130 "Standard wheelchair, fixed full length arms, fixed or swing away detachable footrests"
 * patient = Reference(PFEIG-patientBSJ1)
 * owner = Reference(PFEIG-Org-02)
+* udiCarrier.deviceIdentifier = "00844588003288"
+* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
+* udiCarrier.carrierHRF = "(01)00844588003288(10)LOT20240115(11)240115(17)300115(21)SN-WC-E1130-001"
+* udiCarrier.entryType = #barcode
+* distinctIdentifier = "WHLCHR-E1130-FLA-FDR"
+* manufactureDate = "2024-01-15"
+* expirationDate = "2030-01-15"
+* lotNumber = "LOT20240115"
+* serialNumber = "SN-WC-E1130-001"
 * deviceName.name = "Wheelchair"
 * deviceName.type = #user-friendly-name
 
