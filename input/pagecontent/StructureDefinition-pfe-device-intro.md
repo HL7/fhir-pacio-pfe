@@ -10,13 +10,19 @@ The following data elements must always be present or must be supported if the d
 
 **Each Personal Functioning and Engagement Device must have:**
 
-1. a type
+1. type
+1. patient
 
 **Each Personal Functioning and Engagement Device must support:**
 
-1. a patient
-1. a device name
-1. an owner
+1. udiCarrier
+1. distinctIdentifier
+1. manufactureDate
+1. expirationDate
+1. lotNumber
+1. serialNumber
+1. deviceName
+1. owner
 
 ### Profile Specific Implementation Guidance
 
