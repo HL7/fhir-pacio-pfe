@@ -49,7 +49,7 @@ The following data elements must always be present or must be supported if the d
 1. priorRequest
 1. groupIdentifier
 1. priority
-1. code[x]:CodeablConcept
+1. code[x]:CodeableConcept
 1. parameter
 1. encounter
 1. occurrence[x]

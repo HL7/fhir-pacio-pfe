@@ -26,4 +26,4 @@ The following data elements must always be present or must be supported if the d
 
 ### Profile Specific Implementation Guidance
 
-Implementations SHALL follow the [US Core Implantable Device Profile UDI Specific Implementation Guidance](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-implantable-device.html#profile-specific-implementation-guidance) when exchanging Unique Device Identifier (UDI) information.
+Implementations SHALL follow the [US Core Device Profile UDI Specific Implementation Guidance](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-device.html#profile-specific-implementation-guidance) when exchanging Unique Device Identifier (UDI) information.
