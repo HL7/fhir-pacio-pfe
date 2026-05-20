@@ -17,8 +17,6 @@ Description: "Example Device: Wheelchair"
 * patient = Reference(PFEIG-patientBSJ1)
 * owner = Reference(PFEIG-Org-02)
 * udiCarrier.deviceIdentifier = "00844588003288"
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/fda-udi"
 * udiCarrier.carrierHRF = "(01)00844588003288(10)LOT20240115(11)240115(17)300115(21)SN-WC-E1130-001"
 * udiCarrier.entryType = #barcode
 * distinctIdentifier = "WHLCHR-E1130-FLA-FDR"
