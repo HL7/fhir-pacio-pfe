@@ -1,35 +1,18 @@
 This page has new content for PACIO PFE Version 3.0.0
 {:.new-content}
 
-Given that many Post-acute care (PAC) patients are covered via Medicare and/or Medicaid (cite, cite, cite), the PFE community intentionally and carefully developed the to support capture of documentation that can be critical for a device order/request to be covered by Medicare/Medicaid. While this profile is not a prior authorization or reimbursement workflow, it includes information that supports both (e.g., clinical justification). It is not intended to replace prior authorization or insurance profiles, but to complement them. 
-
 **Example Usage Scenarios:**
 
 The following are example usage scenarios for this Profile:
-- Submit a new request for a device to support a patient’s physical and cognitive functioning and/or engagement in daily activities (aka functioning and engagement). 
-- Query past device requests as part of gathering information about a patient’s prior functioning and engagement support. 
-- Record or update an existing device request based on changes in a patient’s functional and engagement abilities. 
+- A Post-acute care (PAC) provider submits a new request for a device to support a patient’s physical and cognitive functioning and/or engagement in daily activities (aka functioning and engagement). 
+- A healthcare provider at an acute or PAC setting queries past device requests as part of gathering information about a patient’s prior functioning and engagement support. 
+- A PAC provider records or updates an existing device request based on changes in a patient’s functional and engagement abilities. 
 
 ### How this resource was developed 
 
-This Profile was developed by the Personal Functioning and Engagement (PFE) subgroup of the Post-Acute Care InterOperability (PACIO) Project. The subgroup contains experts in: Assessing for and ordering devices (e.g., physical therapists, speech language pathologists), EHR implementation and interoperability, HL7 FHIR, and user-centered design. PACIO is sponsored by the US Centers for Medicare and Medicaid Services (CMS) and by the MITRE Corporation. 
+This profile was developed by the Personal Functioning and Engagement (PFE) subgroup of the Post-Acute Care InterOperability (PACIO) Project ([pacioproject.org](http://pacioproject.org)). PFE includes experts in: Assessing for and ordering devices (e.g., physical therapists, speech language pathologists), EHR implementation and interoperability (e.g., EHR vendors), HL7 FHIR, and user-centered design. PACIO is sponsored by the US Centers for Medicare and Medicaid Services (CMS) and convened by the MITRE Corporation. Contact the PACIO project at [info@pacioproject.org](mailto:info@pacioproject.org) for detailed information about the specific methods used to develop this profile.  
 
-** Specific methods used: **
-- Needs assessment 
-  - PACIO community members identified challenges when requesting devices in Post-acute care (PAC) settings  
-- Identify gaps in existing device request and related resources 
-  - Extraction of data elements within existing resources 
-    - FHIR profiles for [Device](https://hl7.org/fhir/R4/device.html), [DeviceRequest](https://hl7.org/fhir/R4/devicerequest.html), [DeviceDefinition](https://hl7.org/fhir/R4/devicedefinition.html), [DeviceAssociation (R6)](https://build.fhir.org/deviceassociation) 
-    - Da Vinci Payer Data Exchange IG [PDex Device profile](https://hl7.org/fhir/us/davinci-pdex/StructureDefinition-pdex-device.html) and Da Vinci Prior Authorization Support (PAS) IG [PAS Device Request profile](https://hl7.org/fhir/us/davinci-pas/en/StructureDefinition-profile-devicerequest.html)
-    - Why look at Da Vinci specifically? "The HTI-4 final rule adopts three new certification criteria to support more efficient management of electronic prior authorization tasks and reduce administrative burden for providers. These criteria are based on Fast Healthcare Interoperability Resources (FHIR®) implementation specifications developed by the HL7® Da Vinci project.” (cite)  
-  - Identification of device request requirements by CMS and payors 
-  - Compare profile data elements and CMS/payor requirements 
-  - PFE community review of extracted data elements and comparison to CMS/payor requirements to identify gaps based on PAC practice 
-- Identify an existing resource to use as foundation for a PFE Device Request profile 
-  - See this [Confluence page](https://confluence.hl7.org/spaces/PC/pages/413248626/PFE+Device+Profile+Design+Decision) for details on the selection process 
-- Build the PFE Device Request profile to address gaps and address PAC needs 
-  - MITRE team created an initial draft of the profile 
-  - PAC community iteratively provided feedback to improve profile drafts 
+Note: Given that many PAC patients are covered via Medicare and/or Medicaid ([MEDPAC](https://www.medpac.gov/wp-content/uploads/2024/03/Mar24_MedPAC_Report_To_Congress_SEC.pdf), 2024; [Kaiser Family Foundation](https://www.kff.org/medicare/state-indicator/skilled-nursing-facilities/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D), 2021; [American Health Care Association/National Center for Assisted Living](https://www.ahcancal.org/Search/Pages/results.aspx?k=payor%20mix), 2025), this profile was intentionally and purposefully developed to support the capture of documentation that can be critical for a device order/request to be covered by Medicare/Medicaid. While this profile is not a prior authorization (PA) or reimbursement workflow, it includes information that supports both PA and reimbursement (e.g., clinical justification). This profile is not intended to replace PA or insurance profiles, but rather to complement them. 
 
 ### Mandatory and Must Support Data Elements
 
@@ -43,20 +26,20 @@ The following data elements must always be present or must be supported if the d
 
 **Each Personal Functioning and Engagement Narrative History of Status must support:**
 
-1. extension:location
-1. extension:device-user
-1. extnesion:clinical-justification
-1. priorRequest
-1. groupIdentifier
-1. priority
-1. code[x]:CodeableConcept
-1. parameter
-1. encounter
-1. occurrence[x]
 1. authoredOn
-1. requester\*
+1. code[x]:CodeableConcept
+1. encounter
+1. extnesion:clinical-justification
+1. extension:device-user
+1. extension:location
+1. groupIdentifier
 1. insurance
 1. note
+1. occurrence[x]
+1. parameter
+1. priorRequest
+1. priority
+1. requester\*
 
 \* see the Profile specific implementation guidance section below
 
