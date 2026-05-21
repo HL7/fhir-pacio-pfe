@@ -26,11 +26,18 @@ Profiles used by this IG, but defined in other IGs, inherit the definition of Mu
 <div class="bg-success" markdown="1">
 
 ### Use of ConceptMap for ICF Domain Categorization
-When a LOINC code is known for an observation, systems **SHOULD** use the [LOINC to ICF Mapping](ConceptMap-LOINCtoICF.html) to populate the `PFEDomain` category slice with the appropriate ICF code(s). This applies to the following profiles:
+When one of the below assessments is being recorded as an observation, systems SHOULD use the [LOINC to ICF Mapping](ConceptMap-LOINCtoICF.html) to populate the `PFEDomain` category slice with the appropriate ICF code(s).
+- Barthell Index of activities of daily living  
+- Braden Scale for pressure injury risk  
+- Brief Interview for Mental Status (BIMS) 
+- Patient Health Questionnaire-9 (PHQ-9) for depression screening 
+- Sections B, GG, J, and K from the CMS Minimum Data Set (MDS), Functional Assessment Standardized Items (FASI), Inpatient Rehabilitation Facility Patient Assessment Instrument (IRF-PAI), Long-Term Care Hospitals (LTCHs) Continuity Assessment Record and Evaluation (CARE) Data Set (LCDS), and Outcome and Assessment Information Set (OASIS) 
+
+This applies to the following profiles:
 
 - [Personal Functioning and Engagement Single Observation](StructureDefinition-pfe-observation-single.html)
 - [Personal Functioning and Engagement Clinical Test Observation](StructureDefinition-pfe-observation-clinicaltest.html)
 - [Personal Functioning and Engagement Collection](StructureDefinition-pfe-collection.html)
 
-If a LOINC code maps to multiple ICF codes within the ConceptMap, all mapped ICF codes **SHOULD** be included as separate repetitions within the `PFEDomain` category slice.
+The LOINC to ICF Mapping was developed by the Personal Functioning and Engagement (PFE) subgroup of PACIO. PFE includes experts in: Assessing for and ordering devices (e.g., physical therapists, speech language pathologists), EHR implementation and interoperability (e.g., EHR vendors), HL7 FHIR, and user-centered design. Contact the PACIO project at info@pacioproject.org for detailed information about the specific methods used to develop the mapping.  
 </div><!-- new-content -->
