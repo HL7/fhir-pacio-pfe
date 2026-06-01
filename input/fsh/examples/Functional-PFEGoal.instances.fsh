@@ -63,4 +63,4 @@ Description: "Example PFE Goal for walking"
 * addresses[+] = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16)
 * note.authorReference = Reference(PFEIG-Practitioner-JenCadbury)
 * note.time = "2024-01-18"
-* note.text = "Betsy will be able to complete functional mobility including navigating around furniture, mainingin balance, and demonstrating good functional endurance for completing activities of daily life, and instrumental activities of daily life, and in order to decrease risk of fall and risk of hospital readmission."
+* note.text = "Betsy will be able to complete safe functional mobility independently including navigating around furniture and maintaining balance to decrease risk of falls"
