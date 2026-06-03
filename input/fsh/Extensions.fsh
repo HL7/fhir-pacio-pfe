@@ -74,7 +74,7 @@ Id: pfe-device-request-clinical-justification
 * value[x] 0..0
 * extension[note] ^short = "Clinical justification note"
 * extension[note] ^definition = "Captures the clinical justification or rationale for the medical necessity of a device request. Complements the DeviceRequest.reasonCode and DeviceRequest.reasonReference data elements."
-* extension[note].value[x] only Annotation
+* extension[note].value[x] only string or Annotation
 * extension[assessment] ^short = "Supporting assessment information"
 * extension[assessment] ^definition = """
     Supporting information about patient assessments that may influence fulfillment of the device request. This includes assessments documenting the patient's ability to use/interact with the device related to:

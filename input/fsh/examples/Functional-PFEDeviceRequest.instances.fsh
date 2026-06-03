@@ -29,7 +29,7 @@ Usage: #example
 * extension[device-user][=].extension[relationship].valueCodeableConcept = $PFEDeviceAssociationRelationshipCS#patient "Patient"
 * extension[device-user][+].extension[user].valueReference = Reference(PFEIG-Role-SNFPT-RonMarble)
 * extension[device-user][=].extension[relationship].valueCodeableConcept = $PFEDeviceAssociationRelationshipCS#operator "Operator"
-* extension[clinical-justification][+].extension[note].valueAnnotation.text = "Betsy requires a rolling walker to support safe ambulation, transfers, and participation in rehabilitation activities while recovering from stroke-related right-sided weakness and physical deconditioning. In her current state, Betsy is unable to ambulate safely and has been assessed as a fall risk. The use of the walker during physical therapy will support the patient's ability to decrease her fall risk."
+* extension[clinical-justification][+].extension[note].valueString = "Betsy requires a rolling walker to support safe ambulation, transfers, and participation in rehabilitation activities while recovering from stroke-related right-sided weakness and physical deconditioning. In her current state, Betsy is unable to ambulate safely and has been assessed as a fall risk. The use of the walker during physical therapy will support the patient's ability to decrease her fall risk."
 * extension[clinical-justification][=].extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Admission-Mobility-1)
 * extension[clinical-justification][=].extension[assessment][+].valueReference = Reference(PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1)
 * extension[clinical-justification][=].extension[use-of-device][+].valueReference = Reference(PFEIG-SNF-Adm-Mobility-UseOfDevice-RollingWalker)
@@ -45,6 +45,9 @@ Usage: #example
 * intent = #order
 * subject = Reference(PFEIG-patientBSJ1)
 * codeReference = Reference(PFEIG-CMS-Device-Wheelchair)
+* extension[+].url = "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request-clinical-justification"
+* extension[=].extension[+].url = "note"
+* extension[=].extension[=].valueAnnotation.text = "A wheelchair was requested initially to support safe mobility while Betsy required greater assistance following her stroke."
 
 
 Instance: PFEIG-RiskAssessment-FallRisk
