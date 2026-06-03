@@ -364,7 +364,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date",
                             "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period",
                             "name": "date",
                             "type": "date"
@@ -388,7 +388,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code",
                             "documentation": "The code of the observation type",
                             "name": "code",
                             "type": "token"
@@ -404,18 +404,6 @@
                             "documentation": "Code and quantity value parameter pair, including in components",
                             "name": "combo-code-value-quantity",
                             "type": "composite"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Observation-subject",
-                            "documentation": "The subject that the observation is about",
-                            "name": "subject",
-                            "type": "reference"
                         },
                         {
                             "extension": [
@@ -508,7 +496,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient",
                             "documentation": "The subject that the observation is about (if patient)",
                             "name": "patient",
                             "type": "reference"
@@ -724,7 +712,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Observation-category",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category",
                             "documentation": "The classification of the type of observation",
                             "name": "category",
                             "type": "token"
@@ -760,7 +748,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Observation-status",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status",
                             "documentation": "The status of the observation",
                             "name": "status",
                             "type": "token"
@@ -1165,7 +1153,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date",
                             "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period",
                             "name": "date",
                             "type": "date"
@@ -1177,7 +1165,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category",
                             "documentation": "The classification of the type of diagnostic report",
                             "name": "category",
                             "type": "token"
@@ -1189,7 +1177,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-status",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status",
                             "documentation": "Search by status",
                             "name": "status",
                             "type": "token"
@@ -1201,7 +1189,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code",
                             "documentation": "The code of the report type",
                             "name": "code",
                             "type": "token"
@@ -1213,7 +1201,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient",
                             "documentation": "The subject that the report is about (if patient)",
                             "name": "patient",
                             "type": "reference"
@@ -1420,18 +1408,6 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/DeviceUseStatement-subject",
-                            "documentation": "Search by subject",
-                            "name": "subject",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
                             "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
                             "documentation": "Search by subject - a patient",
                             "name": "patient",
@@ -1454,6 +1430,106 @@
                         "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-use-of-device|2.0.0"
                     ],
                     "type": "DeviceUseStatement"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "documentation": "Individual the service is ordered for",
+                            "name": "patient",
+                            "type": "reference"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request|2.0.0"
+                    ],
+                    "type": "DeviceRequest"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient",
+                            "documentation": "Patient information, if the resource is affixed to a person",
+                            "name": "patient",
+                            "type": "reference"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device|2.0.0"
+                    ],
+                    "type": "Device"
                 },
                 {
                     "extension": [
@@ -1834,9 +1910,9 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-clinical-status",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status",
                             "documentation": "Search by status",
-                            "name": "status",
+                            "name": "clinical-status",
                             "type": "token"
                         },
                         {
@@ -1846,9 +1922,9 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-abatement-date",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date",
                             "documentation": "Search by abatement date",
-                            "name": "abatement date",
+                            "name": "abatement-date",
                             "type": "date"
                           },
                           {
@@ -1858,9 +1934,9 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-onset-date",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date",
                             "documentation": "Search by onset date",
-                            "name": "onset date",
+                            "name": "onset-date",
                             "type": "date"
                           },
                           {
@@ -1870,9 +1946,9 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-recorded-date",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date",
                             "documentation": "Search by recorded date",
-                            "name": "recorded date",
+                            "name": "recorded-date",
                             "type": "date"
                           },
                         {
@@ -1882,19 +1958,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-subject",
-                            "documentation": "Search by subject",
-                            "name": "subject",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient",
                             "documentation": "Search by subject - a patient",
                             "name": "patient",
                             "type": "reference"
@@ -1927,22 +1991,10 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-recorded-date",
-                            "documentation": "Search by recorded date",
-                            "name": "recordedDate",
-                            "type": "date"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code",
                             "documentation": "Search by code",
                             "name": "code",
                             "type": "token"
@@ -1954,7 +2006,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter",
                             "documentation": "Search by encounter",
                             "name": "encounter",
                             "type": "reference"
@@ -2207,19 +2259,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-subject",
-                            "documentation": "Search by subject",
-                            "name": "subject",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient",
                             "documentation": "Search by subject - a patient",
                             "name": "patient",
                             "type": "reference"
@@ -2231,9 +2271,9 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-target-date",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date",
                             "documentation": "Search by goal target date",
-                            "name": "target date",
+                            "name": "target-date",
                             "type": "date"
                         },
                         {
@@ -2243,9 +2283,9 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-lifecycle-status",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status",
                             "documentation": "Search by lifecycle status",
-                            "name": "lifecycle status",
+                            "name": "lifecycle-status",
                             "type": "token"
                         },
                         {
@@ -2825,19 +2865,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-subject",
-                            "documentation": "Search by subject",
-                            "name": "subject",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient",
                             "documentation": "Search by subject - a patient",
                             "name": "patient",
                             "type": "reference"
@@ -2849,7 +2877,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-status",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status",
                             "documentation": "Search by status",
                             "name": "status",
                             "type": "token"
@@ -2861,7 +2889,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code",
                             "documentation": "Search by code",
                             "name": "code",
                             "type": "token"
@@ -2873,7 +2901,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-category",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category",
                             "documentation": "Search by category",
                             "name": "category",
                             "type": "token"
@@ -2885,7 +2913,7 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-authored",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored",
                             "documentation": "Search by date authored",
                             "name": "authored",
                             "type": "date"

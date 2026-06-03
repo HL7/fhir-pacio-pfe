@@ -15,11 +15,11 @@ Usage: #example
 * authoredOn = "2024-07-17"
 * priority = #routine
 * reasonCode = http://snomed.info/sct#31031000119102 "Physical deconditioning (finding)"
-* reasonReference[0] = Reference(PFEIG-Condition-Decondition)
-* reasonReference[+] = Reference(PFEIG-Condition-HemiparesisDiagnosis)
+* reasonReference[0] = Reference(PFEIG-Condition-HemiparesisDiagnosis)
 * supportingInfo[+] = Reference(PFEIG-RiskAssessment-FallRisk)
 * supportingInfo[+] = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16)
 * supportingInfo[+] = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18)
+* supportingInfo[+] = Reference(PFEIG-Encounter-DeviceRequest-RollingWalker)
 * encounter = Reference(PFEIG-Encounter-DeviceRequest-RollingWalker)
 * requester = Reference(PFEIG-Role-SNFPT-RonMarble)
 * requester.extension[additional-requester].valueReference = Reference(PFEIG-RelatedPerson-CharlesJohnson)
@@ -29,12 +29,12 @@ Usage: #example
 * extension[device-user][=].extension[relationship].valueCodeableConcept = $PFEDeviceAssociationRelationshipCS#patient "Patient"
 * extension[device-user][+].extension[user].valueReference = Reference(PFEIG-Role-SNFPT-RonMarble)
 * extension[device-user][=].extension[relationship].valueCodeableConcept = $PFEDeviceAssociationRelationshipCS#operator "Operator"
-* extension[clinical-justification][+].extension[note].valueMarkdown = "Betsy requires a rolling walker to support safe ambulation, transfers, and participation in rehabilitation activities while recovering from stroke-related right-sided weakness and physical deconditioning. In her current state, Betsy is unable to ambulate safely and has been assessed as a fall risk. The use of the walker during physical therapy will support the pateint's ability to engage in re-conditioning activities and decrease her fall risk."
-* extension[clinical-justification][=].extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Discharge-Mobility-1)
+* extension[clinical-justification][+].extension[note].valueAnnotation.text = "Betsy requires a rolling walker to support safe ambulation, transfers, and participation in rehabilitation activities while recovering from stroke-related right-sided weakness and physical deconditioning. In her current state, Betsy is unable to ambulate safely and has been assessed as a fall risk. The use of the walker during physical therapy will support the patient's ability to decrease her fall risk."
+* extension[clinical-justification][=].extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Admission-Mobility-1)
 * extension[clinical-justification][=].extension[assessment][+].valueReference = Reference(PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1)
 * extension[clinical-justification][=].extension[use-of-device][+].valueReference = Reference(PFEIG-SNF-Adm-Mobility-UseOfDevice-RollingWalker)
 * extension[clinical-justification][=].extension[goal][+].valueReference = Reference(PFEIG-Goal-WalkingGoal)
-* note.text = "Order for a rolling walker to support reconditioning and mobility rehabilitation, and to reduce fall risk."
+* note.text = "Order for a rolling walker to support mobility rehabilitation and to reduce fall risk."
 
 
 Instance: PFEIG-DeviceRequest-Wheelchair
