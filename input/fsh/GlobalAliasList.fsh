@@ -6,7 +6,6 @@ Alias: $NUCC = http://nucc.org/provider-taxonomy
 Alias: $USCORECAT = http://hl7.org/fhir/us/core/CodeSystem/us-core-category
 Alias: $OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $PFEDOMAINCAT = http://hl7.org/fhir/sid/icf
-Alias: $FUNCTIONINGCAT = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: $PFEDeviceAssociationRelationshipCS = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-deviceassociation-relationship-cs
 Alias: $CPT = http://www.ama-assn.org/go/cpt
 Alias: $HCPCS = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets

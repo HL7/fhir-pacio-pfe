@@ -1,5 +1,4 @@
 Alias: $loinc = http://loinc.org
-Alias: $pfe-functioning-cs = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 Alias: PFEDOMAINCAT = http://hl7.org/fhir/sid/icf
 
 Instance: PFEIG-Narrative-History-Functional-Status-1
