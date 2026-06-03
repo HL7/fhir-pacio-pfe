@@ -66,24 +66,494 @@
                     "extension": [
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHALL"
+                            "valueCode": "SHOULD"
+                        },
+                        {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "recorded-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "asserted-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "clinical-status"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "onset-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "abatement-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "clinical-status"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "encounter"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "code"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHALL"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          }
+                    ],
+                    "conditionalCreate": true,
+                    "_conditionalCreate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalDelete": "multiple",
+                    "_conditionalDelete": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalUpdate": true,
+                    "_conditionalUpdate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
+                    ],
+                    "searchInclude": [
+                        "Condition.identifier",
+                        "Condition.subject",
+                        "Condition.patient",
+                        "Condition.bodySite",
+                        "Condition.asserter",
+                        "Condition.recordedDate",
+                        "Condition.code",
+                        "Condition.encounter"
+
+                    ],
+                    "_searchInclude": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        }
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+                            "documentation": "Search by identifier",
+                            "name": "identifier",
+                            "type": "token"
                         },
                         {
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                                     "valueCode": "SHALL"
-                                },
-                                {
-                                    "url": "required",
-                                    "valueString": "birthdate"
-                                },
-                                {
-                                    "url": "required",
-                                    "valueString": "name"
                                 }
                             ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status",
+                            "documentation": "Search by status",
+                            "name": "clinical-status",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date",
+                            "documentation": "Search by abatement date",
+                            "name": "abatement-date",
+                            "type": "date"
+                          },
+                          {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date",
+                            "documentation": "Search by onset date",
+                            "name": "onset-date",
+                            "type": "date"
+                          },
+                          {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date",
+                            "documentation": "Search by recorded date",
+                            "name": "recorded-date",
+                            "type": "date"
+                          },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient",
+                            "documentation": "Search by subject - a patient",
+                            "name": "patient",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-body-site",
+                            "documentation": "Search by body site",
+                            "name": "bodySite",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-asserter",
+                            "documentation": "Search by asserter",
+                            "name": "asserter",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code",
+                            "documentation": "Search by code",
+                            "name": "code",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter",
+                            "documentation": "Search by encounter",
+                            "name": "encounter",
+                            "type": "reference"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-encounter-diagnosis|2.0.0",
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-problems-health-concerns|2.0.0"
+                    ],
+                    "type": "Condition"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
                         }
                     ],
                     "interaction": [
@@ -118,9 +588,584 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id",
-                            "documentation": "Logical id of this artifact",
-                            "name": "_id",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient",
+                            "documentation": "Patient information, if the resource is affixed to a person",
+                            "name": "patient",
+                            "type": "reference"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device|2.0.0"
+                    ],
+                    "type": "Device"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHALL"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "documentation": "Individual the service is ordered for",
+                            "name": "patient",
+                            "type": "reference"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request|2.0.0"
+                    ],
+                    "type": "DeviceRequest"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHOULD"
+                        }
+                    ],
+                    "conditionalCreate": true,
+                    "_conditionalCreate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalDelete": "multiple",
+                    "_conditionalDelete": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalUpdate": true,
+                    "_conditionalUpdate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
+                    ],
+                    "searchInclude": [
+                        "DeviceUseStatement.subject",
+                        "DeviceUseStatement.patient",
+                        "DeviceUseStatement.device"
+                    ],
+                    "_searchInclude": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        }
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/DeviceUseStatement-identifier",
+                            "documentation": "Search by identifier",
+                            "name": "identifier",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "documentation": "Search by subject - a patient",
+                            "name": "patient",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/DeviceUseStatement-device",
+                            "documentation": "Search by device",
+                            "name": "device",
+                            "type": "reference"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-use-of-device|2.0.0"
+                    ],
+                    "type": "DeviceUseStatement"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "MAY"
+                        },
+                        {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "code"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "status"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHALL"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHALL"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "category"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHALL"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "code"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          }
+                    ],
+                    "conditionalCreate": true,
+                    "_conditionalCreate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalDelete": "multiple",
+                    "_conditionalDelete": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalUpdate": true,
+                    "_conditionalUpdate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
+                    ],
+                    "searchInclude": [
+                        "DiagnosticReport.based-on",
+                        "DiagnosticReport.subject",
+                        "DiagnosticReport.patient",
+                        "DiagnosticReport.encounter",
+                        "DiagnosticReport.media",
+                        "DiagnosticReport.performer",
+                        "DiagnosticReport.result",
+                        "DiagnosticReport.results-interpreter",
+                        "DiagnosticReport.specimen"
+                    ],
+                    "_searchInclude": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        }
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date",
+                            "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period",
+                            "name": "date",
+                            "type": "date"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category",
+                            "documentation": "The classification of the type of diagnostic report",
+                            "name": "category",
                             "type": "token"
                         },
                         {
@@ -130,8 +1175,296 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier",
-                            "documentation": "A patient identifier",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status",
+                            "documentation": "Search by status",
+                            "name": "status",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code",
+                            "documentation": "The code of the report type",
+                            "name": "code",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient",
+                            "documentation": "The subject that the report is about (if patient)",
+                            "name": "patient",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+                            "documentation": "The unique id for a particular report",
+                            "name": "identifier",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
+                            "documentation": "Encounter related to the report",
+                            "name": "encounter",
+                            "type": "reference"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status|2.0.0"
+                    ],
+                    "type": "DiagnosticReport"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHOULD"
+                        },
+                        {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "target-date"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "description"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                "valueCode": "SHOULD"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "patient"
+                              },
+                              {
+                                "url": "required",
+                                "valueString": "lifecycle-status"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                          }
+                    ],
+                    "conditionalCreate": true,
+                    "_conditionalCreate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalDelete": "multiple",
+                    "_conditionalDelete": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalUpdate": true,
+                    "_conditionalUpdate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
+                    ],
+                    "searchInclude": [
+                        "Goal.identifier",
+                        "Goal.subject",
+                        "Goal.patient",
+                        "Goal.achievementStatus",
+                        "Goal.addresses"
+                    ],
+                    "_searchInclude": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        }
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+                            "documentation": "Search by identifier",
                             "name": "identifier",
                             "type": "token"
                         },
@@ -142,10 +1475,34 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name",
-                            "documentation": "A server defined search that may match any of the string fields in the HumanName, including family, given, prefix, suffix, and/or text",
-                            "name": "name",
-                            "type": "string"
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient",
+                            "documentation": "Search by subject - a patient",
+                            "name": "patient",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date",
+                            "documentation": "Search by goal target date",
+                            "name": "target-date",
+                            "type": "date"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status",
+                            "documentation": "Search by lifecycle status",
+                            "name": "lifecycle-status",
+                            "type": "token"
                         },
                         {
                             "extension": [
@@ -154,16 +1511,265 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate",
-                            "documentation": "The patient's date of birth",
-                            "name": "birthdate",
-                            "type": "date"
+                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-achievement-status",
+                            "documentation": "Search by achievement status",
+                            "name": "achievementStatus",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/Goal-addresses",
+                            "documentation": "Search by addresses",
+                            "name": "addresses",
+                            "type": "reference"
                         }
                     ],
                     "supportedProfile": [
-                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-goal|2.0.0"
                     ],
-                    "type": "Patient"
+                    "type": "Goal"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                            "valueCode": "SHOULD"
+                        }
+                    ],
+                    "conditionalCreate": true,
+                    "_conditionalCreate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalDelete": "multiple",
+                    "_conditionalDelete": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "conditionalUpdate": true,
+                    "_conditionalUpdate": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                    "interaction": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "create"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "update"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "delete"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                }
+                            ],
+                            "code": "read"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "vread"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-instance"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "history-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "search-type"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "code": "patch"
+                        }
+                    ],
+                    "referencePolicy": [
+                        "literal",
+                        "logical"
+                    ],
+                    "searchInclude": [
+                        "NutritionOrder.identifier",
+                        "NutritionOrder.patient",
+                        "NutritionOrder.encounter",
+                        "NutritionOrder.orderer",
+                        "NutritionOrder.status"
+                    ],
+                    "_searchInclude": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ]
+                        }
+                    ],
+                    "searchParam": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+                            "documentation": "Search by identifier",
+                            "name": "identifier",
+                            "type": "token"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                            "documentation": "Search by subject - a patient",
+                            "name": "patient",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
+                            "documentation": "Search by encounter",
+                            "name": "encounter",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/NutritionOrder-orderer",
+                            "documentation": "Search by orderer",
+                            "name": "orderer",
+                            "type": "reference"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "MAY"
+                                }
+                            ],
+                            "definition": "http://hl7.org/fhir/SearchParameter/NutritionOrder-status",
+                            "documentation": "Search by status",
+                            "name": "status",
+                            "type": "token"
+                        }
+                    ],
+                    "supportedProfile": [
+                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-nutrition-order|2.0.0"
+                    ],
+                    "type": "NutritionOrder"
                 },
                 {
                     "extension": [
@@ -953,592 +2559,24 @@
                     "extension": [
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "MAY"
-                        },
-                        {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "code"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "date"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "status"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHALL"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "category"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "date"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHALL"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "category"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHALL"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "code"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          }
-                    ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "interaction": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "code": "create"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "code": "update"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "delete"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "code": "read"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "vread"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "history-instance"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "history-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "code": "search-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "patch"
-                        }
-                    ],
-                    "referencePolicy": [
-                        "literal",
-                        "logical"
-                    ],
-                    "searchInclude": [
-                        "DiagnosticReport.based-on",
-                        "DiagnosticReport.subject",
-                        "DiagnosticReport.patient",
-                        "DiagnosticReport.encounter",
-                        "DiagnosticReport.media",
-                        "DiagnosticReport.performer",
-                        "DiagnosticReport.result",
-                        "DiagnosticReport.results-interpreter",
-                        "DiagnosticReport.specimen"
-                    ],
-                    "_searchInclude": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        }
-                    ],
-                    "searchParam": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date",
-                            "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period",
-                            "name": "date",
-                            "type": "date"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category",
-                            "documentation": "The classification of the type of diagnostic report",
-                            "name": "category",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status",
-                            "documentation": "Search by status",
-                            "name": "status",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code",
-                            "documentation": "The code of the report type",
-                            "name": "code",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient",
-                            "documentation": "The subject that the report is about (if patient)",
-                            "name": "patient",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
-                            "documentation": "The unique id for a particular report",
-                            "name": "identifier",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
-                            "documentation": "Encounter related to the report",
-                            "name": "encounter",
-                            "type": "reference"
-                        }
-                    ],
-                    "supportedProfile": [
-                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status|2.0.0"
-                    ],
-                    "type": "DiagnosticReport"
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHOULD"
-                        }
-                    ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "interaction": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "create"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "update"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "delete"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "read"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "vread"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "history-instance"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "history-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "search-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "patch"
-                        }
-                    ],
-                    "referencePolicy": [
-                        "literal",
-                        "logical"
-                    ],
-                    "searchInclude": [
-                        "DeviceUseStatement.subject",
-                        "DeviceUseStatement.patient",
-                        "DeviceUseStatement.device"
-                    ],
-                    "_searchInclude": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        }
-                    ],
-                    "searchParam": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/DeviceUseStatement-identifier",
-                            "documentation": "Search by identifier",
-                            "name": "identifier",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
-                            "documentation": "Search by subject - a patient",
-                            "name": "patient",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/DeviceUseStatement-device",
-                            "documentation": "Search by device",
-                            "name": "device",
-                            "type": "reference"
-                        }
-                    ],
-                    "supportedProfile": [
-                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-use-of-device|2.0.0"
-                    ],
-                    "type": "DeviceUseStatement"
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                             "valueCode": "SHALL"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL"
+                                },
+                                {
+                                    "url": "required",
+                                    "valueString": "birthdate"
+                                },
+                                {
+                                    "url": "required",
+                                    "valueString": "name"
+                                }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
                         }
                     ],
                     "interaction": [
@@ -1573,33 +2611,10 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
-                            "documentation": "Individual the service is ordered for",
-                            "name": "patient",
-                            "type": "reference"
-                        }
-                    ],
-                    "supportedProfile": [
-                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request|2.0.0"
-                    ],
-                    "type": "DeviceRequest"
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHALL"
-                        }
-                    ],
-                    "interaction": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "code": "read"
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id",
+                            "documentation": "Logical id of this artifact",
+                            "name": "_id",
+                            "type": "token"
                         },
                         {
                             "extension": [
@@ -1608,401 +2623,8 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "code": "search-type"
-                        }
-                    ],
-                    "referencePolicy": [
-                        "literal",
-                        "logical"
-                    ],
-                    "searchParam": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient",
-                            "documentation": "Patient information, if the resource is affixed to a person",
-                            "name": "patient",
-                            "type": "reference"
-                        }
-                    ],
-                    "supportedProfile": [
-                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device|2.0.0"
-                    ],
-                    "type": "Device"
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHOULD"
-                        },
-                        {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "recorded-date"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "asserted-date"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "category"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "clinical-status"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "onset-date"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "abatement-date"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "clinical-status"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "category"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "encounter"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "code"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHALL"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "category"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          }
-                    ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "interaction": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "create"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "update"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "delete"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "read"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "vread"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "history-instance"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "history-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "search-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "patch"
-                        }
-                    ],
-                    "referencePolicy": [
-                        "literal",
-                        "logical"
-                    ],
-                    "searchInclude": [
-                        "Condition.identifier",
-                        "Condition.subject",
-                        "Condition.patient",
-                        "Condition.bodySite",
-                        "Condition.asserter",
-                        "Condition.recordedDate",
-                        "Condition.code",
-                        "Condition.encounter"
-                
-                    ],
-                    "_searchInclude": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        }
-                    ],
-                    "searchParam": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
-                            "documentation": "Search by identifier",
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier",
+                            "documentation": "A patient identifier",
                             "name": "identifier",
                             "type": "token"
                         },
@@ -2013,58 +2635,10 @@
                                     "valueCode": "SHALL"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status",
-                            "documentation": "Search by status",
-                            "name": "clinical-status",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date",
-                            "documentation": "Search by abatement date",
-                            "name": "abatement-date",
-                            "type": "date"
-                          },
-                          {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date",
-                            "documentation": "Search by onset date",
-                            "name": "onset-date",
-                            "type": "date"
-                          },
-                          {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date",
-                            "documentation": "Search by recorded date",
-                            "name": "recorded-date",
-                            "type": "date"
-                          },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient",
-                            "documentation": "Search by subject - a patient",
-                            "name": "patient",
-                            "type": "reference"
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name",
+                            "documentation": "A server defined search that may match any of the string fields in the HumanName, including family, given, prefix, suffix, and/or text",
+                            "name": "name",
+                            "type": "string"
                         },
                         {
                             "extension": [
@@ -2073,590 +2647,16 @@
                                     "valueCode": "MAY"
                                 }
                             ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-body-site",
-                            "documentation": "Search by body site",
-                            "name": "bodySite",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Condition-asserter",
-                            "documentation": "Search by asserter",
-                            "name": "asserter",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code",
-                            "documentation": "Search by code",
-                            "name": "code",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter",
-                            "documentation": "Search by encounter",
-                            "name": "encounter",
-                            "type": "reference"
+                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate",
+                            "documentation": "The patient's date of birth",
+                            "name": "birthdate",
+                            "type": "date"
                         }
                     ],
                     "supportedProfile": [
-                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-encounter-diagnosis|2.0.0",
-                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-problems-health-concerns|2.0.0"
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
                     ],
-                    "type": "Condition"
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHOULD"
-                        },
-                        {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "target-date"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "description"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          },
-                          {
-                            "extension": [
-                              {
-                                "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                "valueCode": "SHOULD"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "patient"
-                              },
-                              {
-                                "url": "required",
-                                "valueString": "lifecycle-status"
-                              }
-                            ],
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
-                          }
-                    ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "interaction": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "create"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "update"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "delete"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "read"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "vread"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "history-instance"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "history-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "search-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "patch"
-                        }
-                    ],
-                    "referencePolicy": [
-                        "literal",
-                        "logical"
-                    ],
-                    "searchInclude": [
-                        "Goal.identifier",
-                        "Goal.subject",
-                        "Goal.patient",
-                        "Goal.achievementStatus",
-                        "Goal.addresses"
-                    ],
-                    "_searchInclude": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        }
-                    ],
-                    "searchParam": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
-                            "documentation": "Search by identifier",
-                            "name": "identifier",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient",
-                            "documentation": "Search by subject - a patient",
-                            "name": "patient",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date",
-                            "documentation": "Search by goal target date",
-                            "name": "target-date",
-                            "type": "date"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHALL"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status",
-                            "documentation": "Search by lifecycle status",
-                            "name": "lifecycle-status",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/Goal-achievement-status",
-                            "documentation": "Search by achievement status",
-                            "name": "achievementStatus",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/Goal-addresses",
-                            "documentation": "Search by addresses",
-                            "name": "addresses",
-                            "type": "reference"
-                        }
-                    ],
-                    "supportedProfile": [
-                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-goal|2.0.0"
-                    ],
-                    "type": "Goal"
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                            "valueCode": "SHOULD"
-                        }
-                    ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "interaction": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "create"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "update"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "delete"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "SHOULD"
-                                }
-                            ],
-                            "code": "read"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "vread"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "history-instance"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "history-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "search-type"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "code": "patch"
-                        }
-                    ],
-                    "referencePolicy": [
-                        "literal",
-                        "logical"
-                    ],
-                    "searchInclude": [
-                        "NutritionOrder.identifier",
-                        "NutritionOrder.patient",
-                        "NutritionOrder.encounter",
-                        "NutritionOrder.orderer",
-                        "NutritionOrder.status"
-                    ],
-                    "_searchInclude": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        }
-                    ],
-                    "searchParam": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
-                            "documentation": "Search by identifier",
-                            "name": "identifier",
-                            "type": "token"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
-                            "documentation": "Search by subject - a patient",
-                            "name": "patient",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
-                            "documentation": "Search by encounter",
-                            "name": "encounter",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/NutritionOrder-orderer",
-                            "documentation": "Search by orderer",
-                            "name": "orderer",
-                            "type": "reference"
-                        },
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ],
-                            "definition": "http://hl7.org/fhir/SearchParameter/NutritionOrder-status",
-                            "documentation": "Search by status",
-                            "name": "status",
-                            "type": "token"
-                        }
-                    ],
-                    "supportedProfile": [
-                        "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-nutrition-order|2.0.0"
-                    ],
-                    "type": "NutritionOrder"
+                    "type": "Patient"
                 },
                 {
                     "extension": [
@@ -3062,8 +3062,7 @@
                         "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request|2.0.0"
                     ],
                     "type": "ServiceRequest"
-                }
-            ],
+                }],
             "searchParam": [
                 {
                     "extension": [
