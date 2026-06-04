@@ -1,5 +1,4 @@
 Alias: $loinc = http://loinc.org
-Alias: $pfe-functioning-cs = http://hl7.org/fhir/us/pacio-pfe/CodeSystem/pfe-functioning-cs
 
 Instance: PFEIG-Narrative-History-Cognitive-Status-1
 InstanceOf: PFENarrativeHistoryOfStatus
