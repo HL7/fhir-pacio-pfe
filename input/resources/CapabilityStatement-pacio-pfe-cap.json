@@ -86,33 +86,6 @@
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
                         }
                     ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
                     "interaction": [
                         {
                             "extension": [
@@ -416,33 +389,6 @@
                             "valueCode": "SHOULD"
                         }
                     ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
                     "interaction": [
                         {
                             "extension": [
@@ -642,33 +588,6 @@
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
                           }
                     ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
                     "interaction": [
                         {
                             "extension": [
@@ -903,33 +822,6 @@
                             "valueCode": "SHOULD"
                         }
                     ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
                     "interaction": [
                         {
                             "extension": [
@@ -1092,33 +984,6 @@
                             "valueCode": "SHOULD"
                         }
                     ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
                     "interaction": [
                         {
                             "extension": [
@@ -1336,33 +1201,6 @@
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
                           }
                     ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                    },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
                     "interaction": [
                         {
                             "extension": [
@@ -1833,33 +1671,6 @@
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
                           }
                     ],
-                    "conditionalCreate": true,
-                    "_conditionalCreate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalDelete": "multiple",
-                    "_conditionalDelete": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
-                    "conditionalUpdate": true,
-                    "_conditionalUpdate": {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                                    "valueCode": "MAY"
-                                }
-                            ]
-                        },
                     "interaction": [
                         {
                             "extension": [
