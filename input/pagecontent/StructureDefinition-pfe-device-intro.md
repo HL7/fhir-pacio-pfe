@@ -6,7 +6,7 @@ The following are example usage scenarios for this profile:
 
 ### How this resource was developed 
 
-This profile was developed by the Personal Functioning and Engagement (PFE) subgroup of the Post-Acute Care InterOperability (PACIO) Project ([pacioproject.org](ttp://pacioproject.org)). PFE includes experts in: Assessing for and ordering devices (e.g., physical therapists, speech language pathologists), EHR implementation and interoperability (e.g., EHR vendors), HL7 FHIR, and user-centered design. PACIO is sponsored by the US Centers for Medicare and Medicaid Services (CMS) and convened by the MITRE Corporation. Contact the PACIO project at [info@pacioproject.org](mailto:info@pacioproject.org) for detailed information about the specific methods used to develop this profile.  
+This profile was developed by the Personal Functioning and Engagement (PFE) subgroup of the Post-Acute Care InterOperability (PACIO) Project ([pacioproject.org](https://pacioproject.org)). PFE includes experts in: Assessing for and ordering devices (e.g., physical therapists, speech language pathologists), EHR implementation and interoperability (e.g., EHR vendors), HL7 FHIR, and user-centered design. PACIO is sponsored by the US Centers for Medicare and Medicaid Services (CMS) and convened by the MITRE Corporation. Contact the PACIO project at [info@pacioproject.org](mailto:info@pacioproject.org) for detailed information about the specific methods used to develop this profile.  
 
 ### Mandatory and Must Support Data Elements
 

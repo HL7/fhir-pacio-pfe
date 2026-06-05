@@ -26,9 +26,9 @@ Usage: #example
 * insurance = Reference(PFEIG-PASCoverage-BSJ1)
 * extension[location].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-RoleCode#SNF "Skilled nursing facility"
 * extension[device-user][+].extension[user].valueReference = Reference(PFEIG-patientBSJ1)
-* extension[device-user][=].extension[relationship].valueCodeableConcept = $PFEDeviceAssociationRelationshipCS#patient "Patient"
+* extension[device-user][=].extension[relationship].valueCodeableConcept = $DeviceAssociationRelationshipCS#patient "Patient"
 * extension[device-user][+].extension[user].valueReference = Reference(PFEIG-Role-SNFPT-RonMarble)
-* extension[device-user][=].extension[relationship].valueCodeableConcept = $PFEDeviceAssociationRelationshipCS#operator "Operator"
+* extension[device-user][=].extension[relationship].valueCodeableConcept = $DeviceAssociationRelationshipCS#operator "Operator"
 * extension[clinical-justification][+].extension[note].valueString = "Betsy requires a rolling walker to support safe ambulation, transfers, and participation in rehabilitation activities while recovering from stroke-related right-sided weakness and physical deconditioning. In her current state, Betsy is unable to ambulate safely and has been assessed as a fall risk. The use of the walker during physical therapy will support the patient's ability to decrease her fall risk."
 * extension[clinical-justification][=].extension[assessment][+].valueReference = Reference(PFEIG-FSC-Hospital-Admission-Mobility-1)
 * extension[clinical-justification][=].extension[assessment][+].valueReference = Reference(PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1)

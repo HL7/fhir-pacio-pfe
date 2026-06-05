@@ -7,7 +7,7 @@ Title: "Personal Functioning and Engagement Device Association Relationship Valu
 Id: pfe-deviceassociation-relationship-vs
 Description: "Relationship codes used to describe how a person is associated with a device."
 * ^experimental = false
-* include codes from system $PFEDeviceAssociationRelationshipCS
+* include codes from system $DeviceAssociationRelationshipCS
 
 ValueSet: PFEDeviceType
 Title: "Personal Functioning and Engagement Device Type Value Set"
