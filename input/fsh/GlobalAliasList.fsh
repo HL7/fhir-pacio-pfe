@@ -13,7 +13,6 @@ Alias: $SCT = http://snomed.info/sct
 
 // Value Sets
 // NOTE: use a value set (not code system) when binding a field
-Alias: $LL4309-2 = http://loinc.org/vs/LL4309-2
 Alias: $SDOHCCValueSetObservationMethod = http://hl7.org/fhir/us/sdoh-clinicalcare/ValueSet/SDOHCC-ValueSetObservationMethod
 Alias: $ServiceDeliveryLocationRoleType = http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
 Alias: $FHIRDeviceType = http://hl7.org/fhir/ValueSet/device-type
