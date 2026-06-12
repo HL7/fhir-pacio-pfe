@@ -29,6 +29,18 @@ Description: "Codes used to identify requested device parameters for Personal Fu
 * include codes from system $CPT
 * include codes from system $SCT
 
+ValueSet: PFEAssistanceRequiredVS
+Title: "Personal Functioning and Engagement Assistance Required Value Set"
+Id: pfe-assistance-required-vs
+Description: "Codes from LOINC answer list LL4309-2 used to indicate the assistance required for a person's baseline ability."
+* ^experimental = false
+* ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
+* $LNC#LA11539-6 "Independent - patient completed all the activities by themself, with or without an assistive device, with no assistance from a helper."
+* $LNC#LA30364-6 "Needed some help - patient needed partial assistance from another person to complete any activities."
+* $LNC#LA30365-3 "Dependent - A helper completed all the activities for the patient."
+* $LNC#LA4489-6 "Unknown"
+* $LNC#LA4720-4 "Not applicable"
+
 ValueSet: PFEUSCoreCategoryVS
 Title: "Personal Functioning and Engagement US Core Value Set"
 Id: pfe-us-core-category-vs
