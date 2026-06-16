@@ -27,6 +27,6 @@ The scope of the Personal Functioning and Engagement Goal Profile encompasses a 
 Goals are typically established in the context of a CarePlan, and are sometimes evaluated using Observations. A Personal Functioning and Engagement Goal may be evaluated using a Personal Functioning and Engagement Goal Single Observation. 
 
 #### Relationship to other resources
-This profile is derived from the [US Core Goal profile](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-goal.html). Within the Personal Functioning and Engagement Goal profile, the addresses data element is still optional, but it was elevated to Must Support. This data element is a reference to an instance of Condition, Observation, MedicationStatement, NutritionOrder, ServiceRequest, or RiskAssessment. 
+This profile is derived from the [US Core Goal profile](https://hl7.org/fhir/us/core/STU9/StructureDefinition-us-core-goal.html). Within the Personal Functioning and Engagement Goal profile, the addresses data element is still optional, but it was elevated to Must Support. This data element is a reference to an instance of Condition, Observation, MedicationStatement, NutritionOrder, ServiceRequest, or RiskAssessment. 
 
 

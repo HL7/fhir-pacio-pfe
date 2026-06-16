@@ -2,7 +2,7 @@ Instance: PFEIG-QResponse-Hospital-MMSE-1
 InstanceOf: USCoreQuestionnaireResponseProfile
 Description: "Example U.S. Core Questionnaire Response: Mini-Mental State Examination [MMSE]"
 Usage: #example
-* meta.profile = Canonical(us-core-questionnaireresponse|6.1.0)
+* meta.profile = Canonical(us-core-questionnaireresponse|9.0.0)
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -20,7 +20,7 @@ Instance: PFEIG-QResponse-Hospital-MOCA-1
 InstanceOf: USCoreQuestionnaireResponseProfile
 Description: "Example U.S. Core Questionnaire Response: Montreal Cognitive Assessment [MoCA]"
 Usage: #example
-* meta.profile = Canonical(us-core-questionnaireresponse|6.1.0)
+* meta.profile = Canonical(us-core-questionnaireresponse|9.0.0)
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -38,7 +38,7 @@ Instance: PFEIG-QResponse-SNF-BIMS-1
 InstanceOf: USCoreQuestionnaireResponseProfile
 Description: "Example U.S. Core Questionnaire Response: Brief interview for mental status [BIMS]"
 Usage: #example
-* meta.profile = Canonical(us-core-questionnaireresponse|6.1.0)
+* meta.profile = Canonical(us-core-questionnaireresponse|9.0.0)
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -83,7 +83,7 @@ Instance: PFEIG-QResponse-SNF-CAM-Admission-1
 InstanceOf: USCoreQuestionnaireResponseProfile
 Description: "Example U.S. Core Questionnaire Response: Signs and Symptoms of Delirium (from CAM)"
 Usage: #example
-* meta.profile = Canonical(us-core-questionnaireresponse|6.1.0)
+* meta.profile = Canonical(us-core-questionnaireresponse|9.0.0)
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
@@ -108,7 +108,7 @@ Instance: PFEIG-QResponse-SNF-PHQ9-1
 InstanceOf: USCoreQuestionnaireResponseProfile
 Description: "Example U.S. Core Questionnaire Response: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]"
 Usage: #example
-* meta.profile = Canonical(us-core-questionnaireresponse|6.1.0)
+* meta.profile = Canonical(us-core-questionnaireresponse|9.0.0)
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 * questionnaire.extension.url = "http://hl7.org/fhir/StructureDefinition/display"
 * questionnaire.extension.valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"

@@ -19,12 +19,12 @@ Description:    "An exchange of a narrative summary regarding the most recent pr
 * status ^short = "Should have the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used."
 
 * category MS
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 
 * category 1.. MS
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category ^requirements = "To identify that this narrative note is related to personal functioning and engagement and optionally to identify the domain(s) it falls under. These narratives are not expected to have a US Core DiagnosticReport Category."

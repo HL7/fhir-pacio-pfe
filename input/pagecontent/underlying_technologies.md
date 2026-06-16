@@ -14,4 +14,10 @@ Before reading this implementation guide, familiarity with some of the basic pri
 * [Security]({{site.data.fhir.path}}security.html)
 * [Security Labels]({{site.data.fhir.path}}security-labels.html)
 
-This implementation guide supports the [R4]({{site.data.fhir.path}}index.html) version of the FHIR standard and builds on the [US Core STU6.1.0 Implementation Guide](https://hl7.org/fhir/us/core/STU6.1/); implementers need to familiarize themselves with the profiles in that guide.
+This implementation guide supports the [R4]({{site.data.fhir.path}}index.html) version of the FHIR standard and builds on the [US Core STU9 Implementation Guide](https://hl7.org/fhir/us/core/STU9/); implementers need to familiarize themselves with the profiles in that guide.
+
+### Terminology Expansion Parameters
+
+This implementation guide uses the following terminology expansion parameters when generating terminology content:
+
+{% include expansion-params.xhtml %}

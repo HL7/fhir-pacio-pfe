@@ -9,3 +9,4 @@ Description:    "An exchange of post-acute care condition, problem, or health co
 
 * asserter MS
 * bodySite MS
+* category[screening-assessment] MS
