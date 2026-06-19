@@ -6,6 +6,14 @@ Parent:         $USCoreDiagnosticReportProfileNoteExchange
 Id:             pfe-narrative-history-of-status
 Title:          "Personal Functioning and Engagement Narrative History of Status"
 Description:    "An exchange of a narrative summary regarding the most recent prior status immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level assessments. For formal assessments conducted with for example, an assessment instrument, use the [collection](StructureDefinition-pfe-collection.html) and [single observation](StructureDefinition-pfe-observation-single.html) profiles defined in this IG to capture assessment data."
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|3.1.1"
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|6.1.0"
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|7.0.0"
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|8.0.0"
 
 * extension contains 
   ObservationEventLocation named event-location 0..1 MS and

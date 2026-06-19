@@ -4,18 +4,15 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-
 # Confirmed that this information message should be suppressed. (Zulip stream: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Questionnaire.20could.20not.20be.20resolved)
 The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 
 # The following code system are not discoverable because they are code systems in THO, but THO doesn't define the codes. They have been checked and the identifiers are correct
 Target Code System http://hl7.org/fhir/sid/icf doesn't have all content (content = not-present), so the target codes cannot be checked
+The value set expansion is too large, and only a subset has been displayed
 
 # CodeSystem is not enumerable
 Error from https://tx.fhir.org/r4: Error: The code System "http://www.ama-assn.org/go/cpt" has a grammar, and cannot be enumerated directly
-
-# For information only. The PFE IG defines this value set using the ICF code system defined by the WHO. We don't have control over the large number of codes in the ICF.
-The value set expansion is too large, and only a subset has been displayed
 
 # ERROR: The Subscriptions backport IG was mistakenly release as FHIR 4.0.0 instead of 4.0.1. See https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Subscriptions.20backport.20issue
 This IG is for FHIR version 4.0.1, while the package 'hl7.fhir.uv.subscriptions-backport.r4#1.1.0' is for FHIR version 4.0.0
@@ -26,3 +23,7 @@ The ImplementationGuide uses package hl7.fhir.us.sdoh-clinicalcare#2.2.0 release
 
 # Using the standard CapabilityStatementExpectation extension in additional contexts to fully express intended capabilities: see FHIR-12419
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# ERROR: US Core v8 replaced PATTERN slicing with VALUE slicing. This does not affect resource validation
+This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0' because: Mismatch in slicing rules at Observation.category: the discriminator 'Observation.category:PATTERN' was not found
+This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|7.0.0' because: Mismatch in slicing rules at Observation.category: the discriminator 'Observation.category:PATTERN' was not found

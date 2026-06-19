@@ -6,6 +6,12 @@ Parent:         $USCoreObservationClinicalResultProfile
 Id:             pfe-observation-clinicaltest
 Title:          "Personal Functioning and Engagement Clinical Test Observation"
 Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging a single piece of observation data that resulted from a clinical test."
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0"
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|7.0.0"
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|8.0.0"
 
 * extension contains 
 	ObservationEventLocation named event-location 0..1 MS and

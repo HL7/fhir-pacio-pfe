@@ -6,6 +6,12 @@ Parent:         $USCoreSimpleObservationProfile
 Id:             pfe-observation-single
 Title:          "Personal Functioning and Engagement Single Observation"
 Description:    "An exchange of post-acute care observation for a patient. This profile is used for exchanging an observation for a single question generally included in a structured resource (e.g., assessment tool, instrument, or screen)."
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0"
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|7.0.0"
+* ^extension[+].url = $compliesWithProfile
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|8.0.0"
 
 * extension contains 
 	ObservationEventLocation named event-location 0..1 MS and

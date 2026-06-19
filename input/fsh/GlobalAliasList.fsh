@@ -44,3 +44,4 @@ Alias: $USCoreConditionCodeValueSet = http://hl7.org/fhir/us/core/ValueSet/us-co
 
 // HL7 extensions
 Alias: $PertainsToGoal = http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal
+Alias: $compliesWithProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile
