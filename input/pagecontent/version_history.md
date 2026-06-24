@@ -1,5 +1,44 @@
 This page details changes made in newer versions of the The PACIO Personal Functioning and Engagement (PFE) Implementation Guide 
 
+### STU3 Ballot (version 3.0.0-ballot)
+
+#### What's new in Version 3.0.0-ballot
+
+* Add [Personal Functioning and Engagement Device Profile](StructureDefinition-pfe-device.html)
+* Add [Personal Functioning and Engagement Device Request Profile](StructureDefinition-pfe-device-request.html)
+
+#### What's changed
+
+##### CapabilityStatement improvement
+
+* Align PFE CapabilityStatement with US Core
+  * Add Patient resource: [FHIR-53769](https://jira.hl7.org/browse/FHIR-53769). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+  * Use US Core Search Parameters: [FHIR-57462](https://jira.hl7.org/browse/FHIR-57462). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+  * Align search requirements with US Core: [FHIR-57523](https://jira.hl7.org/browse/FHIR-57523). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+  * Align interaction requirements with US Core: [FHIR-57553](https://jira.hl7.org/browse/FHIR-57553). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+  * Remove subject search parameter: [FHIR-57457](https://jira.hl7.org/browse/FHIR-57457). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+* Remove MAY expected requirements
+  * Conditional Create/Update/Delete: [FHIR-57550](https://jira.hl7.org/browse/FHIR-57550). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+  * Search include and revInclude: [FHIR-57551](https://jira.hl7.org/browse/FHIR-57551). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+* Cosmetic Issue:
+  * Sort resource by alphabetic order: [FHIR-57519](https://jira.hl7.org/browse/FHIR-57519). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+* Remove blank space in search parameter's name: [FHIR-53765](https://jira.hl7.org/browse/FHIR-53765). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+* Remove Condition.status search parameter: [FHIR-53762](https://jira.hl7.org/browse/FHIR-53762). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+
+##### Terminology
+
+* Replace deprecated codes
+  * LOINC 89408-9 / 89411-3: [FHIR-55942](https://jira.hl7.org/browse/FHIR-55942). See Change [here](ValueSet-pfe-products-and-technology-vs.html)
+  * LOINC 93471-4: [FHIR-55941](https://jira.hl7.org/browse/FHIR-55941). See Change [here](ValueSet-pfe-panel-vs.html)
+  * LOINC 45482-7: [FHIR-55924](https://jira.hl7.org/browse/FHIR-55924). See Change [here](ValueSet-pfe-mental-functions-vs.html)
+* Add LOINC-ICF Concept Map: [FHIR-55644](https://jira.hl7.org/browse/FHIR-55644). See Change [here](formal_specification.html#use-of-conceptmap-for-icf-domain-categorization).
+* Move PFE Code Systems to THO: [FHIR-48085](https://jira.hl7.org/browse/FHIR-48085), [FHIR-46758](https://jira.hl7.org/browse/FHIR-46758), [FHIR-38419](https://jira.hl7.org/browse/FHIR-38419)
+* Create FHIR value set for LOINC LL4309-2: [FHIR-57636](https://jira.hl7.org/browse/FHIR-57636). See Change [here](ValueSet-pfe-assistance-required-vs.html).
+
+##### Dependencies
+
+* Support multiple US Core versions: [FHIR-51462](https://jira.hl7.org/browse/FHIR-51462). See Change [here](formal_specification.html#dependencies).
+
 ### STU2 Publication (version 2.0.0)
 The following changes were made as a result of comments received in the 2.0.0-ballot
 

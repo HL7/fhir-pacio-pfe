@@ -5,7 +5,7 @@ Extension: ObservationEventLocation
 Parent: $EventLocation
 Description: "This extension is used to indicate the principal physical location where an observation event occurred."
 Id: event-location
-* value[x] only Reference(USCoreLocation)
+* value[x] only Reference($USCoreLocation)
 
 Extension: DevicePatientUsed
 Description: "Associated with the PAC Collection profile to point to a record indicating what healthcare-related assistive device was used by a patient during an observation. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient."

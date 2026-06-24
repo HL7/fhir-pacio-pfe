@@ -7,7 +7,7 @@ Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Instance: PFEIG-AllergyACE
 InstanceOf: AllergyIntolerance
 Description: "Example Allergy Intolerance for angiotensin-converting enzyme inhibitor mechanism of action."
-* meta.profile = Canonical(us-core-allergyintolerance|6.1.0)
+* meta.profile = Canonical(us-core-allergyintolerance|9.0.0)
 * code = $sct#372733002 "Substance with angiotensin-converting enzyme inhibitor mechanism of action (substance)"
 * patient = Reference(PFEIG-patientBSJ1)
 * clinicalStatus = $allergyintolerance-clinical#active

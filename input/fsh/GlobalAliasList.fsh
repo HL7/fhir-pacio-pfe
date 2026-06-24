@@ -23,23 +23,23 @@ Alias: $PASCoverage = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/pro
 Alias: $PASClaimResponse = http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-claimresponse
 
 // US Core
-Alias: $USCoreConditionEncounterDiagnosisProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|6.1.0
-Alias: $USCoreConditionProblemsHealthConcernsProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|6.1.0
-Alias: $USCoreDeviceProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device|6.1.0
-Alias: $USCoreDiagnosticReportProfileNoteExchange = http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|6.1.0
-Alias: $USCoreDocumentReference = http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|6.1.0
-Alias: $USCoreEncounter = http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|6.1.0
-Alias: $USCoreGoalProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|6.1.0
-Alias: $USCoreLocation = http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|6.1.0
-Alias: $USCoreSimpleObservationProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0
-Alias: $USCoreObservationClinicalResultProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0
-Alias: $USCoreObservationScreeningAssessmentProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|6.1.0
-Alias: $USCoreOrganization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0
-Alias: $USCorePatient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0
-Alias: $USCorePractitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
-Alias: $USCorePractitionerRole = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|6.1.0
-Alias: $USCoreQuestionnaireResponse = http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0
-Alias: $USCoreServiceRequestProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|6.1.0
+Alias: $USCoreConditionEncounterDiagnosisProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|9.0.0
+Alias: $USCoreConditionProblemsHealthConcernsProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|9.0.0
+Alias: $USCoreDeviceProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-device|9.0.0
+Alias: $USCoreDiagnosticReportProfileNoteExchange = http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|9.0.0
+Alias: $USCoreDocumentReference = http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|9.0.0
+Alias: $USCoreEncounter = http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|9.0.0
+Alias: $USCoreGoalProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|9.0.0
+Alias: $USCoreLocation = http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|9.0.0
+Alias: $USCoreSimpleObservationProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|9.0.0
+Alias: $USCoreObservationClinicalResultProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|9.0.0
+Alias: $USCoreObservationScreeningAssessmentProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|9.0.0
+Alias: $USCoreOrganization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|9.0.0
+Alias: $USCorePatient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|9.0.0
+Alias: $USCorePractitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|9.0.0
+Alias: $USCorePractitionerRole = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|9.0.0
+Alias: $USCoreQuestionnaireResponse = http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|9.0.0
+Alias: $USCoreServiceRequestProfile = http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|9.0.0
 Alias: $USCoreConditionCodeValueSet = http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code
 
 // HL7 extensions
