@@ -23,15 +23,24 @@ The following rules apply to all Personal Functioning and Engagement Profile ele
 
 Profiles used by this IG, but defined in other IGs, inherit the definition of Must Support from their respective guides.
 
+### Dependencies
+
+This Implementation Guide depends on US Core v9.0.0 (USCDI 6) as its primary base. Wherever possible, PFE profiles strive to comply with US Core v6.1.0 (USCDI 3), v7.0.0 (USCDI 4), and v8.0.1 (USCDI 5), simplifying implementation for those who need to support varying regulatory expectations over time. Implementers can use any of these US Core versions when implementing this IG, so long as the profile requirements defined in this guide are satisfied.
+{:.new-content}
+
 <div class="bg-success" markdown="1">
 
 ### Use of ConceptMap for ICF Domain Categorization
-When one of the below assessments is being recorded as an observation, systems SHOULD use the [LOINC to ICF Mapping](ConceptMap-LOINCtoICF.html) to populate the `PFEDomain` category slice with the appropriate ICF code(s).
-- Barthell Index of activities of daily living  
-- Braden Scale for pressure injury risk  
-- Brief Interview for Mental Status (BIMS) 
-- Patient Health Questionnaire-9 (PHQ-9) for depression screening 
-- Sections B, GG, J, and K from the CMS Minimum Data Set (MDS), Functional Assessment Standardized Items (FASI), Inpatient Rehabilitation Facility Patient Assessment Instrument (IRF-PAI), Long-Term Care Hospitals (LTCHs) Continuity Assessment Record and Evaluation (CARE) Data Set (LCDS), and Outcome and Assessment Information Set (OASIS) 
+When one of the below assessments is being recorded as an observation, systems SHOULD use the [LOINC to ICF Mapping ConceptMaps](artifacts.html#terminology-concept-maps) to populate the `PFEDomain` category slice with the appropriate ICF code(s).
+- [Barthel Index of activities of daily living](ConceptMap-LOINCtoICFBarthel.html)
+- [Braden Scale for pressure injury risk](ConceptMap-LOINCtoICFBraden.html)
+- [Brief Interview for Mental Status (BIMS)](ConceptMap-LOINCtoICFBIMS.html)
+- [Patient Health Questionnaire-9 (PHQ-9) for depression screening](ConceptMap-LOINCtoICFPHQ9.html)
+- [Generalized Anxiety Disorder-7 (GAD-7)](ConceptMap-LOINCtoICFGAD7.html)
+- [PROMIS-10 Global Health](ConceptMap-LOINCtoICFPromise10.html)
+- CMS Minimum Data Set (MDS), Functional Assessment Standardized Items (FASI), Inpatient Rehabilitation Facility Patient Assessment Instrument (IRF-PAI), Long-Term Care Hospitals (LTCHs) Continuity Assessment Record and Evaluation (CARE) Data Set (LCDS), and Outcome and Assessment Information Set (OASIS): [Section B](ConceptMap-LOINCtoICFMDSSectionB.html), [Section GG](ConceptMap-LOINCtoICFMDSSectionGG.html), [Section J](ConceptMap-LOINCtoICFMDSSectionJ.html), and [Section K](ConceptMap-LOINCtoICFMDSSectionK.html)
+
+ICF concepts used for domain categorization are generally broader than the source LOINC observation concepts. As a result, mapping a LOINC code to an ICF code may reduce specificity and can involve loss of information. Systems should retain the original LOINC-coded observation while using the mapped ICF code(s) for `PFEDomain` categorization.
 
 This applies to the following profiles:
 

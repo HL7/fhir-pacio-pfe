@@ -140,6 +140,9 @@ This IG is divided into several sections that are listed at the top of each page
 {% include globals-table-en.xhtml %}
  
 ### Package Dependencies
+
+This Implementation Guide depends on US Core v9.0.0 (USCDI 6) as its primary base. Wherever possible, PFE profiles strive to comply with US Core v6.1.0 (USCDI 3), 7v.0.0 (USCDI 4), and v8.0.1 (USCDI 5), simplifying implementation for those who will need to support varying regulatory expectations over time. Implementers can use any of these US Core versions when implementing this IG, so long as the profile requirements defined in this guide are satisfied.
+
 {% include dependency-table-en.xhtml %}
  
 ### Cross Version Analysis
