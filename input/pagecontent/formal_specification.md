@@ -36,9 +36,7 @@ When one of the below assessments is being recorded as an observation, systemsâ€
 - [Braden Scale for pressure injury risk](ConceptMap-LOINCtoICFBraden.html)
 - [Brief Interview for Mental Status (BIMS)](ConceptMap-LOINCtoICFBIMS.html)
 - [Patient Health Questionnaire-9 (PHQ-9) for depression screening](ConceptMap-LOINCtoICFPHQ9.html)
-- [Generalized Anxiety Disorder-7 (GAD-7)](ConceptMap-LOINCtoICFGAD7.html)
-- [PROMIS-10 Global Health](ConceptMap-LOINCtoICFPromise10.html)
-- CMS Minimum Data Set (MDS), Functional Assessment Standardized Items (FASI), Inpatient Rehabilitation Facility Patient Assessment Instrument (IRF-PAI), Long-Term Care Hospitals (LTCHs) Continuity Assessment Record and Evaluation (CARE) Data Set (LCDS), and Outcome and Assessment Information Set (OASIS): [Section B](ConceptMap-LOINCtoICFMDSSectionB.html), [Section GG](ConceptMap-LOINCtoICFMDSSectionGG.html), [Section J](ConceptMap-LOINCtoICFMDSSectionJ.html), and [Section K](ConceptMap-LOINCtoICFMDSSectionK.html)
+- CMS Minimum Data Set (MDS), Functional Assessment Standardized Items (FASI), Inpatient Rehabilitation Facility Patient Assessment Instrument (IRF-PAI), and Outcome and Assessment Information Set (OASIS): [Section B](ConceptMap-LOINCtoICFMDSSectionB.html), [Section GG](ConceptMap-LOINCtoICFMDSSectionGG.html), [Section J](ConceptMap-LOINCtoICFMDSSectionJ.html), and [Section K](ConceptMap-LOINCtoICFMDSSectionK.html)
 
 ICF concepts used for domain categorization are generally broader than the source LOINC observation concepts. As a result, mapping a LOINC code to an ICF code may reduce specificity and can involve loss of information. Systems should retain the original LOINC-coded observation while using the mapped ICF code(s) for `PFEDomain` categorization.
 
@@ -48,5 +46,5 @@ This applies to the following profiles:
 - [Personal Functioning and Engagement Clinical Test Observation](StructureDefinition-pfe-observation-clinicaltest.html)
 - [Personal Functioning and Engagement Collection](StructureDefinition-pfe-collection.html)
 
-Theâ€¯LOINC to ICF Mapping was developed by the Personal Functioning and Engagement (PFE) subgroup of PACIO. PFE includes experts in: Assessing for and ordering devices (e.g., physical therapists, speech language pathologists), EHR implementation and interoperability (e.g., EHR vendors), HL7 FHIR, and user-centered design. Contact the PACIO project at info@pacioproject.org for detailed information about the specific methods used to develop the mapping.  
+Contact the PACIO project at info@pacioproject.org for detailed information about the rationale for choosing LOINC and ICF, and for specific methods used to develop and validate the mappings.
 </div><!-- new-content -->

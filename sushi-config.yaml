@@ -43,6 +43,7 @@ dependencies:
   hl7.fhir.us.sdoh-clinicalcare: 2.2.0
   hl7.fhir.us.davinci-pas: 2.2.1
 parameters:
+  auto-oid-root: '2.16.840.1.113883.4.642.40.67'
   path-expansion-params: '../../input/_resources/terminology-settings.json'  # for using US ed of SNOMED
   show-inherited-invariants: false
   apply-jurisdiction: true

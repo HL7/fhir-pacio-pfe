@@ -4,8 +4,6 @@
   - [LOINC to ICF Mapping - Braden](ConceptMap-LOINCtoICFBraden.html)
   - [LOINC to ICF Mapping - BIMS](ConceptMap-LOINCtoICFBIMS.html)
   - [LOINC to ICF Mapping - PHQ-9](ConceptMap-LOINCtoICFPHQ9.html)
-  - [LOINC to ICF Mapping - GAD-7](ConceptMap-LOINCtoICFGAD7.html)
-  - [LOINC to ICF Mapping - PROMIS-10](ConceptMap-LOINCtoICFPromise10.html)
   - [LOINC to ICF Mapping - MDS Section B](ConceptMap-LOINCtoICFMDSSectionB.html)
   - [LOINC to ICF Mapping - MDS Section GG](ConceptMap-LOINCtoICFMDSSectionGG.html)
   - [LOINC to ICF Mapping - MDS Section J](ConceptMap-LOINCtoICFMDSSectionJ.html)
