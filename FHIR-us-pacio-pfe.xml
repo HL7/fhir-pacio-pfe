@@ -158,6 +158,7 @@
 <artifact deprecated="true" id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
 <artifact id="Observation/PFEIG-Nested-Collection-Mobility" key="Observation-PFEIG-Nested-Collection-Mobility" name="PFEIG-Nested-Collection-Mobility"/>
 <artifact id="NutritionOrder/PFEIG-NutritionOrder-SNFDischargeDiet" key="NutritionOrder-PFEIG-NutritionOrder-SNFDischargeDiet" name="PFEIG-NutritionOrder-SNFDischargeDiet"/>
+<artifact id="Basic/PFEIG-NutritionProduct-RenalSupplement" key="Basic-PFEIG-NutritionProduct-RenalSupplement" name="PFEIG-NutritionProduct-RenalSupplement"/>
 <artifact id="Organization/PFEIG-Org-01" key="Organization-PFEIG-Org-01" name="PFEIG-Org-01"/>
 <artifact id="Organization/PFEIG-Org-02" key="Organization-PFEIG-Org-02" name="PFEIG-Org-02"/>
 <artifact id="Organization/PFEIG-Org-03" key="Organization-PFEIG-Org-03" name="PFEIG-Org-03"/>

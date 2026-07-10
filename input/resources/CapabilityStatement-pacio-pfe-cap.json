@@ -42,6 +42,53 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
               "valueCode": "SHALL"
+            }
+          ],
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "referencePolicy": ["literal", "logical"],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "definition": "http://hl7.org/fhir/SearchParameter/Basic-code",
+              "documentation": "Search by Basic code. R5 cross-version NutritionProduct instances use Basic.code to identify the Basic resource as representing a nutrition product.",
+              "name": "code",
+              "type": "token"
+            }
+          ],
+          "supportedProfile": [
+            "http://hl7.org/fhir/5.0/StructureDefinition/profile-NutritionProduct|0.1.0"
+          ],
+          "type": "Basic"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
             },
             {
               "extension": [

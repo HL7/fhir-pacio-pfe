@@ -10,6 +10,7 @@ Alias: $DeviceAssociationRelationshipCS = http://terminology.hl7.org/CodeSystem/
 Alias: $CPT = http://www.ama-assn.org/go/cpt
 Alias: $HCPCS = http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets
 Alias: $SCT = http://snomed.info/sct
+Alias: $FHIRTypes = http://hl7.org/fhir/fhir-types
 
 // Value Sets
 // NOTE: use a value set (not code system) when binding a field
@@ -44,3 +45,9 @@ Alias: $USCoreConditionCodeValueSet = http://hl7.org/fhir/us/core/ValueSet/us-co
 
 // HL7 extensions
 Alias: $PertainsToGoal = http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal
+
+// FHIR R5 cross-version profiles and extensions for use in R4
+Alias: $R5NutritionProduct = http://hl7.org/fhir/5.0/StructureDefinition/profile-NutritionProduct
+Alias: $R5NutritionOrderSupplementType = http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supplement.type
+Alias: $R5NutritionOrderEnteralFormulaBaseFormulaType = http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.baseFormulaType
+Alias: $R5NutritionOrderEnteralFormulaAdditiveType = http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.additive.type
