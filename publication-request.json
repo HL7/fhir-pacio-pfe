@@ -1,12 +1,11 @@
 {
   "package-id" : "hl7.fhir.us.pacio-pfe",
-  "version" : "2.0.0",
-  "path" : "http://hl7.org/fhir/us/pacio-pfe/STU2",
-  "status" : "trial-use",
-  "sequence" : "STU 2",
-  "milestone": true,
-  "desc" : "Personal Functioning and Engagement STU2",
-  "descmd" : "Personal Functioning and Engagement STU2",
-  "changes" : "change_log.html",
-  "mode" : "milestone"
+  "version" : "3.0.0-ballot",
+  "path" : "http://hl7.org/fhir/us/pacio-pfe/2026Sep",
+  "mode" : "working",
+  "status" : "ballot",
+  "sequence" : "STU 3",
+  "desc" : "Personal Functioning and Engagement STU3 Ballot Version adds profiles for: Device, DeviceRequest. In addition, the PFE IG now supports multiple US Core versions: v3.1.1, v6.1.0, v7.0.0, v8.1.0 ",
+  "descmd" : "Personal Functioning and Engagement STU3 Ballot Version adds profiles for: Device, DeviceRequest. In addition, the PFE IG now supports multiple US Core versions: v3.1.1, v6.1.0, v7.0.0, v8.1.0 ",
+  "changes" : "change_log.html"
 }
