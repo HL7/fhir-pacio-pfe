@@ -59,7 +59,3 @@ Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-device-type 
 Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-deviceassociation-relationship-vs to 3.0.0-ballot
 Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-survey-category-vs to 3.0.0-ballot
 Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-us-core-category-vs to 3.0.0-ballot
-
-# Information: PFE domain category slices intentionally use ICF codes in addition to the required US Core category slice.
-# Suppress only the inherited US Core preferred-binding information messages for ICF codings.
-# None of the codings provided are in the value set 'US Core Simple Observation Category' (http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category|9.0.0), and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/sid/icf
