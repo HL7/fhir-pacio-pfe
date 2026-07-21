@@ -6,5 +6,301 @@
   "title" : "Narrative Conformance Statements",
   "status" : "active",
   "experimental" : false,
-  "description" : "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes"
+  "description" : "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes",
+  "statement" : [{
+    "key" : "1",
+    "conformance" : ["SHALL"],
+    "requirement" : "PACIO Personal Functioning and Engagement Servers **SHALL** support the capabilities described in the US Core Server CapabilityStatement. Some RESTful operations and search parameters described in the PACIO Personal Functioning and Engagement Server CapabilityStatement are redundant to the US Core Server CapabilityStatement, but are listed here to highlight which capabilities are specifically relevant to PACIO Personal Functioning and Engagement."
+  },
+  {
+    "key" : "2",
+    "conformance" : ["SHALL"],
+    "requirement" : "*These collection observations represent structured instruments and panels with multiple questions. The hasMember element **SHALL** be used to point to child Observation instances that contain the specific questions and answers, represented by [Single Observations](StructureDefinition-pfe-observation-single.html) or nested panels represented by this profile. The Observation.value and Observation.component elements **SHALL** be empty."
+  },
+  {
+    "key" : "3",
+    "conformance" : ["SHALL"],
+    "requirement" : "**An Observation without a value, **SHALL** include a reason why the data is absent unless there are 1) component observations, or 2) reporting panel observations using Observation.hasMember. Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason."
+  },
+  {
+    "key" : "4",
+    "conformance" : ["SHOULD"],
+    "requirement" : "***When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed below and on the [domains](domains.html) page."
+  },
+  {
+    "key" : "5",
+    "conformance" : ["SHALL"],
+    "requirement" : "The following search parameters and search parameter combinations **SHALL** be supported:"
+  },
+  {
+    "key" : "6",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-category.html)** search parameters:"
+  },
+  {
+    "key" : "7",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-code.html)** search parameters:"
+  },
+  {
+    "key" : "8",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support search by multiple report codes."
+  },
+  {
+    "key" : "9",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-category.html)** and **[`date`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-date.html)** search parameters:"
+  },
+  {
+    "key" : "10",
+    "conformance" : ["SHOULD"],
+    "requirement" : "The following search parameter combinations **SHOULD** be supported:"
+  },
+  {
+    "key" : "11",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-category.html)** and **[`status`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-status.html)** search parameters:"
+  },
+  {
+    "key" : "12",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-code.html)** and **[`date`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-date.html)** search parameters:"
+  },
+  {
+    "key" : "13",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support search by multiple report codes."
+  },
+  {
+    "key" : "14",
+    "conformance" : ["MAY"],
+    "requirement" : "*FHIR R4 DeviceRequest.requester allows Device, Practitioner, PractitionerRole, and Organization. FHIR R6 DeviceRequest.requester also allows CareTeam, Group, Patient, and RelatedPerson. Implementer MAY use the [additional-requester](StructureDefinition-pfe-device-request-additional-requester.html) extension for these additional requester types added in FHIR R6."
+  },
+  {
+    "key" : "15",
+    "conformance" : ["SHALL"],
+    "requirement" : "Implementations SHALL follow the [US Core Device Profile UDI Specific Implementation Guidance](https://hl7.org/fhir/us/core/STU9/StructureDefinition-us-core-device.html#profile-specific-implementation-guidance) when exchanging Unique Device Identifier (UDI) information."
+  },
+  {
+    "key" : "16",
+    "conformance" : ["SHOULD"],
+    "requirement" : "*When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), DiagnosticReport.code **SHOULD** be drawn from the corresponding domain-based value set as discussed on the [domains](domains.html) page."
+  },
+  {
+    "key" : "17",
+    "conformance" : ["SHALL"],
+    "requirement" : "The following search parameters and search parameter combinations **SHALL** be supported:"
+  },
+  {
+    "key" : "18",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-category.html)** search parameters:"
+  },
+  {
+    "key" : "19",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-code.html)** search parameters:"
+  },
+  {
+    "key" : "20",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support search by multiple report codes."
+  },
+  {
+    "key" : "21",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-category.html)** and **[`date`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-date.html)** search parameters:"
+  },
+  {
+    "key" : "22",
+    "conformance" : ["SHOULD"],
+    "requirement" : "The following search parameter combinations **SHOULD** be supported:"
+  },
+  {
+    "key" : "23",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-category.html)** and **[`status`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-status.html)** search parameters:"
+  },
+  {
+    "key" : "24",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-code.html)** and **[`date`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-diagnosticreport-date.html)** search parameters:"
+  },
+  {
+    "key" : "25",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support search by multiple report codes."
+  },
+  {
+    "key" : "26",
+    "conformance" : ["SHALL"],
+    "requirement" : "*An Observation without a value, **SHALL** include a reason why the data is absent unless there are component observations. Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason."
+  },
+  {
+    "key" : "27",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed [below](StructureDefinition-pfe-observation-clinicaltest.html#domain-specific-value-set-bindings) and on the [domains](domains.html) page."
+  },
+  {
+    "key" : "28",
+    "conformance" : ["SHALL"],
+    "requirement" : "The following search parameters and search parameter combinations **SHALL** be supported:"
+  },
+  {
+    "key" : "29",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-category.html)** search parameters:"
+  },
+  {
+    "key" : "30",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-code.html)** search parameters:"
+  },
+  {
+    "key" : "31",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support search by multiple report codes."
+  },
+  {
+    "key" : "32",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-category.html)** and **[`date`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-date.html)** search parameters:"
+  },
+  {
+    "key" : "33",
+    "conformance" : ["SHOULD"],
+    "requirement" : "The following search parameter combinations **SHOULD** be supported:"
+  },
+  {
+    "key" : "34",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-category.html)** and **[`status`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-status.html)** search parameters:"
+  },
+  {
+    "key" : "35",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-code.html)** and **[`date`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-date.html)** search parameters:"
+  },
+  {
+    "key" : "36",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support search by multiple report codes."
+  },
+  {
+    "key" : "37",
+    "conformance" : ["SHALL",
+    "SHOULD"],
+    "requirement" : "*These observations represent a specific question or observation, so the Observation.value element **SHOULD** be populated and the hasMember list **SHALL** be empty."
+  },
+  {
+    "key" : "38",
+    "conformance" : ["SHALL"],
+    "requirement" : "**An Observation without a value, **SHALL** include a reason why the data is absent unless there are component observations. Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason."
+  },
+  {
+    "key" : "39",
+    "conformance" : ["SHOULD"],
+    "requirement" : "***When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed below and on the [domains](domains.html) page."
+  },
+  {
+    "key" : "40",
+    "conformance" : ["SHOULD"],
+    "requirement" : "Where a preferred value set contains a code to describe a needed concept, servers **SHOULD** use that code."
+  },
+  {
+    "key" : "41",
+    "conformance" : ["SHALL"],
+    "requirement" : "The following search parameters and search parameter combinations **SHALL** be supported:"
+  },
+  {
+    "key" : "42",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-category.html)** search parameters:"
+  },
+  {
+    "key" : "43",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-code.html)** search parameters:"
+  },
+  {
+    "key" : "44",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support search by multiple report codes."
+  },
+  {
+    "key" : "45",
+    "conformance" : ["SHALL"],
+    "requirement" : "**SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-category.html)** and **[`date`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-date.html)** search parameters:"
+  },
+  {
+    "key" : "46",
+    "conformance" : ["SHOULD"],
+    "requirement" : "The following search parameter combinations **SHOULD** be supported:"
+  },
+  {
+    "key" : "47",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`category`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-category.html)** and **[`status`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-status.html)** search parameters:"
+  },
+  {
+    "key" : "48",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support searching using the combination of the **[`patient`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-patient.html)** and **[`code`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-code.html)** and **[`date`](https://hl7.org/fhir/us/core/STU9/SearchParameter-us-core-observation-date.html)** search parameters:"
+  },
+  {
+    "key" : "49",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**SHOULD** support search by multiple report codes."
+  },
+  {
+    "key" : "50",
+    "conformance" : ["SHOULD"],
+    "requirement" : "Implementers of this IG **SHOULD** include at least one category from the [Domain Category value set](ValueSet-pfe-category-vs.html) on each observation instance conformant to this guide. Additionally, the code of the instance **SHOULD** come from the value set associated with the indicated category or categories."
+  },
+  {
+    "key" : "51",
+    "conformance" : ["SHOULD"],
+    "requirement" : "PAC assessment observations **SHOULD** be categorized into the ICF domain within the “Activities and Participation” category only when the question focuses on a specific activity."
+  },
+  {
+    "key" : "52",
+    "conformance" : ["SHOULD"],
+    "requirement" : "PAC assessment observations that are part of a specific group of questions (e.g.,PHQ-9 or BIMS) or part of a group of questions listed all under the same header question **SHOULD** be categorized according to the main focus of the grouping header."
+  },
+  {
+    "key" : "53",
+    "conformance" : ["SHOULD"],
+    "requirement" : "All available assessment item resources, such as the question’s available responses, the question text, and the question short name, **SHOULD** be considered when making categorization decisions."
+  },
+  {
+    "key" : "54",
+    "conformance" : ["SHALL"],
+    "requirement" : "To claim conformance to a Profile in this IG, servers **SHALL**:"
+  },
+  {
+    "key" : "55",
+    "conformance" : ["SHOULD"],
+    "requirement" : "All implementers of the Personal Functioning and Engagement IG **SHOULD** follow the HL7® FHIR® Security guidance, Security and Privacy Module, the FHIR Implementer’s Safety Checklist guidance as defined in the FHIR standard, and US Core security recommendations where applicable and not otherwise superseded by this section of the Personal Functioning and Engagement IG."
+  },
+  {
+    "key" : "56",
+    "conformance" : ["MAY"],
+    "requirement" : "This page provides guidance on how tools like the [SDC Questionnaire](https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html) and [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/StructureDefinition-us-core-questionnaireresponse.html) resources **MAY** be used with this IG."
+  },
+  {
+    "key" : "57",
+    "conformance" : ["SHALL"],
+    "requirement" : "When representing formal assessments with complex structures as FHIR Observations, each panel and question **SHALL** be mapped to an individual Observation instance, with panels represented using the [collection](StructureDefinition-pfe-collection.html) profile and questions represented using the [single observation](StructureDefinition-pfe-observation-single.html) profile."
+  },
+  {
+    "key" : "58",
+    "conformance" : ["SHALL"],
+    "requirement" : "**Parent-child links**: parent observations **SHALL** contain references to each child observation instance, including nested panels and specific questions using the `hasMember` element."
+  },
+  {
+    "key" : "59",
+    "conformance" : ["SHOULD"],
+    "requirement" : "**Derivation links**: observations derived from other questions, such as summary scores, **SHOULD** point to the observations that the result is derived from using the `derivedFrom` element."
+  }]
 }

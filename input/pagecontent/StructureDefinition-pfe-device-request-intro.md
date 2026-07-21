@@ -45,5 +45,4 @@ The following data elements must always be present or must be supported if the d
 
 **Profile specific implementation guidance:**
 
-* \*FHIR R4 DeviceRequest.requester allows Device, Practitioner, PractitionerRole, and Organization. FHIR R6 DeviceRequest.requester also allows CareTeam, Group, Patient, and RelatedPerson. Implementer MAY use the [additional-requester](StructureDefinition-pfe-device-request-additional-requester.html) extension for these additional requester types added in FHIR R6.
-
+* §\*FHIR R4 DeviceRequest.requester allows Device, Practitioner, PractitionerRole, and Organization. FHIR R6 DeviceRequest.requester also allows CareTeam, Group, Patient, and RelatedPerson. Implementer MAY use the [additional-requester](StructureDefinition-pfe-device-request-additional-requester.html) extension for these additional requester types added in FHIR R6.§

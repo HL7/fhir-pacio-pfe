@@ -11,7 +11,7 @@ This IG provides examples of some ICF domains and some of their associated, PACI
 
 ### Use
 
-The ICF domain [value sets](artifacts.html#5) provides a mapping of health and health-related domains that fall under the personal functioning and engagement umbrella. Each ICF domain has an associate Value Set that contains codes for Personal Functioning and Engagement Observations. Implementers of this IG **SHOULD** include at least one category from the [Domain Category value set](ValueSet-pfe-category-vs.html) on each observation instance conformant to this guide. Additionally, the code of the instance **SHOULD** come from the value set associated with the indicated category or categories. 
+The ICF domain [value sets](artifacts.html#5) provides a mapping of health and health-related domains that fall under the personal functioning and engagement umbrella. Each ICF domain has an associate Value Set that contains codes for Personal Functioning and Engagement Observations. §Implementers of this IG **SHOULD** include at least one category from the [Domain Category value set](ValueSet-pfe-category-vs.html) on each observation instance conformant to this guide. Additionally, the code of the instance **SHOULD** come from the value set associated with the indicated category or categories.§
 
 ### Motivation and Approach
 
@@ -57,14 +57,13 @@ Most health observations fall into either the Body Functions or Activities and P
 
 To disambiguate categorization and to make the categorization process more easily reproducible, additional rules have been developed to augment the base ICF categorization process. These rules address some of the difficulties that arose while trying to categorize the PAC assessment items into ICF domains and provide additional clarification when more than one domain categorization could apply. 
 
-1. PAC assessment observations **SHOULD** be categorized into the ICF domain within the “Activities and Participation” category only when the question focuses on  a specific activity.
+1. §PAC assessment observations **SHOULD** be categorized into the ICF domain within the “Activities and Participation” category only when the question focuses on  a specific activity.§
     - For assessment items related to assistive devices, unless the activity the assistive device helps with is present in the question, place them into a domain related to the body function that the assistive device most supports.
-2.  PAC assessment observations that are part of a specific group of questions (e.g.,PHQ-9 or BIMS) or part of a group of questions listed all under the same header question **SHOULD** be categorized according to the main focus of the grouping header.
-3. All available assessment item resources, such as the question’s available responses, the question text, and the question short name, **SHOULD** be considered when making categorization decisions. 
+2.  §PAC assessment observations that are part of a specific group of questions (e.g.,PHQ-9 or BIMS) or part of a group of questions listed all under the same header question **SHOULD** be categorized according to the main focus of the grouping header.§
+3. §All available assessment item resources, such as the question’s available responses, the question text, and the question short name, **SHOULD** be considered when making categorization decisions.§
 
 #### Adding New Codes
 
 Adding new codes to the PFE is a simple and straightforward process, but it does require some familiarity with FHIR shorthand. The first step is to categorize the new code into one of the ICF domains using the categorization process described above. If the selected ICF domain does not yet have an associated Value Set, you must first create a new Value Set for that ICF domain following the example of the rest of the ICF Value Sets in the ValueSets.fsh file. If the Value Set associated with the ICF domain already exists, you can skip this step. Next, you must place the code for the PAC assessment item under the Value Set that is associated with the ICF domain to which it has been categorized. To do this, add a new line under the appropriate Value Set with the format:
 
 		* $LNC#<New Code Here>
-

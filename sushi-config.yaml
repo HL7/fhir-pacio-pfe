@@ -51,7 +51,7 @@ parameters:
   pin-canonicals: 'pin-all'
   toggle-changes: true
 copyrightYear: 2022+
-releaseLabel: STU3 Ballot
+releaseLabel: STU 3 Ballot
 jurisdiction: urn:iso:std:iso:3166#US
 
 # ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮

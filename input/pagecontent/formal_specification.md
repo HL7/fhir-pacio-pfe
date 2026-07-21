@@ -1,25 +1,25 @@
 
-This section defines additional requirements and guidance relevant to this IG as a whole. The FHIR Conformance Rules define the conformance verbs - **SHALL**, **SHOULD**, **MAY** - used in this IG.
+This section defines additional requirements and guidance relevant to this IG as a whole. The FHIR Conformance Rules define the conformance verbs — shall, should, and may — used in this IG.
 
 ### Claiming Conformance to a Personal Functioning and Engagement Profile
-To claim conformance to a Profile in this IG, servers **SHALL**:
+§To claim conformance to a Profile in this IG, servers **SHALL**:§
 
 - Be able to populate all Profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profile’s StructureDefinition.
 - Conform to the [Personal Functioning and Engagement Capability Statement](CapabilityStatement-pacio-pfe-cap.html) expectations for that Profile’s type.
 
 ### Must Support
-The following rules apply to all Personal Functioning and Engagement Profile elements marked as Must Support. Must Support on any profile data element **SHALL** be interpreted as follows:
+The following rules apply to all Personal Functioning and Engagement Profile elements marked as Must Support. §Must Support on any profile data element **SHALL** be interpreted as follows:§
 
 #### Data Source System Requirements
 
-- Data Sources Systems **SHALL** be capable of populating all data elements as part of the query results as specified by the [Personal Functioning and Engagement Capability Statement](CapabilityStatement-pacio-pfe-cap.html).
+- §Data Sources Systems **SHALL** be capable of populating all data elements as part of the query results as specified by the [Personal Functioning and Engagement Capability Statement](CapabilityStatement-pacio-pfe-cap.html).§
 
 #### Data Consumer System Requirements
 
-- Data Consumer Systems **SHALL** be capable of displaying the data elements for human use.
-- Data Consumer Systems **SHOULD** be capable of storing the data elements for other uses (such as record keeping of data used for clinical use).
-- Data Consumer Systems **SHALL** be capable of processing resource instances containing the data element without generating an error or causing the application to fail.
-- Data Consumer Systems **SHALL** interpret missing data elements within resources instances as not being present on the Data Sources system’s or as being withheld for privacy or business reasons.
+- §Data Consumer Systems **SHALL** be capable of displaying the data elements for human use.§
+- §Data Consumer Systems **SHOULD** be capable of storing the data elements for other uses (such as record keeping of data used for clinical use).§
+- §Data Consumer Systems **SHALL** be capable of processing resource instances containing the data element without generating an error or causing the application to fail.§
+- §Data Consumer Systems **SHALL** interpret missing data elements within resources instances as not being present on the Data Sources system’s or as being withheld for privacy or business reasons.§
 
 Profiles used by this IG, but defined in other IGs, inherit the definition of Must Support from their respective guides.
 
@@ -31,7 +31,7 @@ This Implementation Guide depends on US Core v9.0.0 (USCDI 6) as its primary bas
 <div class="bg-success" markdown="1">
 
 ### Use of ConceptMap for ICF Domain Categorization
-When one of the below assessments is being recorded as an observation, systems SHOULD use the [LOINC to ICF Mapping ConceptMaps](artifacts.html#terminology-concept-maps) to populate the `PFEDomain` category slice with the appropriate ICF code(s).
+§When one of the below assessments is being recorded as an observation, systems SHOULD use the [LOINC to ICF Mapping ConceptMaps](artifacts.html#terminology-concept-maps) to populate the `PFEDomain` category slice with the appropriate ICF code(s).§
 - [Barthel Index of activities of daily living](ConceptMap-LOINCtoICFBarthel.html)
 - [Braden Scale for pressure injury risk](ConceptMap-LOINCtoICFBraden.html)
 - [Brief Interview for Mental Status (BIMS)](ConceptMap-LOINCtoICFBIMS.html)

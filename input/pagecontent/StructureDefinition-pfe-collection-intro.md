@@ -29,13 +29,12 @@ The following data elements must always be present or must be supported if the d
 
 **Profile specific implementation guidance:**
 
-* \*These collection observations represent structured instruments and panels with multiple questions. The hasMember element **SHALL** be used to point to child Observation instances that contain the specific questions and answers, represented by [Single Observations](StructureDefinition-pfe-observation-single.html) or nested panels represented by this profile. The Observation.value and Observation.component elements **SHALL** be empty.
-* \*\*An Observation without a value, **SHALL** include a reason why the data is absent unless there are 1) component observations, or 2) reporting panel observations using Observation.hasMember. Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason.
-* \*\*\*When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed below and on the [domains](domains.html) page.
+* §\*These collection observations represent structured instruments and panels with multiple questions. The hasMember element **SHALL** be used to point to child Observation instances that contain the specific questions and answers, represented by [Single Observations](StructureDefinition-pfe-observation-single.html) or nested panels represented by this profile. The Observation.value and Observation.component elements **SHALL** be empty.§
+* §\*\*An Observation without a value, **SHALL** include a reason why the data is absent unless there are 1) component observations, or 2) reporting panel observations using Observation.hasMember. Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason.§
+* §\*\*\*When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed below and on the [domains](domains.html) page.§
 
 <blockquote class="stu-note">
 <p>
 ***Panel codes are not in scope for inclusion within <a href="domains.html">domain-based value sets</a> within STU1 of the PFE IG while the PACIO community determines how best to apply domains to panels that may have specific observations from multiple domains as descendents. In the meantime, the recommendation is not to include domain categories within Collection observation instances.
 </p>
 </blockquote>
-

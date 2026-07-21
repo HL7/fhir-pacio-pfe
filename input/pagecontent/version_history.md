@@ -17,7 +17,7 @@ This page details changes made in newer versions of the The PACIO Personal Funct
   * Align search requirements with US Core: [FHIR-57523](https://jira.hl7.org/browse/FHIR-57523). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
   * Align interaction requirements with US Core: [FHIR-57553](https://jira.hl7.org/browse/FHIR-57553). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
   * Remove subject search parameter: [FHIR-57457](https://jira.hl7.org/browse/FHIR-57457). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-* Remove MAY expected requirements
+* Remove optional expected requirements
   * Conditional Create/Update/Delete: [FHIR-57550](https://jira.hl7.org/browse/FHIR-57550). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
   * Search include and revInclude: [FHIR-57551](https://jira.hl7.org/browse/FHIR-57551). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
 * Cosmetic Issue:

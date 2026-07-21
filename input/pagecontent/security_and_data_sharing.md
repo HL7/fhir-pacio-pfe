@@ -1,8 +1,8 @@
 ### General Considerations
-Implementation of the Personal Functioning and Engagement IG involves communication of patient-specific clinical information across multiple parties, which requires proper security and privacy protections to avoid malicious or unintentional exposure of such information. All exchanges of data under this IG must be secured appropriately in transit and ensure access is limited only to authorized individuals, which **MAY** include the person the information is about, that person’s caregivers, payers paying for the  associated services, or other individuals or entities who have permission to use the information.
+Implementation of the Personal Functioning and Engagement IG involves communication of patient-specific clinical information across multiple parties, which requires proper security and privacy protections to avoid malicious or unintentional exposure of such information. All exchanges of data under this IG must be secured appropriately in transit and ensure access is limited only to authorized individuals, which can include the person the information is about, that person’s caregivers, payers paying for the  associated services, or other individuals or entities who have permission to use the information.
 
 #### Security Considerations and Guidance
-All implementers of the Personal Functioning and Engagement IG **SHOULD** follow the HL7® FHIR® Security guidance, Security and Privacy Module, the FHIR Implementer’s Safety Checklist guidance as defined in the FHIR standard, and US Core security recommendations where applicable and not otherwise superseded by this section of the Personal Functioning and Engagement IG.
+§All implementers of the Personal Functioning and Engagement IG **SHOULD** follow the HL7® FHIR® Security guidance, Security and Privacy Module, the FHIR Implementer’s Safety Checklist guidance as defined in the FHIR standard, and US Core security recommendations where applicable and not otherwise superseded by this section of the Personal Functioning and Engagement IG.§
 
 1.	The FHIR Security specification provides guidance related to communication security, authentication, authorization/access control, audit, digital signatures, attachments, labels, narrative, and input validation. The FHIR security specification is available [here](http://hl7.org/FHIR/R4/security.html).
 2.	The FHIR Security and Privacy Module describes access control and authorization considerations to protect a FHIR server, how to document permissions granted, and how to keep records of performed events. The FHIR Security and privacy module is available [here](http://hl7.org/FHIR/R4/secpriv-module.html).
@@ -13,11 +13,11 @@ All implementers of the Personal Functioning and Engagement IG **SHOULD** follow
 For the purposes of the Personal Functioning and Engagement IG, additional security conformance requirements are as follows:
 
 ##### Exchange Security
-1.  In order to protect sensitive patient data while in transit between systems, the exchange of information using the Personal Functioning and Engagement IG **SHALL** support [Transport Layer Security (TLS) Protocol Version 1.2 (RFC5246)](https://tools.ietf.org/html/rfc5246) or a more recent version of TLS for transport layer security.
-2.  Server implementations that expect to support browser-based javascript applications **SHOULD** enable [Cross-Origin Resource Sharing (CORS)](https://www.w3.org/TR/cors/) for REST operations. See the [Communications section of the FHIR security page](http://hl7.org/FHIR/R4/security.html#http) for additional details and recommendations on safely enabling CORS.  
+1.  §In order to protect sensitive patient data while in transit between systems, the exchange of information using the Personal Functioning and Engagement IG **SHALL** support [Transport Layer Security (TLS) Protocol Version 1.2 (RFC5246)](https://tools.ietf.org/html/rfc5246) or a more recent version of TLS for transport layer security.§
+2.  §Server implementations that expect to support browser-based javascript applications **SHOULD** enable [Cross-Origin Resource Sharing (CORS)](https://www.w3.org/TR/cors/) for REST operations.§ See the [Communications section of the FHIR security page](http://hl7.org/FHIR/R4/security.html#http) for additional details and recommendations on safely enabling CORS.
 
 ##### Authentication and Authorization 
-To prevent unauthorized access to sensitive data, implementers **SHALL** use at least one of the following:
+§To prevent unauthorized access to sensitive data, implementers **SHALL** use at least one of the following:§
 
 1.  The security requirements from the [US Core Implementation Guide](http://hl7.org/FHIR/us/core/security.html),
 2.  The [SMART on FHIR App Launch Framework](http://hl7.org/FHIR/smart-app-launch/index.html),

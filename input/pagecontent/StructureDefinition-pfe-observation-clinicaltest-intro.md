@@ -28,8 +28,8 @@ The following data elements must always be present or must be supported if the d
 
 **Profile specific implementation guidance:**
 
-* \*An Observation without a value, **SHALL** include a reason why the data is absent unless there are component observations. Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason.
-* \*\*When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed [below](#domain-specific-value-set-bindings) and on the [domains](domains.html) page.
+* §\*An Observation without a value, **SHALL** include a reason why the data is absent unless there are component observations. Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason.§
+* §\*\*When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed [below](#domain-specific-value-set-bindings) and on the [domains](domains.html) page.§
 
 ### Domain-specific Value Set Bindings
 
