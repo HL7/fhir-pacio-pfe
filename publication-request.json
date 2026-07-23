@@ -5,7 +5,7 @@
   "mode" : "working",
   "status" : "ballot",
   "sequence" : "STU 3",
-  "desc" : "Personal Functioning and Engagement STU3 Ballot Version adds profiles for: Device, DeviceRequest. In addition, the PFE IG now supports multiple US Core versions: v3.1.1, v6.1.0, v7.0.0, v8.1.0 ",
-  "descmd" : "Personal Functioning and Engagement STU3 Ballot Version adds profiles for: Device, DeviceRequest. In addition, the PFE IG now supports multiple US Core versions: v3.1.1, v6.1.0, v7.0.0, v8.1.0 ",
+  "desc" : "Personal Functioning and Engagement STU 3 Ballot Version adds profiles for: Device, DeviceRequest. In addition, the PFE IG now supports multiple US Core versions: v3.1.1, v6.1.0, v7.0.0, v8.1.0 ",
+  "descmd" : "Personal Functioning and Engagement STU 3 Ballot Version adds profiles for: Device, DeviceRequest. In addition, the PFE IG now supports multiple US Core versions: v3.1.1, v6.1.0, v7.0.0, v8.1.0 ",
   "changes" : "change_log.html"
 }

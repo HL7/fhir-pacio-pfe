@@ -20,42 +20,33 @@ The value set expansion is too large, and only a subset has been displayed
 # ERROR: The Subscriptions backport IG was mistakenly release as FHIR 4.0.0 instead of 4.0.1. See https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Subscriptions.20backport.20issue
 This IG is for FHIR version 4.0.1, while the package 'hl7.fhir.uv.subscriptions-backport.r4#1.1.0' is for FHIR version 4.0.0
 
-# These info messages are for dependency IGs, which we do not have direct control over (Zulip stream for SDOH clinical dependency: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Odd.20warnings.20after.20updating.20a.20dependency.20version)
+# Information: These messages are for dependency IGs, which we do not have direct control over
+## This inherits from US Core Simple Observation profile
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+## This inherits from US Core ServiceRequest profile
 Reference to draft ValueSet http://hl7.org/fhir/ValueSet/servicerequest-category|4.0.1
+## Zulip stream for SDOH clinical dependency: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Odd.20warnings.20after.20updating.20a.20dependency.20version
 The ImplementationGuide uses package hl7.fhir.us.sdoh-clinicalcare#2.2.0 released on 2024-08-27, but the most recent appropriate version is 2.3.0. This reference is getting old and the more recent version should be considered
 
-# Using the standard CapabilityStatementExpectation extension in additional contexts to fully express intended capabilities: see FHIR-12419
+# The capabilitystatement-search-parameter-combination extension has open slicing. The nested
+# capabilitystatement-expectation extension explicitly declares that extension as an allowed context.
+# The generic slice message is therefore expected; see FHIR-12419.
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Information: IG Publisher does not validate LOINC Code for performance reasons
 Source Code System http://loinc.org is only supported on the terminology server, so the source codes are not validated for performance reasons	
 
 # Information: pin-all deliberately version-pins canonical references to artifacts defined by this IG.
-# Suppress only these local PFE pins; external dependency pins remain visible for review.
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/assistance-required to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/device-patient-used to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/event-location to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-collection to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-encounter-diagnosis to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-problems-health-concerns to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request-additional-requester to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request-clinical-justification to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request-location to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request-user to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-diagnostic-report-note-exchange to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-goal to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-nutrition-order to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-clinicaltest to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-single to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-use-of-device to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-assistance-required-vs to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-category-vs to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-device-parameter-code-vs to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-device-type to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-deviceassociation-relationship-vs to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-survey-category-vs to 3.0.0-ballot
-Pinned the version of http://hl7.org/fhir/us/pacio-pfe/ValueSet/pfe-us-core-category-vs to 3.0.0-ballot
+Pinned the version of %
+
+# Information: PFE domain category slices intentionally use ICF codes in addition to the required US Core category slice.
+# Suppress only the inherited US Core preferred-binding information messages for ICF codings.
+None of the codings provided are in the value set 'US Core Simple Observation Category' (http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category|9.0.0), and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/sid/icf%
+
+# Information: The PFE clinical-test profile's PFEDomain category slice intentionally uses ICF codes.
+# This is a preferred binding inherited from the base Observation category element, not a failed required binding.
+None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/sid/icf#b2)
+
+# Information: PAS Coverage.relationship has an optional slice using the X12 value set. This example
+# uses SubscriberRelationshipCodes, the extensible value set defined by the parent FHIR Coverage resource.
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-coverage|2.2.1 (this may not be a problem, but you should check that it's not intended to match a slice)
