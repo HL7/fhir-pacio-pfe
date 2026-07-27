@@ -38,7 +38,6 @@ Description:    "The purpose of this profile is to facilitate exchange of inform
 * subject ^short = "Patient"
 * subject ^definition = "The patient for whom the device is being requested."
 
-* code[x] MS
 * code[x] ^definition = "A code that indicates the device being requested. Example code systems include Current Procedural Terminology (CPT) or Healthcare Common Procedure Coding System (HCPCS) codes"
 * code[x] ^comment = """
     Examples: 
