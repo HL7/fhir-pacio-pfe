@@ -16,3 +16,15 @@ Description: "Example Device: Eyeglasses"
 * owner = Reference(PFEIG-Org-02)
 * deviceName.name = "Eyeglasses"
 * deviceName.type = #user-friendly-name
+
+
+Instance: PFEIG-CMS-Device-LingraphicaTouchTalk
+InstanceOf: PFEDevice
+Description: "Example Device: Lingraphica TouchTalk AAC device"
+* type = $SCT#705371001 "Communication and information assistive device (physical object)"
+* patient = Reference(PFEIG-patientBSJ1)
+* owner = Reference(PFEIG-Org-02)
+* manufacturer = "Lingraphica"
+* modelNumber = "TouchTalk"
+* deviceName.name = "Lingraphica TouchTalk AAC device"
+* deviceName.type = #user-friendly-name

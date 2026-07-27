@@ -1,6 +1,6 @@
 <div class="note-to-balloters" markdown="1">
 
-**What's new in the US Core January 2026 Ballot**
+**What's new in the PACIO PFE September 2026 Ballot**
 
 {% include whats-new/v3-ballot.md %}
 </div>

@@ -50,6 +50,7 @@ parameters:
   apply-publisher: true
   pin-canonicals: pin-multiples
   toggle-changes: true
+  shownav: true
 copyrightYear: 2022+
 releaseLabel: STU 3 Ballot
 jurisdiction: urn:iso:std:iso:3166#US

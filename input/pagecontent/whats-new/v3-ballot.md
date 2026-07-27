@@ -20,6 +20,7 @@
   - [Personal Functioning and Engagement Assistance Required Value Set](ValueSet-pfe-assistance-required-vs.html)
   - [PFEIG-DeviceRequest-RollingWalker example](DeviceRequest-PFEIG-DeviceRequest-RollingWalker.html)
   - [PFEIG-DeviceRequest-Wheelchair example](DeviceRequest-PFEIG-DeviceRequest-Wheelchair.html)
+  - [PFEIG-DeviceRequest-LingraphicaTouchTalk example](DeviceRequest-PFEIG-DeviceRequest-LingraphicaTouchTalk.html)
   - [PFEIG-RiskAssessment-FallRisk example](RiskAssessment-PFEIG-RiskAssessment-FallRisk.html)
   - [PFEIG-Role-SNFPT-RonMarble example](PractitionerRole-PFEIG-Role-SNFPT-RonMarble.html)
   - [PFEIG-SNF-Adm-Mobility-UseOfDevice-RollingWalker example](DeviceUseStatement-PFEIG-SNF-Adm-Mobility-UseOfDevice-RollingWalker.html)
@@ -30,3 +31,4 @@
 - PFE Device
   - [Personal Functioning and Engagement Device Profile](StructureDefinition-pfe-device.html)
   - [PFEIG-CMS-Device-Wheelchair example](Device-PFEIG-CMS-Device-Wheelchair.html)
+  - [PFEIG-CMS-Device-LingraphicaTouchTalk example](Device-PFEIG-CMS-Device-LingraphicaTouchTalk.html)
