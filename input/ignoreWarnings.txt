@@ -5,22 +5,16 @@
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
 
-# Confirmed that this information message should be suppressed. (Zulip stream: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Questionnaire.20could.20not.20be.20resolved)
+# 2-1 Confirmed that this information message should be suppressed. (Zulip stream: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Questionnaire.20could.20not.20be.20resolved)
 The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 
-# The following code system are not discoverable because they are code systems in THO, but THO doesn't define the codes. They have been checked and the identifiers are correct
+# 2-2 The following code system are not discoverable because they are code systems in THO, but THO doesn't define the codes. They have been checked and the identifiers are correct
 Target Code System http://hl7.org/fhir/sid/icf doesn't have all content (content = not-present), so the target codes cannot be checked
 
-# CodeSystem is not enumerable
-Error from https://tx.fhir.org/r4: Error: The code System "http://www.ama-assn.org/go/cpt" has a grammar, and cannot be enumerated directly
-
-# For information only. The PFE IG defines this value set using the ICF code system defined by the WHO. We don't have control over the large number of codes in the ICF.
+# 2-3 For information only. The PFE IG defines this value set using the ICF code system defined by the WHO. We don't have control over the large number of codes in the ICF.
 The value set expansion is too large, and only a subset has been displayed
 
-# ERROR: The Subscriptions backport IG was mistakenly release as FHIR 4.0.0 instead of 4.0.1. See https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Subscriptions.20backport.20issue
-This IG is for FHIR version 4.0.1, while the package 'hl7.fhir.uv.subscriptions-backport.r4#1.1.0' is for FHIR version 4.0.0
-
-# Information: These messages are for dependency IGs, which we do not have direct control over
+# 2-4 Information: These messages are for dependency IGs, which we do not have direct control over
 ## This inherits from US Core Simple Observation profile
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 ## This inherits from US Core ServiceRequest profile
@@ -28,25 +22,33 @@ Reference to draft ValueSet http://hl7.org/fhir/ValueSet/servicerequest-category
 ## Zulip stream for SDOH clinical dependency: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Odd.20warnings.20after.20updating.20a.20dependency.20version
 The ImplementationGuide uses package hl7.fhir.us.sdoh-clinicalcare#2.2.0 released on 2024-08-27, but the most recent appropriate version is 2.3.0. This reference is getting old and the more recent version should be considered
 
-# The capabilitystatement-search-parameter-combination extension has open slicing. The nested
+# 3-1 Warning: CodeSystem is not enumerable
+Error from https://tx.fhir.org/r4: Error: The code System "http://www.ama-assn.org/go/cpt" has a grammar, and cannot be enumerated directly
+
+# 3-2 Warning: The capabilitystatement-search-parameter-combination extension has open slicing. The nested
 # capabilitystatement-expectation extension explicitly declares that extension as an allowed context.
 # The generic slice message is therefore expected; see FHIR-12419.
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.3.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# Information: IG Publisher does not validate LOINC Code for performance reasons
+# 3-3 Warning: The Subscriptions backport IG was mistakenly release as FHIR 4.0.0 instead of 4.0.1. See https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Subscriptions.20backport.20issue
+This IG is for FHIR version 4.0.1, while the package 'hl7.fhir.uv.subscriptions-backport.r4#1.1.0' is for FHIR version 4.0.0
+
+# 3-4 Information: IG Publisher does not validate LOINC Code for performance reasons
 Source Code System http://loinc.org is only supported on the terminology server, so the source codes are not validated for performance reasons	
 
-# Information: pin-all deliberately version-pins canonical references to artifacts defined by this IG.
-Pinned the version of %
+# 3-5 Information: pin-multiple/pin-all deliberately version-pins canonical references to artifacts defined by this IG.
+# Pinned the version of %
 
-# Information: PFE domain category slices intentionally use ICF codes in addition to the required US Core category slice.
+# 3-6 Information: PFE domain category slices intentionally use ICF codes in addition to the required US Core category slice.
 # Suppress only the inherited US Core preferred-binding information messages for ICF codings.
 None of the codings provided are in the value set 'US Core Simple Observation Category' (http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category|9.0.0), and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/sid/icf%
 
-# Information: The PFE clinical-test profile's PFEDomain category slice intentionally uses ICF codes.
+# 3-7 Information: The PFE clinical-test profile's PFEDomain category slice intentionally uses ICF codes.
 # This is a preferred binding inherited from the base Observation category element, not a failed required binding.
 None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/sid/icf#b2)
 
-# Information: PAS Coverage.relationship has an optional slice using the X12 value set. This example
+# 3-8 Information: PAS Coverage.relationship has an optional slice using the X12 value set. This example
 # uses SubscriberRelationshipCodes, the extensible value set defined by the parent FHIR Coverage resource.
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-coverage|2.2.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+

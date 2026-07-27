@@ -38,13 +38,17 @@ This Implementation Guide depends on US Core v9.0.0 (USCDI 6) as its primary bas
 - [Patient Health Questionnaire-9 (PHQ-9) for depression screening](ConceptMap-LOINCtoICFPHQ9.html)
 - CMS Minimum Data Set (MDS), Functional Assessment Standardized Items (FASI), Inpatient Rehabilitation Facility Patient Assessment Instrument (IRF-PAI), and Outcome and Assessment Information Set (OASIS): [Section B](ConceptMap-LOINCtoICFMDSSectionB.html), [Section GG](ConceptMap-LOINCtoICFMDSSectionGG.html), [Section J](ConceptMap-LOINCtoICFMDSSectionJ.html), and [Section K](ConceptMap-LOINCtoICFMDSSectionK.html)
 
-ICF concepts used for domain categorization are generally broader than the source LOINC observation concepts. As a result, mapping a LOINC code to an ICF code may reduce specificity and can involve loss of information. Systems should retain the original LOINC-coded observation while using the mapped ICF code(s) for `PFEDomain` categorization.
+§If the assessment is not in the list, systems SHOULD implement their own mapping for those assessments.§
 
 This applies to the following profiles:
 
 - [Personal Functioning and Engagement Single Observation](StructureDefinition-pfe-observation-single.html)
 - [Personal Functioning and Engagement Clinical Test Observation](StructureDefinition-pfe-observation-clinicaltest.html)
 - [Personal Functioning and Engagement Collection](StructureDefinition-pfe-collection.html)
+
+ICF concepts used for domain categorization are generally broader than the source LOINC observation concepts. As a result, mapping a LOINC code to an ICF code may reduce specificity and can involve loss of information. §Systems SHOULD retain the original LOINC-coded observation while using the mapped ICF code(s) for `PFEDomain` categorization.§
+-	LOINC was selected for this mapping as it includes codes for the measure items and response options included in the mapping.
+-	The ICF was specifically chosen through a consensus process with the PFE community after reviewing several code systems and identifying that ICF was the most applicable to capturing PAC data. The purpose of integrating the ICF into the PFE IG and this mapping is to support healthcare system- and population-level sharing and use of data regarding functioning and disability that complements clinical data.
 
 Contact the PACIO project at info@pacioproject.org for detailed information about the rationale for choosing LOINC and ICF, and for specific methods used to develop and validate the mappings.
 </div><!-- new-content -->

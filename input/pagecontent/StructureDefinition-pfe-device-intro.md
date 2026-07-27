@@ -1,8 +1,8 @@
 **Example Usage Scenarios:**
 
 The following are example usage scenarios for this profile:
-- A PAC provider records or updates details about a device that supports a patient's physical and cognitive functioning and/or engagement in daily activities (aka functioning and engagement). 
-- A healthcare provider at an acute or PAC setting accesses details on a device being used by a patient or being used by a provider to support a therapy session. 
+- A PAC provider records or updates details about a device that supports a patient's physical and cognitive functioning and/or engagement in daily activities. 
+- A healthcare provider at an acute or PAC setting accesses details on a device being used by a patient or being used by a provider to facilitate patient function, safety, and independence. 
 
 ### How this resource was developed 
 
@@ -10,7 +10,7 @@ This profile was developed by the Personal Functioning and Engagement (PFE) subg
 
 ### Mandatory and Must Support Data Elements
 
-The following data elements must always be present or must be supported if the data is present in the sending system ([Must Support](formal_specification.html#must-support) definition). They are presented below with a simple human-readable explanation. The [Formal Profile Definition](#profile) below provides the formal summary, definitions, and terminology requirements.
+The following data elements must always be present or must be supported if the data is present in the sending system  ([Must Support](formal_specification.html#must-support) definition). They are presented below with a simple human-readable explanation. The [Formal Profile Definition](#profile) below provides the formal summary, definitions, and terminology requirements. Contact the PACIO project at info@pacioproject.org for detailed information about the specific methods used to develop this profile.
 
 **Each Personal Functioning and Engagement Device must have:**
 

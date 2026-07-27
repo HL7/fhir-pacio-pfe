@@ -48,7 +48,7 @@ parameters:
   show-inherited-invariants: false
   apply-jurisdiction: true
   apply-publisher: true
-  pin-canonicals: 'pin-all'
+  pin-canonicals: pin-multiples
   toggle-changes: true
 copyrightYear: 2022+
 releaseLabel: STU 3 Ballot
