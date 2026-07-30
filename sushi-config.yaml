@@ -40,7 +40,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 9.0.0
-  hl7.fhir.us.sdoh-clinicalcare: 2.2.0
+  hl7.fhir.us.sdoh-clinicalcare: 2.3.0
   hl7.fhir.us.davinci-pas: 2.2.1
 parameters:
   auto-oid-root: '2.16.840.1.113883.4.642.40.67'
