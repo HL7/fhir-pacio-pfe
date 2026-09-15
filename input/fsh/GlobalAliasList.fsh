@@ -48,6 +48,7 @@ Alias: $USCoreConditionCodeValueSet = http://hl7.org/fhir/us/core/ValueSet/us-co
 Alias: $PertainsToGoal = http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal
 
 // FHIR R5 cross-version profiles and extensions for use in R4
+Alias: $R5NutritionIntake = http://hl7.org/fhir/5.0/StructureDefinition/profile-NutritionIntake
 Alias: $R5NutritionProduct = http://hl7.org/fhir/5.0/StructureDefinition/profile-NutritionProduct
 Alias: $R5NutritionOrderSupplementType = http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supplement.type
 Alias: $R5NutritionOrderEnteralFormulaBaseFormulaType = http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.baseFormulaType
