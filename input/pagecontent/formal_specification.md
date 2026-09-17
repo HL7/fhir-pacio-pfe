@@ -1,6 +1,12 @@
 
 This section defines additional requirements and guidance relevant to this IG as a whole. The FHIR Conformance Rules define the conformance verbs — shall, should, and may — used in this IG.
 
+### Conformance Statements
+
+The following table lists the free-text conformance statements in this Implementation Guide. It is provided as a summary to help implementers identify requirements and support testing. The table does not include computable requirements expressed in CapabilityStatements, profiles, value sets, or other FHIR artifacts. Implementers should use the links in the table to read each statement in its full context.
+
+§§§
+
 ### Claiming Conformance to a Personal Functioning and Engagement Profile
 §To claim conformance to a Profile in this IG, servers **SHALL**:§
 
