@@ -21,7 +21,7 @@ Id: assistance-required
 * ^context.type = #element
 * ^context.expression = "DiagnosticReport"
 * value[x] only CodeableConcept
-* value[x] from PFEAssistanceRequiredVS (extensible)
+* value[x] from $LoincAssistanceRequired (extensible)
 
 Extension: PFEDeviceRequestUser
 Description: """
