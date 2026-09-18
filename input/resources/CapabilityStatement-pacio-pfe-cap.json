@@ -109,8 +109,8 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-encounter-diagnosis|2.0.0",
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-problems-health-concerns|2.0.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-encounter-diagnosis",
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-condition-problems-health-concerns"
           ],
           "type": "Condition"
         },
@@ -157,7 +157,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device|2.0.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device"
           ],
           "type": "Device"
         },
@@ -204,7 +204,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request|2.0.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-device-request"
           ],
           "type": "DeviceRequest"
         },
@@ -251,7 +251,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-use-of-device|2.0.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-use-of-device"
           ],
           "type": "DeviceUseStatement"
         },
@@ -407,7 +407,8 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status|2.0.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-narrative-history-of-status",
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-diagnostic-report-note-exchange"
           ],
           "type": "DiagnosticReport"
         },
@@ -454,7 +455,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-goal|2.0.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-goal"
           ],
           "type": "Goal"
         },
@@ -501,7 +502,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-nutrition-order|2.0.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-nutrition-order"
           ],
           "type": "NutritionOrder"
         },
@@ -657,9 +658,9 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-clinicaltest|2.0.0",
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-collection|2.0.0",
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-single|2.0.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-clinicaltest",
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-collection",
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-observation-single"
           ],
           "type": "Observation"
         },
@@ -759,7 +760,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
           ],
           "type": "Patient"
         },
@@ -909,7 +910,7 @@
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request|2.0.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-service-request"
           ],
           "type": "ServiceRequest"
         }
