@@ -280,26 +280,86 @@
   },
   {
     "key" : "55",
-    "conformance" : ["SHOULD"],
-    "requirement" : "All implementers of the Personal Functioning and Engagement IG **SHOULD** follow the HL7® FHIR® Security guidance, Security and Privacy Module, the FHIR Implementer’s Safety Checklist guidance as defined in the FHIR standard, and US Core security recommendations where applicable and not otherwise superseded by this section of the Personal Functioning and Engagement IG."
+    "conformance" : ["SHALL"],
+    "requirement" : "Must Support on any profile data element **SHALL** be interpreted as follows:"
   },
   {
     "key" : "56",
-    "conformance" : ["MAY"],
-    "requirement" : "This page provides guidance on how tools like the [SDC Questionnaire](https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html) and [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/StructureDefinition-us-core-questionnaireresponse.html) resources **MAY** be used with this IG."
+    "conformance" : ["SHALL"],
+    "requirement" : "Data Sources Systems **SHALL** be capable of populating all data elements as part of the query results as specified by the [Personal Functioning and Engagement Capability Statement](CapabilityStatement-pacio-pfe-cap.html)."
   },
   {
     "key" : "57",
     "conformance" : ["SHALL"],
-    "requirement" : "When representing formal assessments with complex structures as FHIR Observations, each panel and question **SHALL** be mapped to an individual Observation instance, with panels represented using the [collection](StructureDefinition-pfe-collection.html) profile and questions represented using the [single observation](StructureDefinition-pfe-observation-single.html) profile."
+    "requirement" : "Data Consumer Systems **SHALL** be capable of displaying the data elements for human use."
   },
   {
     "key" : "58",
+    "conformance" : ["SHOULD"],
+    "requirement" : "Data Consumer Systems **SHOULD** be capable of storing the data elements for other uses (such as record keeping of data used for clinical use)."
+  },
+  {
+    "key" : "59",
+    "conformance" : ["SHALL"],
+    "requirement" : "Data Consumer Systems **SHALL** be capable of processing resource instances containing the data element without generating an error or causing the application to fail."
+  },
+  {
+    "key" : "60",
+    "conformance" : ["SHALL"],
+    "requirement" : "Data Consumer Systems **SHALL** interpret missing data elements within resources instances as not being present on the Data Sources system’s or as being withheld for privacy or business reasons."
+  },
+  {
+    "key" : "61",
+    "conformance" : ["SHOULD"],
+    "requirement" : "When one of the below assessments is being recorded as an observation, systems\u202fSHOULD\u202fuse the [LOINC to ICF Mapping ConceptMaps](artifacts.html#artifacts-table) to populate the `PFEDomain` category slice with the appropriate ICF code(s)."
+  },
+  {
+    "key" : "62",
+    "conformance" : ["SHOULD"],
+    "requirement" : "If the assessment is not in the list, systems SHOULD implement their own mapping for those assessments."
+  },
+  {
+    "key" : "63",
+    "conformance" : ["SHOULD"],
+    "requirement" : "Systems SHOULD retain the original LOINC-coded observation while using the mapped ICF code(s) for `PFEDomain` categorization."
+  },
+  {
+    "key" : "64",
+    "conformance" : ["SHOULD"],
+    "requirement" : "All implementers of the Personal Functioning and Engagement IG **SHOULD** follow the HL7® FHIR® Security guidance, Security and Privacy Module, the FHIR Implementer’s Safety Checklist guidance as defined in the FHIR standard, and US Core security recommendations where applicable and not otherwise superseded by this section of the Personal Functioning and Engagement IG."
+  },
+  {
+    "key" : "65",
+    "conformance" : ["SHALL"],
+    "requirement" : "In order to protect sensitive patient data while in transit between systems, the exchange of information using the Personal Functioning and Engagement IG **SHALL** support [Transport Layer Security (TLS) Protocol Version 1.2 (RFC5246)](https://tools.ietf.org/html/rfc5246) or a more recent version of TLS for transport layer security."
+  },
+  {
+    "key" : "66",
+    "conformance" : ["SHOULD"],
+    "requirement" : "Server implementations that expect to support browser-based javascript applications **SHOULD** enable [Cross-Origin Resource Sharing (CORS)](https://www.w3.org/TR/cors/) for REST operations."
+  },
+  {
+    "key" : "67",
+    "conformance" : ["SHALL"],
+    "requirement" : "To prevent unauthorized access to sensitive data, implementers **SHALL** use at least one of the following:"
+  },
+  {
+    "key" : "68",
+    "conformance" : ["MAY"],
+    "requirement" : "This page provides guidance on how tools like the [SDC Questionnaire](https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html) and [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/StructureDefinition-us-core-questionnaireresponse.html) resources **MAY** be used with this IG."
+  },
+  {
+    "key" : "69",
+    "conformance" : ["SHALL"],
+    "requirement" : "When representing formal assessments with complex structures as FHIR Observations, each panel and question **SHALL** be mapped to an individual Observation instance, with panels represented using the [collection](StructureDefinition-pfe-collection.html) profile and questions represented using the [single observation](StructureDefinition-pfe-observation-single.html) profile."
+  },
+  {
+    "key" : "70",
     "conformance" : ["SHALL"],
     "requirement" : "**Parent-child links**: parent observations **SHALL** contain references to each child observation instance, including nested panels and specific questions using the `hasMember` element."
   },
   {
-    "key" : "59",
+    "key" : "71",
     "conformance" : ["SHOULD"],
     "requirement" : "**Derivation links**: observations derived from other questions, such as summary scores, **SHOULD** point to the observations that the result is derived from using the `derivedFrom` element."
   }]

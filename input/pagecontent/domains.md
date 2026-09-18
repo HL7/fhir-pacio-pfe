@@ -11,7 +11,7 @@ This IG provides examples of some ICF domains and some of their associated, PACI
 
 ### Use
 
-The ICF domain [value sets](artifacts.html#5) provides a mapping of health and health-related domains that fall under the personal functioning and engagement umbrella. Each ICF domain has an associate Value Set that contains codes for Personal Functioning and Engagement Observations. §Implementers of this IG **SHOULD** include at least one category from the [Domain Category value set](ValueSet-pfe-category-vs.html) on each observation instance conformant to this guide. Additionally, the code of the instance **SHOULD** come from the value set associated with the indicated category or categories.§
+The ICF domain [value sets](artifacts.html#artifacts-table) provides a mapping of health and health-related domains that fall under the personal functioning and engagement umbrella. Each ICF domain has an associate Value Set that contains codes for Personal Functioning and Engagement Observations. §Implementers of this IG **SHOULD** include at least one category from the [Domain Category value set](ValueSet-pfe-category-vs.html) on each observation instance conformant to this guide. Additionally, the code of the instance **SHOULD** come from the value set associated with the indicated category or categories.§
 
 ### Motivation and Approach
 

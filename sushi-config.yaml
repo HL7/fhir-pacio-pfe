@@ -40,7 +40,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 9.0.0
-  hl7.fhir.us.sdoh-clinicalcare: 2.3.0
+  hl7.fhir.us.sdoh-clinicalcare: 3.0.0
   hl7.fhir.us.davinci-pas: 2.2.1
 parameters:
   auto-oid-root: '2.16.840.1.113883.4.642.40.67'
@@ -74,11 +74,8 @@ menu:
     Underlying Technologies: underlying_technologies.html
   Domain Support: domains.html
   FHIR Artifacts:
-    Capability Statement: CapabilityStatement-pacio-pfe-cap.html
-    Profiles: artifacts.html#structures-resource-profiles
-    Extensions: artifacts.html#structures-extension-definitions
-    Value Sets: artifacts.html#terminology-value-sets
-    Concept Maps: artifacts.html#terminology-concept-maps
-    Examples: artifacts.html#example-example-instances
+    Global Profiles: artifacts.html#global-profiles
+    Terminology Parameters: artifacts.html#terminology-parameters
+    Artifacts Table: artifacts.html#artifacts-table
   Downloads: downloads.html
   Version History: version_history.html

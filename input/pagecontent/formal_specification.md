@@ -31,7 +31,7 @@ This Implementation Guide depends on US Core v9.0.0 (USCDI 6) as its primary bas
 <div class="bg-success" markdown="1">
 
 ### Use of ConceptMap for ICF Domain Categorization
-§When one of the below assessments is being recorded as an observation, systems SHOULD use the [LOINC to ICF Mapping ConceptMaps](artifacts.html#terminology-concept-maps) to populate the `PFEDomain` category slice with the appropriate ICF code(s).§
+§When one of the below assessments is being recorded as an observation, systems SHOULD use the [LOINC to ICF Mapping ConceptMaps](artifacts.html#artifacts-table) to populate the `PFEDomain` category slice with the appropriate ICF code(s).§
 - [Barthel Index of activities of daily living](ConceptMap-LOINCtoICFBarthel.html)
 - [Braden Scale for pressure injury risk](ConceptMap-LOINCtoICFBraden.html)
 - [Brief Interview for Mental Status (BIMS)](ConceptMap-LOINCtoICFBIMS.html)
