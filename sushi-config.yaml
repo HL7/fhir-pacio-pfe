@@ -74,11 +74,8 @@ menu:
     Underlying Technologies: underlying_technologies.html
   Domain Support: domains.html
   FHIR Artifacts:
-    Capability Statement: CapabilityStatement-pacio-pfe-cap.html
-    Profiles: artifacts.html
-    Extensions: artifacts.html
-    Value Sets: artifacts.html
-    Concept Maps: artifacts.html
-    Examples: artifacts.html
+    Global Profiles: artifacts.html#global-profiles
+    Terminology Parameters: artifacts.html#terminology-parameters
+    Artifacts Table: artifacts.html#artifacts-table
   Downloads: downloads.html
   Version History: version_history.html
