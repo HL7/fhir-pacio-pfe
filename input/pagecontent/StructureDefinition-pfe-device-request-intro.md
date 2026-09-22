@@ -20,13 +20,13 @@ Note: Given that many PAC patients are covered via Medicare and/or Medicaid ([ME
 
 The following data elements must always be present or must be supported if the data is present in the sending system ([Must Support](formal_specification.html#must-support) definition). They are presented below with a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [Formal Profile Definition](#profile) below provides the formal summary, definitions, and terminology requirements.
 
-**Each Personal Functioning and Engagement Narrative History of Status must have:**
+**Each Personal Functioning and Engagement Device Request must have:**
 
 1. code[x]
 1. patient
 1. status
 
-**Each Personal Functioning and Engagement Narrative History of Status must support:**
+**Each Personal Functioning and Engagement Device Request must support:**
 
 1. authoredOn
 1. code[x]:CodeableConcept
