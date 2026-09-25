@@ -51,6 +51,19 @@ parameters:
   pin-canonicals: pin-multiples
   toggle-changes: true
   shownav: true
+pages:
+  index.md: &trial_use_page
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: trial-use
+  domains.md: *trial_use_page
+  downloads.md: *trial_use_page
+  formal_specification.md: *trial_use_page
+  personal_functioning_and_engagement_use_case.md: *trial_use_page
+  security_and_data_sharing.md: *trial_use_page
+  structured_data_capture.md: *trial_use_page
+  underlying_technologies.md: *trial_use_page
+  version_history.md: *trial_use_page
 copyrightYear: 2022+
 releaseLabel: STU 3 Ballot
 jurisdiction: urn:iso:std:iso:3166#US
