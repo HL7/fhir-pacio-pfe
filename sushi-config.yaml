@@ -65,7 +65,6 @@ jurisdiction: urn:iso:std:iso:3166#US
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Table of Contents: toc.html
   Guidance:
     Formal Specification: formal_specification.html
     Use Cases: personal_functioning_and_engagement_use_case.html
