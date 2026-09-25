@@ -1,4 +1,4 @@
-This page details changes made in newer versions of the The PACIO Personal Functioning and Engagement (PFE) Implementation Guide 
+This page details changes made in newer versions of the PACIO Personal Functioning and Engagement (PFE) Implementation Guide.
 
 ### STU3 Ballot (version 3.0.0-ballot)
 
@@ -7,37 +7,29 @@ This page details changes made in newer versions of the The PACIO Personal Funct
 * Add [Personal Functioning and Engagement Device Profile](StructureDefinition-pfe-device.html)
 * Add [Personal Functioning and Engagement Device Request Profile](StructureDefinition-pfe-device-request.html)
 
-#### What's changed
+The following changes were made for the 3.0.0-ballot.
 
-##### CapabilityStatement improvement
+#### Non-Compatible Changes
+* [FHIR-57636](https://jira.hl7.org/browse/FHIR-57636): Create a value set for LOINC LL4309-2. See the [Assistance Required ValueSet](ValueSet-pfe-assistance-required-vs.html).
+* [FHIR-57553](https://jira.hl7.org/browse/FHIR-57553): Align CapabilityStatement interactions with US Core. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
+* [FHIR-55942](https://jira.hl7.org/browse/FHIR-55942): Replace deprecated LOINC codes 89408-9 and 89411-3. See the [Products and Technology ValueSet](ValueSet-pfe-products-and-technology-vs.html).
+* [FHIR-55941](https://jira.hl7.org/browse/FHIR-55941): Remove discouraged LOINC code 93417-4. See the [Panel ValueSet](ValueSet-pfe-panel-vs.html).
+* [FHIR-55644](https://jira.hl7.org/browse/FHIR-55644): Add the LOINC-ICF ConceptMap. See [ICF domain categorization](formal_specification.html#use-of-conceptmap-for-icf-domain-categorization).
+* [FHIR-53769](https://jira.hl7.org/browse/FHIR-53769): Add the Patient resource to the CapabilityStatement. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
+* [FHIR-53765](https://jira.hl7.org/browse/FHIR-53765): Remove blank spaces from search parameter names. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
 
-* Align PFE CapabilityStatement with US Core
-  * Add Patient resource: [FHIR-53769](https://jira.hl7.org/browse/FHIR-53769). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-  * Use US Core Search Parameters: [FHIR-57462](https://jira.hl7.org/browse/FHIR-57462). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-  * Align search requirements with US Core: [FHIR-57523](https://jira.hl7.org/browse/FHIR-57523). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-  * Align interaction requirements with US Core: [FHIR-57553](https://jira.hl7.org/browse/FHIR-57553). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-  * Remove subject search parameter: [FHIR-57457](https://jira.hl7.org/browse/FHIR-57457). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-* Remove optional expected requirements
-  * Conditional Create/Update/Delete: [FHIR-57550](https://jira.hl7.org/browse/FHIR-57550). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-  * Search include and revInclude: [FHIR-57551](https://jira.hl7.org/browse/FHIR-57551). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-* Cosmetic Issue:
-  * Sort resource by alphabetic order: [FHIR-57519](https://jira.hl7.org/browse/FHIR-57519). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-* Remove blank space in search parameter's name: [FHIR-53765](https://jira.hl7.org/browse/FHIR-53765). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
-* Remove Condition.status search parameter: [FHIR-53762](https://jira.hl7.org/browse/FHIR-53762). See Change [here](CapabilityStatement-pacio-pfe-cap.html).
+#### Compatible, Substantive Changes
+* [FHIR-57523](https://jira.hl7.org/browse/FHIR-57523): Align CapabilityStatement search requirements with US Core. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
+* [FHIR-57457](https://jira.hl7.org/browse/FHIR-57457): Remove the subject search parameter. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
+* [FHIR-55924](https://jira.hl7.org/browse/FHIR-55924): Remove deprecated codes from the Mental Functions ValueSet. See the [Mental Functions ValueSet](ValueSet-pfe-mental-functions-vs.html).
+* [FHIR-53762](https://jira.hl7.org/browse/FHIR-53762): Remove the Condition.status search parameter. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
+* [FHIR-51462](https://jira.hl7.org/browse/FHIR-51462): Support multiple US Core versions. See [Dependencies](formal_specification.html#dependencies).
 
-##### Terminology
-
-* Replace deprecated codes
-  * LOINC 89408-9 / 89411-3: [FHIR-55942](https://jira.hl7.org/browse/FHIR-55942). See Change [here](ValueSet-pfe-products-and-technology-vs.html)
-  * LOINC 93471-4: [FHIR-55941](https://jira.hl7.org/browse/FHIR-55941). See Change [here](ValueSet-pfe-panel-vs.html)
-  * LOINC 45482-7: [FHIR-55924](https://jira.hl7.org/browse/FHIR-55924). See Change [here](ValueSet-pfe-mental-functions-vs.html)
-* Add LOINC-ICF Concept Map: [FHIR-55644](https://jira.hl7.org/browse/FHIR-55644). See Change [here](formal_specification.html#use-of-conceptmap-for-icf-domain-categorization).
-* Move PFE Code Systems to THO: [FHIR-48085](https://jira.hl7.org/browse/FHIR-48085), [FHIR-46758](https://jira.hl7.org/browse/FHIR-46758), [FHIR-38419](https://jira.hl7.org/browse/FHIR-38419)
-* Create FHIR value set for LOINC LL4309-2: [FHIR-57636](https://jira.hl7.org/browse/FHIR-57636). See Change [here](ValueSet-pfe-assistance-required-vs.html).
-
-##### Dependencies
-
-* Support multiple US Core versions: [FHIR-51462](https://jira.hl7.org/browse/FHIR-51462). See Change [here](formal_specification.html#dependencies).
+#### Non-Substantive Changes
+* [FHIR-57551](https://jira.hl7.org/browse/FHIR-57551): Remove optional expected searchInclude and searchRevInclude requirements. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
+* [FHIR-57550](https://jira.hl7.org/browse/FHIR-57550): Remove optional expected Conditional Create, Update, and Delete requirements. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
+* [FHIR-57519](https://jira.hl7.org/browse/FHIR-57519): Sort CapabilityStatement resources alphabetically. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
+* [FHIR-57462](https://jira.hl7.org/browse/FHIR-57462): Use US Core search parameters. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
 
 ### STU2 Publication (version 2.0.0)
 The following changes were made as a result of comments received in the 2.0.0-ballot
