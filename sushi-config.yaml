@@ -49,7 +49,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
   pin-canonicals: pin-multiples
-  toggle-changes: true
+  toggle-changes: false
   shownav: true
 pages:
   index.md: &trial_use_page

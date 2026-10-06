@@ -10,7 +10,7 @@ This page details changes made in newer versions of the PACIO Personal Functioni
 The following changes were made for the 3.0.0-ballot.
 
 #### Non-Compatible Changes
-* [FHIR-57636](https://jira.hl7.org/browse/FHIR-57636): Create a value set for LOINC LL4309-2. See the [Assistance Required ValueSet](ValueSet-pfe-assistance-required-vs.html).
+* [FHIR-57636](https://jira.hl7.org/browse/FHIR-57636): Create a value set for LOINC LL4309-2. 
 * [FHIR-57553](https://jira.hl7.org/browse/FHIR-57553): Align CapabilityStatement interactions with US Core. See the [CapabilityStatement](CapabilityStatement-pacio-pfe-cap.html).
 * [FHIR-55942](https://jira.hl7.org/browse/FHIR-55942): Replace deprecated LOINC codes 89408-9 and 89411-3. See the [Products and Technology ValueSet](ValueSet-pfe-products-and-technology-vs.html).
 * [FHIR-55941](https://jira.hl7.org/browse/FHIR-55941): Remove discouraged LOINC code 93417-4. See the [Panel ValueSet](ValueSet-pfe-panel-vs.html).

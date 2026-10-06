@@ -1,8 +1,5 @@
-<div class="note-to-balloters" markdown="1">
-
-**What's new in the PACIO PFE September 2026 Ballot**
-
-{% include whats-new/v3-ballot.md %}
+<div class="stu-note" markdown="1">
+Key updates and detailed changes between this and prior versions are available on the [PFE Change Log](version_history.html) page.
 </div>
 
 Where possible, new and updated pre-publishing content is highlighted with green text and background- **This highlighting will be removed prior to publication.**

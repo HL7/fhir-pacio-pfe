@@ -14,11 +14,11 @@ Target Code System http://hl7.org/fhir/sid/icf doesn't have all content (content
 # 2-3 For information only. The PFE IG defines this value set using the ICF code system defined by the WHO. We don't have control over the large number of codes in the ICF.
 The value set expansion is too large, and only a subset has been displayed
 
-# 2-4-1 Information: This message is inherited from US Core Simple Observation profile (v9.0.0)
+# 2-4 Information: This message is inherited from US Core Simple Observation profile (v9.0.0)
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 
-# 2-4-2 Information: This message is inherited from US Core ServiceRequest profile (v9.0.0)
-Reference to draft ValueSet http://hl7.org/fhir/ValueSet/servicerequest-category|4.0.1
+# 2-5 Information: This message is inherited from US Core ServiceRequest profile (v9.0.0)
+Reference to draft ValueSet http://hl7.org/fhir/ValueSet/servicerequest-category|4.0.1 from active ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category|9.0.0
 
 # 3-1 Warning: CodeSystem is not enumerable
 Error from https://tx.fhir.org/r4: Error: The code System "http://www.ama-assn.org/go/cpt" has a grammar, and cannot be enumerated directly
@@ -39,4 +39,6 @@ None of the codings provided are in the value set 'Observation Category Codes' (
 # 3-7 Information: PAS Coverage.relationship has an optional slice using the X12 value set. This example uses SubscriberRelationshipCodes, the extensible value set defined by the parent FHIR Coverage resource.
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-pas/StructureDefinition/profile-coverage|2.2.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 
+# 3-8 Information: This explanatory use of the FHIR conformance verbs is not a conformance requirement.
+The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: 'This section defines additional requirements and guidance relevant to this IG as a whole. The FHIR Conformance Rules define the conformance verbs — SHALL, SHOULD, and MAY — used in this IG.'
 
