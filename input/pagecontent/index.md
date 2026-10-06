@@ -148,3 +148,41 @@ This Implementation Guide depends on US Core v9.0.0 (USCDI 6) as its primary bas
  
 ### Intellectual Property Considerations
 {% include ip-statements-en.xhtml %}
+
+### Credits
+
+#### Author
+
+- Yunwei Wang, MITRE, Technical Lead
+
+#### PACIO PFE Core Team
+
+- Alyssa Ford, Indiana Weslyan University, Community Co-Lead
+- Jamar Haggans, AOTA, Community Co-Lead
+- Uba Backonja, MITRE, Content Lead
+- Yolanda Liu, MITRE, PACIO Project Lead
+
+#### Special Thanks
+
+Special thanks go to the numerous individuals who have participated:
+
+- Ashleigh Pristas, Restore Therapy Services
+- Brian Meshell, Technical Lead STU-1 and STU-2
+- Chris Pugliese
+- Clarise Grote, Community Co-Lead STU-2
+- Dave Hill, Global Alliant, PACIO Project Lead STU-1 and STU-2
+- Howard Capon, Content Lead STU-2
+- Inoka Tennakoon, Community Co-Lead STU-2
+- Joanne Wisley, Consultant & Widener University
+- Karl Nadan, Content Lead STU-1
+- Lynda Hoeksema
+- Mary Anne Schultz
+- Matt Elrod, Content Lead STU-2
+- Michelle Ashafa, Academy of Nutrition and Dietetics
+- Michele Simler, Consultant
+- Monica Sampson
+- Patricia Saleeby, Bradley University
+- Raj Mahajan
+- Steve Buslovich
+- Tina Wilkins, MITRE, PACIO Project Lead STU-1 and STU-2
+- Tim Shaffer
