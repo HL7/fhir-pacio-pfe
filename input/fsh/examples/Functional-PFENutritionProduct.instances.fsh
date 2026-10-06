@@ -1,7 +1,7 @@
 Alias: $ucum = http://unitsofmeasure.org
 
 Instance: PFEIG-NutritionProduct-RenalSupplement
-InstanceOf: $R5NutritionProduct
+InstanceOf: PFENutritionProduct
 Description: "Example Nutrition Product for a renal oral nutrition supplement used in a skilled nursing facility discharge diet"
 Usage: #example
 * code = $FHIRTypes#NutritionProduct "NutritionProduct"
