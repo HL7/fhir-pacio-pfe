@@ -11,7 +11,7 @@ This IG provides examples of some ICF domains and some of their associated, PACI
 
 ### Use
 
-The ICF domain [value sets](artifacts.html#artifacts-table) provides a mapping of health and health-related domains that fall under the personal functioning and engagement umbrella. Each ICF domain has an associate Value Set that contains codes for Personal Functioning and Engagement Observations. §Implementers of this IG **SHOULD** include at least one category from the [Domain Category value set](ValueSet-pfe-category-vs.html) on each observation instance conformant to this guide. Additionally, the code of the instance **SHOULD** come from the value set associated with the indicated category or categories.§
+The ICF domain [value sets](artifacts.html#artifacts-table) provides a mapping of health and health-related domains that fall under the personal functioning and engagement umbrella. Each ICF domain has an associate Value Set that contains codes for Personal Functioning and Engagement Observations. §CONF-42:Implementers of this IG **SHOULD** include at least one category from the [Domain Category value set](ValueSet-pfe-category-vs.html) on each observation instance conformant to this guide.§ §CONF-43:Additionally, the code of the instance **SHOULD** come from the value set associated with the indicated category or categories.§
 
 ### Motivation and Approach
 
@@ -57,10 +57,10 @@ Most health observations fall into either the Body Functions or Activities and P
 
 To disambiguate categorization and to make the categorization process more easily reproducible, additional rules have been developed to augment the base ICF categorization process. These rules address some of the difficulties that arose while trying to categorize the PAC assessment items into ICF domains and provide additional clarification when more than one domain categorization could apply. 
 
-1. §PAC assessment observations **SHOULD** be categorized into the ICF domain within the “Activities and Participation” category only when the question focuses on  a specific activity.§
+1. §CONF-44?:PAC assessment observations **SHOULD** be categorized into the ICF domain within the “Activities and Participation” category only when the question focuses on  a specific activity.§
     - For assessment items related to assistive devices, unless the activity the assistive device helps with is present in the question, place them into a domain related to the body function that the assistive device most supports.
-2.  §PAC assessment observations that are part of a specific group of questions (e.g.,PHQ-9 or BIMS) or part of a group of questions listed all under the same header question **SHOULD** be categorized according to the main focus of the grouping header.§
-3. §All available assessment item resources, such as the question’s available responses, the question text, and the question short name, **SHOULD** be considered when making categorization decisions.§
+2.  §CONF-45?:PAC assessment observations that are part of a specific group of questions (e.g.,PHQ-9 or BIMS) or part of a group of questions listed all under the same header question **SHOULD** be categorized according to the main focus of the grouping header.§
+3. §CONF-46:All available assessment item resources, such as the question’s available responses, the question text, and the question short name, **SHOULD** be considered when making categorization decisions.§
 
 #### Adding New Codes
 

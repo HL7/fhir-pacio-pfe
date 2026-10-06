@@ -21,17 +21,16 @@ The following data elements must always be present or must be supported if the d
 
 1. the location the observation was made
 1. any devices the patient used
-1. an additional [category value or values](ValueSet-pfe-category-vs.html) specifying the specific health or health-related [domain](domains.html) that this observation is related to***
+1. an additional [category value or values](ValueSet-pfe-category-vs.html) specifying the specific health or health-related [domain](domains.html) that this observation is related to\*\*
 1. related questionnaire responses that this observation is made from
-1. references to nested collections or single questions that represent the answers within the panel\* or a reason why the data is absent\*\*
+1. references to nested collections\* 
 
-\* \*\* \*\*\* see guidance below
+\* \*\* see guidance below
 
 **Profile specific implementation guidance:**
 
-* §\*These collection observations represent structured instruments and panels with multiple questions. The hasMember element **SHALL** be used to point to child Observation instances that contain the specific questions and answers, represented by [Single Observations](StructureDefinition-pfe-observation-single.html) or nested panels represented by this profile. The Observation.value and Observation.component elements **SHALL** be empty.§
-* §\*\*An Observation without a value, **SHALL** include a reason why the data is absent unless there are 1) component observations, or 2) reporting panel observations using Observation.hasMember. Systems that never provide an observation without a value are not required to support Observation.dataAbsentReason.§
-* §\*\*\*When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed below and on the [domains](domains.html) page.§
+* \*§CONF-2:These collection observations represent structured instruments and panels with multiple questions. The hasMember element **SHALL** be used to point to child Observation instances that contain the specific questions and answers, represented by [Single Observations](StructureDefinition-pfe-observation-single.html) or nested panels represented by this profile.§ §CONF-3:The Observation.value and Observation.component elements **SHALL** be empty.§
+* \*\*§CONF-4?:When a health or health-related domain is specified as an additional [category value](ValueSet-pfe-category-vs.html), Observation.code **SHOULD** be drawn from the corresponding domain-based value set as discussed below and on the [domains](domains.html) page.§
 
 <blockquote class="stu-note">
 <p>
