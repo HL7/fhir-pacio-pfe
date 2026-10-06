@@ -161,6 +161,7 @@
 <artifact id="DiagnosticReport/PFEIG-Narrative-History-Cognitive-Status-1" key="Observation-PFEIG-Narrative-History-Cognitive-Status-1" name="PFEIG-Narrative-History-Cognitive-Status-1"/>
 <artifact deprecated="true" id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
 <artifact id="Observation/PFEIG-Nested-Collection-Mobility" key="Observation-PFEIG-Nested-Collection-Mobility" name="PFEIG-Nested-Collection-Mobility"/>
+<artifact id="Basic/PFEIG-NutritionIntake-RenalSupplement" key="Basic-PFEIG-NutritionIntake-RenalSupplement" name="PFEIG-NutritionIntake-RenalSupplement"/>
 <artifact id="NutritionOrder/PFEIG-NutritionOrder-SNFDischargeDiet" key="NutritionOrder-PFEIG-NutritionOrder-SNFDischargeDiet" name="PFEIG-NutritionOrder-SNFDischargeDiet"/>
 <artifact id="Basic/PFEIG-NutritionProduct-RenalSupplement" key="Basic-PFEIG-NutritionProduct-RenalSupplement" name="PFEIG-NutritionProduct-RenalSupplement"/>
 <artifact id="Organization/PFEIG-Org-01" key="Organization-PFEIG-Org-01" name="PFEIG-Org-01"/>
@@ -257,7 +258,9 @@
 <artifact id="ValueSet/pfe-mobility-vs" key="ValueSet-pfe-mobility-vs" name="Personal Functioning and Engagement Mobility Value Set"/>
 <artifact id="StructureDefinition/pfe-narrative-history-of-status" key="StructureDefinition-pfe-narrative-history-of-status" name="Personal Functioning and Engagement Narrative History of Status"/>
 <artifact id="ValueSet/pfe-neuromusculoskeletal-vs" key="ValueSet-pfe-neuromusculoskeletal-vs" name="Personal Functioning and Engagement Neuromusculoskeletal and Movement Related Functions Value Set"/>
+<artifact id="StructureDefinition/pfe-nutrition-intake" key="StructureDefinition-pfe-nutrition-intake" name="Personal Functioning and Engagement Nutrition Intake Profile"/>
 <artifact id="StructureDefinition/pfe-nutrition-order" key="StructureDefinition-pfe-nutrition-order" name="Personal Functioning and Engagement Nutrition Order Profile"/>
+<artifact id="StructureDefinition/pfe-nutrition-product" key="StructureDefinition-pfe-nutrition-product" name="Personal Functioning and Engagement Nutrition Product Profile"/>
 <artifact deprecated="true" id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
 <artifact id="ValueSet/pfe-panel-vs" key="ValueSet-pfe-panel-vs" name="Personal Functioning and Engagement Panel Value Set"/>
 <artifact id="ValueSet/pfe-products-and-technology-vs" key="ValueSet-pfe-products-and-technology-vs" name="Personal Functioning and Engagement Products and Technology Value Set"/>
