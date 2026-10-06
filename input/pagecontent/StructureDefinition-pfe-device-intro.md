@@ -14,7 +14,6 @@ The following data elements must always be present or must be supported if the d
 
 **Each Personal Functioning and Engagement Device must have:**
 
-1. patient
 1. type
 
 **Each Personal Functioning and Engagement Device must support:**
@@ -25,6 +24,7 @@ The following data elements must always be present or must be supported if the d
 1. lotNumber
 1. manufactureDate
 1. owner
+1. patient
 1. serialNumber
 1. udiCarrier
 
