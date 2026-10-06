@@ -158,6 +158,7 @@ This Implementation Guide depends on US Core v9.0.0 (USCDI 6) as its primary bas
 #### PACIO PFE Core Team
 
 - Alyssa Ford, Indiana Weslyan University, Community Co-Lead
+- Dave Hill, Global Alliant, PACIO Project Lead STU-1 and STU-2
 - Jamar Haggans, AOTA, Community Co-Lead
 - Uba Backonja, MITRE, Content Lead
 - Yolanda Liu, MITRE, PACIO Project Lead
@@ -170,7 +171,6 @@ Special thanks go to the numerous individuals who have participated:
 - Brian Meshell, Technical Lead STU-1 and STU-2
 - Chris Pugliese
 - Clarise Grote, Community Co-Lead STU-2
-- Dave Hill, Global Alliant, PACIO Project Lead STU-1 and STU-2
 - Howard Capon, Content Lead STU-2
 - Inoka Tennakoon, Community Co-Lead STU-2
 - Joanne Wisley, Consultant & Widener University
