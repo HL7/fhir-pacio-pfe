@@ -126,10 +126,11 @@ Id: pfe-device-request-location
 
 Extension: PFEDeviceRequestAdditionalRequester
 Description: """
-    Cross-version extension to carry FHIR R6 DeviceRequest.requester targets that are not allowed in FHIR R4. The user is captured using a profile (e.g., HL7 RelatedPerson profile) and the relationship is indicated as Custodian, Maintainer, Patient, or Operator. Example Users:  
+    Cross-version extension to carry FHIR R6 DeviceRequest.requester targets that are not allowed in FHIR R4. The user is captured using a profile (e.g., HL7 RelatedPerson profile). Example Users:  
     - Patient 
     - Related Person: Spouse, child 
-    - Practitioner: Home Health Aide, Nursing Aid, Occupational Therapist, Physical Therapist, Speech-Language Pathologist 
+    - CareTeam: [add examples]
+    - Group: [add examples]
 """
 Id: pfe-device-request-additional-requester
 * ^context.type = #element
