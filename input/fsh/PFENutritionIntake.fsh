@@ -11,4 +11,6 @@ Description:    "An exchange of post-acute care nutrition intake information for
 * extension[code] MS
 * modifierExtension 1..*
 * subject MS
+* subject 1..1
 * subject only Reference($USCorePatient)
+* extension[consumedItem].extension[nutritionProduct].extension[reference].value[x] only Reference(PFENutritionProduct)
