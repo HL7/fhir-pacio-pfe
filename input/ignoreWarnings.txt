@@ -42,6 +42,6 @@ This element does not match any known slice defined in the profile http://hl7.or
 # 3-8 Information: This explanatory use of the FHIR conformance verbs is not a conformance requirement.
 The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: 'This section defines additional requirements and guidance relevant to this IG as a whole. The FHIR Conformance Rules define the conformance verbs — SHALL, SHOULD, and MAY — used in this IG.'
 
-# 3-9 Error: The R5-to-R4 cross-version NutritionIntake profile requires this _datatype marker to encode its CodeableReference. The FHIR Extensions Pack declares _datatype for Base, but the R4 validator incorrectly rejects it on a nested Extension.
+# 3-10 Error: The R5-to-R4 cross-version NutritionIntake profile requires _datatype extension, which is defined on the context of `Base`. `Base` is not available in R4. (https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Validation.20error.20for.20_datatype.20in.20r5-r4.20xver.20resource)
 The extension http://hl7.org/fhir/StructureDefinition/_datatype v5.3.0 is not allowed to be used at this point (this element is [Basic.extension.extension, Extension, Extension.extension]; allowed for this version = e:Base)
 The extension http://hl7.org/fhir/StructureDefinition/_datatype v5.2.0 is not allowed to be used at this point (this element is [Basic.extension.extension, Extension, Extension.extension]; allowed for this version = e:Base)
