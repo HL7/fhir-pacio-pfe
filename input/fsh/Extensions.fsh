@@ -130,9 +130,8 @@ Description: """
     - Patient 
     - Related Person: Spouse, child 
     - CareTeam: [add examples]
-    - Group: [add examples]
 """
 Id: pfe-device-request-additional-requester
 * ^context.type = #element
 * ^context.expression = "DeviceRequest.requester"
-* value[x] only Reference(CareTeam or Group or Patient or RelatedPerson)
+* value[x] only Reference(CareTeam or Patient or RelatedPerson)
