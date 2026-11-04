@@ -129,7 +129,7 @@ Description: """
     Cross-version extension to carry FHIR R6 DeviceRequest.requester targets that are not allowed in FHIR R4. The user is captured using a profile (e.g., HL7 RelatedPerson profile). Example Users:  
     - Patient 
     - Related Person: Spouse, child 
-    - CareTeam: [add examples]
+    - CareTeam: Fall Prevention Team at a post-acute care facility 
 """
 Id: pfe-device-request-additional-requester
 * ^context.type = #element
