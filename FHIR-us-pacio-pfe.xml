@@ -266,7 +266,7 @@
 <artifact id="StructureDefinition/pfe-service-request" key="StructureDefinition-pfe-service-request" name="Personal Functioning and Engagement Service Request Profile"/>
 <artifact id="StructureDefinition/pfe-observation-single" key="StructureDefinition-pfe-observation-single" name="Personal Functioning and Engagement Single Observation"/>
 <artifact id="ValueSet/pfe-structures-voice-and-speech-vs" key="ValueSet-pfe-structures-voice-and-speech-vs" name="Personal Functioning and Engagement Structures Involved in Voice and Speech Value Set"/>
-<artifact id="ValueSet/pfe-survey-category-vs" key="ValueSet-pfe-survey-category-vs" name="Personal Functioning and Engagement Survey Value Set"/>
+<artifact deprecated="true" id="ValueSet/pfe-survey-category-vs" key="ValueSet-pfe-survey-category-vs" name="Personal Functioning and Engagement Survey Value Set"/>
 <artifact id="ValueSet/pfe-us-core-category-vs" key="ValueSet-pfe-us-core-category-vs" name="Personal Functioning and Engagement US Core Value Set"/>
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
 <artifact deprecated="true" id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>

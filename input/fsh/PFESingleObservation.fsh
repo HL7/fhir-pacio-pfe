@@ -31,7 +31,7 @@ Description:    "An exchange of post-acute care observation for a patient. This 
 * category[us-core] from PFEUSCoreCategoryVS
 * category[us-core] ^requirements = "Used to identify the category of personal functioning and engagement observation."
 
-* category[survey] from PFESurveyCategoryVS 
+* category[survey] = $OBSCAT#survey
 * category[survey] ^requirements = "Indicates the personal functioning and engagement observation is of type survey"
 
 * category[PFEDomain] from PFECategoryVS (required)
