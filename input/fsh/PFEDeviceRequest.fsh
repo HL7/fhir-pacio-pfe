@@ -49,7 +49,7 @@ Description:    "The purpose of this profile is to facilitate exchange of inform
     - Wheeled walker: HCPCS E0143 “Walker, folding, wheeled, adjustable or fixed height” 
     - Hot or cold pack: HCPCS A9273 “Cold or hot fluid bottle, ice cap or collar, heat and/or cold wrap, any type” 
 """
-* codeCodeableConcept from PFEDeviceType (extensible)
+* codeCodeableConcept from $FHIRDeviceType (example)
 * codeCodeableConcept MS
 * codeReference only Reference(PFEDevice)
 
@@ -68,7 +68,6 @@ Description:    "The purpose of this profile is to facilitate exchange of inform
 """
 * parameter.code ^short = "Parameter code(s)"
 * parameter.code ^definition = "A code that identifies the device parameter(s)."
-* parameter.code from PFEDeviceParameterCodeVS (preferred)
 * parameter.code ^comment = """
     Examples:  
     - Wheelchair seat cushion: Material = SNOMED 260769002, width = SNOMED 103355008 

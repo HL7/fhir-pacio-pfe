@@ -15,8 +15,6 @@
   - [PFEDeviceRequestLocation extension](StructureDefinition-pfe-device-request-location.html)
   - [PFEDeviceRequestUser extension](StructureDefinition-pfe-device-request-user.html)
   - [Personal Functioning and Engagement Device Association Relationship Value Set](ValueSet-pfe-deviceassociation-relationship-vs.html)
-  - [Personal Functioning and Engagement Device Type Value Set](ValueSet-pfe-device-type.html)
-  - [Personal Functioning and Engagement Device Parameter Code Value Set](ValueSet-pfe-device-parameter-code-vs.html)
   - [Personal Functioning and Engagement Assistance Required Value Set](ValueSet-pfe-assistance-required-vs.html)
   - [PFEIG-DeviceRequest-RollingWalker example](DeviceRequest-PFEIG-DeviceRequest-RollingWalker.html)
   - [PFEIG-DeviceRequest-Wheelchair example](DeviceRequest-PFEIG-DeviceRequest-Wheelchair.html)

@@ -29,7 +29,7 @@ The following data elements must always be present or must be supported if the d
 **Each Personal Functioning and Engagement Device Request must support:**
 
 1. authoredOn
-1. code[x]:CodeableConcept
+1. code[x]:CodeableConcept\**
 1. encounter
 1. extension:clinical-justification
 1. extension:device-user
@@ -48,3 +48,5 @@ The following data elements must always be present or must be supported if the d
 **Profile specific implementation guidance:**
 
 * \*§CONF-13:FHIR R4 DeviceRequest.requester allows Device, Practitioner, PractitionerRole, and Organization. FHIR R6 DeviceRequest.requester also allows CareTeam, Group, Patient, and RelatedPerson. Implementer **MAY** use the [additional-requester](StructureDefinition-pfe-device-request-additional-requester.html) extension for these additional requester types added in FHIR R6.§
+
+* \**The [FHIR Device Type ValueSet](https://hl7.org/fhir/R4/valueset-device-type.html), which includes all SNOMED CT codes, is specified with an example binding strength. It provides illustrative codes rather than restricting the allowable codes for `Device.type` or `DeviceRequest.codeCodeableConcept`. Codes from other code systems, such as HCPCS (sections A, B, E, K, L, and V), may also be used when appropriate. Institutions are encouraged to define their own device type ValueSets based on their specific use cases and requirements. If using SNOMED CT, it is recommended to use codes nested within "49062001 Device".

@@ -9,26 +9,6 @@ Description: "Relationship codes used to describe how a person is associated wit
 * ^experimental = false
 * include codes from system $DeviceAssociationRelationshipCS
 
-ValueSet: PFEDeviceType
-Title: "Personal Functioning and Engagement Device Type Value Set"
-Id: pfe-device-type
-Description: "Codes used to identify requested assistive device types for Personal Functioning and Engagement device requests."
-* ^experimental = false
-* ^copyright = "Current Procedural Terminology (CPT) is copyright 2020 American Medical Association. All rights reserved. HCPCS Level II Alphanumeric Codes are maintained by the US Centers for Medicare & Medicaid Services (CMS) and are available for public use."
-* include codes from system $HCPCS
-* include codes from system $CPT
-* include codes from valueset $FHIRDeviceType
-
-ValueSet: PFEDeviceParameterCodeVS
-Title: "Personal Functioning and Engagement Device Parameter Code Value Set"
-Id: pfe-device-parameter-code-vs
-Description: "Codes used to identify requested device parameters for Personal Functioning and Engagement device requests."
-* ^experimental = false
-* ^copyright = "Current Procedural Terminology (CPT) is copyright 2020 American Medical Association. All rights reserved. HCPCS Level II Alphanumeric Codes are maintained by the US Centers for Medicare & Medicaid Services (CMS) and are available for public use. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
-* include codes from system $HCPCS
-* include codes from system $CPT
-* include codes from system $SCT
-
 ValueSet: PFEUSCoreCategoryVS
 Title: "Personal Functioning and Engagement US Core Value Set"
 Id: pfe-us-core-category-vs

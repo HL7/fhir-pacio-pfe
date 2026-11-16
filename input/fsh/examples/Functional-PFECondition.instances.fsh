@@ -18,7 +18,10 @@ Usage: #example
 * subject = Reference(PFEIG-patientBSJ1)
 * category[us-core] = $condition-category#encounter-diagnosis "Encounter Diagnosis"
 //* category[+] = $icf#b539 "Functions related to the digestive system, other specified and unspecified"
-* bodySite = $sct#113257007 "Structure of cardiovascular system"
+* bodySite[0] = $sct#113257007 "Structure of cardiovascular system"
+// State renal laterality explicitly for the associated chronic kidney disease.
+* bodySite[+] = $sct#"64033007:272741003=51440002"
+* bodySite[=].text = "Bilateral kidneys"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
 * extension.valueDateTime = "2024-06-23T13:15:00-04:00"
 * recordedDate = "2024-06-23T13:15:00-04:00"
@@ -36,7 +39,9 @@ Usage: #example
 * subject = Reference(PFEIG-patientBSJ1)
 * category[us-core] = $condition-category#encounter-diagnosis "Encounter Diagnosis"
 //* category[+] = $icf#b610 "Urinary excretory functions"
-* bodySite = $sct#17373004 "Both kidneys"
+// Kidney structure with bilateral laterality.
+* bodySite = $sct#"64033007:272741003=51440002"
+* bodySite.text = "Bilateral kidneys"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
 * extension.valueDateTime = "2021-04-10"
 * recordedDate = "2021-04-10T15:00:00-04:00"
@@ -110,8 +115,9 @@ Description: "Example PFE Condition Encounter Diagnosis for a stroke diagnosis"
 * subject = Reference(PFEIG-patientBSJ1)
 * category[us-core] = $condition-category#encounter-diagnosis "Encounter Diagnosis"
 //* category[+] = $icf#s11009 "Structure of cortical lobes, unspecified"
-* bodySite[0] = $sct#414722000 "Structure of middle cerebral artery M1 segment (body structure)"
-* bodySite[+] = $sct#7771000 "Left"
+// M1 segment with left laterality; a qualifier alone is not a body site.
+* bodySite = $sct#"414722000:272741003=7771000"
+* bodySite.text = "Left middle cerebral artery M1 segment"
 * onsetDateTime = "2023-12-15T15:40:00-05:00"
 * recordedDate = "2023-12-15T18:40:00-05:00"
 * note.text = "Partial occlusion of MCA. Stroke event witnessed. EMS response / patient arrived within 45 minutes of symptom onset. Verified by CT with contrast. tPA administered within 2 hours of symptom onset."

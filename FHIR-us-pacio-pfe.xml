@@ -236,10 +236,10 @@
 <artifact id="StructureDefinition/pfe-condition-encounter-diagnosis" key="StructureDefinition-pfe-condition-encounter-diagnosis" name="Personal Functioning and Engagement Condition Encounter Diagnosis Profile"/>
 <artifact id="StructureDefinition/pfe-condition-problems-health-concerns" key="StructureDefinition-pfe-condition-problems-health-concerns" name="Personal Functioning and Engagement Condition Problems and Health Concerns Profile"/>
 <artifact id="ValueSet/pfe-deviceassociation-relationship-vs" key="ValueSet-pfe-deviceassociation-relationship-vs" name="Personal Functioning and Engagement Device Association Relationship Value Set"/>
-<artifact id="ValueSet/pfe-device-parameter-code-vs" key="ValueSet-pfe-device-parameter-code-vs" name="Personal Functioning and Engagement Device Parameter Code Value Set"/>
+<artifact deprecated="true" id="ValueSet/pfe-device-parameter-code-vs" key="ValueSet-pfe-device-parameter-code-vs" name="Personal Functioning and Engagement Device Parameter Code Value Set"/>
 <artifact id="StructureDefinition/pfe-device" key="StructureDefinition-pfe-device" name="Personal Functioning and Engagement Device Profile"/>
 <artifact id="StructureDefinition/pfe-device-request" key="StructureDefinition-pfe-device-request" name="Personal Functioning and Engagement Device Request Profile"/>
-<artifact id="ValueSet/pfe-device-type" key="ValueSet-pfe-device-type" name="Personal Functioning and Engagement Device Type Value Set"/>
+<artifact deprecated="true" id="ValueSet/pfe-device-type" key="ValueSet-pfe-device-type" name="Personal Functioning and Engagement Device Type Value Set"/>
 <artifact id="StructureDefinition/pfe-diagnostic-report-note-exchange" key="StructureDefinition-pfe-diagnostic-report-note-exchange" name="Personal Functioning and Engagement Diagnostic Report Note Exchange Profile"/>
 <artifact id="ValueSet/pfe-domestic-life-vs" key="ValueSet-pfe-domestic-life-vs" name="Personal Functioning and Engagement Domestic Life Value Set"/>
 <artifact deprecated="true" id="ValueSet/pfe-example-obs-vs" key="ValueSet-pfe-example-obs-vs" name="Personal Functioning and Engagement Example Observations Value Set"/>
