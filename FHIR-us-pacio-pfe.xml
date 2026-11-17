@@ -29,11 +29,18 @@
 <artifact id="ConceptMap/LOINCtoICFPHQ9" key="ConceptMap-LOINCtoICFPHQ9" name="LOINC to ICF Mapping - PHQ-9"/>
 <artifact deprecated="true" id="ConceptMap/LOINCtoICFPromise10" key="ConceptMap-LOINCtoICFPromise10" name="LOINC to ICF Mapping - PROMIS-10"/>
 <artifact id="Requirements/fromNarrative" key="Requirements-fromNarrative" name="Narrative Conformance Statements"/>
+<artifact id="SearchParameter/NutritionIntake-patient" key="SearchParameter-NutritionIntake-patient" name="NutritionIntake-patient"/>
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-encounter" key="SearchParameter-NutritionOrder-encounter" name="NutritionOrder-encounter"/>
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-identifier" key="SearchParameter-NutritionOrder-identifier" name="NutritionOrder-identifier"/>
 <artifact id="SearchParameter/NutritionOrder-orderer" key="SearchParameter-NutritionOrder-orderer" name="NutritionOrder-orderer"/>
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-subject" key="SearchParameter-NutritionOrder-subject" name="NutritionOrder-subject"/>
 <artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="ObservationEventLocation"/>
+<artifact id="ValueSet/pfe-nutrition-product-category" key="ValueSet-pfe-nutrition-product-category" name="PFE Categories of Nutrition Products"/>
+<artifact id="ValueSet/pfe-clinicalimpression-status-reason" key="ValueSet-pfe-clinicalimpression-status-reason" name="PFE ClinicalImpression Status Reason"/>
+<artifact id="ValueSet/pfe-allergen-class" key="ValueSet-pfe-allergen-class" name="PFE Codes for Allergen Classes"/>
+<artifact id="ValueSet/pfe-nutrition-product-nutrient" key="ValueSet-pfe-nutrition-product-nutrient" name="PFE Codes for Nutrition Product Nutrients"/>
+<artifact id="ValueSet/pfe-measurement-property" key="ValueSet-pfe-measurement-property" name="PFE Codes for Product Characteristics"/>
+<artifact id="ValueSet/pfe-not-consumed-reason" key="ValueSet-pfe-not-consumed-reason" name="PFE Reasons for why a food item was not consumed"/>
 <artifact id="StructureDefinition/pfe-device-request-additional-requester" key="StructureDefinition-pfe-device-request-additional-requester" name="PFEDeviceRequestAdditionalRequester"/>
 <artifact id="StructureDefinition/pfe-device-request-clinical-justification" key="StructureDefinition-pfe-device-request-clinical-justification" name="PFEDeviceRequestClinicalJustification"/>
 <artifact id="StructureDefinition/pfe-device-request-location" key="StructureDefinition-pfe-device-request-location" name="PFEDeviceRequestLocation"/>

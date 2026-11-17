@@ -34,14 +34,14 @@
   "publisher": "HL7 International - Patient Care",
   "rest": [
     {
-      "documentation": "The PFE Server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide.\n2.  Implement the RESTful behavior according to the FHIR specification.\n3. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n4. Support json source formats for all PFE interactions.\n5. Support the searchParameters on each profile  individually and in combination.\n\nThe PFE  Server **SHOULD**:\n\n1. Support xml source formats for all PFE interactions.",
+      "documentation": "The PFE Server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide except the PFE Nutrition Product and PFE Nutrition Intake profiles, which are SHOULD support.\n2.  Implement the RESTful behavior according to the FHIR specification.\n3. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n4. Support json source formats for all PFE interactions.\n5. Support the searchParameters on each profile  individually and in combination.\n\nThe PFE  Server **SHOULD**:\n\n1. Support xml source formats for all PFE interactions.\n2. Support the PFE Nutrition Product and PFE Nutrition Intake profiles.",
       "mode": "server",
       "resource": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "SHALL"
+              "valueCode": "SHOULD"
             }
           ],
           "interaction": [
@@ -52,7 +52,8 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "code": "read"
+              "code": "read",
+              "documentation": "Required when either PFE Nutrition Product or PFE Nutrition Intake is supported."
             },
             {
               "extension": [
@@ -61,7 +62,8 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "code": "search-type"
+              "code": "search-type",
+              "documentation": "Required when PFE Nutrition Intake is supported."
             }
           ],
           "referencePolicy": ["literal", "logical"],
@@ -73,16 +75,36 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "definition": "http://hl7.org/fhir/SearchParameter/Basic-code",
-              "documentation": "Search by Basic code. R5 cross-version NutritionProduct instances use Basic.code to identify the Basic resource as representing a nutrition product.",
-              "name": "code",
-              "type": "token"
+              "definition": "http://hl7.org/fhir/us/pacio-pfe/SearchParameter/NutritionIntake-patient",
+              "documentation": "Search PFE Nutrition Intake instances by patient. Required when PFE Nutrition Intake is supported.",
+              "name": "patient",
+              "type": "reference"
             }
           ],
           "supportedProfile": [
-            "http://hl7.org/fhir/5.0/StructureDefinition/profile-NutritionProduct|0.1.0"
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-nutrition-product",
+            "http://hl7.org/fhir/us/pacio-pfe/StructureDefinition/pfe-nutrition-intake"
           ],
-          "type": "Basic"
+          "type": "Basic",
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ]
+            }
+          ],
+          "documentation": "Servers SHOULD support the PFE Nutrition Product and PFE Nutrition Intake profiles, both represented as R4 Basic resources. If PFE Nutrition Product is supported, servers SHALL support read. If PFE Nutrition Intake is supported, servers SHALL support read and search-type using the patient search parameter (e.g., GET [base]/Basic?patient=Patient/123). Patient search selects Basic resources representing NutritionIntake; search is not required for PFE Nutrition Product."
         },
         {
           "extension": [
