@@ -60,5 +60,7 @@ The event (e.g., procedure, observation) during which the intake occurred or is 
 * extension[performer].extension[function].valueCodeableConcept from http://hl7.org/fhir/ValueSet/performer-role (example)
 * extension[reason].extension[concept].valueCodeableConcept from http://hl7.org/fhir/ValueSet/condition-code (example)
 
-// The inherited status extension requires ClinicalImpressionStatus, not R5 EventStatus.
-// Replacing that required binding needs a correction in the cross-version package.
+// Deliberate local override to Nutrition Product Status.
+// The xver parent still requires ClinicalImpressionStatus; this override does not
+// resolve that derivation conflict or permit the existing completed example.
+* modifierExtension[status].valueCode from http://hl7.org/fhir/uv/xver/ValueSet/R5-nutritionproduct-status-for-R4 (required)
