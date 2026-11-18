@@ -48,6 +48,7 @@ Instance: PFEIG-provider-role-pcp
 InstanceOf: PractitionerRole
 Description: "Example Practitioner Role: Primary Care Physician"
 * code = $NUCC#261QP2300X "Primary Care Clinic/Center"
+* code.coding[0].version = "26.1"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-JohnSmith)
 * organization = Reference(PFEIG-provider-org-01)
@@ -70,6 +71,7 @@ Instance: PFEIG-provider-role-neurologist
 InstanceOf: PractitionerRole
 Description: "Example Practitioner Role: Neurologist"
 * code = $NUCC#2084N0400X "Neurology Physician"
+* code.coding[0].version = "26.1"
 * active = true
 * practitioner = Reference(PFEIG-Practitioner-NoraOlogist)
 * organization = Reference(PFEIG-provider-org-16)
@@ -135,6 +137,7 @@ InstanceOf: PractitionerRole
 Description: "Example Practitioner Role: Geriatric Medicine Physician"
 * active = true
 * code = $NUCC#207QG0300X "Geriatric Medicine (Family Medicine) Physician"
+* code.coding[0].version = "26.1"
 * practitioner = Reference(PFEIG-Practioner-GeraldPark) "Gerald Park"
 * organization = Reference(PFEIG-Org-02) "Happy Nursing Facility"
 * location = Reference(PFEIG-Org-Loc-02)
@@ -146,6 +149,7 @@ InstanceOf: PractitionerRole
 Description: "Example Practitioner Role: Internal Medicine Physician"
 * active = true
 * code = $NUCC#207R00000X "Internal Medicine Physician"
+* code.coding[0].version = "26.1"
 * practitioner = Reference(PFEIG-Practitioner-AnitaChu) "Dr. Anita Chu"
 * organization = Reference(PFEIG-Org-Primary-Care-Michigan) "Michigan Primary Health Care Associates"
 * location = Reference(PFEIG-Org-Loc-Primary-Care-Michigan)
