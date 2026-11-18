@@ -146,3 +146,47 @@ This Implementation Guide depends on US Core v9.0.0 (USCDI 6) as its primary bas
  
 ### Intellectual Property Considerations
 {% include ip-statements-en.xhtml %}
+
+### Credits
+
+#### Author
+
+- Yunwei Wang, MITRE, Technical Lead
+
+#### PACIO PFE Core Team
+
+- Dave Hill, Global Alliant, PACIO Project Lead STU-1, STU-2
+- Jamar Haggans, AOTA, Community Co-Lead
+- Uba Backonja, MITRE, Content Lead STU-2, STU-3
+- Yolanda Liu, MITRE, PACIO Project Lead
+
+#### Special Thanks
+
+Special thanks go to the numerous individuals who have participated:
+
+- Alyssa Ford, Indiana Weslyan University, Community Co-Lead STU-3
+- Ashleigh Pristas, Restore Therapy Services
+- Brian Meshell, MITRE/Warwick Consulting, Technical Lead STU-1, STU-2
+- Chris Pugliese
+- Clarise Grote, Community Co-Lead STU-2
+- Howard Capon, Content Lead STU1, STU-2
+- Inoka Tennakoon, ASHA, Community Co-Lead STU-2
+- Jessica Skopac, MITRE, PACIO Project Co-Lead STU-1, STU-2
+- Joanne Wisley, Consultant & Widener University
+- Karl Nadan, Glen View Associates, Content Lead STU-1
+- Kathleen “Cricket” Coale, NIH Rehabilitation Medicine Epidemiology and Biostatistics Section/ Beth Israel Lahey Health Sports Medicine and Rehabilitation
+- Ken Harwood, Ken Harwood Consulting, PLLC
+- Leigh Ann Frick, ADVION
+- Lynda Hoeksema, MITRE/Aptive Resources, Content Lead STU-1 
+- Mary Anne Schultz, California State University, San Bernardino
+- Matt Elrod, Content Lead STU-2
+- Michele Simler, Consultant
+- Michelle Ashafa, Academy of Nutrition and Dietetics
+- Monica Sampson, American Speech-Language-Hearing Association (ASHA)
+- Patricia Saleeby, Bradley University
+- Raj Mahajan, CIMPAR, S.C. 
+- Rebecca Niitzel, Academy of Nutrition and Dietetics
+- Steve Buslovich, PointClickCare
+- Tina Wilkins, MITRE, PACIO Project Lead STU-1 and STU-2
+- Tim Shaffer
+- Vanessa Fotso, MITRE, Reference Implementation Developer 
