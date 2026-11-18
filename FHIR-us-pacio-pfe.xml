@@ -40,6 +40,7 @@
 <artifact id="ValueSet/pfe-allergen-class" key="ValueSet-pfe-allergen-class" name="PFE Codes for Allergen Classes"/>
 <artifact id="ValueSet/pfe-nutrition-product-nutrient" key="ValueSet-pfe-nutrition-product-nutrient" name="PFE Codes for Nutrition Product Nutrients"/>
 <artifact id="ValueSet/pfe-measurement-property" key="ValueSet-pfe-measurement-property" name="PFE Codes for Product Characteristics"/>
+<artifact id="StructureDefinition/pfe-nutrition-intake-status" key="StructureDefinition-pfe-nutrition-intake-status" name="PFE Nutrition Intake Status"/>
 <artifact id="ValueSet/pfe-not-consumed-reason" key="ValueSet-pfe-not-consumed-reason" name="PFE Reasons for why a food item was not consumed"/>
 <artifact id="StructureDefinition/pfe-device-request-additional-requester" key="StructureDefinition-pfe-device-request-additional-requester" name="PFEDeviceRequestAdditionalRequester"/>
 <artifact id="StructureDefinition/pfe-device-request-clinical-justification" key="StructureDefinition-pfe-device-request-clinical-justification" name="PFEDeviceRequestClinicalJustification"/>

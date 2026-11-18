@@ -9,6 +9,7 @@ Description: "Example PFE Clinical Test Observation for sensory functions and pa
 * status = #final
 * category[us-core] = $OBSCAT#exam "Exam"
 * category[PFEDomain] = $PFEDOMAINCAT#b2 "SENSORY FUNCTIONS AND PAIN"
+* category[PFEDomain].coding[0].version = "2017a"
 * effectiveDateTime = "2020-11-06T10:45:00-05:00"
 * code = http://loinc.org#91375-6 "Hearing threshold Ear - left --250 Hz"
 * performer[+] = Reference(PractitionerRole/PFEIG-Role-Audio-JillBradley)
