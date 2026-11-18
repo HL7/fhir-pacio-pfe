@@ -3,7 +3,6 @@ Key updates and detailed changes between this and prior versions are available o
 </div>
 
 Where possible, new and updated pre-publishing content is highlighted with green text and background- **This highlighting will be removed prior to publication.**
-{:.new-content}
 
 <div style="width: 100%;" >
 <h3 id="plain-language-summary-about-hl7-and-this-guide">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary-about-hl7-and-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
@@ -139,7 +138,6 @@ This IG is divided into several sections that are listed at the top of each page
 ### Package Dependencies
 
 This Implementation Guide depends on US Core v9.0.0 (USCDI 6) as its primary base. Wherever possible, PFE profiles strive to comply with US Core v6.1.0 (USCDI 3), v7.0.0 (USCDI 4), and v8.0.1 (USCDI 5), simplifying implementation for those who will need to support varying regulatory expectations over time. Implementers can use any of these US Core versions when implementing this IG, so long as the profile requirements defined in this guide are satisfied.
-{:.new-content}
 
 {% include dependency-table-en.xhtml %}
  
