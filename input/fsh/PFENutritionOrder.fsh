@@ -29,6 +29,10 @@ Description:    "An exchange of post-acute care nutrition order for a patient. T
 //supplement data elements
 * supplement MS
 * supplement.type MS
+* supplement.type.extension contains $R5NutritionOrderSupplementType named nutrition-product 0..1 MS
+* supplement.type.extension[nutrition-product] ^short = "Specific nutrition product"
+* supplement.type.extension[nutrition-product] ^definition = "A reference to an R5 NutritionProduct represented by the official R5-to-R4 cross-version NutritionProduct profile."
+* supplement.type.extension[nutrition-product].value[x] only Reference($R5NutritionProduct)
 * supplement.schedule MS
 * supplement.quantity MS
 * supplement.instruction MS
@@ -36,7 +40,15 @@ Description:    "An exchange of post-acute care nutrition order for a patient. T
 //enteral formula data elements
 * enteralFormula MS
 * enteralFormula.baseFormulaType MS
+* enteralFormula.baseFormulaType.extension contains $R5NutritionOrderEnteralFormulaBaseFormulaType named nutrition-product 0..1 MS
+* enteralFormula.baseFormulaType.extension[nutrition-product] ^short = "Specific nutrition product"
+* enteralFormula.baseFormulaType.extension[nutrition-product] ^definition = "A reference to an R5 NutritionProduct represented by the official R5-to-R4 cross-version NutritionProduct profile."
+* enteralFormula.baseFormulaType.extension[nutrition-product].value[x] only Reference($R5NutritionProduct)
 * enteralFormula.additiveType MS
+* enteralFormula.additiveType.extension contains $R5NutritionOrderEnteralFormulaAdditiveType named nutrition-product 0..1 MS
+* enteralFormula.additiveType.extension[nutrition-product] ^short = "Specific nutrition product"
+* enteralFormula.additiveType.extension[nutrition-product] ^definition = "A reference to an R5 NutritionProduct represented by the official R5-to-R4 cross-version NutritionProduct profile."
+* enteralFormula.additiveType.extension[nutrition-product].value[x] only Reference($R5NutritionProduct)
 * enteralFormula.caloricDensity MS
 * enteralFormula.routeofAdministration MS
 * enteralFormula.administration MS

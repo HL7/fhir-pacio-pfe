@@ -23,6 +23,7 @@ Usage: #example
 * oralDiet.instruction = "May have a snack if desired"
 * supplement.type.coding[0] = $sct#443481000124101 "Renal Formula"
 * supplement.type.coding[+] = $sct#443051000124104 "Adult diabetic specialty formula"
+* supplement.type.extension[nutrition-product].valueReference = Reference(PFEIG-NutritionProduct-RenalSupplement)
 * supplement.schedule.repeat.boundsPeriod.start = "2024-07-18"
 * supplement.schedule.repeat.frequency = 1
 * supplement.schedule.repeat.period = 1

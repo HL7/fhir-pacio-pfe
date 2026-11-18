@@ -22,7 +22,7 @@ Title: "Personal Functioning and Engagement Category Value Set"
 Description: "This value set includes codes representing health and health-related domains into which functioning observations can be further categorized."
 Id: pfe-category-vs
 * ^experimental = false
-* include codes from system http://hl7.org/fhir/sid/icf
+* include codes from system http://hl7.org/fhir/sid/icf|2017a
 
 ValueSet: PFESensoryFunctionsAndPainClinicalTestVS
 Title: "Personal Functioning and Engagement Sensory Functions and Pain Clinical Test Value Set"

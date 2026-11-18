@@ -29,11 +29,19 @@
 <artifact id="ConceptMap/LOINCtoICFPHQ9" key="ConceptMap-LOINCtoICFPHQ9" name="LOINC to ICF Mapping - PHQ-9"/>
 <artifact deprecated="true" id="ConceptMap/LOINCtoICFPromise10" key="ConceptMap-LOINCtoICFPromise10" name="LOINC to ICF Mapping - PROMIS-10"/>
 <artifact id="Requirements/fromNarrative" key="Requirements-fromNarrative" name="Narrative Conformance Statements"/>
+<artifact id="SearchParameter/NutritionIntake-patient" key="SearchParameter-NutritionIntake-patient" name="NutritionIntake-patient"/>
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-encounter" key="SearchParameter-NutritionOrder-encounter" name="NutritionOrder-encounter"/>
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-identifier" key="SearchParameter-NutritionOrder-identifier" name="NutritionOrder-identifier"/>
 <artifact id="SearchParameter/NutritionOrder-orderer" key="SearchParameter-NutritionOrder-orderer" name="NutritionOrder-orderer"/>
 <artifact deprecated="true" id="SearchParameter/NutritionOrder-subject" key="SearchParameter-NutritionOrder-subject" name="NutritionOrder-subject"/>
 <artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="ObservationEventLocation"/>
+<artifact id="ValueSet/pfe-nutrition-product-category" key="ValueSet-pfe-nutrition-product-category" name="PFE Categories of Nutrition Products"/>
+<artifact id="ValueSet/pfe-clinicalimpression-status-reason" key="ValueSet-pfe-clinicalimpression-status-reason" name="PFE ClinicalImpression Status Reason"/>
+<artifact id="ValueSet/pfe-allergen-class" key="ValueSet-pfe-allergen-class" name="PFE Codes for Allergen Classes"/>
+<artifact id="ValueSet/pfe-nutrition-product-nutrient" key="ValueSet-pfe-nutrition-product-nutrient" name="PFE Codes for Nutrition Product Nutrients"/>
+<artifact id="ValueSet/pfe-measurement-property" key="ValueSet-pfe-measurement-property" name="PFE Codes for Product Characteristics"/>
+<artifact id="StructureDefinition/pfe-nutrition-intake-status" key="StructureDefinition-pfe-nutrition-intake-status" name="PFE Nutrition Intake Status"/>
+<artifact id="ValueSet/pfe-not-consumed-reason" key="ValueSet-pfe-not-consumed-reason" name="PFE Reasons for why a food item was not consumed"/>
 <artifact id="StructureDefinition/pfe-device-request-additional-requester" key="StructureDefinition-pfe-device-request-additional-requester" name="PFEDeviceRequestAdditionalRequester"/>
 <artifact id="StructureDefinition/pfe-device-request-clinical-justification" key="StructureDefinition-pfe-device-request-clinical-justification" name="PFEDeviceRequestClinicalJustification"/>
 <artifact id="StructureDefinition/pfe-device-request-location" key="StructureDefinition-pfe-device-request-location" name="PFEDeviceRequestLocation"/>
@@ -161,7 +169,9 @@
 <artifact id="DiagnosticReport/PFEIG-Narrative-History-Cognitive-Status-1" key="Observation-PFEIG-Narrative-History-Cognitive-Status-1" name="PFEIG-Narrative-History-Cognitive-Status-1"/>
 <artifact deprecated="true" id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
 <artifact id="Observation/PFEIG-Nested-Collection-Mobility" key="Observation-PFEIG-Nested-Collection-Mobility" name="PFEIG-Nested-Collection-Mobility"/>
+<artifact id="Basic/PFEIG-NutritionIntake-RenalSupplement" key="Basic-PFEIG-NutritionIntake-RenalSupplement" name="PFEIG-NutritionIntake-RenalSupplement"/>
 <artifact id="NutritionOrder/PFEIG-NutritionOrder-SNFDischargeDiet" key="NutritionOrder-PFEIG-NutritionOrder-SNFDischargeDiet" name="PFEIG-NutritionOrder-SNFDischargeDiet"/>
+<artifact id="Basic/PFEIG-NutritionProduct-RenalSupplement" key="Basic-PFEIG-NutritionProduct-RenalSupplement" name="PFEIG-NutritionProduct-RenalSupplement"/>
 <artifact id="Organization/PFEIG-Org-01" key="Organization-PFEIG-Org-01" name="PFEIG-Org-01"/>
 <artifact id="Organization/PFEIG-Org-02" key="Organization-PFEIG-Org-02" name="PFEIG-Org-02"/>
 <artifact id="Organization/PFEIG-Org-03" key="Organization-PFEIG-Org-03" name="PFEIG-Org-03"/>
@@ -256,7 +266,9 @@
 <artifact id="ValueSet/pfe-mobility-vs" key="ValueSet-pfe-mobility-vs" name="Personal Functioning and Engagement Mobility Value Set"/>
 <artifact id="StructureDefinition/pfe-narrative-history-of-status" key="StructureDefinition-pfe-narrative-history-of-status" name="Personal Functioning and Engagement Narrative History of Status"/>
 <artifact id="ValueSet/pfe-neuromusculoskeletal-vs" key="ValueSet-pfe-neuromusculoskeletal-vs" name="Personal Functioning and Engagement Neuromusculoskeletal and Movement Related Functions Value Set"/>
+<artifact id="StructureDefinition/pfe-nutrition-intake" key="StructureDefinition-pfe-nutrition-intake" name="Personal Functioning and Engagement Nutrition Intake Profile"/>
 <artifact id="StructureDefinition/pfe-nutrition-order" key="StructureDefinition-pfe-nutrition-order" name="Personal Functioning and Engagement Nutrition Order Profile"/>
+<artifact id="StructureDefinition/pfe-nutrition-product" key="StructureDefinition-pfe-nutrition-product" name="Personal Functioning and Engagement Nutrition Product Profile"/>
 <artifact deprecated="true" id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
 <artifact id="ValueSet/pfe-panel-vs" key="ValueSet-pfe-panel-vs" name="Personal Functioning and Engagement Panel Value Set"/>
 <artifact id="ValueSet/pfe-products-and-technology-vs" key="ValueSet-pfe-products-and-technology-vs" name="Personal Functioning and Engagement Products and Technology Value Set"/>
